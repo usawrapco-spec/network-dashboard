@@ -31,8 +31,13 @@ if git diff --quiet && git diff --cached --quiet && [ -z "$(git ls-files --other
   exit 0
 fi
 
-git add index.html data.json logo.png .nojekyll publish.sh collect.py README.md .gitignore
+# Never add private/ (scheduled drafts, captions, stills).
+git add index.html data.json logo.png .nojekyll publish.sh collect.py scheduled.py README.md .gitignore
 git add stats/*.json 2>/dev/null || true
+if git ls-files --cached -z | grep -z -E '(^|/)private/' >/dev/null; then
+  echo "Refusing to publish: private/ files were staged." >&2
+  exit 1
+fi
 
 if git diff --cached --quiet; then
   echo "No staged changes to publish."

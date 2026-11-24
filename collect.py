@@ -20,7 +20,7 @@ import subprocess
 import sys
 import urllib.error
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any, Optional
 from zoneinfo import ZoneInfo
@@ -35,7 +35,7 @@ STATS_DIR = HERE / "stats"
 
 YT_DLP = "yt-dlp"
 
-INCLUDE_BRANDS = (
+NEWS_BRANDS = (
     "map desk",
     "mapdesk",
     "harbor news",
@@ -43,12 +43,15 @@ INCLUDE_BRANDS = (
     "quint valley",
     "quintvalley",
 )
-SKIP_BRANDS = (
+BUSINESS_BRANDS = (
     "usa wrap",
     "usawrap",
     "dekwave",
     "savajay",
 )
+INCLUDE_BRANDS = NEWS_BRANDS + BUSINESS_BRANDS
+# Kept so older call sites can still skip non-network chatter.
+SKIP_BRANDS = ()
 
 POST_URL_RE = re.compile(
     r"https?://(?:www\.|m\.|mobile\.)?(?:"
@@ -99,6 +102,7 @@ CHANNELS = [
         "url": "https://www.youtube.com/@MapDeskNews",
         "followers_label": "subscribers",
         "kind": "youtube",
+        "network": "news",
     },
     {
         "brand": "Map Desk",
@@ -107,6 +111,7 @@ CHANNELS = [
         "url": "https://x.com/MapDeskNews",
         "followers_label": "followers",
         "kind": "x",
+        "network": "news",
     },
     {
         "brand": "Map Desk",
@@ -115,6 +120,7 @@ CHANNELS = [
         "url": "https://www.facebook.com/profile.php?id=61596875401709",
         "followers_label": "followers",
         "kind": "facebook",
+        "network": "news",
     },
     {
         "brand": "Harbor News",
@@ -123,6 +129,7 @@ CHANNELS = [
         "url": "https://www.facebook.com/profile.php?id=61596429704380",
         "followers_label": "followers",
         "kind": "facebook",
+        "network": "news",
     },
     {
         "brand": "Quint Valley News",
@@ -131,14 +138,69 @@ CHANNELS = [
         "url": "https://www.facebook.com/profile.php?id=61596620650836",
         "followers_label": "followers",
         "kind": "facebook",
+        "network": "news",
+    },
+    {
+        "brand": "USA Wrap Co",
+        "platform": "Facebook",
+        "handle": "USA WRAP Co.",
+        "url": "https://www.facebook.com/USAWRAPCO",
+        "followers_label": "followers",
+        "kind": "facebook",
+        "network": "business",
+    },
+    {
+        "brand": "USA Wrap Co",
+        "platform": "Instagram",
+        "handle": "@usawrapco_upfitting",
+        "url": "https://www.instagram.com/usawrapco_upfitting/",
+        "followers_label": "followers",
+        "kind": "instagram",
+        "network": "business",
+    },
+    {
+        "brand": "USA Wrap Co",
+        "platform": "X",
+        "handle": "@usawrapco",
+        "url": "https://x.com/usawrapco",
+        "followers_label": "followers",
+        "kind": "x",
+        "network": "business",
+    },
+    {
+        "brand": "DekWave",
+        "platform": "Facebook",
+        "handle": "DekWave",
+        "url": "https://www.facebook.com/profile.php?id=61590781825933",
+        "followers_label": "followers",
+        "kind": "facebook",
+        "network": "business",
+    },
+    {
+        "brand": "DekWave",
+        "platform": "Instagram",
+        "handle": "@dekwaveprotect",
+        "url": "https://www.instagram.com/dekwaveprotect/",
+        "followers_label": "followers",
+        "kind": "instagram",
+        "network": "business",
+    },
+    {
+        "brand": "Savajay",
+        "platform": "Facebook",
+        "handle": "Savajay",
+        "url": "https://www.facebook.com/profile.php?id=61553803499989",
+        "followers_label": "followers",
+        "kind": "facebook",
+        "network": "business",
     },
 ]
 
 PLATFORM_NOTES = {
     "YouTube": "Views and likes via yt-dlp. Comment counts are shown when YouTube exposes them; otherwise n/a.",
     "X": "Impressions, likes, reposts, and replies from the public FixTweet/syndication APIs (same public_metrics the X read tools return). Followers from the public profile payload.",
-    "Facebook": "Reel view counts via yt-dlp on the public video page. Likes, comments, shares, photo posts, and permalink posts are n/a without a Facebook login.",
-    "Instagram": "Not collected yet (no live Map Desk / Harbor News / Quint Valley News Instagram post links in the log).",
+    "Facebook": "Reel view counts via yt-dlp on the public video page. Likes, comments, shares, photo/permalink posts, and Story views are n/a without a login or a recorded in-account check. Stories expire after 24 hours and usually have no public URL.",
+    "Instagram": "Feed post views and likes via yt-dlp when the public page exposes them. Story views and replies are n/a unless an in-account check has recorded a real number; Stories expire after 24 hours and usually have no public URL.",
 }
 
 
@@ -187,12 +249,16 @@ def row_text(row: dict) -> str:
     )
 
 
-def is_video_network(text: str) -> bool:
+def is_own_brand(text: str) -> bool:
     t = text.lower()
-    if any(h in t for h in SKIP_BRANDS) and not any(h in t for h in INCLUDE_BRANDS):
-        return False
-    # Skip mixed USA Wrap + Harbor file-work rows unless the brand itself is a news brand.
     return any(h in t for h in INCLUDE_BRANDS)
+
+
+def network_for(family: str) -> str:
+    f = (family or "").lower()
+    if f in {"usa wrap co", "dekwave", "savajay"} or "usa wrap" in f:
+        return "business"
+    return "news"
 
 
 def classify_brand(text: str) -> tuple[str, str]:
@@ -209,6 +275,12 @@ def classify_brand(text: str) -> tuple[str, str]:
         return "Map Desk Money", "Map Desk"
     if "map desk" in t or "mapdesk" in t:
         return "Map Desk", "Map Desk"
+    if "dekwave" in t:
+        return "DekWave", "DekWave"
+    if "savajay" in t:
+        return "Savajay", "Savajay"
+    if "usa wrap" in t or "usawrap" in t:
+        return "USA Wrap Co", "USA Wrap Co"
     return "Unknown", "Unknown"
 
 
@@ -243,6 +315,8 @@ def extract_urls(*parts: str) -> list[str]:
 
 
 def canonical_url(url: str) -> str:
+    if not url:
+        return ""
     url = url.strip()
     m = re.search(r"(?:youtube\.com/shorts/|youtu\.be/)([A-Za-z0-9_-]+)", url)
     if m:
@@ -290,14 +364,34 @@ def is_usable_post_url(url: str) -> bool:
     ))
 
 
+def is_story(action: str, link: str = "") -> bool:
+    blob = f"{action} {link}"
+    if re.search(r"\b(story posted|posted via business suite.*story|story,? no url)\b", blob, re.I):
+        return True
+    if (link or "").lower().startswith("(story"):
+        return True
+    # Avoid "6 stories" in a briefing or an unposted "News desk Story" row.
+    return bool(re.search(r"\bpost\s+[A-Z0-9]+:\s*Story posted\b", action, re.I))
+
+
 def looks_posted(action: str, link: str) -> bool:
     a = lower(action)
-    if re.search(r"\bblocked\b", a):
+    # Only treat the post itself as blocked, not a later "live check blocked" note on a successful Posted row.
+    if re.search(r"\bblocked\b", a) and not re.match(r"^(posted|post |first post|created )", a):
         return False
-    if re.search(r"nothing posted|not posted|did not post|draft only|delete posts", a):
+    if re.search(
+        r"nothing posted|not posted|did not post|draft only|delete posts|"
+        r"file work|inventoried|refreshed social media calendar|password reset|"
+        r"profile update|cover photo updated|\bskipped\b|^built |^qa ",
+        a,
+    ):
         return False
-    if link.startswith("(deleted)") or "deleted" in lower(link):
+    if (link or "").startswith("(deleted)") or "deleted" in lower(link):
         return False
+    if "linkedin.com/in/" in lower(link):
+        return False
+    if is_story(action, link) and re.search(r"\b(posted|published)\b", a):
+        return True
     if re.search(r"\b(posted|published|first post|confirmed published)\b", a):
         return True
     if is_usable_post_url(link) and re.search(r"\b(post|reel|short|upload)\b", a):
@@ -305,7 +399,7 @@ def looks_posted(action: str, link: str) -> bool:
     return False
 
 
-POST_ID_RE = re.compile(r"\b((?:QVN|MD[MWP]?|H|N)\d{2,4})\b", re.I)
+POST_ID_RE = re.compile(r"\b((?:QVN|MD[MWP]?|DW|SJ|X|U|H|N)\d{2,4})\b", re.I)
 
 
 def title_from_action(action: str, fallback: str = "") -> str:
@@ -366,6 +460,8 @@ def previous_post_map(prev: dict) -> dict[str, dict]:
         link = p.get("link")
         if link:
             out[canonical_url(link)] = p
+        if p.get("id"):
+            out[p["id"]] = p
     return out
 
 
@@ -627,31 +723,33 @@ def collect_from_log() -> tuple[list[dict], set[str]]:
         link_raw = (row.get("post_link") or "").strip()
         row_ids = {m.upper() for m in POST_ID_RE.findall(action + " " + link_raw)}
 
-        # Record deletions, including rows that name a post id (H133, H153) without a URL.
-        if "delete posts" in lower(action) or (
-            re.search(r"\b(deleted|removed)\b", lower(action + " " + link_raw))
-            and row_ids
+        # Record deletions, including rows that name a post id without a URL.
+        if "delete posts" in lower(action) or re.search(
+            r"\b(deleted|removed)\b", lower(action + " " + link_raw)
         ):
             for u in extract_urls(link_raw, action, row.get("comment_text") or ""):
                 deleted_urls.add(canonical_url(u))
             for pid in row_ids:
                 deleted_urls.update(id_to_urls.get(pid, set()))
 
-        if not is_video_network(text):
+        if not is_own_brand(text):
             continue
-        # If a skip brand is the only brand and news is mentioned only as "skipped Harbor News"
+        # The business_or_person field must be one of our brands, not a customer or group we commented on.
         biz = lower(row.get("business_or_person"))
-        if any(h in biz for h in SKIP_BRANDS) and not any(h in biz for h in INCLUDE_BRANDS):
+        if not is_own_brand(biz):
+            continue
+        # Never import personal LinkedIn.
+        if "linkedin.com/in/" in lower(link_raw) or "linkedin.com/in/" in lower(action):
             continue
 
         urls = [u for u in extract_urls(link_raw, action) if is_usable_post_url(u)]
         if not urls and looks_posted(action, link_raw) and is_usable_post_url(link_raw):
             urls = [link_raw]
 
-        if not urls:
+        story = is_story(action, link_raw) and looks_posted(action, link_raw)
+        if not urls and not story:
             continue
-        if not looks_posted(action, link_raw) and "confirmed published" not in lower(action):
-            # Skip inventory / hold / file-work rows that merely mention a live URL
+        if urls and not looks_posted(action, link_raw) and "confirmed published" not in lower(action):
             if not looks_posted(action, urls[0]):
                 continue
 
@@ -672,31 +770,52 @@ def collect_from_log() -> tuple[list[dict], set[str]]:
         if "harbor news + quint" in lower(text) and "quint" not in lower(action):
             brand, family = "Harbor News", "Harbor News"
 
-        for url in urls:
-            url = canonical_url(url)
-            if not is_usable_post_url(url):
-                continue
-            for pid in row_ids:
-                id_to_urls.setdefault(pid, set()).add(url)
-            platform = normalize_platform(row.get("platform") or "", url)
-            title = title_from_action(action)
-            posts_by_url[url] = {
+        entries = list(urls)
+        if story and not entries:
+            entries = [None]
+
+        for url in entries:
+            if url:
+                url = canonical_url(url)
+                if not is_usable_post_url(url):
+                    continue
+                for pid in row_ids:
+                    id_to_urls.setdefault(pid, set()).add(url)
+                platform = normalize_platform(row.get("platform") or "", url)
+                key = url
+            else:
+                raw_plat = (row.get("platform") or "").split("+")[0].split("/")[0].strip()
+                platform = {"FB": "Facebook", "Instagram": "Instagram", "Facebook": "Facebook"}.get(raw_plat, raw_plat or "Unknown")
+                key = "story:" + (next(iter(sorted(row_ids)), "") or f"{brand}:{platform}:{row.get('date')}")
+            title = "Story" if story else title_from_action(action)
+            expires_at = None
+            story_live = None
+            if story and when:
+                exp = when.astimezone(PT)
+                exp = exp + timedelta(hours=24)
+                expires_at = iso_pt(exp)
+                story_live = now_pt() < exp
+            posts_by_url[key] = {
+                "id": key if key.startswith("story:") else None,
                 "date": (when.date().isoformat() if when else (row.get("date") or "")),
                 "time_pt": (when.strftime("%-I:%M %p") if when else (row.get("time_pt") or "")),
                 "datetime_pt": iso_pt(when) if when else None,
                 "brand": brand,
                 "family": family,
+                "network": network_for(family),
                 "platform": platform,
                 "title": title,
                 "link": url,
-                "log_action": sanitize(action)[:240],
+                "kind": "story" if story else "post",
+                "expires_at": expires_at,
+                "story_live": story_live,
             }
 
     return list(posts_by_url.values()), deleted_urls
 
 
 def merge_youtube_discoveries(posts: list[dict]) -> list[dict]:
-    existing = {canonical_url(p["link"]) for p in posts}
+    existing = {canonical_url(p["link"]) for p in posts if p.get("link")}
     try:
         found = fetch_youtube_channel_videos()
     except Exception as exc:
@@ -767,15 +886,52 @@ def apply_stats(post: dict, stats: dict, prev: Optional[dict], fetched_at: datet
         elif missing:
             note = "Facebook did not expose " + ", ".join(missing) + " on the public page"
 
+    kind = post.get("kind") or prev.get("kind") or "post"
+    if kind == "story":
+        # Only keep views/replies that were actually recorded. Do not treat missing as zero.
+        views = pick("views")
+        replies = pick("replies")
+        if replies is None:
+            replies = pick("comments")
+        if not stats.get("ok") and views is None and replies is None:
+            note = "Stories expire after 24 hours. Views and replies are n/a until an in-account check records a real number."
+        out = {
+            "id": post.get("id") or prev.get("id"),
+            "date": post.get("date") or prev.get("date") or "",
+            "time_pt": post.get("time_pt") or prev.get("time_pt") or "",
+            "datetime_pt": post.get("datetime_pt") or prev.get("datetime_pt"),
+            "brand": post.get("brand") or prev.get("brand"),
+            "family": post.get("family") or prev.get("family"),
+            "network": post.get("network") or prev.get("network") or network_for(post.get("family") or prev.get("family") or ""),
+            "platform": post["platform"],
+            "title": title or prev.get("title") or "Story",
+            "link": post.get("link") or prev.get("link"),
+            "kind": "story",
+            "expires_at": post.get("expires_at") or prev.get("expires_at"),
+            "story_live": post.get("story_live") if post.get("story_live") is not None else prev.get("story_live"),
+            "views": views,
+            "replies": replies,
+            "likes": pick("likes"),
+            "comments": replies,
+            "shares": None,
+            "impressions": None,
+            "last_updated": iso_pt(fetched_at) if stats.get("ok") else (prev.get("last_updated") or iso_pt(fetched_at)),
+            "stats_source": stats.get("source") if stats.get("ok") else (prev.get("stats_source") or "none"),
+            "stats_note": note,
+        }
+        return out
+
     out = {
         "date": post.get("date") or prev.get("date") or "",
         "time_pt": post.get("time_pt") or prev.get("time_pt") or "",
         "datetime_pt": post.get("datetime_pt") or prev.get("datetime_pt"),
         "brand": post.get("brand") or prev.get("brand"),
         "family": post.get("family") or prev.get("family"),
+        "network": post.get("network") or prev.get("network") or network_for(post.get("family") or prev.get("family") or ""),
         "platform": post["platform"],
         "title": title or prev.get("title") or "Untitled post",
         "link": post["link"],
+        "kind": "post",
         "views": pick("views"),
         "likes": pick("likes"),
         "comments": pick("comments"),
@@ -789,10 +945,16 @@ def apply_stats(post: dict, stats: dict, prev: Optional[dict], fetched_at: datet
 
 
 def empty_bucket() -> dict:
-    return {"posts": 0, "views": 0, "likes": 0, "comments": 0, "shares": 0, "views_known": 0, "likes_known": 0}
+    return {"posts": 0, "stories": 0, "views": 0, "likes": 0, "comments": 0, "shares": 0, "views_known": 0, "likes_known": 0}
 
 
 def add_to(bucket: dict, post: dict) -> None:
+    if post.get("kind") == "story":
+        bucket["stories"] = bucket.get("stories", 0) + 1
+        if post.get("views") is not None:
+            bucket["views"] += post["views"]
+            bucket["views_known"] += 1
+        return
     bucket["posts"] += 1
     for key in ("views", "likes", "comments", "shares"):
         val = post.get(key)
@@ -891,45 +1053,68 @@ def main() -> int:
     posts, deleted = collect_from_log()
     if deleted:
         before = len(posts)
-        posts = [p for p in posts if canonical_url(p["link"]) not in deleted]
+        posts = [p for p in posts if not p.get("link") or canonical_url(p["link"]) not in deleted]
         print(f"  excluded {before - len(posts)} deleted post(s)")
 
     posts = merge_youtube_discoveries(posts)
+    for p in posts:
+        if not p.get("network"):
+            p["network"] = network_for(p.get("family") or "")
+        if not p.get("kind"):
+            p["kind"] = "post"
     posts.sort(key=lambda p: p.get("datetime_pt") or p.get("date") or "", reverse=True)
 
-    print(f"  {len(posts)} live post(s) to score")
+    n_stories = sum(1 for p in posts if p.get("kind") == "story")
+    print(f"  {len(posts)} item(s) to score ({n_stories} stor{'y' if n_stories == 1 else 'ies'})")
 
-    x_followers = None
+    x_followers_by_handle = {}
     yt_subscribers = None
     enriched = []
     for post in posts:
-        url = post["link"]
-        print(f"  {post['platform']:10} {url}")
+        url = post.get("link")
+        print(f"  {post.get('kind','post'):6} {post['platform']:10} {url or post.get('id')}")
         stats: dict
+        if post.get("kind") == "story":
+            prev_key = post.get("id") or (canonical_url(url) if url else "")
+            prev = prev_map.get(prev_key) or {}
+            # Keep a previously recorded in-account metric if we have one; do not scrape expired stories.
+            recorded = bool(prev.get("views") is not None or prev.get("replies") is not None)
+            stats = {
+                "ok": recorded,
+                "source": prev.get("stats_source") or "none",
+                "views": prev.get("views"),
+                "replies": prev.get("replies"),
+                "likes": prev.get("likes"),
+                "comments": prev.get("replies") or prev.get("comments"),
+            }
+            enriched.append(apply_stats(post, stats, prev, fetched_at))
+            continue
         if post["platform"] == "YouTube":
             stats = fetch_youtube(url)
             if stats.get("channel_followers") is not None:
                 yt_subscribers = stats["channel_followers"]
         elif post["platform"] == "X":
             stats = fetch_x_post(url)
-            if stats.get("channel_followers") is not None:
-                x_followers = stats["channel_followers"]
+            handle = (stats.get("handle") or "").lstrip("@").lower()
+            if handle and stats.get("channel_followers") is not None:
+                x_followers_by_handle[handle] = stats["channel_followers"]
         elif post["platform"] == "Facebook":
             stats = fetch_facebook(url)
+        elif post["platform"] == "Instagram":
+            stats = fetch_facebook(url)  # yt-dlp also works on many public IG post pages
+            if stats.get("source") == "yt-dlp":
+                stats["source"] = "yt-dlp"
         else:
             stats = {"ok": False, "source": "none", "note": "Platform not fetched yet"}
-        enriched.append(apply_stats(post, stats, prev_map.get(canonical_url(url)), fetched_at))
+        prev = prev_map.get(canonical_url(url) if url else "") or {}
+        enriched.append(apply_stats(post, stats, prev, fetched_at))
 
-    # Channel-level X followers if we didn't get them from a post
-    if x_followers is None:
-        user = fetch_x_user("MapDeskNews")
-        if user.get("ok"):
-            x_followers = user.get("followers")
-    if x_followers is None:
-        x_followers = next(
-            (c.get("followers") for c in prev.get("channels") or [] if c.get("platform") == "X"),
-            None,
-        )
+    # Fill any missing X follower counts from public profiles we already list.
+    for handle in ("MapDeskNews", "usawrapco"):
+        if handle.lower() not in x_followers_by_handle:
+            user = fetch_x_user(handle)
+            if user.get("ok") and user.get("followers") is not None:
+                x_followers_by_handle[handle.lower()] = user.get("followers")
     if yt_subscribers is None:
         # Try a direct channel probe
         ch = ytdlp_json("https://www.youtube.com/@MapDeskNews", extra=["--playlist-items", "0"], timeout=45)
@@ -948,12 +1133,26 @@ def main() -> int:
             entry["followers"] = yt_subscribers
             entry["followers_available"] = yt_subscribers is not None
         elif ch["kind"] == "x":
-            entry["followers"] = x_followers
-            entry["followers_available"] = x_followers is not None
+            handle = (ch.get("handle") or "").lstrip("@").lower()
+            fol = x_followers_by_handle.get(handle)
+            if fol is None:
+                fol = next(
+                    (
+                        c.get("followers")
+                        for c in prev.get("channels") or []
+                        if c.get("platform") == "X" and (c.get("handle") or "").lstrip("@").lower() == handle
+                    ),
+                    None,
+                )
+            entry["followers"] = fol
+            entry["followers_available"] = fol is not None
+        elif ch["kind"] in {"facebook", "instagram"}:
+            entry["followers"] = None
+            entry["followers_available"] = False
+            entry["note"] = "n/a without a login"
         else:
             entry["followers"] = None
             entry["followers_available"] = False
-            entry["note"] = "n/a without a Facebook login"
         entry.pop("kind", None)
         channels.append(entry)
 
@@ -997,9 +1196,14 @@ def main() -> int:
     print(f"Wrote {DATA_PATH}")
     print(f"Wrote {STATS_DIR / snap_name}")
     print(
-        f"Totals: {totals['posts']} posts, {totals['views']} views, "
-        f"{totals['likes']} likes, YT subs={yt_subscribers}, X followers={x_followers}"
+        f"Totals: {totals['posts']} posts, {totals.get('stories', 0)} stories, {totals['views']} views, "
+        f"{totals['likes']} likes, YT subs={yt_subscribers}"
     )
+    try:
+        from scheduled import write_scheduled_queue
+        write_scheduled_queue(fetched_at)
+    except Exception as exc:
+        print(f"Scheduled queue write failed (public dashboard still ok): {exc}")
     return 0
 
 

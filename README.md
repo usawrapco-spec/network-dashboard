@@ -40,3 +40,5 @@ To collect without publishing:
 ```bash
 python3 /workspace/marketing/social/video-news-network/dashboard/collect.py
 ```
+
+This public site lists published posts only. Scheduled drafts are written to a gitignored `private/` folder by `collect.py` / `scheduled.py` and shown on a private Grok Page, not on GitHub Pages.

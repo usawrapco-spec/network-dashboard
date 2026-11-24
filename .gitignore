@@ -6,3 +6,6 @@ __pycache__/
 
 # Local verification screenshots; not part of the public site
 shots/
+
+# Unpublished scheduled previews; never ship to the public Pages site
+private/

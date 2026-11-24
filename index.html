@@ -294,6 +294,50 @@
     .chip-sand { background: rgba(240, 228, 66, 0.14); color: var(--sand); }
     .chip-default { background: rgba(232, 237, 245, 0.08); color: #d5dde8; }
 
+    .audience {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      width: max-content;
+      max-width: 100%;
+      padding: 4px;
+      margin: 0 0 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+    }
+    .audience button {
+      background: transparent;
+      color: var(--text-2);
+      border: 0;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      min-height: 40px;
+      cursor: pointer;
+    }
+    .audience button:hover { color: var(--text); }
+    .audience button[aria-selected="true"] {
+      background: var(--bg-elev);
+      color: var(--text);
+      font-weight: 600;
+      box-shadow: 0 0 0 1px var(--border-strong);
+    }
+    .badge-live, .badge-expired {
+      display: inline-block;
+      margin-left: 6px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+    .badge-live { background: rgba(127, 212, 200, 0.14); color: var(--teal); }
+    .badge-expired { background: rgba(232, 237, 245, 0.08); color: var(--text-3); }
+
     .table-wrap {
       overflow-x: auto;
       border: 1px solid var(--border);
@@ -425,7 +469,12 @@
   </header>
   <main>
     <p class="kpis" id="overall"></p>
-    <p class="hint" id="status-note">Totals count only numbers a platform actually returns. n/a means missing, not zero.</p>
+    <div class="audience" role="tablist" aria-label="Brand group" id="audience">
+      <button type="button" data-audience="all" aria-selected="true">All brands</button>
+      <button type="button" data-audience="news">News</button>
+      <button type="button" data-audience="business">Local businesses</button>
+    </div>
+    <p class="hint" id="status-note">Totals count only numbers a platform actually returns. n/a means missing, not zero. This public page lists published posts only. Scheduled drafts stay on a private preview Page, not here.</p>
 
     <div class="platform-cards" id="platform-cards"></div>
 
@@ -477,7 +526,10 @@
       "map-desk-world": "gold",
       "map-desk-places": "gold",
       "harbor-news": "violet",
-      "quint-valley-news": "teal"
+      "quint-valley-news": "teal",
+      "usa-wrap-co": "sky",
+      "dekwave": "sand",
+      "savajay": "blue"
     };
     function chip(text) {
       const theme = BRAND_THEME[slug(text)] || "default";
@@ -539,8 +591,19 @@
 
     let DATA = null;
     let active = "YouTube";
+    let audience = "all";
     let sortKey = "date";
     let sortDir = "desc";
+
+    const NEWS_RE = /map desk|harbor news|quint valley/i;
+    function inAudience(p) {
+      const family = String((p && (p.family || p.brand)) || "");
+      const news = NEWS_RE.test(family);
+      if (audience === "news") return news;
+      if (audience === "business") return !news;
+      return true;
+    }
+    function isStory(p) { return p && p.kind === "story"; }
 
     function valueOf(post, col) {
       const v = post[col.key];
@@ -549,7 +612,10 @@
       return null;
     }
     function postsFor(platform) {
-      return (DATA.posts || []).filter((p) => p.platform === platform);
+      return (DATA.posts || []).filter((p) => p.platform === platform && !isStory(p) && inAudience(p));
+    }
+    function storiesFor(platform) {
+      return (DATA.posts || []).filter((p) => p.platform === platform && isStory(p) && inAudience(p));
     }
     function sumKnown(posts, key, fallback) {
       let total = 0, known = 0;
@@ -600,7 +666,7 @@
         likes: likes.known ? likes.total : null,
         followers: followers ? followers.followers : null,
         followersKnown: !!followers,
-        comingSoon: spec.id === "Instagram" && posts.length === 0
+        comingSoon: spec.id === "Instagram" && posts.length === 0 && storiesFor(spec.id).length === 0
       };
     }
 
@@ -628,10 +694,10 @@
 
     function renderTabs() {
       $("tabs").innerHTML = PLATFORMS.map((spec) => {
-        const n = postsFor(spec.id).length;
+        const n = postsFor(spec.id).length + storiesFor(spec.id).length;
         const selected = active === spec.id;
         return `<button type="button" role="tab" id="tab-${slug(spec.id)}" data-platform="${spec.id}" aria-selected="${selected}" aria-controls="platform-panel">
-          ${ICONS[spec.id]} ${escapeHtml(spec.id)} <span class="count">${n ? n : (spec.id === "Instagram" ? "soon" : "0")}</span>
+          ${ICONS[spec.id]} ${escapeHtml(spec.id)} <span class="count">${n ? n : (spec.id === "Instagram" && n === 0 ? "soon" : "0")}</span>
         </button>`;
       }).join("");
       $("tabs").onclick = (e) => {
@@ -728,16 +794,69 @@
         </div>`;
     }
 
+
+    function storyTitle(p) {
+      const t = escapeHtml(p.title || "Story");
+      if (p.link) return `<a href="${escapeHtml(p.link)}" target="_blank" rel="noopener">${t}</a>`;
+      return t;
+    }
+    function storyBadge(p) {
+      if (p.story_live) return `<span class="badge-live">Live</span>`;
+      return `<span class="badge-expired">Expired</span>`;
+    }
+    function renderStories(platform) {
+      const rows = storiesFor(platform).slice().sort((a, b) => {
+        const as = a.datetime_pt || a.date || "";
+        const bs = b.datetime_pt || b.date || "";
+        return as < bs ? 1 : as > bs ? -1 : 0;
+      });
+      const body = rows.length ? rows.map((p) => `
+        <tr>
+          <td>${escapeHtml(p.date)}${p.time_pt ? `<div class="meta">${escapeHtml(p.time_pt)} PT</div>` : ""}</td>
+          <td>${chip(p.brand)}</td>
+          <td class="title">${storyTitle(p)} ${storyBadge(p)}${p.stats_note ? `<div class="meta">${escapeHtml(p.stats_note)}</div>` : ""}</td>
+          <td class="num">${cell(p.views)}</td>
+          <td class="num">${cell(p.replies != null ? p.replies : p.comments)}</td>
+        </tr>`).join("") : `<tr><td colspan="5" class="meta">No published stories for this channel in the log yet.</td></tr>`;
+      const cards = rows.length ? rows.map((p) => `
+        <article class="post-card">
+          <div>${chip(p.brand)} ${storyBadge(p)}</div>
+          <h4>${storyTitle(p)}</h4>
+          <div class="meta">${escapeHtml(p.date)} ${escapeHtml(p.time_pt || "")} PT</div>
+          ${p.stats_note ? `<div class="meta">${escapeHtml(p.stats_note)}</div>` : ""}
+          <div class="row-nums cols-2">
+            <div><span>Views</span><strong>${cell(p.views)}</strong></div>
+            <div><span>Replies</span><strong>${cell(p.replies != null ? p.replies : p.comments)}</strong></div>
+          </div>
+        </article>`).join("") : `<div class="empty"><strong>No stories yet</strong>No published stories for this channel in the log yet.</div>`;
+      return `
+        <h3>Stories</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr>
+              <th>Date</th>
+              <th>Brand</th>
+              <th>Story</th>
+              <th class="num">Views</th>
+              <th class="num">Replies</th>
+            </tr></thead>
+            <tbody>${body}</tbody>
+          </table>
+          <div class="mobile-cards">${rows.length ? cards : ""}</div>
+        </div>`;
+    }
+
     function renderPanel() {
       const posts = postsFor(active);
+      const stories = storiesFor(active);
       const note = (DATA.notes && DATA.notes[active]) ? `<p class="section-note">${escapeHtml(DATA.notes[active])}</p>` : "";
-      if (active === "Instagram" && posts.length === 0) {
+      if (active === "Instagram" && posts.length === 0 && stories.length === 0) {
         $("platform-panel").innerHTML = `
           <div class="section-head">${ICONS.Instagram}<h2>Instagram</h2></div>
           ${note}
           <div class="empty">
             <strong>Coming soon</strong>
-            Instagram will show up here once Map Desk, Harbor News, or Quint Valley News has live Instagram posts.
+            Instagram will show up here once a brand has live Instagram posts.
           </div>`;
         return;
       }
@@ -748,7 +867,8 @@
         <div class="section-head">${ICONS[active]}<h2>${escapeHtml(active)}</h2></div>
         ${note}
         ${renderAccounts(active)}
-        ${table}`;
+        ${table}
+        ${renderStories(active)}`;
       $("platform-panel").querySelectorAll("th[data-key]").forEach((th) => {
         th.addEventListener("click", () => {
           if (sortKey === th.dataset.key) sortDir = sortDir === "asc" ? "desc" : "asc";
@@ -878,18 +998,39 @@
       });
     }
 
+    function renderAudience() {
+      document.querySelectorAll("#audience [data-audience]").forEach((btn) => {
+        btn.setAttribute("aria-selected", btn.dataset.audience === audience ? "true" : "false");
+      });
+    }
+    function setAudience(next) {
+      if (!["all", "news", "business"].includes(next)) next = "all";
+      audience = next;
+      renderAudience();
+      renderCards();
+      renderTabs();
+      renderPanel();
+    }
+
     function render(data) {
       DATA = data;
       $("updated").textContent = data.generated_at_pt || formatWhen(data.generated_at);
       const t = data.totals || {};
-      $("overall").innerHTML = `<span><strong>${fmt(t.posts) ?? "0"}</strong> posts</span><span><strong>${fmt(t.views) ?? "n/a"}</strong> views</span><span><strong>${fmt(t.likes) ?? "n/a"}</strong> likes</span>`;
+      const storyBit = t.stories ? `<span><strong>${fmt(t.stories)}</strong> stories</span>` : "";
+      $("overall").innerHTML = `<span><strong>${fmt(t.posts) ?? "0"}</strong> posts</span>${storyBit}<span><strong>${fmt(t.views) ?? "n/a"}</strong> views</span><span><strong>${fmt(t.likes) ?? "n/a"}</strong> likes</span>`;
       const hash = (location.hash || "").replace("#", "").toLowerCase();
       const fromHash = PLATFORMS.find((p) => slug(p.id) === hash);
       const start = fromHash ? fromHash.id : (postsFor("YouTube").length ? "YouTube" : (PLATFORMS.find((p) => postsFor(p.id).length) || PLATFORMS[0]).id);
+      $("audience").onclick = (e) => {
+        const btn = e.target.closest("[data-audience]");
+        if (!btn) return;
+        setAudience(btn.dataset.audience);
+      };
+      renderAudience();
       setActive(start, !fromHash);
       drawChart(data);
       const notes = Object.entries(data.notes || {}).map(([k, v]) => `<strong>${escapeHtml(k)}:</strong> ${escapeHtml(v)}`).join(" · ");
-      $("footer").innerHTML = notes;
+      $("footer").innerHTML = (notes ? notes + " · " : "") + "Scheduled drafts are previewed on a private Page, not this public site.";
     }
 
     fetch("data.json?ts=" + Date.now())
