@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T14:27:38-08:00",
-  "generated_at_pt": "Tue Nov 24, 2026, 2:27 PM PT",
+  "generated_at": "2026-11-24T14:58:03-08:00",
+  "generated_at_pt": "Tue Nov 24, 2026, 2:58 PM PT",
   "timezone": "America/Los_Angeles",
   "notes": {
     "YouTube": "Views and likes via yt-dlp. Comment counts are shown when YouTube exposes them; otherwise n/a.",
@@ -60,7 +60,7 @@
   ],
   "totals": {
     "posts": 7,
-    "views": 1125,
+    "views": 1127,
     "likes": 10,
     "comments": 0,
     "shares": 0,
@@ -78,7 +78,7 @@
       },
       "Map Desk Money": {
         "posts": 3,
-        "views": 1125,
+        "views": 1127,
         "likes": 10,
         "comments": 0,
         "shares": 0,
@@ -107,7 +107,7 @@
     "by_platform": {
       "Facebook": {
         "posts": 4,
-        "views": 103,
+        "views": 105,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -136,7 +136,7 @@
     "by_family": {
       "Map Desk": {
         "posts": 5,
-        "views": 1125,
+        "views": 1127,
         "likes": 10,
         "comments": 0,
         "shares": 0,
@@ -178,7 +178,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-24T14:27:38-08:00",
+      "last_updated": "2026-11-24T14:58:03-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Facebook did not expose views, likes, comments, shares on the public page"
     },
@@ -196,7 +196,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-24T14:27:38-08:00",
+      "last_updated": "2026-11-24T14:58:03-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -214,7 +214,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 2,
-      "last_updated": "2026-11-24T14:27:38-08:00",
+      "last_updated": "2026-11-24T14:58:03-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -227,12 +227,12 @@
       "platform": "Facebook",
       "title": "Where Americans moved, July 2024 to July 2025: North Carolina led the nation in net moves; California lost the most, about 229,000.",
       "link": "https://www.facebook.com/reel/1139725702096834",
-      "views": 103,
+      "views": 105,
       "likes": null,
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-24T14:27:38-08:00",
+      "last_updated": "2026-11-24T14:58:03-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -250,7 +250,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-24T14:27:38-08:00",
+      "last_updated": "2026-11-24T14:58:03-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
