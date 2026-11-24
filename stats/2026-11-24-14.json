@@ -1,0 +1,294 @@
+{
+  "generated_at": "2026-11-24T14:27:38-08:00",
+  "generated_at_pt": "Tue Nov 24, 2026, 2:27 PM PT",
+  "timezone": "America/Los_Angeles",
+  "notes": {
+    "YouTube": "Views and likes via yt-dlp. Comment counts are shown when YouTube exposes them; otherwise n/a.",
+    "X": "Impressions, likes, reposts, and replies from the public FixTweet/syndication APIs (same public_metrics the X read tools return). Followers from the public profile payload.",
+    "Facebook": "Reel view counts via yt-dlp on the public video page. Likes, comments, shares, photo posts, and permalink posts are n/a without a Facebook login.",
+    "Instagram": "Not collected yet (no live Map Desk / Harbor News / Quint Valley News Instagram post links in the log)."
+  },
+  "channels": [
+    {
+      "brand": "Map Desk",
+      "platform": "YouTube",
+      "handle": "@MapDeskNews",
+      "url": "https://www.youtube.com/@MapDeskNews",
+      "followers_label": "subscribers",
+      "followers": 2,
+      "followers_available": true
+    },
+    {
+      "brand": "Map Desk",
+      "platform": "X",
+      "handle": "@MapDeskNews",
+      "url": "https://x.com/MapDeskNews",
+      "followers_label": "followers",
+      "followers": 0,
+      "followers_available": true
+    },
+    {
+      "brand": "Map Desk",
+      "platform": "Facebook",
+      "handle": "Map Desk",
+      "url": "https://www.facebook.com/profile.php?id=61596875401709",
+      "followers_label": "followers",
+      "followers": null,
+      "followers_available": false,
+      "note": "n/a without a Facebook login"
+    },
+    {
+      "brand": "Harbor News",
+      "platform": "Facebook",
+      "handle": "Harbor News",
+      "url": "https://www.facebook.com/profile.php?id=61596429704380",
+      "followers_label": "followers",
+      "followers": null,
+      "followers_available": false,
+      "note": "n/a without a Facebook login"
+    },
+    {
+      "brand": "Quint Valley News",
+      "platform": "Facebook",
+      "handle": "Quint Valley News",
+      "url": "https://www.facebook.com/profile.php?id=61596620650836",
+      "followers_label": "followers",
+      "followers": null,
+      "followers_available": false,
+      "note": "n/a without a Facebook login"
+    }
+  ],
+  "totals": {
+    "posts": 7,
+    "views": 1125,
+    "likes": 10,
+    "comments": 0,
+    "shares": 0,
+    "views_known": 4,
+    "likes_known": 2,
+    "by_brand": {
+      "Map Desk World": {
+        "posts": 2,
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views_known": 1,
+        "likes_known": 0
+      },
+      "Map Desk Money": {
+        "posts": 3,
+        "views": 1125,
+        "likes": 10,
+        "comments": 0,
+        "shares": 0,
+        "views_known": 3,
+        "likes_known": 2
+      },
+      "Quint Valley News": {
+        "posts": 1,
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views_known": 0,
+        "likes_known": 0
+      },
+      "Harbor News": {
+        "posts": 1,
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views_known": 0,
+        "likes_known": 0
+      }
+    },
+    "by_platform": {
+      "Facebook": {
+        "posts": 4,
+        "views": 103,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views_known": 1,
+        "likes_known": 0
+      },
+      "YouTube": {
+        "posts": 2,
+        "views": 1020,
+        "likes": 10,
+        "comments": 0,
+        "shares": 0,
+        "views_known": 2,
+        "likes_known": 1
+      },
+      "X": {
+        "posts": 1,
+        "views": 2,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views_known": 1,
+        "likes_known": 1
+      }
+    },
+    "by_family": {
+      "Map Desk": {
+        "posts": 5,
+        "views": 1125,
+        "likes": 10,
+        "comments": 0,
+        "shares": 0,
+        "views_known": 4,
+        "likes_known": 2
+      },
+      "Quint Valley News": {
+        "posts": 1,
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views_known": 0,
+        "likes_known": 0
+      },
+      "Harbor News": {
+        "posts": 1,
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views_known": 0,
+        "likes_known": 0
+      }
+    }
+  },
+  "posts": [
+    {
+      "date": "2026-11-24",
+      "time_pt": "2:23 PM",
+      "datetime_pt": "2026-11-24T14:23:00-08:00",
+      "brand": "Map Desk World",
+      "family": "Map Desk",
+      "platform": "Facebook",
+      "title": "World news today, November 24, 2026: Factory fire in Indonesia kills at least 26; New floods hit the Galapagos Islands; Euclid finds the mo\u2026",
+      "link": "https://www.facebook.com/reel/1404021491565229",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "impressions": null,
+      "last_updated": "2026-11-24T14:27:38-08:00",
+      "stats_source": "yt-dlp",
+      "stats_note": "Facebook did not expose views, likes, comments, shares on the public page"
+    },
+    {
+      "date": "2026-11-24",
+      "time_pt": "2:22 PM",
+      "datetime_pt": "2026-11-24T14:22:00-08:00",
+      "brand": "Map Desk World",
+      "family": "Map Desk",
+      "platform": "YouTube",
+      "title": "Factory fire in Indonesia kills at least 26 + more | Map Desk World",
+      "link": "https://youtube.com/shorts/z-xnstT_rBU",
+      "views": 0,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "impressions": null,
+      "last_updated": "2026-11-24T14:27:38-08:00",
+      "stats_source": "yt-dlp",
+      "stats_note": null
+    },
+    {
+      "date": "2026-11-24",
+      "time_pt": "1:47 PM",
+      "datetime_pt": "2026-11-24T13:47:00-08:00",
+      "brand": "Map Desk Money",
+      "family": "Map Desk",
+      "platform": "X",
+      "title": "Where Americans moved, July 2024 to July 2025: North Carolina led the nation in net moves; California lost the most, about 229,000. Narrate\u2026",
+      "link": "https://x.com/MapDeskNews/status/2125345967398638074",
+      "views": 2,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "impressions": 2,
+      "last_updated": "2026-11-24T14:27:38-08:00",
+      "stats_source": "fxtwitter",
+      "stats_note": null
+    },
+    {
+      "date": "2026-11-24",
+      "time_pt": "11:47 AM",
+      "datetime_pt": "2026-11-24T11:47:00-08:00",
+      "brand": "Map Desk Money",
+      "family": "Map Desk",
+      "platform": "Facebook",
+      "title": "Where Americans moved, July 2024 to July 2025: North Carolina led the nation in net moves; California lost the most, about 229,000.",
+      "link": "https://www.facebook.com/reel/1139725702096834",
+      "views": 103,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "impressions": null,
+      "last_updated": "2026-11-24T14:27:38-08:00",
+      "stats_source": "yt-dlp",
+      "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
+    },
+    {
+      "date": "2026-11-23",
+      "time_pt": "9:49 PM",
+      "datetime_pt": "2026-11-23T21:49:00-08:00",
+      "brand": "Map Desk Money",
+      "family": "Map Desk",
+      "platform": "YouTube",
+      "title": "Where Americans Moved in 2025",
+      "link": "https://youtube.com/shorts/KGL7hHWmrUM",
+      "views": 1020,
+      "likes": 10,
+      "comments": null,
+      "shares": null,
+      "impressions": null,
+      "last_updated": "2026-11-24T14:27:38-08:00",
+      "stats_source": "yt-dlp",
+      "stats_note": null
+    },
+    {
+      "date": "2026-11-23",
+      "time_pt": "6:30 AM",
+      "datetime_pt": "2026-11-23T06:30:00-08:00",
+      "brand": "Quint Valley News",
+      "family": "Quint Valley News",
+      "platform": "Facebook",
+      "title": "Christmas for Kids",
+      "link": "https://www.facebook.com/permalink.php?story_fbid=pfbid02xRP8XQ1aRGXDU26XNuFJQuotanNEaW8Gy8m9uixiSiH97ivwsfWU1wP7aEQxkkkxl&id=61596620650836",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "impressions": null,
+      "last_updated": "2026-11-24T14:25:35-08:00",
+      "stats_source": "none",
+      "stats_note": "n/a without a Facebook login"
+    },
+    {
+      "date": "2026-11-22",
+      "time_pt": "12:35 PM",
+      "datetime_pt": "2026-11-22T12:35:00-08:00",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "platform": "Facebook",
+      "title": "Galloping Gertie, 1940",
+      "link": "https://www.facebook.com/photo/?fbid=122108537859547656",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "impressions": null,
+      "last_updated": "2026-11-24T14:25:35-08:00",
+      "stats_source": "none",
+      "stats_note": "n/a without a Facebook login"
+    }
+  ]
+}
