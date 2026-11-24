@@ -4,7 +4,7 @@ A public, static dashboard of every live post from **Map Desk** (Money, World, a
 
 Live site: https://usawrapco-spec.github.io/network-dashboard/
 
-This is a GitHub Pages site. There is no build step and no paid host.
+This is a GitHub Pages site. There is no build step and no paid host. The page is a dark, mobile-friendly analytics view and is set up so more brands can be added later from the same public-post data file.
 
 ## What it shows
 

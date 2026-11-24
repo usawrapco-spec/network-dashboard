@@ -4,344 +4,446 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#0a1e3e">
-  <title>Video News Network — Post Dashboard</title>
+  <meta name="theme-color" content="#0b0f17">
+  <title>Video News Network — Dashboard</title>
   <link rel="icon" href="logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --navy: #071224;
-      --navy-2: #0a1e3e;
-      --panel: #10284f;
-      --panel-2: #16345f;
-      --line: #2a4a76;
+      --bg: #0b0f17;
+      --bg-elev: #10151f;
+      --surface: #151b28;
+      --surface-2: #1b2232;
+      --border: rgba(232, 237, 245, 0.08);
+      --border-strong: rgba(232, 237, 245, 0.14);
+      --text: #e8edf5;
+      --text-2: #9aa6b8;
+      --text-3: #7b879a;
       --gold: #ffc233;
-      --ink: #f4f1e8;
-      --muted: #b8c4d6;
+      --gold-soft: rgba(255, 194, 51, 0.14);
       --sky: #5eb6e6;
       --sand: #f0e442;
       --violet: #c08ae0;
       --teal: #7fd4c8;
-      --white: #ffffff;
+      --blue: #9ec4ff;
+      --radius: 16px;
+      --radius-sm: 10px;
+      --shadow: 0 1px 0 rgba(255,255,255,0.04) inset, 0 8px 24px rgba(0,0,0,0.18);
+      --font: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      --header-h: 68px;
     }
     * { box-sizing: border-box; }
     html, body {
       margin: 0;
       padding: 0;
       background:
-        radial-gradient(1200px 600px at 10% -10%, #16345f 0%, transparent 55%),
-        radial-gradient(900px 500px at 110% 0%, #1f6086 0%, transparent 50%),
-        var(--navy);
-      color: var(--ink);
-      font-family: "Segoe UI", "Helvetica Neue", system-ui, -apple-system, sans-serif;
-      font-size: 17px;
-      line-height: 1.45;
+        radial-gradient(900px 500px at 12% -8%, rgba(255, 194, 51, 0.06), transparent 55%),
+        radial-gradient(800px 420px at 100% 0%, rgba(94, 182, 230, 0.05), transparent 50%),
+        var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: -0.011em;
+      -webkit-font-smoothing: antialiased;
     }
-    a { color: var(--sky); }
+    button, input { font-family: inherit; }
+    a { color: var(--sky); text-decoration: none; }
     a:hover { color: var(--gold); }
+
     header {
       position: sticky;
       top: 0;
       z-index: 30;
       display: flex;
       align-items: center;
-      gap: 14px;
-      padding: 14px 18px;
-      padding-top: max(14px, env(safe-area-inset-top));
-      background: color-mix(in srgb, var(--navy-2) 88%, black);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--line);
+      justify-content: space-between;
+      gap: 16px;
+      min-height: var(--header-h);
+      padding: 12px 24px;
+      padding-top: max(12px, env(safe-area-inset-top));
+      background: color-mix(in srgb, var(--bg) 78%, transparent);
+      backdrop-filter: blur(16px) saturate(1.2);
+      border-bottom: 1px solid var(--border);
     }
-    header img { width: 44px; height: 44px; border-radius: 8px; }
+    .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+    header img { width: 36px; height: 36px; border-radius: 9px; }
     header h1 {
       margin: 0;
-      font-size: 1.15rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--gold);
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
     }
-    header p { margin: 2px 0 0; color: var(--muted); font-size: 0.85rem; }
-    main { max-width: 1180px; margin: 0 auto; padding: 18px 16px 80px; }
-    .note {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-left: 4px solid var(--gold);
-      border-radius: 10px;
-      padding: 12px 14px;
-      color: var(--muted);
-      font-size: 0.92rem;
-      margin: 0 0 16px;
+    header .sub { margin: 1px 0 0; color: var(--text-3); font-size: 0.8rem; font-weight: 400; }
+    #updated {
+      margin: 0;
+      color: var(--text-3);
+      font-size: 0.8rem;
+      font-weight: 500;
+      white-space: nowrap;
     }
-    .overall {
-      color: var(--muted);
-      font-size: 0.92rem;
-      margin: 0 0 14px;
+
+    main { max-width: 1120px; margin: 0 auto; padding: 28px 24px 96px; }
+
+    .kpis {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      margin: 0 0 28px;
+      color: var(--text-2);
+      font-size: 0.9rem;
     }
-    .overall strong { color: var(--white); font-variant-numeric: tabular-nums; }
+    .kpis strong {
+      color: var(--text);
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+    }
+    .hint { color: var(--text-3); font-size: 0.8rem; margin: -12px 0 24px; }
 
     .platform-cards {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-      margin-bottom: 16px;
+      gap: 14px;
+      margin-bottom: 28px;
     }
     .plat-card {
       display: block;
       width: 100%;
       text-align: left;
-      background: linear-gradient(180deg, var(--panel-2), var(--panel));
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 14px 14px 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 18px 16px;
       color: inherit;
       cursor: pointer;
       min-height: 44px;
+      box-shadow: var(--shadow);
+      transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
     }
-    .plat-card:hover { border-color: var(--gold); }
+    .plat-card:hover { border-color: var(--border-strong); background: var(--surface-2); }
     .plat-card[aria-pressed="true"] {
-      border-color: var(--gold);
-      box-shadow: inset 0 0 0 1px var(--gold);
+      border-color: color-mix(in srgb, var(--gold) 65%, var(--border));
+      background: linear-gradient(180deg, color-mix(in srgb, var(--gold) 7%, var(--surface)), var(--surface));
     }
     .plat-card .plat-name {
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-weight: 700;
-      font-size: 1rem;
-      margin-bottom: 10px;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: -0.015em;
+      margin-bottom: 16px;
     }
-    .icon {
-      width: 22px;
-      height: 22px;
-      flex: 0 0 22px;
+    .icon-wrap {
+      width: 32px; height: 32px;
+      border-radius: 9px;
+      background: var(--bg-elev);
+      border: 1px solid var(--border);
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      flex: 0 0 32px;
     }
-    .icon svg { width: 20px; height: 20px; display: block; }
+    .icon { width: 18px; height: 18px; display: inline-flex; }
+    .icon svg { width: 18px; height: 18px; display: block; }
     .plat-metrics {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 8px 10px;
+      gap: 12px 12px;
     }
     .plat-metrics span {
       display: block;
-      color: var(--muted);
+      color: var(--text-3);
       font-size: 0.7rem;
-      letter-spacing: 0.06em;
+      font-weight: 500;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
     }
     .plat-metrics strong {
       display: block;
       font-variant-numeric: tabular-nums;
-      font-size: 1.15rem;
-      color: var(--white);
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-top: 2px;
     }
     .coming-tag {
       display: inline-block;
-      margin-top: 8px;
-      padding: 2px 8px;
+      margin-top: 14px;
+      padding: 3px 8px;
       border-radius: 999px;
-      background: #3a2a4a;
+      background: rgba(192, 138, 224, 0.12);
       color: var(--violet);
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
     }
 
-    .tabs {
+    .tabs-wrap {
       position: sticky;
-      top: 72px;
+      top: var(--header-h);
       z-index: 25;
+      padding: 10px 0 16px;
+      margin: 0 0 8px;
+      background: color-mix(in srgb, var(--bg) 86%, transparent);
+      backdrop-filter: blur(12px);
+    }
+    .tabs {
       display: flex;
-      gap: 8px;
+      gap: 4px;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
-      padding: 8px 0 12px;
-      margin: 0 0 8px;
-      background: color-mix(in srgb, var(--navy) 86%, transparent);
-      backdrop-filter: blur(8px);
+      padding: 4px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      width: max-content;
+      max-width: 100%;
     }
     .tabs button {
       flex: 0 0 auto;
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: var(--panel);
-      color: var(--ink);
-      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--text-2);
+      border: 0;
       border-radius: 999px;
-      padding: 10px 14px;
-      font-size: 0.95rem;
-      min-height: 44px;
+      padding: 8px 14px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      min-height: 40px;
       white-space: nowrap;
+      cursor: pointer;
     }
+    .tabs button:hover { color: var(--text); }
     .tabs button[aria-selected="true"] {
-      background: var(--gold);
-      color: #1a1200;
-      border-color: var(--gold);
-      font-weight: 700;
+      background: var(--bg-elev);
+      color: var(--text);
+      font-weight: 600;
+      box-shadow: 0 0 0 1px var(--border-strong);
     }
     .tabs button .count {
       font-variant-numeric: tabular-nums;
-      font-size: 0.8rem;
-      opacity: 0.85;
+      font-size: 0.75rem;
+      color: var(--text-3);
+      font-weight: 600;
     }
+    .tabs button[aria-selected="true"] .count { color: var(--gold); }
 
     .section-head {
       display: flex;
       align-items: center;
       gap: 10px;
-      margin: 8px 0 14px;
+      margin: 4px 0 8px;
     }
     .section-head h2 {
       margin: 0;
-      font-size: 1.2rem;
-      letter-spacing: 0.04em;
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+    }
+    .section-note {
+      color: var(--text-3);
+      font-size: 0.85rem;
+      margin: 0 0 20px;
+      max-width: 62ch;
     }
     h3 {
-      margin: 20px 0 10px;
-      font-size: 0.82rem;
-      letter-spacing: 0.08em;
+      margin: 28px 0 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
-      color: var(--gold);
+      color: var(--text-3);
     }
-    .accounts { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+    .accounts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
     .card {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 14px 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 18px 16px;
+      box-shadow: var(--shadow);
     }
-    .card h4 { margin: 0 0 2px; font-size: 1rem; }
-    .handle { color: var(--muted); font-size: 0.85rem; margin-bottom: 8px; }
-    .metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 12px; font-variant-numeric: tabular-nums; }
-    .metrics span { color: var(--muted); font-size: 0.78rem; }
-    .metrics strong { display: block; font-size: 1.1rem; }
+    .card h4 { margin: 0 0 2px; font-size: 0.98rem; font-weight: 600; letter-spacing: -0.02em; }
+    .handle { color: var(--text-3); font-size: 0.82rem; margin-bottom: 14px; }
+    .metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; font-variant-numeric: tabular-nums; }
+    .metrics span { color: var(--text-3); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.03em; text-transform: uppercase; }
+    .metrics strong { display: block; font-size: 1.1rem; font-weight: 600; letter-spacing: -0.02em; margin-top: 2px; }
+    .card .profile { margin: 14px 0 0; font-size: 0.85rem; }
+
+    /* Brand chips are data-driven. Unknown future brands fall back to .chip-default. */
     .chip {
       display: inline-block;
       padding: 2px 8px;
       border-radius: 999px;
-      font-size: 0.72rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      font-weight: 700;
+      font-size: 0.7rem;
+      letter-spacing: 0.03em;
+      font-weight: 600;
     }
-    .chip.map-desk, .chip.map-desk-money, .chip.map-desk-world, .chip.map-desk-places { background: #3a2d0c; color: var(--gold); }
-    .chip.harbor-news { background: #2a2040; color: var(--violet); }
-    .chip.quint-valley-news { background: #14363a; color: var(--teal); }
+    .chip-gold { background: var(--gold-soft); color: var(--gold); }
+    .chip-violet { background: rgba(192, 138, 224, 0.14); color: var(--violet); }
+    .chip-teal { background: rgba(127, 212, 200, 0.14); color: var(--teal); }
+    .chip-sky { background: rgba(94, 182, 230, 0.14); color: var(--sky); }
+    .chip-blue { background: rgba(158, 196, 255, 0.14); color: var(--blue); }
+    .chip-sand { background: rgba(240, 228, 66, 0.14); color: var(--sand); }
+    .chip-default { background: rgba(232, 237, 245, 0.08); color: #d5dde8; }
 
     .table-wrap {
       overflow-x: auto;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
       -webkit-overflow-scrolling: touch;
     }
     table { width: 100%; border-collapse: collapse; min-width: 640px; }
-    th, td { padding: 10px 12px; text-align: left; vertical-align: top; }
+    th, td { padding: 14px 16px; text-align: left; vertical-align: top; }
     th {
-      background: #143056;
-      color: var(--gold);
-      font-size: 0.75rem;
-      letter-spacing: 0.06em;
+      background: var(--bg-elev);
+      color: var(--text-3);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
       cursor: pointer;
       user-select: none;
       white-space: nowrap;
+      border-bottom: 1px solid var(--border);
     }
-    th[aria-sort="ascending"]::after { content: " \25B2"; }
-    th[aria-sort="descending"]::after { content: " \25BC"; }
-    td { border-top: 1px solid var(--line); font-size: 0.95rem; }
-    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
-    td.title { max-width: 420px; }
-    tr:hover td { background: color-mix(in srgb, var(--panel-2) 70%, transparent); }
-    .na { color: var(--muted); }
-    .updated { color: var(--muted); font-size: 0.8rem; }
+    th[aria-sort="ascending"]::after { content: " \2191"; color: var(--gold); }
+    th[aria-sort="descending"]::after { content: " \2193"; color: var(--gold); }
+    td { border-top: 1px solid var(--border); font-size: 0.92rem; }
+    tbody tr:first-child td { border-top: 0; }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; font-feature-settings: "tnum"; }
+    td.title { max-width: 420px; font-weight: 500; }
+    tr:hover td { background: rgba(255,255,255,0.02); }
+    .na { color: var(--text-3); font-weight: 400; }
+    .meta { color: var(--text-3); font-size: 0.78rem; font-weight: 400; margin-top: 2px; }
     .mobile-cards { display: none; }
     .post-card {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 16px 14px;
       margin-bottom: 10px;
+      box-shadow: var(--shadow);
     }
-    .post-card .meta { color: var(--muted); font-size: 0.85rem; margin: 4px 0 8px; }
-    .row-nums { display: grid; gap: 8px; margin-top: 8px; }
+    .post-card h4 { margin: 10px 0 0; font-size: 0.98rem; font-weight: 600; }
+    .post-card .meta { margin: 6px 0 0; }
+    .row-nums { display: grid; gap: 8px; margin-top: 14px; }
     .row-nums.cols-2 { grid-template-columns: repeat(2, 1fr); }
     .row-nums.cols-4 { grid-template-columns: repeat(4, 1fr); }
-    .row-nums div { background: #0c1d36; border-radius: 8px; padding: 8px; text-align: center; }
-    .row-nums span { display: block; color: var(--muted); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; }
-    .row-nums strong { font-size: 1.05rem; font-variant-numeric: tabular-nums; }
-    .empty {
-      background: var(--panel);
-      border: 1px dashed var(--line);
-      border-radius: 14px;
-      padding: 28px 18px;
+    .row-nums div {
+      background: var(--bg-elev);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 10px 8px;
       text-align: center;
-      color: var(--muted);
     }
-    .empty strong { display: block; color: var(--gold); font-size: 1.1rem; margin-bottom: 6px; }
+    .row-nums span { display: block; color: var(--text-3); font-size: 0.68rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; }
+    .row-nums strong { font-size: 1.05rem; font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+    .empty {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--text-2);
+    }
+    .empty strong { display: block; color: var(--text); font-size: 1.05rem; font-weight: 600; margin-bottom: 6px; }
+
     #chart-wrap {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 14px 16px 8px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 18px 12px;
+      box-shadow: var(--shadow);
     }
-    #chart-wrap .legend { display: flex; flex-wrap: wrap; gap: 14px; color: var(--muted); font-size: 0.85rem; margin-bottom: 8px; }
-    #chart-wrap .swatch { display: inline-block; width: 14px; height: 14px; border-radius: 3px; margin-right: 6px; vertical-align: -2px; }
-    canvas { width: 100%; height: 220px; display: block; }
-    .chart-empty { color: var(--muted); padding: 16px 0; text-align: center; }
-    footer { color: var(--muted); font-size: 0.8rem; margin-top: 28px; }
-    .visually-hidden {
-      position: absolute;
-      width: 1px; height: 1px;
-      padding: 0; margin: -1px;
-      overflow: hidden; clip: rect(0,0,0,0);
-      white-space: nowrap; border: 0;
+    .chart-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
     }
+    .chart-head h3 { margin: 0; }
+    #chart-wrap .legend { display: flex; flex-wrap: wrap; gap: 16px; color: var(--text-2); font-size: 0.8rem; font-weight: 500; }
+    #chart-wrap .swatch { display: inline-block; width: 8px; height: 8px; border-radius: 999px; margin-right: 6px; vertical-align: 1px; }
+    canvas { width: 100%; height: 240px; display: block; }
+    .chart-empty { color: var(--text-3); padding: 12px 0 4px; text-align: left; font-size: 0.85rem; margin: 0; }
+    footer { color: var(--text-3); font-size: 0.75rem; line-height: 1.6; margin-top: 36px; max-width: 72ch; }
+
+
+    .tabs .icon-wrap { width: 20px; height: 20px; border-radius: 6px; }
+    .tabs .icon, .tabs .icon svg { width: 12px; height: 12px; }
+    .tabs button { padding: 8px 12px; gap: 6px; }
+    @media (min-width: 801px) {
+      .metrics { grid-template-columns: repeat(4, minmax(88px, 1fr)); }
+    }
+
     @media (max-width: 900px) {
+      main { padding: 22px 16px 80px; }
+      header { padding-left: 16px; padding-right: 16px; }
       .platform-cards { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 800px) {
       .table-wrap table { display: none; }
+      .table-wrap { border: 0; background: transparent; box-shadow: none; overflow: visible; }
       .mobile-cards { display: block; }
-      .tabs { top: 70px; }
+      .tabs { width: 100%; }
+      .tabs-wrap { top: var(--header-h); }
+    }
+    @media (max-width: 480px) {
+      header .sub { display: none; }
+      #updated { font-size: 0.72rem; white-space: nowrap; }
+      .tabs button { padding: 8px 9px; font-size: 0.82rem; }
     }
     @media (max-width: 420px) {
-      .plat-metrics strong { font-size: 1.02rem; }
+      .plat-metrics strong { font-size: 1.1rem; }
       .row-nums.cols-4 { grid-template-columns: repeat(2, 1fr); }
-      header h1 { font-size: 1rem; }
+      header h1 { font-size: 0.95rem; }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Map Desk logo">
-    <div>
-      <h1>Video News Network</h1>
-      <p id="updated">Loading live stats…</p>
+    <div class="brand">
+      <img src="logo.png" alt="Map Desk logo">
+      <div>
+        <h1>Video News Network</h1>
+        <p class="sub">Engagement by channel</p>
+      </div>
     </div>
+    <p id="updated">Loading…</p>
   </header>
   <main>
-    <p class="overall" id="overall"></p>
-    <p class="note" id="status-note">
-      Organized by social channel. Totals count only numbers a platform actually returns. n/a means missing, not zero.
-    </p>
+    <p class="kpis" id="overall"></p>
+    <p class="hint" id="status-note">Totals count only numbers a platform actually returns. n/a means missing, not zero.</p>
 
     <div class="platform-cards" id="platform-cards"></div>
 
-    <div class="tabs" role="tablist" aria-label="Social channels" id="tabs"></div>
+    <div class="tabs-wrap">
+      <div class="tabs" role="tablist" aria-label="Social channels" id="tabs"></div>
+    </div>
     <section id="platform-panel" role="tabpanel" aria-live="polite"></section>
 
-    <h3>Network growth</h3>
     <div id="chart-wrap">
-      <div class="legend">
-        <span><i class="swatch" style="background:#5eb6e6"></i>Views</span>
-        <span><i class="swatch" style="background:#ffc233"></i>Likes</span>
-        <span><i class="swatch" style="background:#c08ae0"></i>YouTube subscribers</span>
+      <div class="chart-head">
+        <h3>Network growth</h3>
+        <div class="legend">
+          <span><i class="swatch" style="background:#5eb6e6"></i>Views</span>
+          <span><i class="swatch" style="background:#ffc233"></i>Likes</span>
+          <span><i class="swatch" style="background:#c08ae0"></i>YouTube subscribers</span>
+        </div>
       </div>
-      <canvas id="chart" width="1080" height="260" aria-label="Growth chart of views, likes, and subscribers over time"></canvas>
+      <canvas id="chart" width="1080" height="280" aria-label="Growth chart of views, likes, and subscribers over time"></canvas>
       <p class="chart-empty" id="chart-empty" hidden></p>
     </div>
     <footer id="footer"></footer>
@@ -367,11 +469,26 @@
         }).format(d) + " PT";
       } catch { return fallback || iso; }
     }
+
+    /* Brand themes are opt-in. Unknown brands (added later via data.json) use chip-default. */
+    const BRAND_THEME = {
+      "map-desk": "gold",
+      "map-desk-money": "gold",
+      "map-desk-world": "gold",
+      "map-desk-places": "gold",
+      "harbor-news": "violet",
+      "quint-valley-news": "teal"
+    };
+    function chip(text) {
+      const theme = BRAND_THEME[slug(text)] || "default";
+      return `<span class="chip chip-${theme}">${escapeHtml(text)}</span>`;
+    }
+
     const ICONS = {
-      YouTube: `<span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="3" stroke="#ffc233" stroke-width="1.8"/><path d="M10 9.5v5l5-2.5-5-2.5Z" fill="#ffc233"/></svg></span>`,
-      X: `<span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#f0e442"><path d="M4 4h3.2l5.05 6.7L17.7 4H21l-7.15 8.7L21.2 20h-3.2l-5.4-7.15L7.1 20H4l7.5-9.1L4 4Z"/></svg></span>`,
-      Facebook: `<span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#9ec4ff"><path d="M14.5 8.5V6.8c0-.7.5-1 1.2-1H17V3h-2.3C12.2 3 11 4.4 11 6.6v1.9H9v2.7h2V21h3.5v-9.8h2.3l.4-2.7h-2.7Z"/></svg></span>`,
-      Instagram: `<span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#c08ae0" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="#c08ae0" stroke="none"/></svg></span>`
+      YouTube: `<span class="icon-wrap" aria-hidden="true"><span class="icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="3" stroke="#ffc233" stroke-width="1.8"/><path d="M10 9.5v5l5-2.5-5-2.5Z" fill="#ffc233"/></svg></span></span>`,
+      X: `<span class="icon-wrap" aria-hidden="true"><span class="icon"><svg viewBox="0 0 24 24" fill="#f0e442"><path d="M4 4h3.2l5.05 6.7L17.7 4H21l-7.15 8.7L21.2 20h-3.2l-5.4-7.15L7.1 20H4l7.5-9.1L4 4Z"/></svg></span></span>`,
+      Facebook: `<span class="icon-wrap" aria-hidden="true"><span class="icon"><svg viewBox="0 0 24 24" fill="#9ec4ff"><path d="M14.5 8.5V6.8c0-.7.5-1 1.2-1H17V3h-2.3C12.2 3 11 4.4 11 6.6v1.9H9v2.7h2V21h3.5v-9.8h2.3l.4-2.7h-2.7Z"/></svg></span></span>`,
+      Instagram: `<span class="icon-wrap" aria-hidden="true"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#c08ae0" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="#c08ae0" stroke="none"/></svg></span></span>`
     };
 
     const PLATFORMS = [
@@ -431,11 +548,9 @@
       if (col.fallback) return post[col.fallback];
       return null;
     }
-
     function postsFor(platform) {
       return (DATA.posts || []).filter((p) => p.platform === platform);
     }
-
     function sumKnown(posts, key, fallback) {
       let total = 0, known = 0;
       for (const p of posts) {
@@ -444,11 +559,9 @@
       }
       return { total, known };
     }
-
     function channelsFor(platform) {
       return (DATA.channels || []).filter((c) => c.platform === platform);
     }
-
     function accountGroups(platform) {
       const posts = postsFor(platform);
       const channels = channelsFor(platform);
@@ -475,7 +588,6 @@
       });
       return [...groups.values()].filter((g) => g.posts.length || g.url);
     }
-
     function platformSummary(spec) {
       const posts = postsFor(spec.id);
       const views = sumKnown(posts, spec.id === "X" ? "impressions" : "views", spec.id === "X" ? "views" : null);
@@ -561,8 +673,8 @@
           const likes = sumKnown(g.posts, "likes");
           const viewsLabel = platform === "X" ? "Impressions" : "Views";
           const likesLabel = platform === "Facebook" ? "Reactions" : "Likes";
-          const profile = g.url ? `<p style="margin:8px 0 0"><a href="${escapeHtml(g.url)}" target="_blank" rel="noopener">Open profile</a></p>` : "";
-          const note = g.note ? `<div class="updated">${escapeHtml(g.note)}</div>` : "";
+          const profile = g.url ? `<p class="profile"><a href="${escapeHtml(g.url)}" target="_blank" rel="noopener">Open profile</a></p>` : "";
+          const note = g.note ? `<div class="meta">${escapeHtml(g.note)}</div>` : "";
           return `<div class="card">
             <h4>${escapeHtml(g.family)}</h4>
             <div class="handle">${escapeHtml(g.handle || "")}</div>
@@ -589,18 +701,18 @@
         <th data-key="last_updated">Last updated</th>`;
       const body = rows.map((p) => `
         <tr>
-          <td>${escapeHtml(p.date)}${p.time_pt ? `<div class="updated">${escapeHtml(p.time_pt)} PT</div>` : ""}</td>
-          <td>${`<span class="chip ${slug(p.brand)}">${escapeHtml(p.brand)}</span>`}</td>
-          <td class="title"><a href="${escapeHtml(p.link)}" target="_blank" rel="noopener">${escapeHtml(p.title || p.link)}</a>${p.stats_note ? `<div class="updated">${escapeHtml(p.stats_note)}</div>` : ""}</td>
+          <td>${escapeHtml(p.date)}${p.time_pt ? `<div class="meta">${escapeHtml(p.time_pt)} PT</div>` : ""}</td>
+          <td>${chip(p.brand)}</td>
+          <td class="title"><a href="${escapeHtml(p.link)}" target="_blank" rel="noopener">${escapeHtml(p.title || p.link)}</a>${p.stats_note ? `<div class="meta">${escapeHtml(p.stats_note)}</div>` : ""}</td>
           ${spec.columns.map((c) => `<td class="num">${cell(valueOf(p, c))}</td>`).join("")}
-          <td class="updated">${escapeHtml(formatWhen(p.last_updated))}</td>
+          <td class="meta">${escapeHtml(formatWhen(p.last_updated))}</td>
         </tr>`).join("");
       const cards = rows.map((p) => `
         <article class="post-card">
-          <div><span class="chip ${slug(p.brand)}">${escapeHtml(p.brand)}</span></div>
-          <p style="margin:8px 0 0"><a href="${escapeHtml(p.link)}" target="_blank" rel="noopener">${escapeHtml(p.title || p.link)}</a></p>
+          <div>${chip(p.brand)}</div>
+          <h4><a href="${escapeHtml(p.link)}" target="_blank" rel="noopener">${escapeHtml(p.title || p.link)}</a></h4>
           <div class="meta">${escapeHtml(p.date)} ${escapeHtml(p.time_pt || "")} PT · updated ${escapeHtml(formatWhen(p.last_updated))}</div>
-          ${p.stats_note ? `<div class="updated">${escapeHtml(p.stats_note)}</div>` : ""}
+          ${p.stats_note ? `<div class="meta">${escapeHtml(p.stats_note)}</div>` : ""}
           <div class="row-nums ${colCount > 2 ? "cols-4" : "cols-2"}">
             ${spec.columns.map((c) => `<div><span>${escapeHtml(c.label)}</span><strong>${cell(valueOf(p, c))}</strong></div>`).join("")}
           </div>
@@ -617,9 +729,8 @@
     }
 
     function renderPanel() {
-      const spec = PLATFORMS.find((p) => p.id === active);
       const posts = postsFor(active);
-      const note = (DATA.notes && DATA.notes[active]) ? `<p class="note">${escapeHtml(DATA.notes[active])}</p>` : "";
+      const note = (DATA.notes && DATA.notes[active]) ? `<p class="section-note">${escapeHtml(DATA.notes[active])}</p>` : "";
       if (active === "Instagram" && posts.length === 0) {
         $("platform-panel").innerHTML = `
           <div class="section-head">${ICONS.Instagram}<h2>Instagram</h2></div>
@@ -681,11 +792,11 @@
       const ctx = canvas.getContext("2d");
       const w = canvas.width, h = canvas.height;
       ctx.clearRect(0, 0, w, h);
-      const pad = { l: 54, r: 16, t: 16, b: 40 };
+      const pad = { l: 58, r: 18, t: 18, b: 44 };
       const series = [
-        { key: "views", color: "#5eb6e6" },
-        { key: "likes", color: "#ffc233" },
-        { key: "youtube_subscribers", color: "#c08ae0" }
+        { key: "views", color: "#5eb6e6", fill: "rgba(94,182,230,0.10)" },
+        { key: "likes", color: "#ffc233", fill: null },
+        { key: "youtube_subscribers", color: "#c08ae0", fill: null }
       ];
       const values = series.flatMap((s) => hist.map((d) => d[s.key]).filter((v) => v != null));
       const max = Math.max(1, ...values);
@@ -694,25 +805,57 @@
       const plotH = h - pad.t - pad.b;
       const xAt = (i) => pad.l + (hist.length === 1 ? plotW / 2 : (i / (hist.length - 1)) * plotW);
       const yAt = (v) => pad.t + plotH - (v / niceMax) * plotH;
-      ctx.strokeStyle = "#2a4a76";
-      ctx.fillStyle = "#b8c4d6";
-      ctx.font = "12px sans-serif";
+
+      ctx.strokeStyle = "rgba(232,237,245,0.07)";
+      ctx.fillStyle = "#7b879a";
+      ctx.font = "500 12px Inter, system-ui, sans-serif";
       ctx.lineWidth = 1;
       for (let i = 0; i <= 4; i++) {
         const v = (niceMax / 4) * i;
         const y = yAt(v);
         ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(w - pad.r, y); ctx.stroke();
-        ctx.fillText(String(Math.round(v)), 8, y + 4);
+        ctx.fillText(Number(Math.round(v)).toLocaleString("en-US"), 8, y + 4);
       }
-      hist.forEach((d, i) => {
-        const label = (d.label || d.at || "").replace(/, \d{4}/, "").replace(/, \d{1,2}:\d{2}.*$/, "");
-        ctx.fillText(label.slice(0, 16), xAt(i) - 20, h - 14);
+      const labels = hist.map((d) => {
+        if (!d.at) return (d.label || "").slice(0, 12);
+        try {
+          const dt = new Date(d.at);
+          const sameDay = hist.every((x) => x.at && new Date(x.at).toDateString() === dt.toDateString());
+          return new Intl.DateTimeFormat("en-US", Object.assign({
+            timeZone: "America/Los_Angeles"
+          }, sameDay ? { hour: "numeric", minute: "2-digit" } : { month: "short", day: "numeric" })).format(dt);
+        } catch { return (d.label || "").slice(0, 12); }
       });
+      labels.forEach((label, i) => {
+        const wLabel = ctx.measureText(label).width;
+        let x = xAt(i) - wLabel / 2;
+        x = Math.max(pad.l - 4, Math.min(x, w - pad.r - wLabel));
+        ctx.fillText(label, x, h - 16);
+      });
+
+      const views = series[0];
+      const viewPts = hist.map((d, i) => d[views.key] == null ? null : [xAt(i), yAt(d[views.key])]);
+      if (viewPts.some(Boolean)) {
+        ctx.beginPath();
+        let started = false;
+        viewPts.forEach((p) => {
+          if (!p) return;
+          if (!started) { ctx.moveTo(p[0], pad.t + plotH); ctx.lineTo(p[0], p[1]); started = true; }
+          else ctx.lineTo(p[0], p[1]);
+        });
+        const last = [...viewPts].reverse().find(Boolean);
+        if (last) ctx.lineTo(last[0], pad.t + plotH);
+        ctx.closePath();
+        ctx.fillStyle = views.fill;
+        ctx.fill();
+      }
+
       series.forEach((s) => {
         const pts = hist.map((d, i) => d[s.key] == null ? null : [xAt(i), yAt(d[s.key])]);
         ctx.strokeStyle = s.color;
-        ctx.fillStyle = s.color;
-        ctx.lineWidth = 2.5;
+        ctx.lineWidth = 2;
+        ctx.lineJoin = "round";
+        ctx.lineCap = "round";
         ctx.beginPath();
         let started = false;
         pts.forEach((p) => {
@@ -724,7 +867,12 @@
         pts.forEach((p) => {
           if (!p) return;
           ctx.beginPath();
-          ctx.arc(p[0], p[1], 4.5, 0, Math.PI * 2);
+          ctx.fillStyle = "#0b0f17";
+          ctx.arc(p[0], p[1], 5, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.beginPath();
+          ctx.fillStyle = s.color;
+          ctx.arc(p[0], p[1], 3.2, 0, Math.PI * 2);
           ctx.fill();
         });
       });
@@ -732,9 +880,9 @@
 
     function render(data) {
       DATA = data;
-      $("updated").textContent = "Updated " + (data.generated_at_pt || formatWhen(data.generated_at));
+      $("updated").textContent = data.generated_at_pt || formatWhen(data.generated_at);
       const t = data.totals || {};
-      $("overall").innerHTML = `Across the network: <strong>${fmt(t.posts) ?? "0"}</strong> posts · <strong>${fmt(t.views) ?? "n/a"}</strong> views · <strong>${fmt(t.likes) ?? "n/a"}</strong> likes`;
+      $("overall").innerHTML = `<span><strong>${fmt(t.posts) ?? "0"}</strong> posts</span><span><strong>${fmt(t.views) ?? "n/a"}</strong> views</span><span><strong>${fmt(t.likes) ?? "n/a"}</strong> likes</span>`;
       const hash = (location.hash || "").replace("#", "").toLowerCase();
       const fromHash = PLATFORMS.find((p) => slug(p.id) === hash);
       const start = fromHash ? fromHash.id : (postsFor("YouTube").length ? "YouTube" : (PLATFORMS.find((p) => postsFor(p.id).length) || PLATFORMS[0]).id);

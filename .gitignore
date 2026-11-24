@@ -3,3 +3,6 @@ __pycache__/
 .DS_Store
 .env
 *.log
+
+# Local verification screenshots; not part of the public site
+shots/
