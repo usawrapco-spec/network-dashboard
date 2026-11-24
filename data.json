@@ -131,6 +131,7 @@
   "totals": {
     "posts": 16,
     "stories": 2,
+    "group_shares": 2,
     "views": 1142,
     "likes": 10,
     "comments": 0,
@@ -141,6 +142,7 @@
       "Map Desk World": {
         "posts": 2,
         "stories": 0,
+        "group_shares": 0,
         "views": 0,
         "likes": 0,
         "comments": 0,
@@ -151,6 +153,7 @@
       "Map Desk Money": {
         "posts": 3,
         "stories": 0,
+        "group_shares": 0,
         "views": 1127,
         "likes": 10,
         "comments": 0,
@@ -161,6 +164,7 @@
       "USA Wrap Co": {
         "posts": 7,
         "stories": 2,
+        "group_shares": 2,
         "views": 15,
         "likes": 0,
         "comments": 0,
@@ -171,6 +175,7 @@
       "Quint Valley News": {
         "posts": 1,
         "stories": 0,
+        "group_shares": 0,
         "views": 0,
         "likes": 0,
         "comments": 0,
@@ -181,6 +186,7 @@
       "Harbor News": {
         "posts": 1,
         "stories": 0,
+        "group_shares": 0,
         "views": 0,
         "likes": 0,
         "comments": 0,
@@ -191,6 +197,7 @@
       "DekWave": {
         "posts": 2,
         "stories": 0,
+        "group_shares": 0,
         "views": 0,
         "likes": 0,
         "comments": 0,
@@ -203,6 +210,7 @@
       "Facebook": {
         "posts": 8,
         "stories": 1,
+        "group_shares": 2,
         "views": 105,
         "likes": 0,
         "comments": 0,
@@ -213,6 +221,7 @@
       "YouTube": {
         "posts": 2,
         "stories": 0,
+        "group_shares": 0,
         "views": 1020,
         "likes": 10,
         "comments": 0,
@@ -223,6 +232,7 @@
       "X": {
         "posts": 2,
         "stories": 0,
+        "group_shares": 0,
         "views": 17,
         "likes": 0,
         "comments": 0,
@@ -233,6 +243,7 @@
       "Instagram": {
         "posts": 4,
         "stories": 1,
+        "group_shares": 0,
         "views": 0,
         "likes": 0,
         "comments": 0,
@@ -245,6 +256,7 @@
       "Map Desk": {
         "posts": 5,
         "stories": 0,
+        "group_shares": 0,
         "views": 1127,
         "likes": 10,
         "comments": 0,
@@ -255,6 +267,7 @@
       "USA Wrap Co": {
         "posts": 7,
         "stories": 2,
+        "group_shares": 2,
         "views": 15,
         "likes": 0,
         "comments": 0,
@@ -265,6 +278,7 @@
       "Quint Valley News": {
         "posts": 1,
         "stories": 0,
+        "group_shares": 0,
         "views": 0,
         "likes": 0,
         "comments": 0,
@@ -275,6 +289,7 @@
       "Harbor News": {
         "posts": 1,
         "stories": 0,
+        "group_shares": 0,
         "views": 0,
         "likes": 0,
         "comments": 0,
@@ -285,6 +300,7 @@
       "DekWave": {
         "posts": 2,
         "stories": 0,
+        "group_shares": 0,
         "views": 0,
         "likes": 0,
         "comments": 0,
@@ -313,7 +329,9 @@
       "impressions": null,
       "last_updated": "2026-11-24T15:14:12-08:00",
       "stats_source": "yt-dlp",
-      "stats_note": "Facebook did not expose views, likes, comments, shares on the public page"
+      "stats_note": "Facebook did not expose views, likes, comments, shares on the public page",
+      "episode": "mdw-world-2026-11-24-sample",
+      "group_id": "mdw-world-2026-11-24-sample"
     },
     {
       "date": "2026-11-24",
@@ -333,7 +351,9 @@
       "impressions": null,
       "last_updated": "2026-11-24T15:14:12-08:00",
       "stats_source": "yt-dlp",
-      "stats_note": null
+      "stats_note": null,
+      "episode": "mdw-world-2026-11-24-sample",
+      "group_id": "mdw-world-2026-11-24-sample"
     },
     {
       "date": "2026-11-24",
@@ -353,7 +373,9 @@
       "impressions": 2,
       "last_updated": "2026-11-24T15:14:12-08:00",
       "stats_source": "fxtwitter",
-      "stats_note": null
+      "stats_note": null,
+      "episode": "mdm-2026-11-23-sample",
+      "group_id": "mdm-2026-11-23-sample"
     },
     {
       "date": "2026-11-24",
@@ -373,7 +395,9 @@
       "impressions": null,
       "last_updated": "2026-11-24T15:14:12-08:00",
       "stats_source": "yt-dlp",
-      "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
+      "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login",
+      "episode": null,
+      "group_id": "mdm-2026-11-23-sample"
     },
     {
       "date": "2026-11-24",
@@ -393,7 +417,13 @@
       "impressions": null,
       "last_updated": "2026-11-24T15:13:17-08:00",
       "stats_source": "none",
-      "stats_note": "n/a without a Facebook login"
+      "stats_note": "n/a without a Facebook login",
+      "plan_ids": [
+        "H181"
+      ],
+      "plan_id": "H181",
+      "episode": null,
+      "group_id": "h181-h182"
     },
     {
       "date": "2026-11-24",
@@ -413,7 +443,13 @@
       "impressions": null,
       "last_updated": "2026-11-24T15:13:17-08:00",
       "stats_source": "none",
-      "stats_note": "Using last known stats; live fetch via none failed"
+      "stats_note": "Using last known stats; live fetch via none failed",
+      "plan_ids": [
+        "H182"
+      ],
+      "plan_id": "H182",
+      "episode": null,
+      "group_id": "h181-h182"
     },
     {
       "date": "2026-11-23",
@@ -433,7 +469,9 @@
       "impressions": null,
       "last_updated": "2026-11-24T15:14:12-08:00",
       "stats_source": "yt-dlp",
-      "stats_note": null
+      "stats_note": null,
+      "episode": "mdm-2026-11-23-sample",
+      "group_id": "mdm-2026-11-23-sample"
     },
     {
       "date": "2026-11-23",
@@ -453,7 +491,13 @@
       "impressions": null,
       "last_updated": "2026-11-24T15:13:17-08:00",
       "stats_source": "none",
-      "stats_note": "n/a without a Facebook login"
+      "stats_note": "n/a without a Facebook login",
+      "plan_ids": [
+        "H179"
+      ],
+      "plan_id": "H179",
+      "episode": null,
+      "group_id": "h179-h180"
     },
     {
       "date": "2026-11-23",
@@ -473,7 +517,13 @@
       "impressions": null,
       "last_updated": "2026-11-24T15:14:12-08:00",
       "stats_source": "none",
-      "stats_note": "Stats unavailable on this pass"
+      "stats_note": "Stats unavailable on this pass",
+      "plan_ids": [
+        "H180"
+      ],
+      "plan_id": "H180",
+      "episode": null,
+      "group_id": "h179-h180"
     },
     {
       "date": "2026-11-23",
@@ -493,7 +543,13 @@
       "impressions": null,
       "last_updated": "2026-11-24T15:13:17-08:00",
       "stats_source": "none",
-      "stats_note": "n/a without a Facebook login"
+      "stats_note": "n/a without a Facebook login",
+      "plan_ids": [
+        "H024"
+      ],
+      "plan_id": "H024",
+      "episode": null,
+      "group_id": "h024-h025"
     },
     {
       "date": "2026-11-23",
@@ -513,7 +569,13 @@
       "impressions": null,
       "last_updated": "2026-11-24T15:13:17-08:00",
       "stats_source": "none",
-      "stats_note": "Using last known stats; live fetch via none failed"
+      "stats_note": "Using last known stats; live fetch via none failed",
+      "plan_ids": [
+        "H025"
+      ],
+      "plan_id": "H025",
+      "episode": null,
+      "group_id": "h024-h025"
     },
     {
       "date": "2026-11-23",
@@ -533,7 +595,15 @@
       "impressions": null,
       "last_updated": "2026-11-24T14:25:35-08:00",
       "stats_source": "none",
-      "stats_note": "n/a without a Facebook login"
+      "stats_note": "n/a without a Facebook login",
+      "plan_ids": [
+        "QVN001",
+        "QVN002",
+        "H188"
+      ],
+      "plan_id": "QVN001",
+      "episode": null,
+      "group_id": "qvn001-qvn002"
     },
     {
       "date": "2026-11-22",
@@ -553,7 +623,13 @@
       "impressions": null,
       "last_updated": "2026-11-24T14:25:35-08:00",
       "stats_source": "none",
-      "stats_note": "n/a without a Facebook login"
+      "stats_note": "n/a without a Facebook login",
+      "plan_ids": [
+        "H184"
+      ],
+      "plan_id": "H184",
+      "episode": null,
+      "group_id": "h184"
     },
     {
       "date": "2026-11-22",
@@ -573,7 +649,13 @@
       "impressions": null,
       "last_updated": "2026-11-24T15:13:17-08:00",
       "stats_source": "none",
-      "stats_note": "n/a without a Facebook login"
+      "stats_note": "n/a without a Facebook login",
+      "plan_ids": [
+        "DW030"
+      ],
+      "plan_id": "DW030",
+      "episode": null,
+      "group_id": "dw030-dw031"
     },
     {
       "date": "2026-11-22",
@@ -593,7 +675,13 @@
       "impressions": null,
       "last_updated": "2026-11-24T15:13:17-08:00",
       "stats_source": "none",
-      "stats_note": "Using last known stats; live fetch via none failed"
+      "stats_note": "Using last known stats; live fetch via none failed",
+      "plan_ids": [
+        "DW031"
+      ],
+      "plan_id": "DW031",
+      "episode": null,
+      "group_id": "dw030-dw031"
     },
     {
       "id": "story:H004",
@@ -617,7 +705,9 @@
       "impressions": null,
       "last_updated": "2026-11-24T15:13:17-08:00",
       "stats_source": "none",
-      "stats_note": "Stories expire after 24 hours. Views and replies are n/a until an in-account check records a real number."
+      "stats_note": "Stories expire after 24 hours. Views and replies are n/a until an in-account check records a real number.",
+      "episode": null,
+      "group_id": "story:usa-wrap-co:2026-11-20"
     },
     {
       "id": "story:H005",
@@ -641,7 +731,9 @@
       "impressions": null,
       "last_updated": "2026-11-24T15:13:17-08:00",
       "stats_source": "none",
-      "stats_note": "Stories expire after 24 hours. Views and replies are n/a until an in-account check records a real number."
+      "stats_note": "Stories expire after 24 hours. Views and replies are n/a until an in-account check records a real number.",
+      "episode": null,
+      "group_id": "story:usa-wrap-co:2026-11-20"
     },
     {
       "date": "2026-11-20",
@@ -661,7 +753,65 @@
       "impressions": 15,
       "last_updated": "2026-11-24T15:14:12-08:00",
       "stats_source": "fxtwitter",
-      "stats_note": null
+      "stats_note": null,
+      "plan_ids": [
+        "X001"
+      ],
+      "plan_id": "X001",
+      "episode": null,
+      "group_id": "x001"
+    },
+    {
+      "id": "group-share:G001",
+      "episode": null,
+      "plan_id": "G001",
+      "group_id": "g001",
+      "date": "2026-11-19",
+      "time_pt": "10:59 AM",
+      "datetime_pt": "2026-11-19T10:59:00-08:00",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platform": "Facebook",
+      "title": "Group share: EP01 We Lift Brands Reel (share from page after it posts)",
+      "group_name": "Gig Harbor Community Talk",
+      "link": "https://www.facebook.com/groups/1116103615086781/posts/29683510897919338",
+      "kind": "group-share",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "impressions": null,
+      "replies": null,
+      "last_updated": "2026-11-19T10:59:00-08:00",
+      "stats_source": "none",
+      "stats_note": "Group share stats are n/a unless a public count is available."
+    },
+    {
+      "id": "group-share:G002",
+      "episode": null,
+      "plan_id": "G002",
+      "group_id": "g002",
+      "date": "2026-11-24",
+      "time_pt": "11:53 AM",
+      "datetime_pt": "2026-11-24T11:53:00-08:00",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platform": "Facebook",
+      "title": "Group share: Bay Pointe IN THE BAY poster (H181 FB post share)",
+      "group_name": "Gig Harbor Small Business Networking Group",
+      "link": "https://www.facebook.com/groups/1506919972925759",
+      "kind": "group-share",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "impressions": null,
+      "replies": null,
+      "last_updated": "2026-11-24T11:53:00-08:00",
+      "stats_source": "none",
+      "stats_note": "Group share stats are n/a unless a public count is available."
     }
   ],
   "history": [
@@ -973,5 +1123,2391 @@
       "youtube_subscribers": 2,
       "x_followers": 0
     }
-  ]
+  ],
+  "scheduled": {
+    "generated_at": "2026-11-24T15:38:44.202538-08:00",
+    "generated_at_pt": "2026-11-24 3:38 PM PT",
+    "timezone": "America/Los_Angeles",
+    "items": [
+      {
+        "id": "mdm-2026-11-24-prices",
+        "group_id": "mdm-2026-11-24-prices",
+        "title": "Alaska led the nation in price gains + more | Map Desk Money",
+        "caption": "Home-price change by state, year to 2026 Q3: Alaska led the nation in price gains; Prices rose in 48 states.\n\n1. Alaska led the nation in price gains\n2. Prices rose in 48 states\n\nCredits & thanks: Thank you to Federal Housing Finance Agency, Mortgage Professional America for the reporting we cite.\nMap imagery: NASA GIBS (Blue Marble, Black Marble). Borders and labels: Natural Earth.\nNarrated with an AI voice. Facts checked against two independent sources per story. Not financial advice",
+        "brand": "Map Desk Money",
+        "family": "Map Desk",
+        "network": "news",
+        "platforms": [
+          "YouTube",
+          "Facebook",
+          "X",
+          "Instagram"
+        ],
+        "planned_date": "2026-11-24",
+        "planned_time": "Waiting to post",
+        "planned_tz": "PT",
+        "planned_at": null,
+        "status": "Ready",
+        "kind": "short",
+        "still": "media/scheduled/mdm-2026-11-24-prices.jpg",
+        "video": "media/scheduled/mdm-2026-11-24-prices-720.mp4"
+      },
+      {
+        "id": "mdm-2026-11-24-living",
+        "group_id": "mdm-2026-11-24-living",
+        "title": "California had the highest prices + more | Map Desk Money",
+        "caption": "Cost of living by state, 2024 price levels: California had the highest prices; Arkansas was the lowest.\n\n1. California had the highest prices\n2. Arkansas was the lowest\n\nCredits & thanks: Thank you to U.S. Bureau of Economic Analysis, FRED, St. Louis Fed for the reporting we cite.\nMap imagery: NASA GIBS (Blue Marble, Black Marble). Borders and labels: Natural Earth.\nNarrated with an AI voice. Facts checked against two independent sources per story. Not financial advice",
+        "brand": "Map Desk Money",
+        "family": "Map Desk",
+        "network": "news",
+        "platforms": [
+          "YouTube",
+          "Facebook",
+          "X",
+          "Instagram"
+        ],
+        "planned_date": "2026-11-24",
+        "planned_time": "Waiting to post",
+        "planned_tz": "PT",
+        "planned_at": null,
+        "status": "Ready",
+        "kind": "short",
+        "still": "media/scheduled/mdm-2026-11-24-living.jpg",
+        "video": "media/scheduled/mdm-2026-11-24-living-720.mp4"
+      },
+      {
+        "id": "mdm-2026-11-24-rent",
+        "group_id": "mdm-2026-11-24-rent",
+        "title": "Florida renters paid the most of income + more | Map Desk Money",
+        "caption": "Where renters pay the most of their income, 2025: Florida renters paid the most of income; Connecticut and California were close behind.\n\n1. Florida renters paid the most of income\n2. Connecticut and California were close behind\n\nCredits & thanks: Thank you to U.S. Census Bureau, Quadranac for the reporting we cite.\nMap imagery: NASA GIBS (Blue Marble, Black Marble). Borders and labels: Natural Earth.\nNarrated with an AI voice. Facts checked against two independent sources per story. Not financial advice",
+        "brand": "Map Desk Money",
+        "family": "Map Desk",
+        "network": "news",
+        "platforms": [
+          "YouTube",
+          "Facebook",
+          "X",
+          "Instagram"
+        ],
+        "planned_date": "2026-11-24",
+        "planned_time": "Waiting to post",
+        "planned_tz": "PT",
+        "planned_at": null,
+        "status": "Ready",
+        "kind": "short",
+        "still": "media/scheduled/mdm-2026-11-24-rent.jpg",
+        "video": "media/scheduled/mdm-2026-11-24-rent-720.mp4"
+      },
+      {
+        "id": "mdp-places-2026-11-24-sample",
+        "group_id": "mdp-places-2026-11-24-sample",
+        "title": "Arkansas has the only public diamond site + more | Map Desk Places",
+        "caption": "Best places to dig for gems in America: Arkansas has the only public diamond site; Herkimer diamonds are quartz, not diamonds.\n\n1. Arkansas has the only public diamond site\n2. Herkimer diamonds are quartz, not diamonds\n\nCredits & thanks: Thank you to Arkansas State Parks, Arkansas Geological Survey, Arkansas Geological Survey (State Park Series), New York State Museum, I LOVE NY (official NYS tourism) for the reporting we cite.\nMap imagery: NASA GIBS (Blue Marble, Black Marble). Borders and labels: Natural Earth.\nNarrated with an AI voice. Facts checked against two independent public sources. Not a sponsored endorsement",
+        "brand": "Map Desk Places",
+        "family": "Map Desk",
+        "network": "news",
+        "platforms": [
+          "YouTube",
+          "Facebook",
+          "X",
+          "Instagram"
+        ],
+        "planned_date": "2026-11-24",
+        "planned_time": "After approval",
+        "planned_tz": "PT",
+        "planned_at": null,
+        "status": "Awaiting OK",
+        "kind": "short",
+        "still": "media/scheduled/mdp-places-2026-11-24-sample.jpg",
+        "video": "media/scheduled/mdp-places-2026-11-24-sample-720.mp4"
+      },
+      {
+        "id": "QVN003",
+        "group_id": "qvn003-qvn004",
+        "title": "QVN map briefing Reel v3: this week on the plains, week of Nov. 22, 2026",
+        "caption": "Your rundown for the plains east of Denver, week of Nov. 22.\n\n\u2022 I-70 between Watkins and Bennett: median cable barrier work, with one westbound lane closed weekdays 9 a.m.\u20135 p.m., through late March 2027.\n\u2022 Elizabeth: the Senior Baskets drive is collecting donations through the week of Dec. 8.\n\u2022 Near Kiowa: T21 Sensory Ranch offers free one-on-one visits for people with disabilities, by appointment.\n\u2022 Kiowa: Christmas in Kiowa is Sat., Nov. 28, with live reindeer at the Extravaganza from noon to 2:30 p.m. and the lighted car parade and tree lighting Saturday evening.\n\u2022 Elizabeth: the Mayor's Tree Lighting is Sat., Dec. 5, 3\u20136 p.m. on Main Street, with the tree lit at 5 p.m.\n\nThanks to CDOT, Sentinel Colorado, Elbert County News, the Town of Elizabeth, Inside Elizabeth, Rocky Mountain PBS, the Town of Kiowa and Our Journey for the reporting and listings behind this rundown.\n\nFollow along for local news and things to do.\n\n#QuintValleyNews #Bennett #Strasburg #Kiowa #ElizabethCO",
+        "brand": "Quint Valley News",
+        "family": "Quint Valley News",
+        "network": "news",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
+        "planned_date": "2026-11-24",
+        "planned_time": "12:00 p.m. MT",
+        "planned_tz": "MT",
+        "planned_at": "2026-11-24T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/qvn003.jpg",
+        "video": null
+      },
+      {
+        "id": "DW029",
+        "group_id": "DW029",
+        "title": "Orange star panel + grooved hatch lid, Townsend job (real photo, 1:1, small DekWave mark)",
+        "caption": "Orange teak-look EVA with a star routed right into the panel, plus a matching hatch lid with vertical grooves. Every piece cut in our Gig Harbor shop and fitted to the boat.\n\nBold color, soft underfoot, and grippy when it's wet.\n\nWould you go bold like this, or keep it classic gray?\n\nCall/#DekWave #EVADecking #GigHarbor #PugetSoundBoating",
+        "brand": "DekWave",
+        "family": "DekWave",
+        "network": "business",
+        "platforms": [
+          "Instagram"
+        ],
+        "planned_date": "2026-11-24",
+        "planned_time": "3:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-24T15:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/dw029.jpg",
+        "video": null
+      },
+      {
+        "id": "DW032",
+        "group_id": "DW032",
+        "title": "Orange star panel + grooved hatch lid, Townsend job (real photo, 1:1, small DekWave mark)",
+        "caption": "Orange teak-look EVA with a star routed right into the panel, plus a matching hatch lid with vertical grooves. Every piece cut in our Gig Harbor shop and fitted to the boat.\n\nBold color, soft underfoot, and grippy when it's wet.\n\nWould you go bold like this, or keep it classic gray?\n\nCall/#DekWave #EVADecking #GigHarbor #PugetSoundBoating",
+        "brand": "DekWave",
+        "family": "DekWave",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-24",
+        "planned_time": "3:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-24T15:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/dw032.jpg",
+        "video": null
+      },
+      {
+        "id": "MN009",
+        "group_id": "mn009-mn011",
+        "title": "80s VHS parody testimonial: \"Gary's Gutters\" (33 s, v5, ElevenLabs voices)",
+        "caption": "Real results. Fake Gary. \ud83d\udcfc Your van doesn't have to be the refrigerator of the block. Full wraps designed, printed and installed in Gig Harbor. #vanwrap #80s #gigharbor\n\n(Dramatization. Gary is an AI actor and Gary's Gutters is fictional.)\nMusic: \"Local Forecast - Elevator\" Kevin MacLeod (incompetech.com) \u00b7 CC BY 4.0",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook",
+          "Instagram",
+          "LinkedIn"
+        ],
+        "planned_date": "2026-11-24",
+        "planned_time": "4:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-24T16:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/mn009.jpg",
+        "video": null
+      },
+      {
+        "id": "QVN005",
+        "group_id": "qvn005-qvn006",
+        "title": "I-70 Watkins\u2013Bennett lane closures (holiday travel day)",
+        "caption": "Heading out on I-70 for the holiday? CDOT crews are installing median cable barriers between Watkins and Bennett.\n\nWhat to expect:\n\u2022 Weekdays, 9 a.m.\u20135 p.m.: one westbound lane and the eastbound shoulder closed\n\u2022 Saturdays, 7 a.m.\u20136 p.m.: one lane closed in each direction, plus the westbound shoulder\n\u2022 Construction trucks entering and leaving the closed left lanes\n\nThe work zone runs 13.8 miles, from about two miles east of Exit 292 (Airpark Rd.) to two miles east of Exit 306 (Kiowa-Bennett). CDOT doesn't expect big delays but says to plan extra time. The project is expected to wrap up by late March 2027. Check COtrip.org for real-time lane closures.\n\nThanks to CDOT and Sentinel Colorado for the details. Slow down in the cone zone and safe travels.\n\n#I70 #Bennett #Watkins #ColoradoRoads #QuintValleyNews",
+        "brand": "Quint Valley News",
+        "family": "Quint Valley News",
+        "network": "news",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
+        "planned_date": "2026-11-25",
+        "planned_time": "7:00 a.m. MT",
+        "planned_tz": "MT",
+        "planned_at": "2026-11-25T06:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/qvn005.jpg",
+        "video": null
+      },
+      {
+        "id": "H187",
+        "group_id": "H187",
+        "title": "Harbor News map-briefing v2 (90 s; Turkey Trot, Zoolights, tree lighting, SR 167 tolls)",
+        "caption": "Your Gig Harbor & Tacoma rundown: this week, plus what's coming up\n\u2022 Gig Harbor Boat Works to close in early 2027\n\u2022 Basket Brigade packed Thanksgiving baskets\n\u2022 Tacoma History Museum is open (free)\nComing up: Turkey Trot Thu 11/26 \u00b7 Zoolights from Fri 11/27 \u00b7 Gig Harbor tree lighting Sat 12/5 \u00b7 SR 167 tolls start Mon 12/14\nSources: Gig Harbor Now, The News Tribune, Greater Gig Harbor Foundation, Tacoma Historical Society, Gig Harbor Turkey Trot, RunSignup, Point Defiance Zoo & Aquarium, KING 5, GHDWA, Tacoma Foodie, WSDOT, Tacoma Weekly.\nImagery: USGS The National Map \u00b7 Map data \u00a9 OpenStreetMap contributors\nPresented by USA Wrap Co",
+        "brand": "Harbor News",
+        "family": "Harbor News",
+        "network": "news",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-25",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-25T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/h187.jpg",
+        "video": null
+      },
+      {
+        "id": "X004",
+        "group_id": "X004",
+        "title": "Light aircraft stripe graphics (real job photo; tail number blurred)",
+        "caption": "Not just vans. Custom stripe graphics on a light aircraft. If it moves, we can wrap it. Gig Harbor, WA. #aircraftgraphics #aviation #gigharbor #pnw",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "X"
+        ],
+        "planned_date": "2026-11-25",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-25T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/x004.jpg",
+        "video": null
+      },
+      {
+        "id": "MN003",
+        "group_id": "mn003-mn004",
+        "title": "Mini 2: Golden Events \"Two Stories\" (14.6 s)",
+        "caption": "One SUV, two stories: gold lettering on the doors, a PNW mountain mural on the back. Golden Events, wrapped in Gig Harbor. #vehiclewrap #pnw #gigharbor\n\nMusic: \"Neolith\" Kevin MacLeod (incompetech.com) \u00b7 CC BY 4.0",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
+        "planned_date": "2026-11-25",
+        "planned_time": "4:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-25T16:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/mn003.jpg",
+        "video": null
+      },
+      {
+        "id": "SJ013",
+        "group_id": "SJ013",
+        "title": "In-hand scale, 4:5 color-render crop",
+        "caption": "Fair warning: this prototype is bigger than I want. The production unit will be smaller. Founders get that one.\n\nRechargeable pocket vacuum for a leftover preroll, cigar, or cigarette.\n\nAI-generated render.\n\nFounder reservations are open at https://savajay.com/fb. Reservations only; payment isn't live yet.\n21+ only. For legal use only. Patent pending.\n\n#PuffPods #Savajay #EDC #PocketGadget #PatentPending #FoundersDrive",
+        "brand": "Savajay",
+        "family": "Savajay",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-25",
+        "planned_time": "4:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-25T16:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/sj013.jpg",
+        "video": null
+      },
+      {
+        "id": "H175",
+        "group_id": "h175-h176",
+        "title": "16 Thanksgiving thank-you: matched 3-SUV fleet (real job photo, 4:5, plates blurred)",
+        "caption": "Happy Thanksgiving from all of us at USA Wrap Co. \ud83e\udd83\n\nThis year you trusted us with your trucks, vans, trailers and whole fleets, like this matched three-SUV set. Every one of them is a local business we're proud to help get seen.\n\nThank you, Gig Harbor. We're grateful for every one of you.\n\nWhat are you most thankful for this year? \ud83d\udc47\n\n#usawrapco #gigharbor #gigharborwa #pnwbusiness #thanksgiving #fleetwraps",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
+        "planned_date": "2026-11-26",
+        "planned_time": "7:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-26T07:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/h175.jpg",
+        "video": null
+      },
+      {
+        "id": "QVN007",
+        "group_id": "qvn007-qvn008",
+        "title": "CO 86 Kiowa Creek bridge replacement (+ the one gratitude line)",
+        "caption": "Happy Thanksgiving from Quint Valley News. If your plans take you through Kiowa this weekend, the CO 86 bridge replacement at Kiowa Creek is still on CDOT's schedule through winter 2026.\n\nCDOT says to expect:\n\u2022 Traffic shifts and reduced speeds through the work zone\n\u2022 A temporary shoofly alignment that keeps traffic moving while the bridge is replaced\n\u2022 A 12-foot width limit for traffic crossing the bridge while construction is active. Trucks and oversized loads should use another route.\n\nConstruction began March 9, 2026. CDOT notes the work is weather-dependent and subject to change, so check COtrip.org before you go. The Town of Kiowa says weekly project updates go out every Friday.\n\nThanks to CDOT and the Town of Kiowa for keeping folks posted. Today we're grateful for the neighbors out here who show up for each other.\n\n#Kiowa #ElbertCounty #CO86 #QuintValleyNews",
+        "brand": "Quint Valley News",
+        "family": "Quint Valley News",
+        "network": "news",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
+        "planned_date": "2026-11-26",
+        "planned_time": "8:00 a.m. MT",
+        "planned_tz": "MT",
+        "planned_at": "2026-11-26T07:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/qvn007.jpg",
+        "video": null
+      },
+      {
+        "id": "QVN009",
+        "group_id": "qvn009-qvn010",
+        "title": "Christmas in Kiowa is tomorrow, Sat. Nov. 28 (Town-published times only) + ECCO deadline today",
+        "caption": "Christmas in Kiowa is tomorrow, Sat., Nov. 28.\n\nThe Town of Kiowa's Christmas Extravaganza is at the Elbert County Fairgrounds Exhibit Building, 95 Ute Ave. The Town lists live Christmas music, holiday vendors, pictures with Santa and Mrs. Claus, cookies, coffee and hot cocoa, a special appearance by the Grinch, voting on the lighted Christmas trees, and live reindeer from noon to 2:30 p.m. The first 100 people through the door get a gift.\n\nThen comes the 6th annual Lighted Car Parade, led by the Kiowa Fire Department, ending at Kiowa Town Hall, 404 Comanche St., for the Mayor's Tree Lighting and awards. Parade entry is free.\n\nAt the Extravaganza you can also pick a gift tag for ECCO's Christmas for Kids. And a reminder for Elbert County families: Christmas for Kids applications are due today, Nov. 27, by 4 p.m.\n\nThanks to the Town of Kiowa for putting this day together and sharing the details, and to Our Journey for listing it.\n\n#ChristmasInKiowa #Kiowa #ElbertCounty #QuintValleyNews",
+        "brand": "Quint Valley News",
+        "family": "Quint Valley News",
+        "network": "news",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
+        "planned_date": "2026-11-27",
+        "planned_time": "8:00 a.m. MT",
+        "planned_tz": "MT",
+        "planned_at": "2026-11-27T07:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/qvn009.jpg",
+        "video": null
+      },
+      {
+        "id": "DW033",
+        "group_id": "dw033-dw034",
+        "title": "Typographic card: Why EVA decking? (no photo)",
+        "caption": "Why EVA decking? The short version:\n\n\u2022 Grip underfoot, wet or dry\n\u2022 Softer on your feet and knees\n\u2022 Cut around every hatch and fitting\n\u2022 Your colors, your pattern, even your logo\n\nWhich one matters most on your boat? \ud83d\udc47\n\nCall/#DekWave #EVADecking #BoatDecking #GigHarbor #PugetSoundBoating #PNWBoating",
+        "brand": "DekWave",
+        "family": "DekWave",
+        "network": "business",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
+        "planned_date": "2026-11-27",
+        "planned_time": "8:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-27T08:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/dw033.jpg",
+        "video": null
+      },
+      {
+        "id": "H173",
+        "group_id": "H173",
+        "title": "Harbor Desk community odds: Will you make it to Winterfest at Peninsula High this weekend?",
+        "caption": "Harbor Desk odds, just for fun: Will you make it to Winterfest at Peninsula High this weekend?\n\nPeninsula High School's Winterfest Arts & Crafts Show is back for Thanksgiving weekend:\n\u2022 Saturday, Nov. 28, 9 a.m.\u20135 p.m.\n\u2022 Sunday, Nov. 29, 11 a.m.\u20134 p.m.\n\u2022 Peninsula High School, 14105 Purdy Dr. NW, Gig Harbor\n\nHandmade arts and crafts, food trucks, and the Hall of Wreaths silent auction (Saturday only). It's the school ASB's annual fundraiser for clubs and activities, running since 1992.\n\nThe 68/32 \"odds\" on the graphic are made up to get the conversation going. No betting, no money, not a market.\n\nSource: Peninsula High School Winterfest (official site), https://sites.google.com/psd401.net/peninsulahswinterfest/home\nSource: Gig Harbor Now, 2026 key dates, https://www.gigharbornow.org/news/arts-entertainment/2026-key-dates-when-is-maritime-gig-fest-christmas-tree-lighting-scarecrow-fest/\n\nPresented by USA Wrap Co.\n\nSo, are you going? Vote YES or NO in the comments",
+        "brand": "Harbor News",
+        "family": "Harbor News",
+        "network": "news",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-27",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-27T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/h173.jpg",
+        "video": null
+      },
+      {
+        "id": "X005",
+        "group_id": "X005",
+        "title": "ONA Landscaping trailer (real job photo; bystander plate blurred)",
+        "caption": "Rooted in nature, built to last. Rear-door lettering and logo for ONA Landscaping, readable from a block away. Gig Harbor, WA. #trailerwrap #fleetgraphics #landscaping #pnw",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "X"
+        ],
+        "planned_date": "2026-11-27",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-27T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/x005.jpg",
+        "video": null
+      },
+      {
+        "id": "SJ017",
+        "group_id": "SJ017",
+        "title": "Black + White color render (1\u00d71) \u2014 EDC still; flatlay 4:5 failed QA",
+        "caption": "A leftover preroll, cigar, or cigarette doesn't belong loose in a pack or crushed in a pocket.\n\nPress. Drop. Saved. A pocket tube that puts the rest out and locks in the smell.\n\nColor renders.\n\nFounder reservations are open at https://savajay.com/fb. Reservations only; payment isn't live yet.\n21+ only. For legal use only. Patent pending.\n\n#PuffPods #Savajay #EDC #PocketGadget #CigarLife #PatentPending",
+        "brand": "Savajay",
+        "family": "Savajay",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-27",
+        "planned_time": "4:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-27T16:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/sj017.jpg",
+        "video": null
+      },
+      {
+        "id": "H032",
+        "group_id": "h032-h033",
+        "title": "11 Small Business Saturday poster",
+        "caption": "Happy Small Business Saturday. 88% of shoppers say they're likely to shop small this season, the most since 2012 (American Express). Local shops built this town, and your neighbors run on vans, trucks & trailers. \ud83c\uddfa\ud83c\uddf8\n\n#usawrapco #vehiclewrap #gigharbor #pnwbusiness #shopsmall #smallbusinesssaturday",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
+        "planned_date": "2026-11-28",
+        "planned_time": "7:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-28T07:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/h032.jpg",
+        "video": null
+      },
+      {
+        "id": "DW035",
+        "group_id": "dw035-dw036",
+        "title": "Typographic card: Photos in. Deck out. (how it works, no photo)",
+        "caption": "Photos in. Deck out. Here's how a custom DekWave deck happens:\n\n1. Send us a few photos of your deck\n2. Pick your colors and pattern\n3. We cut it to fit, then install it\n\nTrailer boats come to our Gig Harbor shop. Big boats in the water: we come to you.\n\nDown at the boat this holiday weekend? Snap a few photos of the deck and text them over.\n\nCall/#DekWave #EVADecking #BoatDecking #GigHarbor #PugetSoundBoating #PNWBoating",
+        "brand": "DekWave",
+        "family": "DekWave",
+        "network": "business",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
+        "planned_date": "2026-11-28",
+        "planned_time": "8:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-28T08:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/dw035.jpg",
+        "video": null
+      },
+      {
+        "id": "H174",
+        "group_id": "H174",
+        "title": "Harbor News Through Time: The Purdy Bridge (1937)",
+        "caption": "Gig Harbor Through Time: The Purdy Bridge.\n\nThe Purdy Bridge was completed on Sept. 29, 1937, over the channel between Henderson Bay and Burley Lagoon. At the time it was considered the longest bridge of its kind: a reinforced-concrete box girder, a design common in Europe but rare in America. Engineer Homer Hadley suggested the design.\n\nIt runs 550 feet end to end over five spans, with a 190-foot center span, and it's the fourth bridge at this spot. Pierce County built the first one, a wooden bridge with a swing span, in 1892. Today it's on the National Register of Historic Places.\n\nPhoto: Historic American Engineering Record, HAER WA-101, Library of Congress (public domain). This is a later survey photo, not a 1937 image.\nSource: HistoryLink.org Essay 7133, https://www.historylink.org/File/7133\nSource: Library of Congress, HAER WA-101 (Purdy Bridge), https://www.loc.gov/item/wa0455/\n\nA Harbor News Through Time report, presented by USA Wrap Co.\n\nHave you crossed it on the way out to the Key Peninsula? What's your favorite Purdy Spit memory?",
+        "brand": "Harbor News",
+        "family": "Harbor News",
+        "network": "news",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-28",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-28T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/h174.jpg",
+        "video": null
+      },
+      {
+        "id": "X006",
+        "group_id": "X006",
+        "title": "Washington State Dahlia Society trailer (real job photo)",
+        "caption": "In full bloom. Dahlia art and lettering for the Washington State Dahlia Society trailer. Wrapped in Gig Harbor. #trailerwrap #pnw #gigharbor #dahlia",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "X"
+        ],
+        "planned_date": "2026-11-28",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-28T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/x006.jpg",
+        "video": null
+      },
+      {
+        "id": "SJ029",
+        "group_id": "SJ029",
+        "title": "Typographic card: Old way vs Puff Pods way (no photo)",
+        "caption": "It's Small Business Saturday, so here's what our small business is building:\n\nPuff Pods by Savajay. A rechargeable pocket vacuum for a leftover preroll, cigar, or cigarette.\n\nThe old way: scrape it, pinch it, hope it's out.\nThe Puff Pods way: press the button, drop it in, the lid seals and the ember's out.\n\nFounder reservations are open at https://savajay.com/fb. Reservations only; payment isn't live yet.\n21+ only. For legal use only. Patent pending.\n\n#PuffPods #Savajay #SmallBusinessSaturday #CigarLife #PocketGadget #PatentPending",
+        "brand": "Savajay",
+        "family": "Savajay",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-28",
+        "planned_time": "4:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-28T16:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/sj029.jpg",
+        "video": null
+      },
+      {
+        "id": "DW037",
+        "group_id": "dw037-dw038",
+        "title": "Typographic card: From the bow to the swim step (where EVA goes, no photo)",
+        "caption": "From the bow to the swim step, EVA decking goes where your feet go:\n\n\u2022 Swim platforms\n\u2022 Cockpit floors\n\u2022 Bow decks\n\u2022 Helm stations and steps\n\nEvery piece is cut to the shape of your boat.\n\nWhich spot on your boat takes the most wear? \ud83d\udc47\n\nCall/#DekWave #EVADecking #BoatDecking #GigHarbor #PugetSoundBoating #PNWBoating",
+        "brand": "DekWave",
+        "family": "DekWave",
+        "network": "business",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
+        "planned_date": "2026-11-29",
+        "planned_time": "8:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-29T08:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/dw037.jpg",
+        "video": null
+      },
+      {
+        "id": "QVN011",
+        "group_id": "qvn011-qvn012",
+        "title": "Coming up: Elizabeth Mayor's Tree Lighting, Sat. Dec. 5",
+        "caption": "Coming up next Saturday: Elizabeth's Mayor's Tree Lighting on Main Street.\n\nSat., Dec. 5, 3\u20136 p.m.\nTree lit at 5 p.m.\nMain Street, Elizabeth\n\nWhile you're downtown, the Town's Senior Baskets drive has donation boxes at businesses around town until they're picked up the week of Dec. 8. Socks, hats, gloves, puzzles, games and snacks are all on the suggested list.\n\nThanks to the Town of Elizabeth for the event, to Inside Elizabeth and Our Journey for the listings, and to Elbert County News for the Senior Baskets story.\n\n#ElizabethCO #ElbertCounty #TreeLighting #QuintValleyNews",
+        "brand": "Quint Valley News",
+        "family": "Quint Valley News",
+        "network": "news",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
+        "planned_date": "2026-11-29",
+        "planned_time": "9:00 a.m. MT",
+        "planned_tz": "MT",
+        "planned_at": "2026-11-29T08:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/qvn011.jpg",
+        "video": null
+      },
+      {
+        "id": "H177",
+        "group_id": "H177",
+        "title": "Harbor News Through Time: The Fox Island Bridge (1954)",
+        "caption": "Gig Harbor Through Time: The Fox Island Bridge.\n\nOn Aug. 28, 1954, Gov. Arthur B. Langlie cut the ribbon on the bridge across Hale Passage, and Fox Island traded the ferry for a road to the mainland. The Washington State Toll Bridge Authority built the 1,981-foot span, and it ran as a toll bridge until 1965. Seventy-two years later, it's still the island's road to the mainland.\n\nBonus fact: the island itself was named in 1841, during the Wilkes Expedition, for Dr. J.L. Fox, an assistant surgeon on the voyage.\n\nPhoto: \"FI-Bridge 1\" by Hedwig in Washington, Wikimedia Commons, CC BY-SA 3.0 (cropped and toned), https://commons.wikimedia.org/wiki/File:FI-Bridge_1.jpg\nSource: Washington State Archives, Guide to the Records of the Washington State Toll Bridge Authority, https://www.sos.wa.gov/sites/default/files/2022-05/Washington-Toll-Bridge-Authority-1937-1977.pdf\nSource: Tacoma Public Library Northwest Room, Richards Studio D79525-3 (Fox Island bridge construction, 1953), https://tpl.accesstomemory.org/d79525-3\nSource: Pierce County, Gig Harbor Community Plan (history of the Peninsula and Fox Island), https://www.piercecountywa.gov/DocumentCenter/View/38486/ADOPTED-Gig-Harbor-Community-Plan\nSource: The Bridge Guy, \"What's up with the Fox Island Bridge?\", https://thebridgeguy.org/2022/02/whats-up-with-the-fox-island-bridge/\n\nA Harbor News Through Time report, presented by USA Wrap Co.\n\nDid you ever pay the toll, or ride the old ferry? Tell us your best Fox Island Bridge memory",
+        "brand": "Harbor News",
+        "family": "Harbor News",
+        "network": "news",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-29",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-29T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/h177.jpg",
+        "video": null
+      },
+      {
+        "id": "SJ031",
+        "group_id": "SJ031",
+        "title": "Typographic card: Quick answers FAQ (no photo)",
+        "caption": "Quick answers about Puff Pods:\n\nWhat fits? A preroll, cigar, or cigarette.\nRechargeable? Yes.\nFinal size? Smaller than the current prototype. Founders get the production unit.\nCan I get one? Founder reservations are open. Payment isn't live yet.\n\nGot another question? Drop it in the comments. \ud83d\udc47\n\nFounder reservations are open at https://savajay.com/fb. Reservations only; payment isn't live yet.\n21+ only. For legal use only. Patent pending.\n\n#PuffPods #Savajay #PocketGadget #CigarLife #EDC #PatentPending",
+        "brand": "Savajay",
+        "family": "Savajay",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-29",
+        "planned_time": "4:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-29T16:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/sj031.jpg",
+        "video": null
+      },
+      {
+        "id": "H192",
+        "group_id": "h192-h193",
+        "title": "17 John's Plumbing & Pumps: RAM ProMaster full wrap (real job photo, 4:5)",
+        "caption": "Fresh water, fresh wrap. \ud83d\udca7\n\nFull wrap on a RAM ProMaster for John's Plumbing & Pumps: a splash of water from bumper to bumper, a startled tank mascot you can't unsee, and a QR code right on the side so people can scan it while the van is parked.\n\nOut on South Sound roads, a van like this works every mile it drives.\n\nThinking about wrapping your work van? #usawrapco #vehiclewrap #vanwrap #gigharbor #pnwbusiness #plumbing #fleetwrap",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
+        "planned_date": "2026-11-30",
+        "planned_time": "7:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-30T07:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/h192.jpg",
+        "video": null
+      },
+      {
+        "id": "DW039",
+        "group_id": "dw039-dw040",
+        "title": "Typographic card: Three photos. That's the start. (quote photo checklist, no photo)",
+        "caption": "Thinking about a new deck? Three photos is all it takes to get started:\n\n\u2022 The whole deck, shot from above\n\u2022 Each hatch, step and fitting\n\u2022 The swim platform or bow\n\nText them over and we'll put together a written quote for your boat.\n\nCall/#DekWave #EVADecking #BoatDecking #GigHarbor #PugetSoundBoating #PNWBoating",
+        "brand": "DekWave",
+        "family": "DekWave",
+        "network": "business",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
+        "planned_date": "2026-11-30",
+        "planned_time": "8:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-30T08:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/dw039.jpg",
+        "video": null
+      },
+      {
+        "id": "H178",
+        "group_id": "H178",
+        "title": "Harbor News Through Time: Born From the Flames (Fire District No. 5, 1945)",
+        "caption": "Gig Harbor Through Time: Born From the Flames.\n\nIn the spring of 1944, a fire tore through the north-end waterfront and destroyed several businesses. Gig Harbor had no organized fire department, so neighbors led by John Finholm got together and started one.\n\nBy January 1945, Pierce County Fire Protection District No. 5 was official, an all-volunteer department. The first career hire came in 1973. Today that department is Gig Harbor Fire & Medic One, covering about 54 square miles of the Peninsula, Fox Island and Raft Island from nine stations.\n\nEighty-one years later, it's still neighbors looking out for neighbors. Thank you to every firefighter and medic, volunteer and career, who has answered the call out here.\n\nGraphic: Harbor News typographic illustration (no photo).\nSource: Gig Harbor Fire & Medic One, Department History, https://www.gigharborfire.org/department-history\nSource: Harbor History Museum, \"Memories of a Father\" (2014), http://harborhistorymuseum.blogspot.com/2014/07/memories-of-father.html\nSource: Gig Harbor Fire & Medic One, Milestones Through the Years, https://www.gigharborfire.org/milestones-through-the-years\nSource: The Peninsula Gateway via Firehouse (2018), https://www.firehouse.com/careers-education/news/21021381/gig-harbor-wa-fire-district-recover-recession-finance-staff-firefighters\n\nA Harbor News Through Time report, presented by USA Wrap Co.\n\nDid someone in your family ever volunteer with the Gig Harbor fire department? Tell us their story",
+        "brand": "Harbor News",
+        "family": "Harbor News",
+        "network": "news",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-30",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-30T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/h178.jpg",
+        "video": null
+      },
+      {
+        "id": "X008",
+        "group_id": "X008",
+        "title": "Woods Bee Co Ford Transit Connect honeycomb partial wrap (real job photo; front plate blurred)",
+        "caption": "Buzz-worthy. Honeycomb graphics, a hood bee and bold lettering for Woods Bee Co, local honey on four wheels. Wrapped in Gig Harbor. #vanwrap #fleetgraphics #smallbusiness #pnw",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "X"
+        ],
+        "planned_date": "2026-11-30",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-30T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/x008.jpg",
+        "video": null
+      },
+      {
+        "id": "SJ033",
+        "group_id": "SJ033",
+        "title": "Typographic card: Save the rest. (use-case, no photo)",
+        "caption": "Made for the half you didn't finish.\n\nBreak ran short? Only needed a few pulls? Don't toss the rest or crush it in a pocket.\n\nPress. Drop. Saved. Puff Pods by Savajay puts the ember out and locks in the smell, so the rest is there when you want it.\n\nFounder reservations are open at https://savajay.com/fb. Reservations only; payment isn't live yet.\n21+ only. For legal use only. Patent pending.\n\n#PuffPods #Savajay #PocketGadget #CigarLife #EDC #PatentPending",
+        "brand": "Savajay",
+        "family": "Savajay",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-30",
+        "planned_time": "4:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-30T16:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/sj033.jpg",
+        "video": null
+      },
+      {
+        "id": "DW041",
+        "group_id": "dw041-dw042",
+        "title": "Typographic card: How's it holding up? (review ask, no photo)",
+        "caption": "Already have a DekWave deck? We'd love to hear how it's holding up.\n\nIf you have a minute, a quick Google review means a lot to a small local shop, and a photo of the boat on the water is a bonus:\nhttps://g.page/r/CWkJqhD0Sk-xECA/review\n\nThank you for trusting us with your boat.\n\n#DekWave #EVADecking #BoatDecking #GigHarbor #PugetSoundBoating #PNWBoating",
+        "brand": "DekWave",
+        "family": "DekWave",
+        "network": "business",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
+        "planned_date": "2026-12-01",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-01T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/dw041.jpg",
+        "video": null
+      },
+      {
+        "id": "SJ035",
+        "group_id": "SJ035",
+        "title": "Typographic card: Press. Drop. Saved. (how it works in three words, no photo)",
+        "caption": "Three words, one pocket tube:\n\nPress. The button starts the vacuum.\nDrop. A preroll, cigar, or cigarette goes in.\nSaved. The lid seals and locks in the smell.\n\nPuff Pods by Savajay.\n\nFounder reservations are open at https://savajay.com/fb. Reservations only; payment isn't live yet.\n21+ only. For legal use only. Patent pending.\n\n#PuffPods #Savajay #PressDropSaved #CigarLife #PocketGadget #PatentPending",
+        "brand": "Savajay",
+        "family": "Savajay",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-01",
+        "planned_time": "4:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-01T16:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/sj035.jpg",
+        "video": null
+      },
+      {
+        "id": "H194",
+        "group_id": "h194-h195",
+        "title": "18 Toyota Tacoma color-shift wrap (real job photo, 4:5, plate blurred)",
+        "caption": "Same Tacoma. Brand-new look.\n\nThis one got a full color-shift wrap here at the shop in Gig Harbor. Depending on the light and the angle, it moves between deep purple, blue and teal, so it never looks quite the same twice.\n\nThe factory paint stays underneath, and the whole look is new.\n\nWant a color your truck didn't come in? #usawrapco #colorshift #colorchangewrap #toyotatacoma #gigharbor #gigharborwa #pnw #vinylwrap",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
+        "planned_date": "2026-12-02",
+        "planned_time": "7:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-02T07:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/h194.jpg",
+        "video": null
+      },
+      {
+        "id": "DW043",
+        "group_id": "dw043-dw044",
+        "title": "Typographic card: Your boat. Your look. (colors and patterns, no photo)",
+        "caption": "Your boat. Your look.\n\nEvery DekWave deck is cut and styled to the boat it goes on:\n\n\u2022 Teak-style lines and grooves\n\u2022 Diamond tread\n\u2022 Star and custom inlays\n\u2022 Your logo, routed right in\n\nClassic gray or something bold: what would you put on yours? \ud83d\udc47\n\nCall/#DekWave #EVADecking #BoatDecking #GigHarbor #PugetSoundBoating #PNWBoating",
+        "brand": "DekWave",
+        "family": "DekWave",
+        "network": "business",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
+        "planned_date": "2026-12-02",
+        "planned_time": "8:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-02T08:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/dw043.jpg",
+        "video": null
+      },
+      {
+        "id": "X009",
+        "group_id": "X009",
+        "title": "Xclusive Painting LLC Chevy Express marble + gold full wrap (real job photo; floor scraps cleaned)",
+        "caption": "Solid gold. White marble and metallic gold paint-splash graphics on a full van wrap for Xclusive Painting. Printed and installed in our Gig Harbor shop. #vanwrap #fullwrap #painters #gigharbor",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "X"
+        ],
+        "planned_date": "2026-12-02",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-02T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/x009.jpg",
+        "video": null
+      },
+      {
+        "id": "SJ037",
+        "group_id": "SJ037",
+        "title": "Typographic card: What are you saving? A/B/C comment prompt (no photo)",
+        "caption": "Quick one: what are you saving?\n\nA) Preroll\nB) Cigar\nC) Cigarette\n\nDrop your letter in the comments. \ud83d\udc47 Puff Pods by Savajay fits all three.\n\nFounder reservations are open at https://savajay.com/fb. Reservations only; payment isn't live yet.\n21+ only. For legal use only. Patent pending.\n\n#PuffPods #Savajay #CigarLife #EDC #PocketGadget #PatentPending",
+        "brand": "Savajay",
+        "family": "Savajay",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-02",
+        "planned_time": "4:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-02T16:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/sj037.jpg",
+        "video": null
+      },
+      {
+        "id": "H044",
+        "group_id": "h044-h045",
+        "title": "12 Dahlia Society detail",
+        "caption": "Dahlia art & lettering for the Washington State Dahlia Society trailer. \ud83c\udf38\n\n#usawrapco #vehiclewrap #gigharbor #pnwbusiness #trailerwrap #pnw",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
+        "planned_date": "2026-12-05",
+        "planned_time": "7:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-05T07:00:00-08:00",
+        "status": "Approved",
+        "kind": "plan",
+        "still": "media/scheduled/h044.jpg",
+        "video": null
+      }
+    ],
+    "group_shares": [
+      {
+        "id": "G003",
+        "group_id": "G003",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-25",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-25T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G009",
+        "group_id": "G009",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-25",
+        "planned_time": "11:30 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-25T11:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G010",
+        "group_id": "G010",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-25",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-25T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G072",
+        "group_id": "G072",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-25",
+        "planned_time": "1:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-25T13:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G012",
+        "group_id": "G012",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-26",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-26T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G014",
+        "group_id": "G014",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-26",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-26T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G008",
+        "group_id": "G008",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-26",
+        "planned_time": "12:30 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-26T12:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G007",
+        "group_id": "G007",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-27",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-27T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G004",
+        "group_id": "G004",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-27",
+        "planned_time": "11:30 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-27T11:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G005",
+        "group_id": "G005",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-27",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-27T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G006",
+        "group_id": "G006",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-27",
+        "planned_time": "12:30 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-27T12:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G015",
+        "group_id": "G015",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-29",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-29T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G073",
+        "group_id": "G073",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-29",
+        "planned_time": "11:30 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-29T11:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G074",
+        "group_id": "G074",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-29",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-29T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G075",
+        "group_id": "G075",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-29",
+        "planned_time": "12:30 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-29T12:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G017",
+        "group_id": "G017",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-30",
+        "planned_time": "11:45 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-30T11:45:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G076",
+        "group_id": "G076",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-30",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-30T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G018",
+        "group_id": "G018",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-30",
+        "planned_time": "12:30 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-30T12:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G077",
+        "group_id": "G077",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-11-30",
+        "planned_time": "1:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-11-30T13:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G019",
+        "group_id": "G019",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-01",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-01T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G079",
+        "group_id": "G079",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-01",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-01T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G080",
+        "group_id": "G080",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-01",
+        "planned_time": "1:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-01T13:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G081",
+        "group_id": "G081",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-01",
+        "planned_time": "1:30 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-01T13:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G022",
+        "group_id": "G022",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-02",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-02T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G023",
+        "group_id": "G023",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-02",
+        "planned_time": "11:30 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-02T11:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G024",
+        "group_id": "G024",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-02",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-02T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G083",
+        "group_id": "G083",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-02",
+        "planned_time": "1:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-02T13:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G026",
+        "group_id": "G026",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-03",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-03T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G028",
+        "group_id": "G028",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-03",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-03T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G029",
+        "group_id": "G029",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-03",
+        "planned_time": "12:30 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-03T12:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G084",
+        "group_id": "G084",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-03",
+        "planned_time": "1:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-03T13:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G030",
+        "group_id": "G030",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-04",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-04T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G031",
+        "group_id": "G031",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-04",
+        "planned_time": "11:30 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-04T11:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G032",
+        "group_id": "G032",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-04",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-04T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G033",
+        "group_id": "G033",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-04",
+        "planned_time": "12:30 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-04T12:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G034",
+        "group_id": "G034",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-06",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-06T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G085",
+        "group_id": "G085",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-06",
+        "planned_time": "11:30 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-06T11:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G086",
+        "group_id": "G086",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-06",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-06T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G087",
+        "group_id": "G087",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-06",
+        "planned_time": "12:30 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-06T12:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G036",
+        "group_id": "G036",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-07",
+        "planned_time": "11:45 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-07T11:45:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G088",
+        "group_id": "G088",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-07",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-07T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G037",
+        "group_id": "G037",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-07",
+        "planned_time": "12:30 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-07T12:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G089",
+        "group_id": "G089",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-07",
+        "planned_time": "1:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-07T13:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G038",
+        "group_id": "G038",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-08",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-08T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G090",
+        "group_id": "G090",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-08",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-08T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G091",
+        "group_id": "G091",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-08",
+        "planned_time": "1:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-08T13:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G092",
+        "group_id": "G092",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-08",
+        "planned_time": "1:30 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-08T13:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G041",
+        "group_id": "G041",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-09",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-09T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G042",
+        "group_id": "G042",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-09",
+        "planned_time": "11:30 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-09T11:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G043",
+        "group_id": "G043",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-09",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-09T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G093",
+        "group_id": "G093",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-09",
+        "planned_time": "1:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-09T13:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G045",
+        "group_id": "G045",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-10",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-10T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G047",
+        "group_id": "G047",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-10",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-10T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G048",
+        "group_id": "G048",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-10",
+        "planned_time": "12:30 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-10T12:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G094",
+        "group_id": "G094",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-10",
+        "planned_time": "1:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-10T13:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G049",
+        "group_id": "G049",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-11",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-11T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G050",
+        "group_id": "G050",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-11",
+        "planned_time": "11:30 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-11T11:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G051",
+        "group_id": "G051",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-11",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-11T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G052",
+        "group_id": "G052",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-11",
+        "planned_time": "12:30 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-11T12:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G053",
+        "group_id": "G053",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-13",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-13T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G055",
+        "group_id": "G055",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-14",
+        "planned_time": "11:45 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-14T11:45:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G056",
+        "group_id": "G056",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-14",
+        "planned_time": "12:30 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-14T12:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G057",
+        "group_id": "G057",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-15",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-15T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G095",
+        "group_id": "G095",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-15",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-15T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G060",
+        "group_id": "G060",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-16",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-16T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G061",
+        "group_id": "G061",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-16",
+        "planned_time": "11:30 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-16T11:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G062",
+        "group_id": "G062",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-16",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-16T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G096",
+        "group_id": "G096",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-16",
+        "planned_time": "1:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-16T13:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G064",
+        "group_id": "G064",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-17",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-17T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G066",
+        "group_id": "G066",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-17",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-17T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G067",
+        "group_id": "G067",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-17",
+        "planned_time": "12:30 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-17T12:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G097",
+        "group_id": "G097",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-17",
+        "planned_time": "1:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-17T13:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G068",
+        "group_id": "G068",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-18",
+        "planned_time": "11:00 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-18T11:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G069",
+        "group_id": "G069",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-18",
+        "planned_time": "11:30 AM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-18T11:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G070",
+        "group_id": "G070",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-18",
+        "planned_time": "12:00 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-18T12:00:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      },
+      {
+        "id": "G071",
+        "group_id": "G071",
+        "title": "Group share of that week's newest feed post",
+        "caption": "",
+        "brand": "USA Wrap Co",
+        "family": "USA Wrap Co",
+        "network": "business",
+        "platforms": [
+          "Facebook"
+        ],
+        "planned_date": "2026-12-18",
+        "planned_time": "12:30 PM PT",
+        "planned_tz": "PT",
+        "planned_at": "2026-12-18T12:30:00-08:00",
+        "status": "Approved",
+        "kind": "group-share",
+        "still": null,
+        "video": null
+      }
+    ],
+    "counts": {
+      "ready": 4,
+      "planned": 37,
+      "group_shares": 76,
+      "videos": 4
+    }
+  }
 }

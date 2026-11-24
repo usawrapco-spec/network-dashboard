@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Build a private scheduled-post queue for the Grok Page preview.
+"""Build the scheduled-post queue.
 
-Writes gitignored files under dashboard/private/. Never called into data.json
-or GitHub Pages. Read-only on Big Helper's content-plan.csv.
+Writes a gitignored full queue under dashboard/private/ (for the private
+Grok Page mirror) and an allowlisted public payload plus stills and small
+720p preview videos under dashboard/media/scheduled/ and scheduled.json
+for the GitHub Pages dashboard. Read-only on Big Helper's content-plan.csv.
 """
 
 from __future__ import annotations
@@ -31,6 +33,20 @@ PRIVATE = HERE / "private"
 CANVAS_ID = "03805b8e-a489-4caa-b205-b683ab224b22"
 CANVAS_TITLE = "Map Desk – Scheduled posts"
 STILLS = PRIVATE / "stills"
+PUBLIC_MEDIA = HERE / "media" / "scheduled"
+PUBLIC_JSON = HERE / "scheduled.json"
+MAX_VIDEO_BYTES = 10 * 1024 * 1024
+
+PHONE_RE = re.compile(
+    r"(?:\+?1[\s.-]?)?(?:\(?\d{3}\)?[\s.-]?)\d{3}[\s.-]\d{4}"
+)
+NAME_RE = re.compile(r"\b(Chance Wallace|Chance the Wrapper|Chance|Wallace)\b", re.I)
+EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
+STATUS_PUBLIC = {
+    "Ready to post": "Ready",
+    "Approved": "Approved",
+    "Awaiting OK": "Awaiting OK",
+}
 
 NEWS_BRANDS = (
     "map desk", "mapdesk", "harbor news", "harbornews", "quint valley", "quintvalley",
@@ -415,7 +431,239 @@ def plan_items(logged: set[str], fetched_at: datetime) -> tuple[list[dict[str, A
     return page_rows, group_rows
 
 
-def write_scheduled_queue(fetched_at: Optional[datetime] = None) -> Path:
+
+def sanitize_public(text: Optional[str]) -> str:
+    if not text:
+        return ""
+    text = PHONE_RE.sub("", text)
+    text = NAME_RE.sub("", text)
+    text = EMAIL_RE.sub("", text)
+    text = re.sub(r"/workspace\S+", "", text)
+    text = re.sub(r"https?://(?:www\.)?linkedin\.com/in/\S+", "", text, flags=re.I)
+    text = re.sub(r"(?im)^\s*(call|text|phone|tel)\.?\s*[:\-–]?\s*$", "", text)
+    text = re.sub(r"(?i)\b(call|text)\s*\.?\s*(?=\n|#|$)", "", text)
+    text = re.sub(r"[ \t]{2,}", " ", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip(" -|,;:.")
+
+
+def normalize_channel(channel: str) -> str:
+    c = (channel or "").strip()
+    low = c.lower()
+    if "youtube" in low:
+        return "YouTube"
+    if low == "x" or low.startswith("x ") or "twitter" in low:
+        return "X"
+    if "instagram" in low:
+        return "Instagram"
+    if "linkedin" in low:
+        return "LinkedIn"
+    if "facebook" in low:
+        return "Facebook"
+    return c or "Unknown"
+
+
+def copy_public_still(src: Optional[str], dest_name: str) -> Optional[str]:
+    if not src:
+        return None
+    path = Path(src)
+    if not path.is_file() or not dest_name:
+        return None
+    PUBLIC_MEDIA.mkdir(parents=True, exist_ok=True)
+    dest = PUBLIC_MEDIA / dest_name
+    if path.resolve() != dest.resolve():
+        try:
+            shutil.copy2(path, dest)
+        except Exception:
+            still = make_still(path, dest)
+            if not still:
+                return None
+    return f"media/scheduled/{dest_name}" if dest.is_file() else None
+
+
+def copy_public_video(src: Optional[str], dest_name: str) -> Optional[str]:
+    """Copy a preview MP4 if it is already <= 10 MB; otherwise try a compact 720p encode."""
+    if not src:
+        return None
+    path = Path(src)
+    if not path.is_file() or path.suffix.lower() not in {".mp4", ".webm", ".mov"}:
+        return None
+    PUBLIC_MEDIA.mkdir(parents=True, exist_ok=True)
+    dest = PUBLIC_MEDIA / dest_name
+    size = path.stat().st_size
+    try:
+        if size <= MAX_VIDEO_BYTES:
+            shutil.copy2(path, dest)
+        else:
+            cmd = [
+                "ffmpeg", "-y", "-i", str(path),
+                "-vf", "scale='min(720,iw)':-2",
+                "-c:v", "libx264", "-pix_fmt", "yuv420p",
+                "-crf", "28", "-preset", "veryfast",
+                "-c:a", "aac", "-b:a", "96k",
+                "-movflags", "+faststart",
+                str(dest),
+            ]
+            subprocess.run(cmd, check=True, capture_output=True, timeout=120)
+    except Exception:
+        if dest.exists():
+            dest.unlink()
+        return None
+    if not dest.is_file() or dest.stat().st_size > MAX_VIDEO_BYTES:
+        if dest.exists():
+            dest.unlink()
+        return None
+    return f"media/scheduled/{dest_name}"
+
+
+def public_item(item: dict[str, Any], *, allow_video: bool) -> Optional[dict[str, Any]]:
+    status = STATUS_PUBLIC.get(item.get("status") or "")
+    if not status:
+        return None
+    still_name = item.get("still_name") or (f"{slugify(item.get('id') or 'item')}.jpg")
+    still = copy_public_still(item.get("still"), still_name)
+    video = None
+    if allow_video:
+        video = copy_public_video(item.get("preview_video"), f"{slugify(item.get('id') or 'item')}-720.mp4")
+    platforms = item.get("platforms") or ([item.get("platform")] if item.get("platform") else [])
+    platforms = [normalize_channel(p) for p in platforms if p]
+    # Deduplicate, keep order
+    seen = set()
+    plat = []
+    for p in platforms:
+        if p not in seen:
+            seen.add(p)
+            plat.append(p)
+    return {
+        "id": item.get("id"),
+        "group_id": item.get("id"),
+        "title": sanitize_public(item.get("title") or item.get("id") or "Scheduled post")[:160],
+        "caption": sanitize_public(item.get("caption") or ""),
+        "brand": item.get("brand"),
+        "family": item.get("family") or item.get("brand"),
+        "network": item.get("network") or "news",
+        "platforms": plat,
+        "planned_date": item.get("planned_date") or "",
+        "planned_time": item.get("planned_time") or "",
+        "planned_tz": item.get("planned_tz") or "PT",
+        "planned_at": item.get("planned_at"),
+        "status": status,
+        "kind": item.get("kind") or "plan",
+        "still": still,
+        "video": video,
+    }
+
+
+def merge_public_twins(items: list[dict[str, Any]], private_rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Collapse FB/IG/X twins of the same creative into one public item."""
+    keys = {}
+    for raw in private_rows:
+        pid = raw.get("id")
+        preview = (raw.get("preview_key") or "").strip().lower()
+        title = (raw.get("title") or "").strip().lower()
+        key = (
+            raw.get("planned_date") or "",
+            re.sub(r"\s+", " ", (raw.get("planned_time") or "").lower()),
+            (raw.get("brand") or "").lower(),
+            preview or title,
+        )
+        keys[pid] = key
+    buckets: dict[tuple, dict[str, Any]] = {}
+    order: list[tuple] = []
+    for item in items:
+        key = keys.get(item.get("id")) or (
+            item.get("planned_date") or "",
+            item.get("planned_time") or "",
+            (item.get("brand") or "").lower(),
+            (item.get("title") or "").lower(),
+        )
+        if key not in buckets:
+            buckets[key] = dict(item)
+            buckets[key]["platforms"] = list(item.get("platforms") or [])
+            order.append(key)
+        else:
+            cur = buckets[key]
+            for p in item.get("platforms") or []:
+                if p not in cur["platforms"]:
+                    cur["platforms"].append(p)
+            if item.get("still") and not cur.get("still"):
+                cur["still"] = item["still"]
+            if item.get("video") and not cur.get("video"):
+                cur["video"] = item["video"]
+            if item.get("caption") and len(item["caption"]) > len(cur.get("caption") or ""):
+                cur["caption"] = item["caption"]
+            ids = [cur.get("id"), item.get("id")]
+            cur["group_id"] = "-".join(sorted({i.lower() for i in ids if i}))
+    return [buckets[k] for k in order]
+
+
+FORBIDDEN_PUBLIC_KEYS = {
+    "owner", "phone_flag", "notes", "source", "status_detail", "preview_key",
+    "qa", "post_type", "preview_video", "still_name",
+}
+
+
+def audit_public_payload(payload: dict[str, Any]) -> None:
+    blob = json.dumps(payload)
+    if PHONE_RE.search(blob) or NAME_RE.search(blob) or "/workspace" in blob or "linkedin.com/in" in blob.lower():
+        raise ValueError("public scheduled payload failed the privacy allowlist")
+    for collection in (payload.get("items") or [], payload.get("group_shares") or []):
+        for item in collection:
+            bad = FORBIDDEN_PUBLIC_KEYS.intersection(item)
+            if bad:
+                raise ValueError(f"public scheduled item {item.get('id')} has forbidden keys: {bad}")
+
+
+def write_public_queue(private_payload: dict[str, Any], fetched_at: datetime) -> dict[str, Any]:
+    PUBLIC_MEDIA.mkdir(parents=True, exist_ok=True)
+    # Clear previous public media, then rewrite from the current queue.
+    for old in PUBLIC_MEDIA.glob("*"):
+        if old.is_file():
+            old.unlink()
+    ready = []
+    for item in private_payload.get("ready") or []:
+        pub = public_item(item, allow_video=True)
+        if pub:
+            ready.append(pub)
+    planned = []
+    for item in private_payload.get("planned") or []:
+        pub = public_item(item, allow_video=False)
+        if pub:
+            planned.append(pub)
+    planned = merge_public_twins(planned, private_payload.get("planned") or [])
+    shares = []
+    for item in private_payload.get("group_shares") or []:
+        pub = public_item(item, allow_video=False)
+        if pub:
+            pub["caption"] = ""
+            pub["still"] = None
+            pub["video"] = None
+            shares.append(pub)
+    payload = {
+        "generated_at": fetched_at.isoformat(),
+        "generated_at_pt": fetched_at.strftime("%Y-%m-%d %-I:%M %p PT"),
+        "timezone": "America/Los_Angeles",
+        "items": ready + planned,
+        "group_shares": shares,
+        "counts": {
+            "ready": len(ready),
+            "planned": len(planned),
+            "group_shares": len(shares),
+            "videos": sum(1 for i in ready + planned if i.get("video")),
+        },
+    }
+    audit_public_payload(payload)
+    PUBLIC_JSON.write_text(json.dumps(payload, indent=2) + "\n")
+    print(
+        f"Wrote public scheduled queue: {payload['counts']['ready']} ready, "
+        f"{payload['counts']['planned']} planned, "
+        f"{payload['counts']['group_shares']} group shares, "
+        f"{payload['counts']['videos']} video(s) → {PUBLIC_JSON}"
+    )
+    return payload
+
+
+def write_scheduled_queue(fetched_at: Optional[datetime] = None) -> dict[str, Any]:
     fetched_at = fetched_at or now_pt()
     PRIVATE.mkdir(parents=True, exist_ok=True)
     STILLS.mkdir(parents=True, exist_ok=True)
@@ -459,7 +707,7 @@ def write_scheduled_queue(fetched_at: Optional[datetime] = None) -> Path:
         f"{payload['counts']['planned']} planned, "
         f"{payload['counts']['group_shares']} group shares → {out}"
     )
-    return out
+    return write_public_queue(payload, fetched_at)
 
 
 if __name__ == "__main__":

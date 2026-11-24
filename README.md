@@ -41,4 +41,4 @@ To collect without publishing:
 python3 /workspace/marketing/social/video-news-network/dashboard/collect.py
 ```
 
-This public site lists published posts only. Scheduled drafts are written to a gitignored `private/` folder by `collect.py` / `scheduled.py` and shown on a private Grok Page, not on GitHub Pages.
+The public site has a Posts tab (one row per creative, with per-platform stats), per-channel tabs, and a Scheduled tab for upcoming posts that have passed QA or are approved. collect.py writes an allowlisted `scheduled.json` plus stills and small 720p preview videos under `media/scheduled/`. Unpublished drafts with phones, owner fields, or internal notes stay in the gitignored `private/` folder and are not published.

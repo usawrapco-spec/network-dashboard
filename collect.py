@@ -795,8 +795,14 @@ def collect_from_log() -> tuple[list[dict], set[str]]:
                 exp = exp + timedelta(hours=24)
                 expires_at = iso_pt(exp)
                 story_live = now_pt() < exp
+            action_blob = action + " " + (link_raw or "")
+            episode_m = re.search(r"\b((?:mdm|mdw|mdp)[-a-z0-9]+)\b", action_blob, re.I)
+            plan_ids = [x.upper() for x in re.findall(r"\b((?:H|DW|SJ|MN|X|QVN|G)\d{3,})\b", action_blob, re.I)]
             posts_by_url[key] = {
-                "id": key if key.startswith("story:") else None,
+                "id": key if str(key).startswith("story:") else None,
+                "episode": (episode_m.group(1).lower() if episode_m else None),
+                "plan_id": plan_ids[0] if plan_ids else None,
+                "plan_ids": plan_ids,
                 "date": (when.date().isoformat() if when else (row.get("date") or "")),
                 "time_pt": (when.strftime("%-I:%M %p") if when else (row.get("time_pt") or "")),
                 "datetime_pt": iso_pt(when) if when else None,
@@ -812,6 +818,142 @@ def collect_from_log() -> tuple[list[dict], set[str]]:
             }
 
     return list(posts_by_url.values()), deleted_urls
+
+
+
+def is_group_share_url(url: str) -> bool:
+    return bool(re.search(r"facebook\.com/groups/\d+", url or "", re.I))
+
+
+def is_posted_group_share(action: str, link: str) -> bool:
+    a = lower(action)
+    if re.search(r"\bblocked\b|nothing posted|did not post|not posted", a):
+        return False
+    if not (is_group_share_url(link) or "facebook.com/groups/" in lower(link or "")):
+        # Allow an explicit share action even if the URL is only in the action text.
+        if not re.search(r"facebook\.com/groups/\d+", action or "", re.I):
+            return False
+    return bool(re.search(
+        r"(^group share\b|^shared page post to group\b|^shared .+ to group\b|\bgroup share\b.*\b(posted|published|shared)\b)",
+        a,
+    )) or bool(re.match(r"^(group share|shared page post)", a))
+
+
+def group_name_from_row(row: dict) -> str:
+    """Use a group name only when it already appears on the activity-log row, not from plan notes."""
+    biz = (row.get("business_or_person") or "").strip()
+    if not biz:
+        return ""
+    if is_own_brand(biz):
+        return ""
+    if NAME_RE.search(biz):
+        return ""
+    return sanitize(biz)
+
+
+def collect_posted_group_shares() -> list[dict]:
+    """Posted Facebook group shares, with public links, for the Facebook tab."""
+    plan_meta: dict[str, dict] = {}
+    plan_by_date_link: list[dict] = []
+    if Path("/workspace/marketing/social/content-plan.csv").exists():
+        with Path("/workspace/marketing/social/content-plan.csv").open() as f:
+            for row in csv.DictReader(f):
+                if (row.get("channel") or "").strip().lower() != "facebook group":
+                    continue
+                if not (row.get("status") or "").startswith("Posted"):
+                    continue
+                pid = (row.get("id") or "").strip()
+                rec = {
+                    "id": pid,
+                    "brand": re.sub(r"\s*\(@[^)]+\)\s*$", "", row.get("brand") or "").strip() or "USA Wrap Co",
+                    "title": sanitize((row.get("asset") or "").strip()) or "Group share",
+                    "date": (row.get("date") or "").strip(),
+                }
+                if pid:
+                    plan_meta[pid.upper()] = rec
+                plan_by_date_link.append(rec)
+
+    posts: list[dict] = []
+    seen_links: set[str] = set()
+    if not ACTIVITY_LOG.exists():
+        return posts
+    with ACTIVITY_LOG.open() as f:
+        rows = list(csv.DictReader(f))
+    for row in rows:
+        action = row.get("action") or ""
+        link_raw = (row.get("post_link") or "").strip()
+        urls = [u for u in extract_urls(link_raw, action) if is_group_share_url(u)]
+        if not urls and is_group_share_url(link_raw):
+            urls = [link_raw]
+        if not urls:
+            continue
+        if not is_posted_group_share(action, link_raw or (urls[0] if urls else "")):
+            continue
+        # Brand comes from the account or a matching content-plan row, not from the group name.
+        account = (row.get("account_used") or "") + " " + (row.get("business_or_person") or "")
+        brand, family = classify_brand(account + " " + action)
+        blob = action + " " + link_raw
+        plan_ids = [x.upper() for x in re.findall(r"\b(G\d{3,})\b", blob, re.I)]
+        meta = plan_meta.get(plan_ids[0]) if plan_ids else None
+        if not meta:
+            # Match a Posted plan row on the same date when the log omitted the G-id.
+            when = parse_when(row.get("date") or "", row.get("time_pt") or "")
+            date_s = when.date().isoformat() if when else (row.get("date") or "")
+            meta = next((m for m in plan_by_date_link if m.get("date") == date_s), None)
+        if meta:
+            brand = meta.get("brand") or brand
+            family = brand
+            if meta.get("id") and meta["id"].upper() not in plan_ids:
+                plan_ids.append(meta["id"].upper())
+        if not is_own_brand(brand):
+            # If the group is in business_or_person, fall back to a Posted USA Wrap row on that date.
+            if meta and is_own_brand(meta.get("brand") or ""):
+                brand = meta["brand"]
+                family = brand
+            else:
+                continue
+        group_name = group_name_from_row(row)
+        title = "Group share"
+        if meta and meta.get("title"):
+            title = "Group share: " + meta["title"]
+        else:
+            m = re.search(r"group share\s*\(([^)]+)\)", action, re.I)
+            if m:
+                title = "Group share: " + sanitize(m.group(1))
+        when = parse_when(row.get("date") or "", row.get("time_pt") or "")
+        for url in urls:
+            url = canonical_url(url)
+            if url in seen_links:
+                continue
+            seen_links.add(url)
+            pid = plan_ids[0] if plan_ids else None
+            posts.append({
+                "id": f"group-share:{pid or url}",
+                "episode": None,
+                "plan_id": pid,
+                "group_id": (pid or url).lower(),
+                "date": when.date().isoformat() if when else (row.get("date") or ""),
+                "time_pt": when.strftime("%-I:%M %p") if when else (row.get("time_pt") or ""),
+                "datetime_pt": iso_pt(when) if when else None,
+                "brand": brand,
+                "family": family or brand,
+                "network": network_for(family or brand),
+                "platform": "Facebook",
+                "title": title,
+                "group_name": group_name or None,
+                "link": url,
+                "kind": "group-share",
+                "views": None,
+                "likes": None,
+                "comments": None,
+                "shares": None,
+                "impressions": None,
+                "replies": None,
+                "last_updated": iso_pt(when) if when else None,
+                "stats_source": "none",
+                "stats_note": "Group share stats are n/a unless a public count is available.",
+            })
+    return posts
 
 
 def merge_youtube_discoveries(posts: list[dict]) -> list[dict]:
@@ -897,6 +1039,9 @@ def apply_stats(post: dict, stats: dict, prev: Optional[dict], fetched_at: datet
             note = "Stories expire after 24 hours. Views and replies are n/a until an in-account check records a real number."
         out = {
             "id": post.get("id") or prev.get("id"),
+            "episode": post.get("episode") or prev.get("episode"),
+            "plan_id": post.get("plan_id") or prev.get("plan_id"),
+            "group_id": post.get("group_id") or prev.get("group_id"),
             "date": post.get("date") or prev.get("date") or "",
             "time_pt": post.get("time_pt") or prev.get("time_pt") or "",
             "datetime_pt": post.get("datetime_pt") or prev.get("datetime_pt"),
@@ -922,6 +1067,10 @@ def apply_stats(post: dict, stats: dict, prev: Optional[dict], fetched_at: datet
         return out
 
     out = {
+        "id": post.get("id") or prev.get("id") or (canonical_url(post.get("link")) if post.get("link") else None),
+        "episode": post.get("episode") or prev.get("episode"),
+        "plan_id": post.get("plan_id") or prev.get("plan_id"),
+        "group_id": post.get("group_id") or prev.get("group_id"),
         "date": post.get("date") or prev.get("date") or "",
         "time_pt": post.get("time_pt") or prev.get("time_pt") or "",
         "datetime_pt": post.get("datetime_pt") or prev.get("datetime_pt"),
@@ -944,11 +1093,189 @@ def apply_stats(post: dict, stats: dict, prev: Optional[dict], fetched_at: datet
     return out
 
 
+
+def normalize_episode(episode: Optional[str]) -> Optional[str]:
+    if not episode:
+        return None
+    ep = episode.strip().lower()
+    ep = re.sub(r"\.(mp4|mov|webm)$", "", ep)
+    ep = re.sub(r"-(?:9x16|16x9|1x1|4x5|720p?|1080p?)$", "", ep)
+    return ep or None
+
+
+def title_fingerprint(title: str, family: str) -> str:
+    stop = {"the", "a", "an", "to", "in", "of", "and", "for", "on", "at", "plus", "more", "map", "desk", "money", "world", "places", "news"}
+    text = re.sub(r"[^a-z0-9\s]+", " ", (title or "").lower())
+    words = [w for w in text.split() if w and w not in stop]
+    return (re.sub(r"[^a-z0-9]+", "-", (family or "").lower()).strip("-") + ":" + " ".join(words[:5])).strip(":")
+
+
+def plan_twin_map() -> dict[str, str]:
+    """Map a content-plan id to a shared group key for same-day, same-asset twins."""
+    path = Path("/workspace/marketing/social/content-plan.csv")
+    if not path.exists():
+        return {}
+    buckets: dict[tuple, list[str]] = {}
+    with path.open() as f:
+        for row in csv.DictReader(f):
+            pid = (row.get("id") or "").strip()
+            if not pid:
+                continue
+            preview = (row.get("preview") or "").strip().lower()
+            asset = (row.get("asset") or "").strip().lower()
+            key = (
+                (row.get("date") or "").strip(),
+                re.sub(r"\s*\(@[^)]+\)\s*$", "", (row.get("brand") or "")).strip().lower(),
+                preview or asset,
+            )
+            if not key[2]:
+                continue
+            buckets.setdefault(key, []).append(pid)
+    out: dict[str, str] = {}
+    for ids in buckets.values():
+        if len(ids) < 2:
+            # still map singles so plan_id can be the group
+            if ids:
+                out[ids[0].upper()] = ids[0].lower()
+            continue
+        group = "-".join(sorted({i.lower() for i in ids}))
+        for pid in ids:
+            out[pid.upper()] = group
+    return out
+
+
+def keys_from_activity_log() -> dict[str, dict]:
+    """Look up episode / plan ids for a published post URL."""
+    found: dict[str, dict] = {}
+    if not ACTIVITY_LOG.exists():
+        return found
+    with ACTIVITY_LOG.open() as f:
+        for row in csv.DictReader(f):
+            action = row.get("action") or ""
+            link = row.get("post_link") or ""
+            blob = action + " " + link
+            episode_m = re.search(r"\b((?:mdm|mdw|mdp)[-a-z0-9]+)\b", blob, re.I)
+            plan_ids = [x.upper() for x in re.findall(r"\b((?:H|DW|SJ|MN|X|QVN|G)\d{3,})\b", blob, re.I)]
+            if not episode_m and not plan_ids:
+                continue
+            for url in extract_urls(link, action):
+                rec = found.setdefault(canonical_url(url), {"episode": None, "plan_ids": []})
+                if episode_m and not rec["episode"]:
+                    rec["episode"] = normalize_episode(episode_m.group(1))
+                for pid in plan_ids:
+                    if pid not in rec["plan_ids"]:
+                        rec["plan_ids"].append(pid)
+    return found
+
+
+def assign_group_ids(posts: list[dict]) -> None:
+    """Group cross-posts of the same creative (episode, twin plan ids, or title)."""
+    url_meta = keys_from_activity_log()
+    twins = plan_twin_map()
+    for post in posts:
+        if post.get("link"):
+            meta = url_meta.get(canonical_url(post["link"])) or {}
+            if meta.get("episode") and not post.get("episode"):
+                post["episode"] = meta["episode"]
+            if meta.get("plan_ids"):
+                merged = list(dict.fromkeys((post.get("plan_ids") or []) + meta["plan_ids"]))
+                post["plan_ids"] = merged
+                post["plan_id"] = post.get("plan_id") or (merged[0] if merged else None)
+        post["episode"] = normalize_episode(post.get("episode"))
+        if post.get("episode"):
+            post["group_id"] = post["episode"]
+        elif not post.get("group_id"):
+            if post.get("plan_id") and post["plan_id"].upper() in twins:
+                post["group_id"] = twins[post["plan_id"].upper()]
+            elif post.get("plan_ids"):
+                mapped = [twins[i] for i in post["plan_ids"] if i.upper() in twins]
+                post["group_id"] = mapped[0] if mapped else post["plan_ids"][0].lower()
+
+    # Cluster remaining posts by brand + close dates + similar titles.
+    grouped = [p for p in posts if p.get("group_id")]
+    ungrouped = [p for p in posts if not p.get("group_id")]
+    # Index fingerprints of already grouped posts so discoveries can join them
+    fp_groups: dict[str, str] = {}
+    for post in grouped:
+        fp = title_fingerprint(post.get("title") or "", post.get("family") or post.get("brand") or "")
+        if fp:
+            fp_groups.setdefault(fp, post["group_id"])
+
+    used: set[int] = set()
+    for i, post in enumerate(ungrouped):
+        if i in used:
+            continue
+        fp = title_fingerprint(post.get("title") or "", post.get("family") or post.get("brand") or "")
+        if fp in fp_groups:
+            post["group_id"] = fp_groups[fp]
+            used.add(i)
+            continue
+        family = post.get("family") or post.get("brand") or ""
+        date = post.get("date") or ""
+        members = [post]
+        idxs = [i]
+        for j, other in enumerate(ungrouped):
+            if j <= i or j in used:
+                continue
+            if (other.get("family") or other.get("brand") or "") != family:
+                continue
+            od = other.get("date") or ""
+            if date and od and abs((int(date.replace("-", "") or 0) - int(od.replace("-", "") or 0))) > 1:
+                # allow a 1-day window without going wild; compare ISO dates
+                try:
+                    from datetime import date as _date
+                    d1 = _date.fromisoformat(date)
+                    d2 = _date.fromisoformat(od)
+                    if abs((d1 - d2).days) > 1:
+                        continue
+                except ValueError:
+                    continue
+            ofp = title_fingerprint(other.get("title") or "", family)
+            if fp and ofp and (fp == ofp or fp.split(":")[-1][:24] == ofp.split(":")[-1][:24] or fp.split(":")[-1].split()[:3] == ofp.split(":")[-1].split()[:3]):
+                members.append(other)
+                idxs.append(j)
+        if post.get("kind") == "group-share":
+            prev = prev_map.get(post.get("id") or (canonical_url(post.get("link")) if post.get("link") else "")) or {}
+            enriched.append({
+                **{k: post.get(k) for k in (
+                    "id", "episode", "plan_id", "group_id", "date", "time_pt", "datetime_pt",
+                    "brand", "family", "network", "platform", "title", "group_name", "link", "kind",
+                )},
+                "views": post.get("views") if post.get("views") is not None else prev.get("views"),
+                "likes": post.get("likes") if post.get("likes") is not None else prev.get("likes"),
+                "comments": None,
+                "shares": None,
+                "impressions": None,
+                "replies": None,
+                "last_updated": iso_pt(fetched_at),
+                "stats_source": "none",
+                "stats_note": post.get("stats_note") or "Group share stats are n/a unless a public count is available.",
+            })
+            continue
+        if post.get("kind") == "story":
+            gid = "story:" + slugish(family) + ":" + (date or "undated")
+        else:
+            gid = slugish((post.get("title") or "post")[:40]) + ":" + (date or "undated")
+            if family:
+                gid = slugish(family) + ":" + gid
+        for m, ix in zip(members, idxs):
+            m["group_id"] = gid
+            used.add(ix)
+            fp_groups.setdefault(title_fingerprint(m.get("title") or "", family), gid)
+
+
+def slugish(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", (text or "").lower()).strip("-") or "item"
+
+
 def empty_bucket() -> dict:
-    return {"posts": 0, "stories": 0, "views": 0, "likes": 0, "comments": 0, "shares": 0, "views_known": 0, "likes_known": 0}
+    return {"posts": 0, "stories": 0, "group_shares": 0, "views": 0, "likes": 0, "comments": 0, "shares": 0, "views_known": 0, "likes_known": 0}
 
 
 def add_to(bucket: dict, post: dict) -> None:
+    if post.get("kind") == "group-share":
+        bucket["group_shares"] = bucket.get("group_shares", 0) + 1
+        return
     if post.get("kind") == "story":
         bucket["stories"] = bucket.get("stories", 0) + 1
         if post.get("views") is not None:
@@ -1055,6 +1382,18 @@ def main() -> int:
         before = len(posts)
         posts = [p for p in posts if not p.get("link") or canonical_url(p["link"]) not in deleted]
         print(f"  excluded {before - len(posts)} deleted post(s)")
+    group_shares = collect_posted_group_shares()
+    if group_shares:
+        existing = {canonical_url(p["link"]) for p in posts if p.get("link")}
+        added = 0
+        for share in group_shares:
+            if share.get("link") and canonical_url(share["link"]) in existing:
+                continue
+            if deleted and share.get("link") and canonical_url(share["link"]) in deleted:
+                continue
+            posts.append(share)
+            added += 1
+        print(f"  added {added} posted Facebook group share(s)")
 
     posts = merge_youtube_discoveries(posts)
     for p in posts:
@@ -1062,6 +1401,7 @@ def main() -> int:
             p["network"] = network_for(p.get("family") or "")
         if not p.get("kind"):
             p["kind"] = "post"
+    assign_group_ids(posts)
     posts.sort(key=lambda p: p.get("datetime_pt") or p.get("date") or "", reverse=True)
 
     n_stories = sum(1 for p in posts if p.get("kind") == "story")
@@ -1199,11 +1539,15 @@ def main() -> int:
         f"Totals: {totals['posts']} posts, {totals.get('stories', 0)} stories, {totals['views']} views, "
         f"{totals['likes']} likes, YT subs={yt_subscribers}"
     )
+    public_scheduled = None
     try:
         from scheduled import write_scheduled_queue
-        write_scheduled_queue(fetched_at)
+        public_scheduled = write_scheduled_queue(fetched_at)
     except Exception as exc:
         print(f"Scheduled queue write failed (public dashboard still ok): {exc}")
+    if public_scheduled:
+        payload["scheduled"] = public_scheduled
+        DATA_PATH.write_text(json.dumps(payload, indent=2) + "\n")
     return 0
 
 

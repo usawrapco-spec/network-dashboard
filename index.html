@@ -338,6 +338,115 @@
     .badge-live { background: rgba(127, 212, 200, 0.14); color: var(--teal); }
     .badge-expired { background: rgba(232, 237, 245, 0.08); color: var(--text-3); }
 
+    .badge-ready { background: var(--gold-soft); color: var(--gold); }
+    .badge-approved { background: rgba(94, 182, 230, 0.14); color: var(--sky); }
+    .badge-awaiting { background: rgba(240, 228, 66, 0.14); color: var(--sand); }
+    .badge-status {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .group-card, .sched-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 18px 16px;
+      box-shadow: var(--shadow);
+      margin-bottom: 12px;
+    }
+    .group-card h4, .sched-card h4 {
+      margin: 8px 0 4px;
+      font-size: 1.02rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    .group-totals {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      margin: 10px 0 14px;
+      color: var(--text-2);
+      font-size: 0.9rem;
+    }
+    .group-totals strong { color: var(--text); font-variant-numeric: tabular-nums; }
+    .plat-cells {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+    .plat-cell {
+      background: var(--bg-elev);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 10px 10px 8px;
+      min-width: 0;
+    }
+    .plat-cell.empty { opacity: 0.55; }
+    .plat-cell .plat-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .plat-cell .plat-label .icon-wrap { width: 18px; height: 18px; border-radius: 5px; }
+    .plat-cell .plat-label .icon, .plat-cell .plat-label .icon svg { width: 10px; height: 10px; }
+    .plat-cell .metric {
+      color: var(--text-3);
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    .plat-cell .metric strong {
+      display: block;
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+      text-transform: none;
+      letter-spacing: -0.02em;
+      margin-top: 1px;
+    }
+    .sched-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 14px;
+    }
+    .sched-card { margin-bottom: 0; }
+    .sched-card .media {
+      background: #0a0e16;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .sched-card video, .sched-card img.still {
+      display: block;
+      width: 100%;
+      max-height: 420px;
+      object-fit: contain;
+      background: #0a0e16;
+    }
+    .sched-card .caption {
+      white-space: pre-wrap;
+      color: var(--text-2);
+      font-size: 0.85rem;
+      margin: 8px 0 0;
+    }
+    .sched-meta { color: var(--text-3); font-size: 0.8rem; margin: 2px 0; }
+    @media (max-width: 800px) {
+      .plat-cells { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .sched-grid { grid-template-columns: 1fr; }
+      .plat-cells { grid-template-columns: 1fr 1fr; }
+    }
+
     .table-wrap {
       overflow-x: auto;
       border: 1px solid var(--border);
@@ -474,7 +583,7 @@
       <button type="button" data-audience="news">News</button>
       <button type="button" data-audience="business">Local businesses</button>
     </div>
-    <p class="hint" id="status-note">Totals count only numbers a platform actually returns. n/a means missing, not zero. This public page lists published posts only. Scheduled drafts stay on a private preview Page, not here.</p>
+    <p class="hint" id="status-note">Totals count only numbers a platform actually returns. n/a means missing, not zero. Scheduled shows upcoming posts that are ready or approved; each one leaves this list once it is posted.</p>
 
     <div class="platform-cards" id="platform-cards"></div>
 
@@ -540,7 +649,9 @@
       YouTube: `<span class="icon-wrap" aria-hidden="true"><span class="icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="3" stroke="#ffc233" stroke-width="1.8"/><path d="M10 9.5v5l5-2.5-5-2.5Z" fill="#ffc233"/></svg></span></span>`,
       X: `<span class="icon-wrap" aria-hidden="true"><span class="icon"><svg viewBox="0 0 24 24" fill="#f0e442"><path d="M4 4h3.2l5.05 6.7L17.7 4H21l-7.15 8.7L21.2 20h-3.2l-5.4-7.15L7.1 20H4l7.5-9.1L4 4Z"/></svg></span></span>`,
       Facebook: `<span class="icon-wrap" aria-hidden="true"><span class="icon"><svg viewBox="0 0 24 24" fill="#9ec4ff"><path d="M14.5 8.5V6.8c0-.7.5-1 1.2-1H17V3h-2.3C12.2 3 11 4.4 11 6.6v1.9H9v2.7h2V21h3.5v-9.8h2.3l.4-2.7h-2.7Z"/></svg></span></span>`,
-      Instagram: `<span class="icon-wrap" aria-hidden="true"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#c08ae0" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="#c08ae0" stroke="none"/></svg></span></span>`
+      Instagram: `<span class="icon-wrap" aria-hidden="true"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#c08ae0" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="#c08ae0" stroke="none"/></svg></span></span>`,
+      Posts: `<span class="icon-wrap" aria-hidden="true"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#ffc233" stroke-width="1.8"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 13h5"/></svg></span></span>`,
+      Scheduled: `<span class="icon-wrap" aria-hidden="true"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#5eb6e6" stroke-width="1.8"><circle cx="12" cy="13" r="7"/><path d="M12 10v3.5l2 1.5M9 4h6"/></svg></span></span>`
     };
 
     const PLATFORMS = [
@@ -590,7 +701,7 @@
     ];
 
     let DATA = null;
-    let active = "YouTube";
+    let active = "Posts";
     let audience = "all";
     let sortKey = "date";
     let sortDir = "desc";
@@ -604,6 +715,7 @@
       return true;
     }
     function isStory(p) { return p && p.kind === "story"; }
+    function isGroupShare(p) { return p && p.kind === "group-share"; }
 
     function valueOf(post, col) {
       const v = post[col.key];
@@ -612,10 +724,25 @@
       return null;
     }
     function postsFor(platform) {
-      return (DATA.posts || []).filter((p) => p.platform === platform && !isStory(p) && inAudience(p));
+      return (DATA.posts || []).filter((p) => p.platform === platform && !isStory(p) && !isGroupShare(p) && inAudience(p));
+    }
+    function groupSharesFor(platform) {
+      return (DATA.posts || []).filter((p) => p.platform === platform && isGroupShare(p) && inAudience(p));
     }
     function storiesFor(platform) {
       return (DATA.posts || []).filter((p) => p.platform === platform && isStory(p) && inAudience(p));
+    }
+    function scheduledItems() {
+      return ((DATA.scheduled && DATA.scheduled.items) || []).filter(inAudience);
+    }
+    function scheduledShares() {
+      return ((DATA.scheduled && DATA.scheduled.group_shares) || []).filter(inAudience);
+    }
+    const VIEW_TABS = ["Posts", "YouTube", "X", "Facebook", "Instagram", "Scheduled"];
+    function viewsOf(p) {
+      if (!p) return null;
+      if (p.platform === "X") return p.impressions != null ? p.impressions : p.views;
+      return p.views;
     }
     function sumKnown(posts, key, fallback) {
       let total = 0, known = 0;
@@ -692,12 +819,21 @@
       };
     }
 
+    function tabCount(id) {
+      if (id === "Posts") {
+        const ids = new Set((DATA.posts || []).filter((p) => inAudience(p) && !isStory(p)).map((p) => p.group_id || p.link || p.id));
+        return ids.size;
+      }
+      if (id === "Scheduled") return scheduledItems().length;
+      return postsFor(id).length + storiesFor(id).length + (id === "Facebook" ? groupSharesFor(id).length : 0);
+    }
     function renderTabs() {
-      $("tabs").innerHTML = PLATFORMS.map((spec) => {
-        const n = postsFor(spec.id).length + storiesFor(spec.id).length;
-        const selected = active === spec.id;
-        return `<button type="button" role="tab" id="tab-${slug(spec.id)}" data-platform="${spec.id}" aria-selected="${selected}" aria-controls="platform-panel">
-          ${ICONS[spec.id]} ${escapeHtml(spec.id)} <span class="count">${n ? n : (spec.id === "Instagram" && n === 0 ? "soon" : "0")}</span>
+      $("tabs").innerHTML = VIEW_TABS.map((id) => {
+        const n = tabCount(id);
+        const selected = active === id;
+        const soon = id === "Instagram" && n === 0;
+        return `<button type="button" role="tab" id="tab-${slug(id)}" data-platform="${id}" aria-selected="${selected}" aria-controls="platform-panel">
+          ${ICONS[id]} ${escapeHtml(id)} <span class="count">${soon ? "soon" : n}</span>
         </button>`;
       }).join("");
       $("tabs").onclick = (e) => {
@@ -846,7 +982,172 @@
         </div>`;
     }
 
+
+    function groupedPosts(includeStories) {
+      const rows = (DATA.posts || []).filter((p) => inAudience(p) && !isGroupShare(p) && (includeStories ? true : !isStory(p)));
+      const map = new Map();
+      rows.forEach((p) => {
+        const gid = p.group_id || p.link || p.id || (p.brand + ":" + p.date + ":" + p.title);
+        if (!map.has(gid)) {
+          map.set(gid, { id: gid, title: p.title || "Post", brand: p.brand, family: p.family, date: p.date, time_pt: p.time_pt, datetime_pt: p.datetime_pt, kind: p.kind, posts: [] });
+        }
+        const g = map.get(gid);
+        g.posts.push(p);
+        if ((p.title || "").length > (g.title || "").length) g.title = p.title;
+        if (!g.date || (p.date && p.date < g.date)) { g.date = p.date; g.time_pt = p.time_pt; }
+        if (p.datetime_pt && (!g.datetime_pt || p.datetime_pt > g.datetime_pt)) g.datetime_pt = p.datetime_pt;
+        if (p.kind === "story") g.kind = "story";
+      });
+      return [...map.values()].sort((a, b) => {
+        const as = a.datetime_pt || a.date || "";
+        const bs = b.datetime_pt || b.date || "";
+        return as < bs ? 1 : as > bs ? -1 : 0;
+      });
+    }
+    function combinedTotals(group) {
+      let views = 0, vKnown = 0, likes = 0, lKnown = 0;
+      group.posts.forEach((p) => {
+        const v = viewsOf(p);
+        if (v != null) { views += v; vKnown += 1; }
+        if (p.likes != null) { likes += p.likes; lKnown += 1; }
+      });
+      return { views: vKnown ? views : null, likes: lKnown ? likes : null, viewsKnown: vKnown, likesKnown: lKnown };
+    }
+    function platformCell(group, spec) {
+      const p = group.posts.find((x) => x.platform === spec.id);
+      const icon = ICONS[spec.id] || "";
+      if (!p) {
+        return `<div class="plat-cell empty"><div class="plat-label">${icon}<span>${escapeHtml(spec.id)}</span></div><div class="metric">Not posted<strong class="na">—</strong></div></div>`;
+      }
+      const label = p.link
+        ? `<a href="${escapeHtml(p.link)}" target="_blank" rel="noopener">${escapeHtml(spec.id)}</a>`
+        : escapeHtml(spec.id);
+      const metrics = spec.columns.map((c) => `<div class="metric">${escapeHtml(c.label)}<strong>${cell(valueOf(p, c))}</strong></div>`).join("");
+      return `<div class="plat-cell"><div class="plat-label">${icon}<span>${label}</span></div>${metrics}</div>`;
+    }
+    function statusBadge(status) {
+      const key = String(status || "").toLowerCase().replace(/\s+/g, "-");
+      const cls = key === "ready" ? "badge-ready" : key === "awaiting-ok" ? "badge-awaiting" : "badge-approved";
+      return `<span class="badge-status ${cls}">${escapeHtml(status || "")}</span>`;
+    }
+    function renderGroupedPosts() {
+      const feed = groupedPosts(false);
+      const stories = groupedPosts(true).filter((g) => g.kind === "story");
+      const feedHtml = feed.length ? feed.map((g) => {
+        const tot = combinedTotals(g);
+        return `<article class="group-card">
+          <div>${chip(g.brand)}</div>
+          <h4>${escapeHtml(g.title || "Post")}</h4>
+          <div class="meta">${escapeHtml(g.date || "")} ${escapeHtml(g.time_pt || "")} ${g.time_pt ? "PT" : ""}</div>
+          <div class="group-totals"><span><strong>${cell(tot.views)}</strong> combined views</span><span><strong>${cell(tot.likes)}</strong> combined likes</span></div>
+          <div class="plat-cells">${PLATFORMS.map((spec) => platformCell(g, spec)).join("")}</div>
+        </article>`;
+      }).join("") : `<div class="empty"><strong>No posts yet</strong>Nothing in this filter is in the log.</div>`;
+      const storyHtml = stories.length ? `<h3>Stories</h3>` + stories.map((g) => {
+        return `<article class="group-card">
+          <div>${chip(g.brand)} ${storyBadge(g.posts[0] || {})}</div>
+          <h4>${escapeHtml(g.title || "Story")}</h4>
+          <div class="meta">${escapeHtml(g.date || "")} ${escapeHtml(g.time_pt || "")} PT</div>
+          <div class="plat-cells">${PLATFORMS.filter((s) => s.id === "Facebook" || s.id === "Instagram").map((spec) => {
+            const p = g.posts.find((x) => x.platform === spec.id);
+            const icon = ICONS[spec.id];
+            if (!p) return `<div class="plat-cell empty"><div class="plat-label">${icon}<span>${spec.id}</span></div><div class="metric">Not posted<strong class="na">—</strong></div></div>`;
+            return `<div class="plat-cell"><div class="plat-label">${icon}<span>${escapeHtml(spec.id)}</span></div><div class="metric">Views<strong>${cell(p.views)}</strong></div><div class="metric">Replies<strong>${cell(p.replies != null ? p.replies : p.comments)}</strong></div></div>`;
+          }).join("")}</div>
+        </article>`;
+      }).join("") : "";
+      return `<div class="section-head">${ICONS.Posts}<h2>Posts</h2></div>
+        <p class="section-note">Each row is one piece of content. Cross-posts of the same video or graphic are grouped, with stats for each platform beside it. n/a means that platform did not return a number, not zero.</p>
+        ${feedHtml}${storyHtml}`;
+    }
+    function renderScheduled() {
+      const items = scheduledItems().slice().sort((a, b) => {
+        const as = a.planned_at || a.planned_date || "";
+        const bs = b.planned_at || b.planned_date || "";
+        return as < bs ? -1 : as > bs ? 1 : 0;
+      });
+      const shares = scheduledShares();
+      const cards = items.length ? `<div class="sched-grid">${items.map((item) => {
+        const media = item.video
+          ? `<video controls playsinline preload="metadata" poster="${item.still ? escapeHtml(item.still) : ""}" aria-label="Preview of ${escapeHtml(item.title || "scheduled post")}"><source src="${escapeHtml(item.video)}" type="video/mp4"></video>`
+          : (item.still ? `<img class="still" src="${escapeHtml(item.still)}" alt="Preview still of ${escapeHtml(item.title || "scheduled post")}">` : "");
+        const when = [item.planned_date, item.planned_time, item.planned_tz].filter(Boolean).join(" ");
+        return `<article class="sched-card">
+          <div class="media">${media}</div>
+          <div>${chip(item.brand)} ${statusBadge(item.status)}</div>
+          <h4>${escapeHtml(item.title || "Scheduled post")}</h4>
+          <div class="sched-meta">${escapeHtml(when)}</div>
+          <div class="sched-meta">${escapeHtml((item.platforms || []).join(", "))}</div>
+          ${item.caption ? `<p class="caption">${escapeHtml(item.caption)}</p>` : ""}
+        </article>`;
+      }).join("")}</div>` : `<div class="empty"><strong>Nothing waiting</strong>No ready or approved posts are queued in this filter.</div>`;
+      const shareTable = shares.length ? `<h3>Facebook group shares</h3>
+        <p class="section-note">${shares.length} approved group shares of that week's newest feed post. They use the same art as the page post above.</p>
+        <div class="table-wrap"><table><thead><tr><th>Date</th><th>Time</th><th>Brand</th><th>Status</th></tr></thead><tbody>
+        ${shares.map((s) => `<tr><td>${escapeHtml(s.planned_date || "")}</td><td>${escapeHtml((s.planned_time || "") + (s.planned_tz ? " " + s.planned_tz : ""))}</td><td>${chip(s.brand)}</td><td>${statusBadge(s.status)}</td></tr>`).join("")}
+        </tbody></table></div>` : "";
+      return `<div class="section-head">${ICONS.Scheduled}<h2>Scheduled</h2></div>
+        <p class="section-note">Upcoming posts that have passed QA or are approved. Each creative is listed once, with the platforms it will go to. A post leaves this list once it goes live. Preview clips are 720p when a small file is available; otherwise a still is shown.</p>
+        ${cards}${shareTable}`;
+    }
+
+
+    function renderGroupShares(platform) {
+      const rows = groupSharesFor(platform).slice().sort((a, b) => {
+        const as = a.datetime_pt || a.date || "";
+        const bs = b.datetime_pt || b.date || "";
+        return as < bs ? 1 : as > bs ? -1 : 0;
+      });
+      if (!rows.length) return "";
+      const body = rows.map((p) => {
+        const name = p.group_name ? escapeHtml(p.group_name) : "Facebook group";
+        const title = p.link
+          ? `<a href="${escapeHtml(p.link)}" target="_blank" rel="noopener">${name}</a>`
+          : name;
+        return `<tr>
+          <td>${escapeHtml(p.date || "")}${p.time_pt ? `<div class="meta">${escapeHtml(p.time_pt)} PT</div>` : ""}</td>
+          <td>${chip(p.brand)}</td>
+          <td class="title">${title}${p.title && p.title !== "Group share" ? `<div class="meta">${escapeHtml(p.title)}</div>` : ""}${p.stats_note ? `<div class="meta">${escapeHtml(p.stats_note)}</div>` : ""}</td>
+          <td class="num">${cell(p.views)}</td>
+          <td class="num">${cell(p.likes)}</td>
+        </tr>`;
+      }).join("");
+      const cards = rows.map((p) => {
+        const name = p.group_name ? escapeHtml(p.group_name) : "Facebook group";
+        const title = p.link
+          ? `<a href="${escapeHtml(p.link)}" target="_blank" rel="noopener">${name}</a>`
+          : name;
+        return `<article class="post-card">
+          <div>${chip(p.brand)}</div>
+          <h4>${title}</h4>
+          <div class="meta">${escapeHtml(p.date || "")} ${escapeHtml(p.time_pt || "")} PT</div>
+          ${p.title && p.title !== "Group share" ? `<div class="meta">${escapeHtml(p.title)}</div>` : ""}
+          <div class="row-nums cols-2">
+            <div><span>Views</span><strong>${cell(p.views)}</strong></div>
+            <div><span>Reactions</span><strong>${cell(p.likes)}</strong></div>
+          </div>
+        </article>`;
+      }).join("");
+      return `<h3>Group shares</h3>
+        <p class="section-note">Shares of a page post into a Facebook group. Stats are n/a unless a public count is available. Approved shares that have not gone out yet are on the Scheduled tab.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Date</th><th>Brand</th><th>Group</th><th class="num">Views</th><th class="num">Reactions</th></tr></thead>
+            <tbody>${body}</tbody>
+          </table>
+          <div class="mobile-cards">${cards}</div>
+        </div>`;
+    }
+
     function renderPanel() {
+      if (active === "Posts") {
+        $("platform-panel").innerHTML = renderGroupedPosts();
+        return;
+      }
+      if (active === "Scheduled") {
+        $("platform-panel").innerHTML = renderScheduled();
+        return;
+      }
       const posts = postsFor(active);
       const stories = storiesFor(active);
       const note = (DATA.notes && DATA.notes[active]) ? `<p class="section-note">${escapeHtml(DATA.notes[active])}</p>` : "";
@@ -868,7 +1169,8 @@
         ${note}
         ${renderAccounts(active)}
         ${table}
-        ${renderStories(active)}`;
+        ${renderStories(active)}
+        ${renderGroupShares(active)}`;
       $("platform-panel").querySelectorAll("th[data-key]").forEach((th) => {
         th.addEventListener("click", () => {
           if (sortKey === th.dataset.key) sortDir = sortDir === "asc" ? "desc" : "asc";
@@ -882,7 +1184,7 @@
     }
 
     function setActive(platform, updateHash = true) {
-      if (!PLATFORMS.some((p) => p.id === platform)) platform = "YouTube";
+      if (!VIEW_TABS.includes(platform)) platform = "Posts";
       active = platform;
       sortKey = "date";
       sortDir = "desc";
@@ -1017,10 +1319,14 @@
       $("updated").textContent = data.generated_at_pt || formatWhen(data.generated_at);
       const t = data.totals || {};
       const storyBit = t.stories ? `<span><strong>${fmt(t.stories)}</strong> stories</span>` : "";
-      $("overall").innerHTML = `<span><strong>${fmt(t.posts) ?? "0"}</strong> posts</span>${storyBit}<span><strong>${fmt(t.views) ?? "n/a"}</strong> views</span><span><strong>${fmt(t.likes) ?? "n/a"}</strong> likes</span>`;
+      const shareN = t.group_shares || (DATA.posts || []).filter(isGroupShare).length;
+      const shareBit = shareN ? `<span><strong>${fmt(shareN)}</strong> group shares</span>` : "";
+      const schedN = ((data.scheduled && data.scheduled.items) || []).length;
+      const schedBit = schedN ? `<span><strong>${fmt(schedN)}</strong> scheduled</span>` : "";
+      $("overall").innerHTML = `<span><strong>${fmt(t.posts) ?? "0"}</strong> posts</span>${storyBit}${shareBit}${schedBit}<span><strong>${fmt(t.views) ?? "n/a"}</strong> views</span><span><strong>${fmt(t.likes) ?? "n/a"}</strong> likes</span>`;
       const hash = (location.hash || "").replace("#", "").toLowerCase();
-      const fromHash = PLATFORMS.find((p) => slug(p.id) === hash);
-      const start = fromHash ? fromHash.id : (postsFor("YouTube").length ? "YouTube" : (PLATFORMS.find((p) => postsFor(p.id).length) || PLATFORMS[0]).id);
+      const fromHash = VIEW_TABS.find((id) => slug(id) === hash);
+      const start = fromHash || "Posts";
       $("audience").onclick = (e) => {
         const btn = e.target.closest("[data-audience]");
         if (!btn) return;
@@ -1030,7 +1336,7 @@
       setActive(start, !fromHash);
       drawChart(data);
       const notes = Object.entries(data.notes || {}).map(([k, v]) => `<strong>${escapeHtml(k)}:</strong> ${escapeHtml(v)}`).join(" · ");
-      $("footer").innerHTML = (notes ? notes + " · " : "") + "Scheduled drafts are previewed on a private Page, not this public site.";
+      $("footer").innerHTML = (notes ? notes + " · " : "") + "Scheduled lists ready or approved upcoming posts only. A post drops off that list once it is live.";
     }
 
     fetch("data.json?ts=" + Date.now())
