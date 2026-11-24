@@ -8,10 +8,12 @@ This is a GitHub Pages site. There is no build step and no paid host.
 
 ## What it shows
 
-- Totals by brand and by platform (YouTube, X, Facebook)
-- Channel-level YouTube subscribers and X followers
-- A sortable table of every post: date, brand, platform, title, link, views, likes, comments, shares, last updated
-- A growth chart from timestamped snapshots in `stats/`
+The page is organized by social channel. A row of platform cards at the top (YouTube, X, Facebook, Instagram) shows posts, views or impressions, likes or reactions, and followers or subscribers, each with the platform name and an icon. Click a card or a tab to open that channel.
+
+- Inside each channel: account totals per brand (Map Desk @MapDeskNews, Harbor News, Quint Valley News), then that channel's posts, newest first
+- Columns fit the platform: YouTube shows views and likes; X shows impressions, likes, reposts, and replies; Facebook shows views and reactions
+- Instagram reads "Coming soon" until there are live posts
+- A growth chart at the bottom is built from timestamped snapshots in `stats/`
 
 Fields the platform does not expose are shown as **n/a**, not as zero.
 

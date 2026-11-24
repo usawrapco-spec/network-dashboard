@@ -15,14 +15,12 @@
       --panel-2: #16345f;
       --line: #2a4a76;
       --gold: #ffc233;
-      --gold-dim: #c49220;
       --ink: #f4f1e8;
       --muted: #b8c4d6;
       --sky: #5eb6e6;
-      --orange: #f08c22;
-      --violet: #c08ae0;
       --sand: #f0e442;
-      --rose: #e089b0;
+      --violet: #c08ae0;
+      --teal: #7fd4c8;
       --white: #ffffff;
     }
     * { box-sizing: border-box; }
@@ -43,7 +41,7 @@
     header {
       position: sticky;
       top: 0;
-      z-index: 20;
+      z-index: 30;
       display: flex;
       align-items: center;
       gap: 14px;
@@ -71,49 +69,155 @@
       padding: 12px 14px;
       color: var(--muted);
       font-size: 0.92rem;
-      margin: 0 0 18px;
+      margin: 0 0 16px;
     }
-    .grid {
+    .overall {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin: 0 0 14px;
+    }
+    .overall strong { color: var(--white); font-variant-numeric: tabular-nums; }
+
+    .platform-cards {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 12px;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
-    .stat {
+    .plat-card {
+      display: block;
+      width: 100%;
+      text-align: left;
       background: linear-gradient(180deg, var(--panel-2), var(--panel));
       border: 1px solid var(--line);
       border-radius: 14px;
-      padding: 14px 16px;
+      padding: 14px 14px 12px;
+      color: inherit;
+      cursor: pointer;
+      min-height: 44px;
     }
-    .stat .label {
+    .plat-card:hover { border-color: var(--gold); }
+    .plat-card[aria-pressed="true"] {
+      border-color: var(--gold);
+      box-shadow: inset 0 0 0 1px var(--gold);
+    }
+    .plat-card .plat-name {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    .icon {
+      width: 22px;
+      height: 22px;
+      flex: 0 0 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .icon svg { width: 20px; height: 20px; display: block; }
+    .plat-metrics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 10px;
+    }
+    .plat-metrics span {
+      display: block;
       color: var(--muted);
-      font-size: 0.78rem;
-      letter-spacing: 0.08em;
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
     }
-    .stat .value {
+    .plat-metrics strong {
+      display: block;
       font-variant-numeric: tabular-nums;
-      font-size: 1.85rem;
-      font-weight: 700;
+      font-size: 1.15rem;
       color: var(--white);
-      margin-top: 4px;
     }
-    .stat .sub { color: var(--gold); font-size: 0.8rem; margin-top: 2px; }
-    h2 {
-      margin: 28px 0 12px;
-      font-size: 1.05rem;
+    .coming-tag {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #3a2a4a;
+      color: var(--violet);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .tabs {
+      position: sticky;
+      top: 72px;
+      z-index: 25;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 8px 0 12px;
+      margin: 0 0 8px;
+      background: color-mix(in srgb, var(--navy) 86%, transparent);
+      backdrop-filter: blur(8px);
+    }
+    .tabs button {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--panel);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 0.95rem;
+      min-height: 44px;
+      white-space: nowrap;
+    }
+    .tabs button[aria-selected="true"] {
+      background: var(--gold);
+      color: #1a1200;
+      border-color: var(--gold);
+      font-weight: 700;
+    }
+    .tabs button .count {
+      font-variant-numeric: tabular-nums;
+      font-size: 0.8rem;
+      opacity: 0.85;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 8px 0 14px;
+    }
+    .section-head h2 {
+      margin: 0;
+      font-size: 1.2rem;
+      letter-spacing: 0.04em;
+    }
+    h3 {
+      margin: 20px 0 10px;
+      font-size: 0.82rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--gold);
     }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+    .accounts { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
     .card {
       background: var(--panel);
       border: 1px solid var(--line);
       border-radius: 14px;
       padding: 14px 16px;
     }
-    .card h3 { margin: 0 0 8px; font-size: 1rem; }
+    .card h4 { margin: 0 0 2px; font-size: 1rem; }
+    .handle { color: var(--muted); font-size: 0.85rem; margin-bottom: 8px; }
+    .metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 12px; font-variant-numeric: tabular-nums; }
+    .metrics span { color: var(--muted); font-size: 0.78rem; }
+    .metrics strong { display: block; font-size: 1.1rem; }
     .chip {
       display: inline-block;
       padding: 2px 8px;
@@ -123,39 +227,10 @@
       text-transform: uppercase;
       font-weight: 700;
     }
-    .chip.youtube { background: #1a3f66; color: var(--sky); }
-    .chip.x { background: #2a2f3a; color: var(--sand); }
-    .chip.facebook { background: #1b3360; color: #9ec4ff; }
-    .chip.instagram { background: #3a2a4a; color: var(--violet); }
     .chip.map-desk, .chip.map-desk-money, .chip.map-desk-world, .chip.map-desk-places { background: #3a2d0c; color: var(--gold); }
     .chip.harbor-news { background: #2a2040; color: var(--violet); }
-    .chip.quint-valley-news { background: #14363a; color: #7fd4c8; }
-    .metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 12px; font-variant-numeric: tabular-nums; }
-    .metrics span { color: var(--muted); font-size: 0.8rem; }
-    .metrics strong { display: block; font-size: 1.1rem; }
-    .channels { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
-    .channel .handle { color: var(--muted); font-size: 0.85rem; }
-    .filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 0 0 12px;
-    }
-    .filters button {
-      background: var(--panel);
-      color: var(--ink);
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 8px 12px;
-      font-size: 0.9rem;
-      min-height: 40px;
-    }
-    .filters button[aria-pressed="true"] {
-      background: var(--gold);
-      color: #1a1200;
-      border-color: var(--gold);
-      font-weight: 700;
-    }
+    .chip.quint-valley-news { background: #14363a; color: var(--teal); }
+
     .table-wrap {
       overflow-x: auto;
       border: 1px solid var(--line);
@@ -163,11 +238,9 @@
       background: var(--panel);
       -webkit-overflow-scrolling: touch;
     }
-    table { width: 100%; border-collapse: collapse; min-width: 760px; }
+    table { width: 100%; border-collapse: collapse; min-width: 640px; }
     th, td { padding: 10px 12px; text-align: left; vertical-align: top; }
     th {
-      position: sticky;
-      top: 0;
       background: #143056;
       color: var(--gold);
       font-size: 0.75rem;
@@ -181,10 +254,10 @@
     th[aria-sort="descending"]::after { content: " \25BC"; }
     td { border-top: 1px solid var(--line); font-size: 0.95rem; }
     td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
-    td.title { max-width: 340px; }
+    td.title { max-width: 420px; }
     tr:hover td { background: color-mix(in srgb, var(--panel-2) 70%, transparent); }
     .na { color: var(--muted); }
-    .updated { color: var(--muted); font-size: 0.8rem; white-space: nowrap; }
+    .updated { color: var(--muted); font-size: 0.8rem; }
     .mobile-cards { display: none; }
     .post-card {
       background: var(--panel);
@@ -194,10 +267,21 @@
       margin-bottom: 10px;
     }
     .post-card .meta { color: var(--muted); font-size: 0.85rem; margin: 4px 0 8px; }
-    .row-nums { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 8px; }
+    .row-nums { display: grid; gap: 8px; margin-top: 8px; }
+    .row-nums.cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .row-nums.cols-4 { grid-template-columns: repeat(4, 1fr); }
     .row-nums div { background: #0c1d36; border-radius: 8px; padding: 8px; text-align: center; }
     .row-nums span { display: block; color: var(--muted); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; }
     .row-nums strong { font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+    .empty {
+      background: var(--panel);
+      border: 1px dashed var(--line);
+      border-radius: 14px;
+      padding: 28px 18px;
+      text-align: center;
+      color: var(--muted);
+    }
+    .empty strong { display: block; color: var(--gold); font-size: 1.1rem; margin-bottom: 6px; }
     #chart-wrap {
       background: var(--panel);
       border: 1px solid var(--line);
@@ -206,18 +290,28 @@
     }
     #chart-wrap .legend { display: flex; flex-wrap: wrap; gap: 14px; color: var(--muted); font-size: 0.85rem; margin-bottom: 8px; }
     #chart-wrap .swatch { display: inline-block; width: 14px; height: 14px; border-radius: 3px; margin-right: 6px; vertical-align: -2px; }
-    canvas { width: 100%; height: 240px; display: block; }
-    .chart-empty { color: var(--muted); padding: 24px 0; text-align: center; }
+    canvas { width: 100%; height: 220px; display: block; }
+    .chart-empty { color: var(--muted); padding: 16px 0; text-align: center; }
     footer { color: var(--muted); font-size: 0.8rem; margin-top: 28px; }
+    .visually-hidden {
+      position: absolute;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0);
+      white-space: nowrap; border: 0;
+    }
+    @media (max-width: 900px) {
+      .platform-cards { grid-template-columns: repeat(2, 1fr); }
+    }
     @media (max-width: 800px) {
-      .grid { grid-template-columns: repeat(2, 1fr); }
-      header h1 { font-size: 1rem; }
       .table-wrap table { display: none; }
       .mobile-cards { display: block; }
+      .tabs { top: 70px; }
     }
     @media (max-width: 420px) {
-      .stat .value { font-size: 1.5rem; }
-      .row-nums { grid-template-columns: repeat(2, 1fr); }
+      .plat-metrics strong { font-size: 1.02rem; }
+      .row-nums.cols-4 { grid-template-columns: repeat(2, 1fr); }
+      header h1 { font-size: 1rem; }
     }
   </style>
 </head>
@@ -230,52 +324,25 @@
     </div>
   </header>
   <main>
+    <p class="overall" id="overall"></p>
     <p class="note" id="status-note">
-      Totals count only numbers the platforms actually return. A field marked n/a is missing, not zero.
+      Organized by social channel. Totals count only numbers a platform actually returns. n/a means missing, not zero.
     </p>
 
-    <section class="grid" id="hero"></section>
+    <div class="platform-cards" id="platform-cards"></div>
 
-    <h2>Channels</h2>
-    <div class="channels" id="channels"></div>
+    <div class="tabs" role="tablist" aria-label="Social channels" id="tabs"></div>
+    <section id="platform-panel" role="tabpanel" aria-live="polite"></section>
 
-    <h2>By brand</h2>
-    <div class="cards" id="brands"></div>
-
-    <h2>By platform</h2>
-    <div class="cards" id="platforms"></div>
-
-    <h2>Growth</h2>
+    <h3>Network growth</h3>
     <div id="chart-wrap">
       <div class="legend">
         <span><i class="swatch" style="background:#5eb6e6"></i>Views</span>
         <span><i class="swatch" style="background:#ffc233"></i>Likes</span>
         <span><i class="swatch" style="background:#c08ae0"></i>YouTube subscribers</span>
       </div>
-      <canvas id="chart" width="1080" height="280" aria-label="Growth chart of views, likes, and subscribers over time"></canvas>
+      <canvas id="chart" width="1080" height="260" aria-label="Growth chart of views, likes, and subscribers over time"></canvas>
       <p class="chart-empty" id="chart-empty" hidden></p>
-    </div>
-
-    <h2>Every post</h2>
-    <div class="filters" id="filters"></div>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th data-key="date">Date</th>
-            <th data-key="brand">Brand</th>
-            <th data-key="platform">Platform</th>
-            <th data-key="title">Title / caption</th>
-            <th class="num" data-key="views">Views</th>
-            <th class="num" data-key="likes">Likes</th>
-            <th class="num" data-key="comments">Comments</th>
-            <th class="num" data-key="shares">Shares</th>
-            <th data-key="last_updated">Last updated</th>
-          </tr>
-        </thead>
-        <tbody id="tbody"></tbody>
-      </table>
-      <div class="mobile-cards" id="cards"></div>
     </div>
     <footer id="footer"></footer>
   </main>
@@ -283,7 +350,6 @@
     const $ = (id) => document.getElementById(id);
     const fmt = (n) => (n === null || n === undefined) ? null : Number(n).toLocaleString("en-US");
     const cell = (n) => fmt(n) === null ? '<span class="na">n/a</span>' : fmt(n);
-    const chip = (text, kind) => `<span class="chip ${kind}">${escapeHtml(text)}</span>`;
     const slug = (s) => String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
     function escapeHtml(s) {
       return String(s ?? "").replace(/[&<>"']/g, (c) => ({
@@ -301,122 +367,298 @@
         }).format(d) + " PT";
       } catch { return fallback || iso; }
     }
+    const ICONS = {
+      YouTube: `<span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="3" stroke="#ffc233" stroke-width="1.8"/><path d="M10 9.5v5l5-2.5-5-2.5Z" fill="#ffc233"/></svg></span>`,
+      X: `<span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#f0e442"><path d="M4 4h3.2l5.05 6.7L17.7 4H21l-7.15 8.7L21.2 20h-3.2l-5.4-7.15L7.1 20H4l7.5-9.1L4 4Z"/></svg></span>`,
+      Facebook: `<span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#9ec4ff"><path d="M14.5 8.5V6.8c0-.7.5-1 1.2-1H17V3h-2.3C12.2 3 11 4.4 11 6.6v1.9H9v2.7h2V21h3.5v-9.8h2.3l.4-2.7h-2.7Z"/></svg></span>`,
+      Instagram: `<span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#c08ae0" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="#c08ae0" stroke="none"/></svg></span>`
+    };
+
+    const PLATFORMS = [
+      {
+        id: "YouTube",
+        viewsLabel: "Views",
+        likesLabel: "Likes",
+        followersLabel: "Subscribers",
+        columns: [
+          { key: "views", label: "Views" },
+          { key: "likes", label: "Likes" }
+        ]
+      },
+      {
+        id: "X",
+        viewsLabel: "Impressions",
+        likesLabel: "Likes",
+        followersLabel: "Followers",
+        columns: [
+          { key: "impressions", label: "Impressions", fallback: "views" },
+          { key: "likes", label: "Likes" },
+          { key: "shares", label: "Reposts" },
+          { key: "comments", label: "Replies" }
+        ]
+      },
+      {
+        id: "Facebook",
+        viewsLabel: "Views",
+        likesLabel: "Reactions",
+        followersLabel: "Followers",
+        columns: [
+          { key: "views", label: "Views" },
+          { key: "likes", label: "Reactions" }
+        ]
+      },
+      {
+        id: "Instagram",
+        viewsLabel: "Views",
+        likesLabel: "Likes",
+        followersLabel: "Followers",
+        columns: [
+          { key: "views", label: "Views" },
+          { key: "likes", label: "Likes" },
+          { key: "comments", label: "Comments" }
+        ]
+      }
+    ];
 
     let DATA = null;
-    let filter = "all";
+    let active = "YouTube";
     let sortKey = "date";
     let sortDir = "desc";
 
-    function hero(data) {
-      const t = data.totals;
-      const items = [
-        ["Posts", t.posts, "Across the news brands"],
-        ["Views", t.views, t.views_known < t.posts ? `From ${t.views_known} of ${t.posts} posts` : "All counted posts"],
-        ["Likes", t.likes, t.likes_known < t.posts ? `From ${t.likes_known} of ${t.posts} posts` : "All counted posts"],
-        ["Comments + shares", (t.comments || 0) + (t.shares || 0), "Only where the platform reports them"]
-      ];
-      $("hero").innerHTML = items.map(([label, value, sub]) =>
-        `<div class="stat"><div class="label">${label}</div><div class="value">${fmt(value) ?? "n/a"}</div><div class="sub">${escapeHtml(sub)}</div></div>`
-      ).join("");
+    function valueOf(post, col) {
+      const v = post[col.key];
+      if (v != null) return v;
+      if (col.fallback) return post[col.fallback];
+      return null;
     }
 
-    function renderChannels(data) {
-      $("channels").innerHTML = data.channels.map((c) => {
-        const followers = c.followers_available ? fmt(c.followers) : "n/a";
-        const note = c.note ? `<div class="sub">${escapeHtml(c.note)}</div>` : "";
-        return `<div class="card channel">
-          ${chip(c.platform, slug(c.platform))}
-          <h3 style="margin-top:8px">${escapeHtml(c.brand)}</h3>
-          <div class="handle">${escapeHtml(c.handle || "")}</div>
-          <div class="metrics" style="margin-top:8px"><div><span>${escapeHtml(c.followers_label || "followers")}</span><strong>${followers}</strong></div></div>
-          <p><a href="${escapeHtml(c.url)}" target="_blank" rel="noopener">Open profile</a></p>
-          ${note}
-        </div>`;
-      }).join("");
+    function postsFor(platform) {
+      return (DATA.posts || []).filter((p) => p.platform === platform);
     }
 
-    function renderBuckets(el, buckets) {
-      el.innerHTML = Object.entries(buckets).map(([name, b]) => `
-        <div class="card">
-          ${chip(name, slug(name))}
-          <div class="metrics" style="margin-top:10px">
-            <div><span>Posts</span><strong>${fmt(b.posts)}</strong></div>
-            <div><span>Views</span><strong>${cell(b.views_known ? b.views : (b.views || null))}</strong></div>
-            <div><span>Likes</span><strong>${cell(b.likes_known ? b.likes : (b.likes || null))}</strong></div>
-            <div><span>Comments</span><strong>${cell(b.comments || (b.comments === 0 ? 0 : null))}</strong></div>
-          </div>
-        </div>
-      `).join("");
-    }
-
-    function filteredPosts() {
-      let rows = DATA.posts.slice();
-      if (filter !== "all") {
-        rows = rows.filter((p) => p.platform === filter || p.brand === filter || p.family === filter);
+    function sumKnown(posts, key, fallback) {
+      let total = 0, known = 0;
+      for (const p of posts) {
+        const v = p[key] != null ? p[key] : (fallback ? p[fallback] : null);
+        if (v != null) { total += v; known += 1; }
       }
+      return { total, known };
+    }
+
+    function channelsFor(platform) {
+      return (DATA.channels || []).filter((c) => c.platform === platform);
+    }
+
+    function accountGroups(platform) {
+      const posts = postsFor(platform);
+      const channels = channelsFor(platform);
+      const groups = new Map();
+      const ensure = (family, seed) => {
+        if (!groups.has(family)) {
+          groups.set(family, {
+            family,
+            handle: seed.handle || "",
+            url: seed.url || "",
+            followers: seed.followers_available ? seed.followers : null,
+            followersLabel: seed.followers_label || (platform === "YouTube" ? "subscribers" : "followers"),
+            note: seed.note || "",
+            posts: []
+          });
+        }
+        return groups.get(family);
+      };
+      channels.forEach((c) => ensure(c.brand, c));
+      posts.forEach((p) => {
+        const family = p.family || p.brand;
+        const g = ensure(family, {});
+        g.posts.push(p);
+      });
+      return [...groups.values()].filter((g) => g.posts.length || g.url);
+    }
+
+    function platformSummary(spec) {
+      const posts = postsFor(spec.id);
+      const views = sumKnown(posts, spec.id === "X" ? "impressions" : "views", spec.id === "X" ? "views" : null);
+      const likes = sumKnown(posts, "likes");
+      const ch = channelsFor(spec.id);
+      const followers = ch.find((c) => c.followers_available && c.followers != null);
+      return {
+        posts: posts.length,
+        views: views.known ? views.total : null,
+        likes: likes.known ? likes.total : null,
+        followers: followers ? followers.followers : null,
+        followersKnown: !!followers,
+        comingSoon: spec.id === "Instagram" && posts.length === 0
+      };
+    }
+
+    function renderCards() {
+      $("platform-cards").innerHTML = PLATFORMS.map((spec) => {
+        const s = platformSummary(spec);
+        const pressed = active === spec.id;
+        return `<button type="button" class="plat-card" data-platform="${spec.id}" aria-pressed="${pressed}">
+          <div class="plat-name">${ICONS[spec.id]} <span>${escapeHtml(spec.id)}</span></div>
+          <div class="plat-metrics">
+            <div><span>Posts</span><strong>${fmt(s.posts) ?? "0"}</strong></div>
+            <div><span>${escapeHtml(spec.viewsLabel)}</span><strong>${cell(s.views)}</strong></div>
+            <div><span>${escapeHtml(spec.likesLabel)}</span><strong>${cell(s.likes)}</strong></div>
+            <div><span>${escapeHtml(spec.followersLabel)}</span><strong>${cell(s.followers)}</strong></div>
+          </div>
+          ${s.comingSoon ? `<span class="coming-tag">Coming soon</span>` : ""}
+        </button>`;
+      }).join("");
+      $("platform-cards").onclick = (e) => {
+        const btn = e.target.closest("[data-platform]");
+        if (!btn) return;
+        setActive(btn.dataset.platform);
+      };
+    }
+
+    function renderTabs() {
+      $("tabs").innerHTML = PLATFORMS.map((spec) => {
+        const n = postsFor(spec.id).length;
+        const selected = active === spec.id;
+        return `<button type="button" role="tab" id="tab-${slug(spec.id)}" data-platform="${spec.id}" aria-selected="${selected}" aria-controls="platform-panel">
+          ${ICONS[spec.id]} ${escapeHtml(spec.id)} <span class="count">${n ? n : (spec.id === "Instagram" ? "soon" : "0")}</span>
+        </button>`;
+      }).join("");
+      $("tabs").onclick = (e) => {
+        const btn = e.target.closest("[data-platform]");
+        if (!btn) return;
+        setActive(btn.dataset.platform);
+      };
+    }
+
+    function sortedPosts(platform) {
+      const rows = postsFor(platform).slice();
       const dir = sortDir === "asc" ? 1 : -1;
+      const spec = PLATFORMS.find((p) => p.id === platform);
       rows.sort((a, b) => {
-        const av = a[sortKey], bv = b[sortKey];
         if (sortKey === "date") {
           const as = a.datetime_pt || a.date || "";
           const bs = b.datetime_pt || b.date || "";
           return as < bs ? -dir : as > bs ? dir : 0;
         }
+        const col = (spec.columns || []).find((c) => c.key === sortKey) || { key: sortKey };
+        const av = valueOf(a, col), bv = valueOf(b, col);
+        if (sortKey === "brand" || sortKey === "title") {
+          return String(a[sortKey] || "").localeCompare(String(b[sortKey] || "")) * dir;
+        }
         if (av == null && bv == null) return 0;
         if (av == null) return 1;
         if (bv == null) return -1;
-        if (typeof av === "number" && typeof bv === "number") return (av - bv) * dir;
-        return String(av).localeCompare(String(bv)) * dir;
+        return (av - bv) * dir;
       });
       return rows;
     }
 
-    function renderTable() {
-      const rows = filteredPosts();
-      document.querySelectorAll("th[data-key]").forEach((th) => {
-        th.setAttribute("aria-sort", th.dataset.key === sortKey ? (sortDir === "asc" ? "ascending" : "descending") : "none");
-      });
-      $("tbody").innerHTML = rows.map((p) => `
+    function renderAccounts(platform) {
+      const groups = accountGroups(platform);
+      if (!groups.length) return "";
+      return `<h3>Accounts</h3>
+        <div class="accounts">${groups.map((g) => {
+          const views = sumKnown(g.posts, platform === "X" ? "impressions" : "views", platform === "X" ? "views" : null);
+          const likes = sumKnown(g.posts, "likes");
+          const viewsLabel = platform === "X" ? "Impressions" : "Views";
+          const likesLabel = platform === "Facebook" ? "Reactions" : "Likes";
+          const profile = g.url ? `<p style="margin:8px 0 0"><a href="${escapeHtml(g.url)}" target="_blank" rel="noopener">Open profile</a></p>` : "";
+          const note = g.note ? `<div class="updated">${escapeHtml(g.note)}</div>` : "";
+          return `<div class="card">
+            <h4>${escapeHtml(g.family)}</h4>
+            <div class="handle">${escapeHtml(g.handle || "")}</div>
+            <div class="metrics">
+              <div><span>Posts</span><strong>${fmt(g.posts.length) ?? "0"}</strong></div>
+              <div><span>${escapeHtml(g.followersLabel)}</span><strong>${cell(g.followers)}</strong></div>
+              <div><span>${escapeHtml(viewsLabel)}</span><strong>${cell(views.known ? views.total : null)}</strong></div>
+              <div><span>${escapeHtml(likesLabel)}</span><strong>${cell(likes.known ? likes.total : null)}</strong></div>
+            </div>
+            ${profile}${note}
+          </div>`;
+        }).join("")}</div>`;
+    }
+
+    function renderTable(platform) {
+      const spec = PLATFORMS.find((p) => p.id === platform);
+      const rows = sortedPosts(platform);
+      const colCount = spec.columns.length;
+      const heads = `
+        <th data-key="date" aria-sort="${sortKey === "date" ? (sortDir === "asc" ? "ascending" : "descending") : "none"}">Date</th>
+        <th data-key="brand" aria-sort="${sortKey === "brand" ? (sortDir === "asc" ? "ascending" : "descending") : "none"}">Brand</th>
+        <th data-key="title" aria-sort="${sortKey === "title" ? (sortDir === "asc" ? "ascending" : "descending") : "none"}">Title / caption</th>
+        ${spec.columns.map((c) => `<th class="num" data-key="${c.key}" aria-sort="${sortKey === c.key ? (sortDir === "asc" ? "ascending" : "descending") : "none"}">${escapeHtml(c.label)}</th>`).join("")}
+        <th data-key="last_updated">Last updated</th>`;
+      const body = rows.map((p) => `
         <tr>
           <td>${escapeHtml(p.date)}${p.time_pt ? `<div class="updated">${escapeHtml(p.time_pt)} PT</div>` : ""}</td>
-          <td>${chip(p.brand, slug(p.brand))}</td>
-          <td>${chip(p.platform, slug(p.platform))}</td>
+          <td>${`<span class="chip ${slug(p.brand)}">${escapeHtml(p.brand)}</span>`}</td>
           <td class="title"><a href="${escapeHtml(p.link)}" target="_blank" rel="noopener">${escapeHtml(p.title || p.link)}</a>${p.stats_note ? `<div class="updated">${escapeHtml(p.stats_note)}</div>` : ""}</td>
-          <td class="num">${cell(p.views)}</td>
-          <td class="num">${cell(p.likes)}</td>
-          <td class="num">${cell(p.comments)}</td>
-          <td class="num">${cell(p.shares)}</td>
+          ${spec.columns.map((c) => `<td class="num">${cell(valueOf(p, c))}</td>`).join("")}
           <td class="updated">${escapeHtml(formatWhen(p.last_updated))}</td>
-        </tr>
-      `).join("");
-      $("cards").innerHTML = rows.map((p) => `
+        </tr>`).join("");
+      const cards = rows.map((p) => `
         <article class="post-card">
-          <div>${chip(p.brand, slug(p.brand))} ${chip(p.platform, slug(p.platform))}</div>
+          <div><span class="chip ${slug(p.brand)}">${escapeHtml(p.brand)}</span></div>
           <p style="margin:8px 0 0"><a href="${escapeHtml(p.link)}" target="_blank" rel="noopener">${escapeHtml(p.title || p.link)}</a></p>
           <div class="meta">${escapeHtml(p.date)} ${escapeHtml(p.time_pt || "")} PT · updated ${escapeHtml(formatWhen(p.last_updated))}</div>
           ${p.stats_note ? `<div class="updated">${escapeHtml(p.stats_note)}</div>` : ""}
-          <div class="row-nums">
-            <div><span>Views</span><strong>${cell(p.views)}</strong></div>
-            <div><span>Likes</span><strong>${cell(p.likes)}</strong></div>
-            <div><span>Comments</span><strong>${cell(p.comments)}</strong></div>
-            <div><span>Shares</span><strong>${cell(p.shares)}</strong></div>
+          <div class="row-nums ${colCount > 2 ? "cols-4" : "cols-2"}">
+            ${spec.columns.map((c) => `<div><span>${escapeHtml(c.label)}</span><strong>${cell(valueOf(p, c))}</strong></div>`).join("")}
           </div>
-        </article>
-      `).join("");
+        </article>`).join("");
+      return `
+        <h3>Posts</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr>${heads}</tr></thead>
+            <tbody>${body}</tbody>
+          </table>
+          <div class="mobile-cards">${cards}</div>
+        </div>`;
     }
 
-    function renderFilters(data) {
-      const opts = ["all", ...new Set(data.posts.map((p) => p.platform)), ...new Set(data.posts.map((p) => p.brand))];
-      $("filters").innerHTML = opts.map((o) =>
-        `<button type="button" data-filter="${escapeHtml(o)}" aria-pressed="${o === filter}">${o === "all" ? "All posts" : escapeHtml(o)}</button>`
-      ).join("");
-      $("filters").onclick = (e) => {
-        const btn = e.target.closest("button");
-        if (!btn) return;
-        filter = btn.dataset.filter;
-        renderFilters(data);
-        renderTable();
-      };
+    function renderPanel() {
+      const spec = PLATFORMS.find((p) => p.id === active);
+      const posts = postsFor(active);
+      const note = (DATA.notes && DATA.notes[active]) ? `<p class="note">${escapeHtml(DATA.notes[active])}</p>` : "";
+      if (active === "Instagram" && posts.length === 0) {
+        $("platform-panel").innerHTML = `
+          <div class="section-head">${ICONS.Instagram}<h2>Instagram</h2></div>
+          ${note}
+          <div class="empty">
+            <strong>Coming soon</strong>
+            Instagram will show up here once Map Desk, Harbor News, or Quint Valley News has live Instagram posts.
+          </div>`;
+        return;
+      }
+      const table = posts.length
+        ? renderTable(active)
+        : `<div class="empty"><strong>No posts yet</strong>Nothing from this channel is in the log.</div>`;
+      $("platform-panel").innerHTML = `
+        <div class="section-head">${ICONS[active]}<h2>${escapeHtml(active)}</h2></div>
+        ${note}
+        ${renderAccounts(active)}
+        ${table}`;
+      $("platform-panel").querySelectorAll("th[data-key]").forEach((th) => {
+        th.addEventListener("click", () => {
+          if (sortKey === th.dataset.key) sortDir = sortDir === "asc" ? "desc" : "asc";
+          else {
+            sortKey = th.dataset.key;
+            sortDir = (sortKey === "title" || sortKey === "brand") ? "asc" : "desc";
+          }
+          renderPanel();
+        });
+      });
+    }
+
+    function setActive(platform, updateHash = true) {
+      if (!PLATFORMS.some((p) => p.id === platform)) platform = "YouTube";
+      active = platform;
+      sortKey = "date";
+      sortDir = "desc";
+      if (updateHash) history.replaceState(null, "", "#" + slug(platform));
+      renderCards();
+      renderTabs();
+      renderPanel();
     }
 
     function drawChart(data) {
@@ -441,9 +683,9 @@
       ctx.clearRect(0, 0, w, h);
       const pad = { l: 54, r: 16, t: 16, b: 40 };
       const series = [
-        { key: "views", color: "#5eb6e6", label: "Views" },
-        { key: "likes", color: "#ffc233", label: "Likes" },
-        { key: "youtube_subscribers", color: "#c08ae0", label: "Subs" }
+        { key: "views", color: "#5eb6e6" },
+        { key: "likes", color: "#ffc233" },
+        { key: "youtube_subscribers", color: "#c08ae0" }
       ];
       const values = series.flatMap((s) => hist.map((d) => d[s.key]).filter((v) => v != null));
       const max = Math.max(1, ...values);
@@ -452,7 +694,6 @@
       const plotH = h - pad.t - pad.b;
       const xAt = (i) => pad.l + (hist.length === 1 ? plotW / 2 : (i / (hist.length - 1)) * plotW);
       const yAt = (v) => pad.t + plotH - (v / niceMax) * plotH;
-
       ctx.strokeStyle = "#2a4a76";
       ctx.fillStyle = "#b8c4d6";
       ctx.font = "12px sans-serif";
@@ -492,24 +733,16 @@
     function render(data) {
       DATA = data;
       $("updated").textContent = "Updated " + (data.generated_at_pt || formatWhen(data.generated_at));
-      hero(data);
-      renderChannels(data);
-      renderBuckets($("brands"), data.totals.by_brand || {});
-      renderBuckets($("platforms"), data.totals.by_platform || {});
-      renderFilters(data);
-      renderTable();
+      const t = data.totals || {};
+      $("overall").innerHTML = `Across the network: <strong>${fmt(t.posts) ?? "0"}</strong> posts · <strong>${fmt(t.views) ?? "n/a"}</strong> views · <strong>${fmt(t.likes) ?? "n/a"}</strong> likes`;
+      const hash = (location.hash || "").replace("#", "").toLowerCase();
+      const fromHash = PLATFORMS.find((p) => slug(p.id) === hash);
+      const start = fromHash ? fromHash.id : (postsFor("YouTube").length ? "YouTube" : (PLATFORMS.find((p) => postsFor(p.id).length) || PLATFORMS[0]).id);
+      setActive(start, !fromHash);
       drawChart(data);
       const notes = Object.entries(data.notes || {}).map(([k, v]) => `<strong>${escapeHtml(k)}:</strong> ${escapeHtml(v)}`).join(" · ");
       $("footer").innerHTML = notes;
     }
-
-    document.querySelectorAll("th[data-key]").forEach((th) => {
-      th.addEventListener("click", () => {
-        if (sortKey === th.dataset.key) sortDir = sortDir === "asc" ? "desc" : "asc";
-        else { sortKey = th.dataset.key; sortDir = th.dataset.key === "title" || th.dataset.key === "brand" || th.dataset.key === "platform" ? "asc" : "desc"; }
-        renderTable();
-      });
-    });
 
     fetch("data.json?ts=" + Date.now())
       .then((r) => {
