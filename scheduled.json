@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-25T11:52:41.439113-08:00",
-  "generated_at_pt": "2026-11-25 11:52 AM PT",
+  "generated_at": "2026-11-25T12:57:57.899694-08:00",
+  "generated_at_pt": "2026-11-25 12:57 PM PT",
   "timezone": "America/Los_Angeles",
   "items": [
     {
@@ -138,46 +138,6 @@
       "video": null
     },
     {
-      "id": "L002",
-      "group_id": "L002",
-      "title": "Jefferson County Food Bank Association donated EV",
-      "caption": "Thanksgiving week, and still one of my favorite jobs of the year: the donated EV we wrapped for Jefferson County Food Bank Association. Pantry locations, mapped right on the rear doors, working every mile.\n\nGrateful to the teams who feed our neighbors, and glad this shop could help them show up clearly.\n\n#ChanceTheWrapper #GigHarbor #FleetWraps",
-      "brand": "Chance the Wrapper",
-      "family": "Chance the Wrapper",
-      "network": "creator",
-      "platforms": [
-        "LinkedIn"
-      ],
-      "planned_date": "2026-11-25",
-      "planned_time": "8:00 AM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-25T08:00:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/l002.jpg",
-      "video": null
-    },
-    {
-      "id": "L013",
-      "group_id": "L013",
-      "title": "Typographic card: Read it at 35 mph (fleet wrap basics, no photo)",
-      "caption": "What does a fleet wrap actually have to do? Work at 35 mph.\n\nMost people see your truck for a few seconds: at a light, in traffic, pulling out of a lot. When we lay out a fleet, I check three things before anything gets printed:\n\n1. Can you read who you are and what you do in about 3 seconds?\n2. Is the contact easy to find? One phone number or website, big enough to read, not buried in the design.\n3. Does every vehicle match? Same layout, same colors, same placement, so the fleet reads as one company.\n\nGet those three right and the rest is style.\n\nWant a second set of eyes on your trucks or vans? Send me a photo and I'll tell you what I'd change.\nusawrapco.com\n\n#FleetWraps #ChanceTheWrapper",
-      "brand": "Chance the Wrapper",
-      "family": "Chance the Wrapper",
-      "network": "creator",
-      "platforms": [
-        "LinkedIn"
-      ],
-      "planned_date": "2026-11-25",
-      "planned_time": "8:00 AM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-25T08:00:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/l013.jpg",
-      "video": null
-    },
-    {
       "id": "H224",
       "group_id": "h224-h225",
       "title": "Story: T-Mobile van wrap (real job photo, 9:16)",
@@ -216,26 +176,6 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/h187.jpg",
-      "video": null
-    },
-    {
-      "id": "X004",
-      "group_id": "X004",
-      "title": "Light aircraft stripe graphics (real job photo; tail number blurred)",
-      "caption": "Not just vans. Custom stripe graphics on a light aircraft. If it moves, we can wrap it. Gig Harbor, WA. #aircraftgraphics #aviation #gigharbor #pnw",
-      "brand": "USA Wrap Co",
-      "family": "USA Wrap Co",
-      "network": "business",
-      "platforms": [
-        "X"
-      ],
-      "planned_date": "2026-11-25",
-      "planned_time": "12:00 PM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-25T12:00:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/x004.jpg",
       "video": null
     },
     {
@@ -5585,7 +5525,7 @@
   ],
   "counts": {
     "ready": 4,
-    "planned": 195,
+    "planned": 192,
     "group_shares": 76,
     "videos": 4
   }
