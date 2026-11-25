@@ -1,0 +1,114 @@
+{
+  "notes": [
+    "Map Desk, Map Desk Places, and Map Battle YouTube channels share one Google account."
+  ],
+  "brands": [
+    {
+      "brand": "Map Desk",
+      "family": "Map Desk",
+      "network": "news",
+      "channels": [
+        { "platform": "YouTube", "handle": "@MapDeskNews", "url": "https://www.youtube.com/@MapDeskNews", "status": "Live" },
+        { "platform": "X", "handle": "@MapDeskNews", "url": "https://x.com/MapDeskNews", "status": "Live" },
+        { "platform": "Facebook", "handle": "Map Desk", "url": "https://www.facebook.com/profile.php?id=61596875401709", "status": "Live" },
+        { "platform": "Instagram", "handle": null, "url": null, "status": "Not set up" },
+        { "platform": "TikTok", "handle": null, "url": null, "status": "Skipped" }
+      ]
+    },
+    {
+      "brand": "Map Desk Places",
+      "family": "Map Desk",
+      "network": "news",
+      "series": "Places",
+      "channels": [
+        { "platform": "YouTube", "handle": "@MapDeskPlaces", "url": null, "status": "Pending", "note": "Channel creation will be retried." },
+        { "platform": "Facebook", "handle": "Map Desk Places", "url": "https://www.facebook.com/profile.php?id=61596793805858", "status": "Live" },
+        { "platform": "X", "handle": null, "url": null, "status": "Not set up" },
+        { "platform": "Instagram", "handle": null, "url": null, "status": "Not set up" }
+      ]
+    },
+    {
+      "brand": "Map Battle",
+      "family": "Map Battle",
+      "network": "news",
+      "note": "Sample in progress.",
+      "channels": [
+        { "platform": "YouTube", "handle": null, "url": null, "status": "Not set up" },
+        { "platform": "X", "handle": null, "url": null, "status": "Not set up" },
+        { "platform": "Facebook", "handle": null, "url": null, "status": "Not set up" },
+        { "platform": "Instagram", "handle": null, "url": null, "status": "Not set up" }
+      ]
+    },
+    {
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "channels": [
+        { "platform": "Facebook", "handle": "Harbor News", "url": "https://www.facebook.com/profile.php?id=61596429704380", "status": "Live" },
+        { "platform": "YouTube", "handle": null, "url": null, "status": "Not set up" },
+        { "platform": "X", "handle": null, "url": null, "status": "Not set up" },
+        { "platform": "Instagram", "handle": null, "url": null, "status": "Not set up" }
+      ]
+    },
+    {
+      "brand": "Quint Valley News",
+      "family": "Quint Valley News",
+      "network": "news",
+      "channels": [
+        { "platform": "Facebook", "handle": "Quint Valley News", "url": "https://www.facebook.com/profile.php?id=61596620650836", "status": "Live" },
+        { "platform": "YouTube", "handle": null, "url": null, "status": "Not set up" },
+        { "platform": "X", "handle": null, "url": null, "status": "Not set up" },
+        { "platform": "Instagram", "handle": null, "url": null, "status": "Not set up" }
+      ]
+    },
+    {
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "channels": [
+        { "platform": "Facebook", "handle": "USA WRAP Co.", "url": "https://www.facebook.com/USAWRAPCO", "status": "Live" },
+        { "platform": "Instagram", "handle": "@usawrapco_upfitting", "url": "https://www.instagram.com/usawrapco_upfitting/", "status": "Live" },
+        { "platform": "X", "handle": "@usawrapco", "url": "https://x.com/usawrapco", "status": "Live" },
+        { "platform": "LinkedIn", "handle": "USA WRAP Co.", "url": "https://www.linkedin.com/company/71340067/", "status": "Live" },
+        { "platform": "YouTube", "handle": null, "url": null, "status": "Not set up" },
+        { "platform": "Google Business", "handle": "USA Wrap Co · Gig Harbor", "url": null, "status": "Live", "location": "USA Wrap Co · Gig Harbor" },
+        { "platform": "Google Business", "handle": "USA Wrap Co · Olympia", "url": null, "status": "Live", "location": "USA Wrap Co · Olympia" }
+      ]
+    },
+    {
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "channels": [
+        { "platform": "Facebook", "handle": "DekWave", "url": "https://www.facebook.com/profile.php?id=61590781825933", "status": "Live" },
+        { "platform": "Instagram", "handle": "@dekwaveprotect", "url": "https://www.instagram.com/dekwaveprotect/", "status": "Live" },
+        { "platform": "Google Business", "handle": "DekWave", "url": null, "status": "Live", "location": "DekWave" },
+        { "platform": "YouTube", "handle": null, "url": null, "status": "Not set up" },
+        { "platform": "X", "handle": null, "url": null, "status": "Not set up" }
+      ]
+    },
+    {
+      "brand": "Savajay",
+      "family": "Savajay",
+      "network": "business",
+      "channels": [
+        { "platform": "Facebook", "handle": "Savajay", "url": "https://www.facebook.com/profile.php?id=61553803499989", "status": "Live" },
+        { "platform": "YouTube", "handle": null, "url": null, "status": "Not set up" },
+        { "platform": "X", "handle": null, "url": null, "status": "Not set up" },
+        { "platform": "Instagram", "handle": null, "url": null, "status": "Not set up" }
+      ]
+    },
+    {
+      "brand": "Chance the Wrapper",
+      "family": "Chance the Wrapper",
+      "network": "creator",
+      "channels": [
+        { "platform": "LinkedIn", "handle": "Chance the Wrapper", "url": null, "status": "Live" },
+        { "platform": "YouTube", "handle": null, "url": null, "status": "Not set up" },
+        { "platform": "X", "handle": null, "url": null, "status": "Not set up" },
+        { "platform": "Facebook", "handle": null, "url": null, "status": "Not set up" },
+        { "platform": "Instagram", "handle": null, "url": null, "status": "Not set up" }
+      ]
+    }
+  ]
+}

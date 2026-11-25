@@ -32,7 +32,7 @@ if git diff --quiet && git diff --cached --quiet && [ -z "$(git ls-files --other
 fi
 
 # Never add private/ (full captions, internal notes, source CSVs).
-git add index.html data.json scheduled.json logo.png .nojekyll publish.sh collect.py scheduled.py README.md .gitignore
+git add index.html data.json scheduled.json accounts.json logo.png .nojekyll publish.sh collect.py scheduled.py README.md .gitignore
 git add stats/*.json 2>/dev/null || true
 git add media/scheduled 2>/dev/null || true
 if git ls-files --cached | grep -E '(^|/)private/|content-plan|activity-log'; then

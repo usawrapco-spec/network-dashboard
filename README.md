@@ -10,7 +10,9 @@ This is a GitHub Pages site. There is no build step and no paid host. The page i
 
 The page opens on a Posts tab (one row per creative, with per-platform stats side by side). Platform tabs follow for YouTube, X, Facebook, Instagram, and Google Business, plus a Scheduled tab for upcoming work.
 
-- Brand groups (All / News / Local businesses) sit above a selector for each brand. Map Desk has sub-filters for Money, World, and Places. Each brand view has its own platform breakdown, Posts list, Stories, and Scheduled list.
+- Brand groups (All / News / Local businesses) sit above a selector for each brand. Map Desk has sub-filters for Money, World, and Places. Map Battle is its own brand. Each brand view has its own platform breakdown, Posts list, Stories, and Scheduled list.
+- The Accounts tab lists each brand's public channels, with a handle or link when there is one, and a status of Live, Pending, Not set up, or Skipped. Edit `accounts.json` to add or change accounts. Never put emails, passwords, vault ids, or login names in that file.
+- Map Desk, Map Desk Places, and Map Battle YouTube channels share one Google account.
 - Platform cards at the top show posts, views or impressions, likes or reactions, and followers or subscribers. Google Business cards show published vs pending-review counts, because those posts have no public URL.
 - Inside each social channel: account totals per brand, then that channel's posts, newest first.
 - Instagram reads "Coming soon" until there are live posts.
