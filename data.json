@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T18:06:54-08:00",
-  "generated_at_pt": "Tue Nov 24, 2026, 6:06 PM PT",
+  "generated_at": "2026-11-24T19:07:09-08:00",
+  "generated_at_pt": "Tue Nov 24, 2026, 7:07 PM PT",
   "timezone": "America/Los_Angeles",
   "notes": {
     "YouTube": "Views and likes via yt-dlp. Comment counts are shown when YouTube exposes them; otherwise n/a.",
@@ -130,26 +130,26 @@
     }
   ],
   "totals": {
-    "posts": 20,
+    "posts": 21,
     "stories": 2,
     "group_shares": 2,
-    "views": 1189,
+    "views": 1326,
     "likes": 10,
     "comments": 0,
     "shares": 0,
-    "views_known": 7,
-    "likes_known": 3,
+    "views_known": 8,
+    "likes_known": 4,
     "by_brand": {
       "USA Wrap Co": {
-        "posts": 9,
+        "posts": 10,
         "stories": 2,
         "group_shares": 2,
-        "views": 19,
+        "views": 51,
         "likes": 0,
         "comments": 0,
         "shares": 0,
-        "views_known": 2,
-        "likes_known": 1
+        "views_known": 3,
+        "likes_known": 2
       },
       "DekWave": {
         "posts": 4,
@@ -166,7 +166,7 @@
         "posts": 2,
         "stories": 0,
         "group_shares": 0,
-        "views": 34,
+        "views": 37,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -177,7 +177,7 @@
         "posts": 3,
         "stories": 0,
         "group_shares": 0,
-        "views": 1136,
+        "views": 1238,
         "likes": 10,
         "comments": 0,
         "shares": 0,
@@ -208,11 +208,22 @@
       }
     },
     "by_platform": {
+      "X": {
+        "posts": 3,
+        "stories": 0,
+        "group_shares": 0,
+        "views": 45,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views_known": 3,
+        "likes_known": 3
+      },
       "Facebook": {
         "posts": 11,
         "stories": 1,
         "group_shares": 2,
-        "views": 149,
+        "views": 163,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -234,36 +245,25 @@
         "posts": 2,
         "stories": 0,
         "group_shares": 0,
-        "views": 1022,
+        "views": 1118,
         "likes": 10,
         "comments": 0,
         "shares": 0,
         "views_known": 2,
         "likes_known": 1
-      },
-      "X": {
-        "posts": 2,
-        "stories": 0,
-        "group_shares": 0,
-        "views": 18,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "views_known": 2,
-        "likes_known": 2
       }
     },
     "by_family": {
       "USA Wrap Co": {
-        "posts": 9,
+        "posts": 10,
         "stories": 2,
         "group_shares": 2,
-        "views": 19,
+        "views": 51,
         "likes": 0,
         "comments": 0,
         "shares": 0,
-        "views_known": 2,
-        "likes_known": 1
+        "views_known": 3,
+        "likes_known": 2
       },
       "DekWave": {
         "posts": 4,
@@ -280,7 +280,7 @@
         "posts": 5,
         "stories": 0,
         "group_shares": 0,
-        "views": 1170,
+        "views": 1275,
         "likes": 10,
         "comments": 0,
         "shares": 0,
@@ -313,6 +313,30 @@
   },
   "posts": [
     {
+      "id": "https://x.com/usawrapco/status/2125411672068338148",
+      "episode": null,
+      "plan_id": null,
+      "group_id": "usa-wrap-co:post:2026-11-24",
+      "date": "2026-11-24",
+      "time_pt": "6:09 PM",
+      "datetime_pt": "2026-11-24T18:09:00-08:00",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platform": "X",
+      "title": "Real results. Fake Gary. Your van doesn't have to be the refrigerator of the block. Full wraps in Gig Harbor. (Dramatization. Gary is an AI\u2026",
+      "link": "https://x.com/usawrapco/status/2125411672068338148",
+      "kind": "post",
+      "views": 26,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "impressions": 26,
+      "last_updated": "2026-11-24T19:07:09-08:00",
+      "stats_source": "fxtwitter",
+      "stats_note": null
+    },
+    {
       "id": "https://www.facebook.com/reel/1153969150339435",
       "episode": null,
       "plan_id": "MN010",
@@ -327,12 +351,12 @@
       "title": "Real results. Fake Gary. \ud83d\udcfc Your van doesn't have to be the refrigerator of the block. Full wraps designed, printed and installed in Gig Har\u2026",
       "link": "https://www.facebook.com/reel/1153969150339435",
       "kind": "post",
-      "views": 3,
+      "views": 8,
       "likes": null,
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-24T18:06:54-08:00",
+      "last_updated": "2026-11-24T19:07:09-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -423,12 +447,12 @@
       "title": "World news today, November 24, 2026: Factory fire in Indonesia kills at least 26; New floods hit the Galapagos Islands; Euclid finds the mo\u2026",
       "link": "https://www.facebook.com/reel/1404021491565229",
       "kind": "post",
-      "views": 32,
+      "views": 35,
       "likes": null,
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-24T18:06:54-08:00",
+      "last_updated": "2026-11-24T19:07:09-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -452,7 +476,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-24T18:06:54-08:00",
+      "last_updated": "2026-11-24T19:07:09-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -476,7 +500,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 2,
-      "last_updated": "2026-11-24T18:06:54-08:00",
+      "last_updated": "2026-11-24T19:07:09-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -501,7 +525,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-24T18:06:54-08:00",
+      "last_updated": "2026-11-24T19:07:09-08:00",
       "stats_source": "none",
       "stats_note": "Group share stats are n/a unless a public count is available."
     },
@@ -520,12 +544,12 @@
       "title": "Where Americans moved, July 2024 to July 2025: North Carolina led the nation in net moves; California lost the most, about 229,000.",
       "link": "https://www.facebook.com/reel/1139725702096834",
       "kind": "post",
-      "views": 114,
+      "views": 120,
       "likes": null,
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-24T18:06:54-08:00",
+      "last_updated": "2026-11-24T19:07:09-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -592,12 +616,12 @@
       "title": "Where Americans Moved in 2025",
       "link": "https://youtube.com/shorts/KGL7hHWmrUM",
       "kind": "post",
-      "views": 1020,
+      "views": 1116,
       "likes": 10,
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-24T18:06:54-08:00",
+      "last_updated": "2026-11-24T19:07:09-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -862,12 +886,12 @@
       "title": "Built for business. Full Transit wrap for Olympic Plumbing Technology: bold blues, big logo, readable from across the lot. Designed, printe\u2026",
       "link": "https://x.com/usawrapco/status/2123875525722833271",
       "kind": "post",
-      "views": 16,
+      "views": 17,
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "impressions": 16,
-      "last_updated": "2026-11-24T18:06:54-08:00",
+      "impressions": 17,
+      "last_updated": "2026-11-24T19:07:09-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -892,7 +916,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-24T18:06:54-08:00",
+      "last_updated": "2026-11-24T19:07:09-08:00",
       "stats_source": "none",
       "stats_note": "Group share stats are n/a unless a public count is available."
     }
@@ -1350,11 +1374,136 @@
       },
       "youtube_subscribers": 2,
       "x_followers": 0
+    },
+    {
+      "at": "2026-11-24T19:07:09-08:00",
+      "label": "Tue Nov 24, 2026, 7:07 PM PT",
+      "views": 1326,
+      "likes": 10,
+      "comments": 0,
+      "shares": 0,
+      "posts": 21,
+      "by_brand": {
+        "USA Wrap Co": {
+          "posts": 10,
+          "stories": 2,
+          "group_shares": 2,
+          "views": 51,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 3,
+          "likes_known": 2
+        },
+        "DekWave": {
+          "posts": 4,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        },
+        "Map Desk World": {
+          "posts": 2,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 37,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 2,
+          "likes_known": 0
+        },
+        "Map Desk Money": {
+          "posts": 3,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 1238,
+          "likes": 10,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 3,
+          "likes_known": 2
+        },
+        "Quint Valley News": {
+          "posts": 1,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        },
+        "Harbor News": {
+          "posts": 1,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        }
+      },
+      "by_platform": {
+        "X": {
+          "posts": 3,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 45,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 3,
+          "likes_known": 3
+        },
+        "Facebook": {
+          "posts": 11,
+          "stories": 1,
+          "group_shares": 2,
+          "views": 163,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 3,
+          "likes_known": 0
+        },
+        "Instagram": {
+          "posts": 5,
+          "stories": 1,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        },
+        "YouTube": {
+          "posts": 2,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 1118,
+          "likes": 10,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 2,
+          "likes_known": 1
+        }
+      },
+      "youtube_subscribers": 2,
+      "x_followers": 0
     }
   ],
   "scheduled": {
-    "generated_at": "2026-11-24T18:06:54.476449-08:00",
-    "generated_at_pt": "2026-11-24 6:06 PM PT",
+    "generated_at": "2026-11-24T19:07:09.364646-08:00",
+    "generated_at_pt": "2026-11-24 7:07 PM PT",
     "timezone": "America/Los_Angeles",
     "items": [
       {
@@ -1468,26 +1617,6 @@
         "status": "Approved",
         "kind": "plan",
         "still": "media/scheduled/qvn003.jpg",
-        "video": null
-      },
-      {
-        "id": "X014",
-        "group_id": "X014",
-        "title": "80s VHS parody testimonial: \"Gary's Gutters\" (33 s, v5, ElevenLabs voices)",
-        "caption": "Real results. Fake Gary. Your van doesn't have to be the refrigerator of the block. Full wraps in Gig Harbor.\n(Dramatization. Gary is an AI actor; Gary's Gutters is fictional.)\nMusic: \"Local Forecast - Elevator\" Kevin MacLeod (incompetech.com) \u00b7 CC BY 4.0\n",
-        "brand": "USA Wrap Co",
-        "family": "USA Wrap Co",
-        "network": "business",
-        "platforms": [
-          "X"
-        ],
-        "planned_date": "2026-11-24",
-        "planned_time": "4:00 PM PT",
-        "planned_tz": "PT",
-        "planned_at": "2026-11-24T16:00:00-08:00",
-        "status": "Approved",
-        "kind": "plan",
-        "still": "media/scheduled/x014.jpg",
         "video": null
       },
       {
@@ -4235,7 +4364,7 @@
     ],
     "counts": {
       "ready": 4,
-      "planned": 62,
+      "planned": 61,
       "group_shares": 76,
       "videos": 4
     }

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T18:06:54.476449-08:00",
-  "generated_at_pt": "2026-11-24 6:06 PM PT",
+  "generated_at": "2026-11-24T19:07:09.364646-08:00",
+  "generated_at_pt": "2026-11-24 7:07 PM PT",
   "timezone": "America/Los_Angeles",
   "items": [
     {
@@ -114,26 +114,6 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/qvn003.jpg",
-      "video": null
-    },
-    {
-      "id": "X014",
-      "group_id": "X014",
-      "title": "80s VHS parody testimonial: \"Gary's Gutters\" (33 s, v5, ElevenLabs voices)",
-      "caption": "Real results. Fake Gary. Your van doesn't have to be the refrigerator of the block. Full wraps in Gig Harbor.\n(Dramatization. Gary is an AI actor; Gary's Gutters is fictional.)\nMusic: \"Local Forecast - Elevator\" Kevin MacLeod (incompetech.com) \u00b7 CC BY 4.0\n",
-      "brand": "USA Wrap Co",
-      "family": "USA Wrap Co",
-      "network": "business",
-      "platforms": [
-        "X"
-      ],
-      "planned_date": "2026-11-24",
-      "planned_time": "4:00 PM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-24T16:00:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/x014.jpg",
       "video": null
     },
     {
@@ -2881,7 +2861,7 @@
   ],
   "counts": {
     "ready": 4,
-    "planned": 62,
+    "planned": 61,
     "group_shares": 76,
     "videos": 4
   }
