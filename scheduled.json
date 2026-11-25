@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-25T08:53:27.339181-08:00",
-  "generated_at_pt": "2026-11-25 8:53 AM PT",
+  "generated_at": "2026-11-25T09:54:40.874572-08:00",
+  "generated_at_pt": "2026-11-25 9:54 AM PT",
   "timezone": "America/Los_Angeles",
   "items": [
     {
@@ -138,26 +138,6 @@
       "video": null
     },
     {
-      "id": "X021",
-      "group_id": "X021",
-      "title": "Cybertruck matte color-change wrap (real job photo, 4:5)",
-      "caption": "Same Cybertruck. Matte mode. Color-change wrap, original finish protected underneath. Wrapped by USA Wrap Co.\n",
-      "brand": "USA Wrap Co",
-      "family": "USA Wrap Co",
-      "network": "business",
-      "platforms": [
-        "X"
-      ],
-      "planned_date": "2026-11-25",
-      "planned_time": "7:30 AM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-25T07:30:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/x021.jpg",
-      "video": null
-    },
-    {
       "id": "L002",
       "group_id": "L002",
       "title": "Jefferson County Food Bank Association donated EV",
@@ -195,86 +175,6 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/l013.jpg",
-      "video": null
-    },
-    {
-      "id": "L015",
-      "group_id": "L015",
-      "title": "Cybertruck matte color-change wrap (real job photo, 4:5)",
-      "caption": "Color-change wraps protect the factory finish underneath and can be removed later. This Cybertruck went matte.\n\nUSA Wrap Co designs, prints and installs vehicle wraps, fleet graphics and lettering. Call .\n\n#FleetGraphics #VehicleWraps #SmallBusiness",
-      "brand": "USA Wrap Co",
-      "family": "USA Wrap Co",
-      "network": "business",
-      "platforms": [
-        "LinkedIn"
-      ],
-      "planned_date": "2026-11-25",
-      "planned_time": "8:30 AM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-25T08:30:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/l015.jpg",
-      "video": null
-    },
-    {
-      "id": "H252",
-      "group_id": "H252",
-      "title": "Raverie vending truck wrap (real job photo)",
-      "caption": "Fresh wrap on the Raverie vending truck. Bold color that people notice from across the lot",
-      "brand": "USA Wrap Co \u00b7 Gig Harbor",
-      "family": "USA Wrap Co \u00b7 Gig Harbor",
-      "network": "business",
-      "platforms": [
-        "Google Business"
-      ],
-      "planned_date": "2026-11-25",
-      "planned_time": "9:30 AM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-25T09:30:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/h252.jpg",
-      "video": null
-    },
-    {
-      "id": "H258",
-      "group_id": "H258",
-      "title": "Cybertruck matte color change (real job photo)",
-      "caption": "Matte color-change wrap on a Cybertruck. The original finish stays protected underneath",
-      "brand": "USA Wrap Co \u00b7 Olympia",
-      "family": "USA Wrap Co \u00b7 Olympia",
-      "network": "business",
-      "platforms": [
-        "Google Business"
-      ],
-      "planned_date": "2026-11-25",
-      "planned_time": "9:30 AM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-25T09:30:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/h258.jpg",
-      "video": null
-    },
-    {
-      "id": "H264",
-      "group_id": "H264",
-      "title": "Octopus custom EVA deck design (real job photo)",
-      "caption": "Custom EVA foam decking with an octopus design. Soft, grippy underfoot and built for the water",
-      "brand": "DekWave",
-      "family": "DekWave",
-      "network": "business",
-      "platforms": [
-        "Google Business"
-      ],
-      "planned_date": "2026-11-25",
-      "planned_time": "9:30 AM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-25T09:30:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/h264.jpg",
       "video": null
     },
     {
@@ -2615,10 +2515,10 @@
       "video": null
     },
     {
-      "id": "H267",
-      "group_id": "H267",
-      "title": "Orange star EVA deck (real job photo)",
-      "caption": "EVA foam decking with an orange star accent, cut to fit",
+      "id": "H264",
+      "group_id": "H264",
+      "title": "Octopus custom EVA deck design (real job photo)",
+      "caption": "Custom EVA foam decking with an octopus design. Soft, grippy underfoot and built for the water",
       "brand": "DekWave",
       "family": "DekWave",
       "network": "business",
@@ -2631,7 +2531,7 @@
       "planned_at": "2026-12-03T09:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h267.jpg",
+      "still": "media/scheduled/h264.jpg",
       "video": null
     },
     {
@@ -4058,6 +3958,46 @@
       "video": null
     },
     {
+      "id": "H252",
+      "group_id": "H252",
+      "title": "Raverie vending truck wrap (real job photo)",
+      "caption": "Fresh wrap on the Raverie vending truck. Bold color that people notice from across the lot",
+      "brand": "USA Wrap Co \u00b7 Gig Harbor",
+      "family": "USA Wrap Co \u00b7 Gig Harbor",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-14",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-14T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h252.jpg",
+      "video": null
+    },
+    {
+      "id": "H258",
+      "group_id": "H258",
+      "title": "Cybertruck matte color change (real job photo)",
+      "caption": "Matte color-change wrap on a Cybertruck. The original finish stays protected underneath",
+      "brand": "USA Wrap Co \u00b7 Olympia",
+      "family": "USA Wrap Co \u00b7 Olympia",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-14",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-14T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h258.jpg",
+      "video": null
+    },
+    {
       "id": "L011",
       "group_id": "L011",
       "title": "Chance wrapping",
@@ -4134,6 +4074,27 @@
       "planned_time": "9:27 AM",
       "planned_tz": "PT",
       "planned_at": "2026-11-24T09:27:00-08:00",
+      "status": "Pending review",
+      "kind": "gbp",
+      "still": null,
+      "video": null
+    },
+    {
+      "id": "gbp:H296",
+      "group_id": "gbp:h296",
+      "title": "Zeus Electrical Sprinter full wrap (real job photo, phone/URL/QR/plate blurred)",
+      "caption": "Olympia and Thurston County contractors: your van is parked in front of every customer you visit",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "location": "USA Wrap Co \u00b7 Olympia",
+      "planned_date": "2026-11-25",
+      "planned_time": "9:30 AM",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-25T09:30:00-08:00",
       "status": "Pending review",
       "kind": "gbp",
       "still": null,
@@ -5664,7 +5625,7 @@
   ],
   "counts": {
     "ready": 4,
-    "planned": 199,
+    "planned": 197,
     "group_shares": 76,
     "videos": 4
   }
