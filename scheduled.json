@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T21:57:59.647699-08:00",
-  "generated_at_pt": "2026-11-24 9:57 PM PT",
+  "generated_at": "2026-11-25T06:57:05.254151-08:00",
+  "generated_at_pt": "2026-11-25 6:57 AM PT",
   "timezone": "America/Los_Angeles",
   "items": [
     {
@@ -94,27 +94,6 @@
       "kind": "short",
       "still": "media/scheduled/mdp-places-2026-11-24-sample.jpg",
       "video": "media/scheduled/mdp-places-2026-11-24-sample-720.mp4"
-    },
-    {
-      "id": "QVN003",
-      "group_id": "qvn003-qvn004",
-      "title": "QVN map briefing Reel v3: this week on the plains, week of Nov. 22, 2026",
-      "caption": "Your rundown for the plains east of Denver, week of Nov. 22.\n\nI-70 between Watkins and Bennett: median cable barrier work, with one westbound lane closed weekdays 9 a.m.\u20135 p.m., through late March 2027.\nElizabeth: the Senior Baskets drive is collecting donations through the week of Dec. 8.\nNear Kiowa: T21 Sensory Ranch offers free one-on-one visits for people with disabilities, by appointment.\nKiowa: Christmas in Kiowa is Sat., Nov. 28, with live reindeer at the Extravaganza from noon to 2:30 p.m. and the lighted car parade and tree lighting Saturday evening.\nElizabeth: the Mayor's Tree Lighting is Sat., Dec. 5, 3\u20136 p.m. on Main Street, with the tree lit at 5 p.m.\n\nThanks to CDOT, Sentinel Colorado, Elbert County News, the Town of Elizabeth, Inside Elizabeth, Rocky Mountain PBS, the Town of Kiowa and Our Journey for the reporting and listings behind this rundown.\n\nFollow along for local news and things to do.\n\n#QuintValleyNews #Bennett #Strasburg #Kiowa #ElizabethCO",
-      "brand": "Quint Valley News",
-      "family": "Quint Valley News",
-      "network": "news",
-      "platforms": [
-        "Facebook",
-        "Instagram"
-      ],
-      "planned_date": "2026-11-24",
-      "planned_time": "12:00 p.m. MT",
-      "planned_tz": "MT",
-      "planned_at": "2026-11-24T11:00:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/qvn003.jpg",
-      "video": null
     },
     {
       "id": "QVN005",
@@ -235,7 +214,7 @@
       "planned_at": "2026-11-25T08:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/l015.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -336,7 +315,7 @@
       "planned_at": "2026-11-25T10:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h224.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -640,7 +619,7 @@
       "planned_at": "2026-11-26T08:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/l016.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -661,7 +640,7 @@
       "planned_at": "2026-11-26T10:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h226.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -802,7 +781,7 @@
       "planned_at": "2026-11-26T16:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/x022.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -884,7 +863,7 @@
       "planned_at": "2026-11-27T07:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h200.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -904,7 +883,7 @@
       "planned_at": "2026-11-27T07:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/x023.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -965,7 +944,7 @@
       "planned_at": "2026-11-27T08:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/l017.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -1066,7 +1045,7 @@
       "planned_at": "2026-11-27T10:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h228.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -1310,7 +1289,7 @@
       "planned_at": "2026-11-28T10:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h230.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -1391,7 +1370,7 @@
       "planned_at": "2026-11-28T16:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h202.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -1431,7 +1410,7 @@
       "planned_at": "2026-11-28T16:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/x024.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -1473,7 +1452,7 @@
       "planned_at": "2026-11-29T07:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h204.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -1493,7 +1472,7 @@
       "planned_at": "2026-11-29T07:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/x025.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -1616,7 +1595,7 @@
       "planned_at": "2026-11-29T10:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h232.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -1839,7 +1818,7 @@
       "planned_at": "2026-11-30T08:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/l018.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -1860,7 +1839,7 @@
       "planned_at": "2026-11-30T10:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h234.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -1941,7 +1920,7 @@
       "planned_at": "2026-11-30T16:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h206.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -1981,7 +1960,7 @@
       "planned_at": "2026-11-30T16:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/x026.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -2063,7 +2042,7 @@
       "planned_at": "2026-12-01T08:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/l019.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -2084,7 +2063,7 @@
       "planned_at": "2026-12-01T10:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h236.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -2206,7 +2185,7 @@
       "planned_at": "2026-12-01T16:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h208.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -2246,7 +2225,7 @@
       "planned_at": "2026-12-01T16:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/x027.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -2368,7 +2347,7 @@
       "planned_at": "2026-12-02T08:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/l020.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -2389,7 +2368,7 @@
       "planned_at": "2026-12-02T10:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h238.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -2470,7 +2449,7 @@
       "planned_at": "2026-12-02T16:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h210.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -2490,7 +2469,7 @@
       "planned_at": "2026-12-02T16:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/x028.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -2532,7 +2511,7 @@
       "planned_at": "2026-12-03T07:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h212.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -2552,7 +2531,7 @@
       "planned_at": "2026-12-03T07:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/x029.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -2592,7 +2571,7 @@
       "planned_at": "2026-12-03T08:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/l021.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -2673,7 +2652,7 @@
       "planned_at": "2026-12-03T10:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h240.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -2796,7 +2775,7 @@
       "planned_at": "2026-12-04T07:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h214.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -2816,7 +2795,7 @@
       "planned_at": "2026-12-04T07:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/x030.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -2857,7 +2836,7 @@
       "planned_at": "2026-12-04T10:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h242.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -3041,7 +3020,7 @@
       "planned_at": "2026-12-05T10:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h244.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -3103,7 +3082,7 @@
       "planned_at": "2026-12-05T16:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h216.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -3143,7 +3122,7 @@
       "planned_at": "2026-12-05T16:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/x031.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -3185,7 +3164,7 @@
       "planned_at": "2026-12-06T07:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h218.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -3205,7 +3184,7 @@
       "planned_at": "2026-12-06T07:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/x032.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -3226,7 +3205,7 @@
       "planned_at": "2026-12-06T10:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h246.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -3367,7 +3346,7 @@
       "planned_at": "2026-12-07T07:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h220.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -3387,7 +3366,7 @@
       "planned_at": "2026-12-07T07:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/x033.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -3448,7 +3427,7 @@
       "planned_at": "2026-12-07T08:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/l022.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -3529,7 +3508,7 @@
       "planned_at": "2026-12-07T10:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h248.jpg",
+      "still": "media/scheduled/h249.jpg",
       "video": null
     },
     {
@@ -3652,7 +3631,7 @@
       "planned_at": "2026-12-08T07:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/h222.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -3672,7 +3651,7 @@
       "planned_at": "2026-12-08T07:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/x034.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -3692,7 +3671,7 @@
       "planned_at": "2026-12-08T08:30:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/l023.jpg",
+      "still": null,
       "video": null
     },
     {
@@ -5685,7 +5664,7 @@
   ],
   "counts": {
     "ready": 4,
-    "planned": 200,
+    "planned": 199,
     "group_shares": 76,
     "videos": 4
   }
