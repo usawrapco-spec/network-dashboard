@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T19:58:19.385456-08:00",
-  "generated_at_pt": "2026-11-24 7:58 PM PT",
+  "generated_at": "2026-11-24T20:56:15.003604-08:00",
+  "generated_at_pt": "2026-11-24 8:56 PM PT",
   "timezone": "America/Los_Angeles",
   "items": [
     {
@@ -2129,6 +2129,26 @@
       "video": null
     },
     {
+      "id": "X003",
+      "group_id": "X003",
+      "title": "Jefferson County Food Bank Association EV van (real job photo)",
+      "caption": "A wrap that works every mile. Full EV van wrap for the Jefferson County Food Bank Association, with a route map right on the back doors. Wrapped in Gig Harbor. #vanwrap #fleetgraphics #nonprofit #gigharbor",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-12-01",
+      "planned_time": "12:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-01T12:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x003.jpg",
+      "video": null
+    },
+    {
       "id": "H280",
       "group_id": "H280",
       "title": "Harbor Desk card: 1 library this week",
@@ -3025,6 +3045,26 @@
       "video": null
     },
     {
+      "id": "X002",
+      "group_id": "X002",
+      "title": "Golden Events SUV side + back (real job photos; bystander plate blurred)",
+      "caption": "One SUV, two stories: gold lettering on the doors, a PNW mountain mural on the back. Golden Events, wrapped in Gig Harbor. #vehiclewrap #pnw #gigharbor",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-12-05",
+      "planned_time": "12:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-05T12:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x002.jpg",
+      "video": null
+    },
+    {
       "id": "DW054",
       "group_id": "dw054-dw055",
       "title": "Typographic card: On the stands? Plan the deck (winter haul-out, no photo)",
@@ -3836,6 +3876,26 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/h293.jpg",
+      "video": null
+    },
+    {
+      "id": "SJ007",
+      "group_id": "SJ007",
+      "title": "Chrome + glass tube, 4:5 color-render crop",
+      "caption": "You shouldn't have to scrape it, pinch it, or hope the ember actually died.\n\nPress the button, drop the cigar in the glass tube, the lid seals, the vacuum does the rest. The tube locks in the smell.\n\nPuff Pods by Savajay. Patent pending.\n\nColor renders.\n\nFounder reservations are open at https://savajay.com/fb. Reservations only; payment isn't live yet.\n21+ only. For legal use only.\n\n#PuffPods #Savajay #CigarLife #CigarAccessory #SOTL #PatentPending #FoundersDrive",
+      "brand": "Savajay",
+      "family": "Savajay",
+      "network": "business",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-12-09",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-09T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/sj007.jpg",
       "video": null
     },
     {
@@ -5625,7 +5685,7 @@
   ],
   "counts": {
     "ready": 4,
-    "planned": 197,
+    "planned": 200,
     "group_shares": 76,
     "videos": 4
   }
