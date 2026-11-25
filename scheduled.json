@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-25T09:54:40.874572-08:00",
-  "generated_at_pt": "2026-11-25 9:54 AM PT",
+  "generated_at": "2026-11-25T10:57:29.901692-08:00",
+  "generated_at_pt": "2026-11-25 10:57 AM PT",
   "timezone": "America/Los_Angeles",
   "items": [
     {
@@ -178,26 +178,6 @@
       "video": null
     },
     {
-      "id": "X010",
-      "group_id": "X010",
-      "title": "01 Bay Pointe shuttle poster (\"IN THE BAY\", real mid-install job photo, 4:5)",
-      "caption": "In the bay: Bay Pointe Senior Living's shuttle, mid-install in our Gig Harbor shop. Panels go on one section at a time so the graphics read clean from the curb.\n",
-      "brand": "USA Wrap Co",
-      "family": "USA Wrap Co",
-      "network": "business",
-      "platforms": [
-        "X"
-      ],
-      "planned_date": "2026-11-25",
-      "planned_time": "10:00 AM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-25T10:00:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/x010.jpg",
-      "video": null
-    },
-    {
       "id": "H224",
       "group_id": "h224-h225",
       "title": "Story: T-Mobile van wrap (real job photo, 9:16)",
@@ -216,26 +196,6 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/h224.jpg",
-      "video": null
-    },
-    {
-      "id": "X011",
-      "group_id": "X011",
-      "title": "Local shout-out: Gig Harbor Cruisers Automotive Club",
-      "caption": "Local shout-out to Gig Harbor Cruisers Automotive Club. Since 1997 they've welcomed all makes and years, and Cruise the Narrows in Uptown helps fund local youth activities. Thanks for keeping the Peninsula car scene rolling.\n",
-      "brand": "USA Wrap Co",
-      "family": "USA Wrap Co",
-      "network": "business",
-      "platforms": [
-        "X"
-      ],
-      "planned_date": "2026-11-25",
-      "planned_time": "10:30 AM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-25T10:30:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/x011.jpg",
       "video": null
     },
     {
@@ -5625,7 +5585,7 @@
   ],
   "counts": {
     "ready": 4,
-    "planned": 197,
+    "planned": 195,
     "group_shares": 76,
     "videos": 4
   }

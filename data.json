@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-25T09:54:40-08:00",
-  "generated_at_pt": "Wed Nov 25, 2026, 9:54 AM PT",
+  "generated_at": "2026-11-25T10:57:29-08:00",
+  "generated_at_pt": "Wed Nov 25, 2026, 10:57 AM PT",
   "timezone": "America/Los_Angeles",
   "notes": {
     "YouTube": "Views and likes via yt-dlp. Comment counts are shown when YouTube exposes them; otherwise n/a.",
@@ -130,26 +130,26 @@
     }
   ],
   "totals": {
-    "posts": 30,
+    "posts": 31,
     "stories": 2,
     "group_shares": 2,
-    "views": 1517,
+    "views": 1529,
     "likes": 10,
     "comments": 3,
     "shares": 0,
-    "views_known": 13,
-    "likes_known": 8,
+    "views_known": 14,
+    "likes_known": 9,
     "by_brand": {
       "USA Wrap Co": {
-        "posts": 12,
+        "posts": 13,
         "stories": 2,
         "group_shares": 2,
-        "views": 114,
+        "views": 124,
         "likes": 0,
         "comments": 0,
         "shares": 0,
-        "views_known": 4,
-        "likes_known": 3
+        "views_known": 5,
+        "likes_known": 4
       },
       "DekWave": {
         "posts": 5,
@@ -177,7 +177,7 @@
         "posts": 2,
         "stories": 0,
         "group_shares": 0,
-        "views": 54,
+        "views": 56,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -220,15 +220,15 @@
     },
     "by_platform": {
       "X": {
-        "posts": 7,
+        "posts": 8,
         "stories": 0,
         "group_shares": 0,
-        "views": 110,
+        "views": 119,
         "likes": 0,
         "comments": 3,
         "shares": 0,
-        "views_known": 7,
-        "likes_known": 7
+        "views_known": 8,
+        "likes_known": 8
       },
       "Google Business": {
         "posts": 2,
@@ -256,7 +256,7 @@
         "posts": 11,
         "stories": 1,
         "group_shares": 2,
-        "views": 210,
+        "views": 213,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -277,15 +277,15 @@
     },
     "by_family": {
       "USA Wrap Co": {
-        "posts": 12,
+        "posts": 13,
         "stories": 2,
         "group_shares": 2,
-        "views": 114,
+        "views": 124,
         "likes": 0,
         "comments": 0,
         "shares": 0,
-        "views_known": 4,
-        "likes_known": 3
+        "views_known": 5,
+        "likes_known": 4
       },
       "DekWave": {
         "posts": 5,
@@ -302,7 +302,7 @@
         "posts": 11,
         "stories": 0,
         "group_shares": 0,
-        "views": 1403,
+        "views": 1405,
         "likes": 10,
         "comments": 3,
         "shares": 0,
@@ -335,6 +335,30 @@
   },
   "posts": [
     {
+      "id": "https://x.com/usawrapco/status/2125658939815866738",
+      "episode": null,
+      "plan_id": "X011",
+      "group_id": "x011",
+      "date": "2026-11-25",
+      "time_pt": "10:42 AM",
+      "datetime_pt": "2026-11-25T10:42:00-08:00",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platform": "X",
+      "title": "Local shout-out to Gig Harbor Cruisers Automotive Club. Since 1997 they've welcomed all makes and years, and Cruise the Narrows in Uptown h\u2026",
+      "link": "https://x.com/usawrapco/status/2125658939815866738",
+      "kind": "post",
+      "views": 2,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "impressions": 2,
+      "last_updated": "2026-11-25T10:57:29-08:00",
+      "stats_source": "fxtwitter",
+      "stats_note": null
+    },
+    {
       "id": "https://x.com/usawrapco/status/2125643831832178695",
       "episode": null,
       "plan_id": "X021",
@@ -349,12 +373,12 @@
       "title": "Same Cybertruck. Matte mode. Color-change wrap, original finish protected underneath. Wrapped by USA Wrap Co. Call .",
       "link": "https://x.com/usawrapco/status/2125643831832178695",
       "kind": "post",
-      "views": 2,
+      "views": 6,
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "impressions": 2,
-      "last_updated": "2026-11-25T09:54:40-08:00",
+      "impressions": 6,
+      "last_updated": "2026-11-25T10:57:29-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -380,7 +404,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T09:54:40-08:00",
+      "last_updated": "2026-11-25T10:57:29-08:00",
       "stats_source": "none",
       "stats_note": "Google Business posts have no public URL. Stats are n/a."
     },
@@ -406,7 +430,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T09:54:40-08:00",
+      "last_updated": "2026-11-25T10:57:29-08:00",
       "stats_source": "none",
       "stats_note": "Google Business posts have no public URL. Stats are n/a."
     },
@@ -430,7 +454,7 @@
       "comments": 1,
       "shares": 0,
       "impressions": 5,
-      "last_updated": "2026-11-25T09:54:40-08:00",
+      "last_updated": "2026-11-25T10:57:29-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -454,7 +478,7 @@
       "comments": 1,
       "shares": 0,
       "impressions": 6,
-      "last_updated": "2026-11-25T09:54:40-08:00",
+      "last_updated": "2026-11-25T10:57:29-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -478,7 +502,7 @@
       "comments": 1,
       "shares": 0,
       "impressions": 10,
-      "last_updated": "2026-11-25T09:54:40-08:00",
+      "last_updated": "2026-11-25T10:57:29-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -542,7 +566,7 @@
       "family": "Map Desk",
       "network": "news",
       "platform": "YouTube",
-      "title": "Pan for gold where the Gold Rush began + more | Map Desk Places",
+      "title": "post",
       "link": "https://youtube.com/shorts/9blV7hHzzD8",
       "kind": "post",
       "views": 21,
@@ -552,7 +576,7 @@
       "impressions": null,
       "last_updated": "2026-11-25T09:54:40-08:00",
       "stats_source": "yt-dlp",
-      "stats_note": null
+      "stats_note": "Using last known stats; live fetch via yt-dlp failed"
     },
     {
       "id": "https://x.com/usawrapco/status/2125411672068338148",
@@ -569,12 +593,12 @@
       "title": "Real results. Fake Gary. Your van doesn't have to be the refrigerator of the block. Full wraps in Gig Harbor. (Dramatization. Gary is an AI\u2026",
       "link": "https://x.com/usawrapco/status/2125411672068338148",
       "kind": "post",
-      "views": 68,
+      "views": 71,
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "impressions": 68,
-      "last_updated": "2026-11-25T09:54:40-08:00",
+      "impressions": 71,
+      "last_updated": "2026-11-25T10:57:29-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -593,12 +617,12 @@
       "title": "Real results. Fake Gary. \ud83d\udcfc Your van doesn't have to be the refrigerator of the block. Full wraps designed, printed and installed in Gig Har\u2026",
       "link": "https://www.facebook.com/reel/1153969150339435",
       "kind": "post",
-      "views": 27,
+      "views": 28,
       "likes": null,
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T09:54:40-08:00",
+      "last_updated": "2026-11-25T10:57:29-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -689,12 +713,12 @@
       "title": "World news today, November 24, 2026: Factory fire in Indonesia kills at least 26; New floods hit the Galapagos Islands; Euclid finds the mo\u2026",
       "link": "https://www.facebook.com/reel/1404021491565229",
       "kind": "post",
-      "views": 50,
+      "views": 52,
       "likes": null,
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T09:54:40-08:00",
+      "last_updated": "2026-11-25T10:57:29-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -742,7 +766,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 2,
-      "last_updated": "2026-11-25T09:54:40-08:00",
+      "last_updated": "2026-11-25T10:57:29-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -767,7 +791,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T09:54:40-08:00",
+      "last_updated": "2026-11-25T10:57:29-08:00",
       "stats_source": "none",
       "stats_note": "Group share stats are n/a unless a public count is available."
     },
@@ -791,7 +815,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T09:54:40-08:00",
+      "last_updated": "2026-11-25T10:57:29-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -1133,7 +1157,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 17,
-      "last_updated": "2026-11-25T09:54:40-08:00",
+      "last_updated": "2026-11-25T10:57:29-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -1158,7 +1182,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T09:54:40-08:00",
+      "last_updated": "2026-11-25T10:57:29-08:00",
       "stats_source": "none",
       "stats_note": "Group share stats are n/a unless a public count is available."
     }
@@ -2682,11 +2706,158 @@
       },
       "youtube_subscribers": null,
       "x_followers": 0
+    },
+    {
+      "at": "2026-11-25T10:57:29-08:00",
+      "label": "Wed Nov 25, 2026, 10:57 AM PT",
+      "views": 1529,
+      "likes": 10,
+      "comments": 3,
+      "shares": 0,
+      "posts": 31,
+      "by_brand": {
+        "USA Wrap Co": {
+          "posts": 13,
+          "stories": 2,
+          "group_shares": 2,
+          "views": 124,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 5,
+          "likes_known": 4
+        },
+        "DekWave": {
+          "posts": 5,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        },
+        "Map Desk Places": {
+          "posts": 6,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 42,
+          "likes": 0,
+          "comments": 3,
+          "shares": 0,
+          "views_known": 4,
+          "likes_known": 3
+        },
+        "Map Desk World": {
+          "posts": 2,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 56,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 2,
+          "likes_known": 0
+        },
+        "Map Desk Money": {
+          "posts": 3,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 1307,
+          "likes": 10,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 3,
+          "likes_known": 2
+        },
+        "Quint Valley News": {
+          "posts": 1,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        },
+        "Harbor News": {
+          "posts": 1,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        }
+      },
+      "by_platform": {
+        "X": {
+          "posts": 8,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 119,
+          "likes": 0,
+          "comments": 3,
+          "shares": 0,
+          "views_known": 8,
+          "likes_known": 8
+        },
+        "Google Business": {
+          "posts": 2,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        },
+        "YouTube": {
+          "posts": 5,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 1197,
+          "likes": 10,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 3,
+          "likes_known": 1
+        },
+        "Facebook": {
+          "posts": 11,
+          "stories": 1,
+          "group_shares": 2,
+          "views": 213,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 3,
+          "likes_known": 0
+        },
+        "Instagram": {
+          "posts": 5,
+          "stories": 1,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        }
+      },
+      "youtube_subscribers": null,
+      "x_followers": 0
     }
   ],
   "scheduled": {
-    "generated_at": "2026-11-25T09:54:40.874572-08:00",
-    "generated_at_pt": "2026-11-25 9:54 AM PT",
+    "generated_at": "2026-11-25T10:57:29.901692-08:00",
+    "generated_at_pt": "2026-11-25 10:57 AM PT",
     "timezone": "America/Los_Angeles",
     "items": [
       {
@@ -2864,26 +3035,6 @@
         "video": null
       },
       {
-        "id": "X010",
-        "group_id": "X010",
-        "title": "01 Bay Pointe shuttle poster (\"IN THE BAY\", real mid-install job photo, 4:5)",
-        "caption": "In the bay: Bay Pointe Senior Living's shuttle, mid-install in our Gig Harbor shop. Panels go on one section at a time so the graphics read clean from the curb.\n",
-        "brand": "USA Wrap Co",
-        "family": "USA Wrap Co",
-        "network": "business",
-        "platforms": [
-          "X"
-        ],
-        "planned_date": "2026-11-25",
-        "planned_time": "10:00 AM PT",
-        "planned_tz": "PT",
-        "planned_at": "2026-11-25T10:00:00-08:00",
-        "status": "Approved",
-        "kind": "plan",
-        "still": "media/scheduled/x010.jpg",
-        "video": null
-      },
-      {
         "id": "H224",
         "group_id": "h224-h225",
         "title": "Story: T-Mobile van wrap (real job photo, 9:16)",
@@ -2902,26 +3053,6 @@
         "status": "Approved",
         "kind": "plan",
         "still": "media/scheduled/h224.jpg",
-        "video": null
-      },
-      {
-        "id": "X011",
-        "group_id": "X011",
-        "title": "Local shout-out: Gig Harbor Cruisers Automotive Club",
-        "caption": "Local shout-out to Gig Harbor Cruisers Automotive Club. Since 1997 they've welcomed all makes and years, and Cruise the Narrows in Uptown helps fund local youth activities. Thanks for keeping the Peninsula car scene rolling.\n",
-        "brand": "USA Wrap Co",
-        "family": "USA Wrap Co",
-        "network": "business",
-        "platforms": [
-          "X"
-        ],
-        "planned_date": "2026-11-25",
-        "planned_time": "10:30 AM PT",
-        "planned_tz": "PT",
-        "planned_at": "2026-11-25T10:30:00-08:00",
-        "status": "Approved",
-        "kind": "plan",
-        "still": "media/scheduled/x011.jpg",
         "video": null
       },
       {
@@ -8311,7 +8442,7 @@
     ],
     "counts": {
       "ready": 4,
-      "planned": 197,
+      "planned": 195,
       "group_shares": 76,
       "videos": 4
     }
