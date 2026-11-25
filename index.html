@@ -425,7 +425,8 @@
       grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
       gap: 14px;
     }
-    .sched-card { margin-bottom: 0; }
+    .sched-card { margin-bottom: 0; min-width: 0; max-width: 100%; }
+    .group-card, .post-card { min-width: 0; max-width: 100%; }
     .sched-card .media {
       background: #0a0e16;
       border-radius: 12px;
@@ -441,6 +442,8 @@
     }
     .sched-card .caption {
       white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      word-break: break-word;
       color: var(--text-2);
       font-size: 0.85rem;
       margin: 8px 0 0;
@@ -448,6 +451,8 @@
     .sched-meta { color: var(--text-3); font-size: 0.8rem; margin: 2px 0; }
     .gbp-caption {
       white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      word-break: break-word;
       color: var(--text-2);
       font-size: 0.9rem;
       margin: 8px 0 0;
