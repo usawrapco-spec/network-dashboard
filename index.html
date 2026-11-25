@@ -105,7 +105,7 @@
 
     .platform-cards {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 14px;
       margin-bottom: 28px;
     }
@@ -294,6 +294,7 @@
     .chip-sand { background: rgba(240, 228, 66, 0.14); color: var(--sand); }
     .chip-default { background: rgba(232, 237, 245, 0.08); color: #d5dde8; }
 
+    .nav-block { margin: 0 0 16px; }
     .audience {
       display: flex;
       flex-wrap: wrap;
@@ -301,11 +302,16 @@
       width: max-content;
       max-width: 100%;
       padding: 4px;
-      margin: 0 0 16px;
+      margin: 0 0 8px;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 999px;
     }
+    .audience.brands, .audience.series {
+      width: 100%;
+      border-radius: 16px;
+    }
+    .audience.series[hidden] { display: none; }
     .audience button {
       background: transparent;
       color: var(--text-2);
@@ -341,6 +347,7 @@
     .badge-ready { background: var(--gold-soft); color: var(--gold); }
     .badge-approved { background: rgba(94, 182, 230, 0.14); color: var(--sky); }
     .badge-awaiting { background: rgba(240, 228, 66, 0.14); color: var(--sand); }
+    .badge-pending { background: rgba(127, 212, 200, 0.14); color: var(--teal); }
     .badge-status {
       display: inline-block;
       padding: 2px 8px;
@@ -375,7 +382,7 @@
     .group-totals strong { color: var(--text); font-variant-numeric: tabular-nums; }
     .plat-cells {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, minmax(0, 1fr));
       gap: 8px;
     }
     .plat-cell {
@@ -439,6 +446,14 @@
       margin: 8px 0 0;
     }
     .sched-meta { color: var(--text-3); font-size: 0.8rem; margin: 2px 0; }
+    .gbp-caption {
+      white-space: pre-wrap;
+      color: var(--text-2);
+      font-size: 0.9rem;
+      margin: 8px 0 0;
+      max-width: 72ch;
+    }
+    .gbp-location { color: var(--text-2); font-size: 0.9rem; font-weight: 600; margin: 4px 0 0; }
     @media (max-width: 800px) {
       .plat-cells { grid-template-columns: repeat(2, 1fr); }
     }
@@ -541,10 +556,15 @@
       .metrics { grid-template-columns: repeat(4, minmax(88px, 1fr)); }
     }
 
+    @media (max-width: 1200px) {
+      .platform-cards { grid-template-columns: repeat(3, 1fr); }
+      .plat-cells { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
     @media (max-width: 900px) {
       main { padding: 22px 16px 80px; }
       header { padding-left: 16px; padding-right: 16px; }
       .platform-cards { grid-template-columns: repeat(2, 1fr); }
+      .plat-cells { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 800px) {
       .table-wrap table { display: none; }
@@ -578,12 +598,29 @@
   </header>
   <main>
     <p class="kpis" id="overall"></p>
-    <div class="audience" role="tablist" aria-label="Brand group" id="audience">
-      <button type="button" data-audience="all" aria-selected="true">All brands</button>
-      <button type="button" data-audience="news">News</button>
-      <button type="button" data-audience="business">Local businesses</button>
+    <div class="nav-block">
+      <div class="audience" role="tablist" aria-label="Brand group" id="groups">
+        <button type="button" data-group="all" aria-selected="true">All brands</button>
+        <button type="button" data-group="news">News</button>
+        <button type="button" data-group="business">Local businesses</button>
+      </div>
+      <div class="audience brands" role="tablist" aria-label="Brand" id="brands">
+        <button type="button" data-brand="USA Wrap Co">USA Wrap Co</button>
+        <button type="button" data-brand="Chance the Wrapper">Chance the Wrapper</button>
+        <button type="button" data-brand="DekWave">DekWave</button>
+        <button type="button" data-brand="Savajay">Savajay</button>
+        <button type="button" data-brand="Harbor News">Harbor News</button>
+        <button type="button" data-brand="Quint Valley News">Quint Valley News</button>
+        <button type="button" data-brand="Map Desk">Map Desk</button>
+      </div>
+      <div class="audience series" role="tablist" aria-label="Map Desk series" id="series" hidden>
+        <button type="button" data-series="all" aria-selected="true">All Map Desk</button>
+        <button type="button" data-series="Money">Money</button>
+        <button type="button" data-series="World">World</button>
+        <button type="button" data-series="Places">Places</button>
+      </div>
     </div>
-    <p class="hint" id="status-note">Totals count only numbers a platform actually returns. n/a means missing, not zero. Scheduled shows upcoming posts that are ready or approved; each one leaves this list once it is posted.</p>
+    <p class="hint" id="status-note">Totals count only numbers a platform actually returns. n/a means missing, not zero. Scheduled shows upcoming posts that are ready, approved, or pending Google review; each one leaves this list once it is posted. Google Business posts have no public URL.</p>
 
     <div class="platform-cards" id="platform-cards"></div>
 
@@ -638,7 +675,8 @@
       "quint-valley-news": "teal",
       "usa-wrap-co": "sky",
       "dekwave": "sand",
-      "savajay": "blue"
+      "savajay": "blue",
+      "chance-the-wrapper": "default"
     };
     function chip(text) {
       const theme = BRAND_THEME[slug(text)] || "default";
@@ -651,7 +689,8 @@
       Facebook: `<span class="icon-wrap" aria-hidden="true"><span class="icon"><svg viewBox="0 0 24 24" fill="#9ec4ff"><path d="M14.5 8.5V6.8c0-.7.5-1 1.2-1H17V3h-2.3C12.2 3 11 4.4 11 6.6v1.9H9v2.7h2V21h3.5v-9.8h2.3l.4-2.7h-2.7Z"/></svg></span></span>`,
       Instagram: `<span class="icon-wrap" aria-hidden="true"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#c08ae0" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="#c08ae0" stroke="none"/></svg></span></span>`,
       Posts: `<span class="icon-wrap" aria-hidden="true"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#ffc233" stroke-width="1.8"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 13h5"/></svg></span></span>`,
-      Scheduled: `<span class="icon-wrap" aria-hidden="true"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#5eb6e6" stroke-width="1.8"><circle cx="12" cy="13" r="7"/><path d="M12 10v3.5l2 1.5M9 4h6"/></svg></span></span>`
+      Scheduled: `<span class="icon-wrap" aria-hidden="true"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#5eb6e6" stroke-width="1.8"><circle cx="12" cy="13" r="7"/><path d="M12 10v3.5l2 1.5M9 4h6"/></svg></span></span>`,
+      "Google Business": `<span class="icon-wrap" aria-hidden="true"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#7fd4c8" stroke-width="1.8"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg></span></span>`
     };
 
     const PLATFORMS = [
@@ -697,25 +736,53 @@
           { key: "likes", label: "Likes" },
           { key: "comments", label: "Comments" }
         ]
+      },
+      {
+        id: "Google Business",
+        viewsLabel: "Pending review",
+        likesLabel: "",
+        followersLabel: "",
+        columns: []
       }
     ];
 
     let DATA = null;
     let active = "Posts";
     let audience = "all";
+    let selectedBrand = null;
+    let selectedSeries = "all";
     let sortKey = "date";
     let sortDir = "desc";
 
     const NEWS_RE = /map desk|harbor news|quint valley/i;
-    function inAudience(p) {
-      const family = String((p && (p.family || p.brand)) || "");
-      const news = NEWS_RE.test(family);
-      if (audience === "news") return news;
-      if (audience === "business") return !news;
+    const LOCAL_RE = /usa wrap|dekwave|savajay/i;
+    const BRAND_LIST = ["USA Wrap Co", "Chance the Wrapper", "DekWave", "Savajay", "Harbor News", "Quint Valley News", "Map Desk"];
+    function brandKey(p) {
+      return String((p && (p.family || p.brand)) || "");
+    }
+    function inAudience(p, opts) {
+      const accounts = !!(opts && opts.accounts);
+      const brand = String((p && p.brand) || "");
+      const family = brandKey(p);
+      const hay = (family + " " + brand).trim();
+      if (selectedBrand) {
+        if (selectedBrand === "Map Desk") {
+          if (!/map desk/i.test(hay)) return false;
+          if (accounts || selectedSeries === "all") return true;
+          const re = new RegExp(selectedSeries, "i");
+          return re.test(brand) || re.test(family);
+        }
+        if (selectedBrand === "USA Wrap Co") return /usa wrap/i.test(hay);
+        if (selectedBrand === "Chance the Wrapper") return /chance the wrapper/i.test(hay);
+        return hay.toLowerCase() === selectedBrand.toLowerCase() || family.toLowerCase() === selectedBrand.toLowerCase() || brand.toLowerCase() === selectedBrand.toLowerCase();
+      }
+      if (audience === "news") return NEWS_RE.test(hay);
+      if (audience === "business") return LOCAL_RE.test(hay);
       return true;
     }
     function isStory(p) { return p && p.kind === "story"; }
     function isGroupShare(p) { return p && p.kind === "group-share"; }
+    function isGbp(p) { return p && (p.kind === "gbp" || p.platform === "Google Business"); }
 
     function valueOf(post, col) {
       const v = post[col.key];
@@ -738,7 +805,7 @@
     function scheduledShares() {
       return ((DATA.scheduled && DATA.scheduled.group_shares) || []).filter(inAudience);
     }
-    const VIEW_TABS = ["Posts", "YouTube", "X", "Facebook", "Instagram", "Scheduled"];
+    const VIEW_TABS = ["Posts", "YouTube", "X", "Facebook", "Instagram", "Google Business", "Scheduled"];
     function viewsOf(p) {
       if (!p) return null;
       if (p.platform === "X") return p.impressions != null ? p.impressions : p.views;
@@ -753,7 +820,7 @@
       return { total, known };
     }
     function channelsFor(platform) {
-      return (DATA.channels || []).filter((c) => c.platform === platform);
+      return (DATA.channels || []).filter((c) => c.platform === platform && inAudience(c, { accounts: true }));
     }
     function accountGroups(platform) {
       const posts = postsFor(platform);
@@ -781,6 +848,9 @@
       });
       return [...groups.values()].filter((g) => g.posts.length || g.url);
     }
+    function pendingGbpCount() {
+      return scheduledItems().filter((i) => i.kind === "gbp" || (i.platforms || []).includes("Google Business")).length;
+    }
     function platformSummary(spec) {
       const posts = postsFor(spec.id);
       const views = sumKnown(posts, spec.id === "X" ? "impressions" : "views", spec.id === "X" ? "views" : null);
@@ -793,6 +863,7 @@
         likes: likes.known ? likes.total : null,
         followers: followers ? followers.followers : null,
         followersKnown: !!followers,
+        pending: spec.id === "Google Business" ? pendingGbpCount() : 0,
         comingSoon: spec.id === "Instagram" && posts.length === 0 && storiesFor(spec.id).length === 0
       };
     }
@@ -801,14 +872,16 @@
       $("platform-cards").innerHTML = PLATFORMS.map((spec) => {
         const s = platformSummary(spec);
         const pressed = active === spec.id;
-        return `<button type="button" class="plat-card" data-platform="${spec.id}" aria-pressed="${pressed}">
-          <div class="plat-name">${ICONS[spec.id]} <span>${escapeHtml(spec.id)}</span></div>
-          <div class="plat-metrics">
-            <div><span>Posts</span><strong>${fmt(s.posts) ?? "0"}</strong></div>
+        const metrics = spec.id === "Google Business"
+          ? `<div><span>Published</span><strong>${fmt(s.posts) ?? "0"}</strong></div>
+            <div><span>Pending review</span><strong>${fmt(s.pending) ?? "0"}</strong></div>`
+          : `<div><span>Posts</span><strong>${fmt(s.posts) ?? "0"}</strong></div>
             <div><span>${escapeHtml(spec.viewsLabel)}</span><strong>${cell(s.views)}</strong></div>
             <div><span>${escapeHtml(spec.likesLabel)}</span><strong>${cell(s.likes)}</strong></div>
-            <div><span>${escapeHtml(spec.followersLabel)}</span><strong>${cell(s.followers)}</strong></div>
-          </div>
+            <div><span>${escapeHtml(spec.followersLabel)}</span><strong>${cell(s.followers)}</strong></div>`;
+        return `<button type="button" class="plat-card" data-platform="${spec.id}" aria-pressed="${pressed}">
+          <div class="plat-name">${ICONS[spec.id]} <span>${escapeHtml(spec.id)}</span></div>
+          <div class="plat-metrics">${metrics}</div>
           ${s.comingSoon ? `<span class="coming-tag">Coming soon</span>` : ""}
         </button>`;
       }).join("");
@@ -821,7 +894,7 @@
 
     function tabCount(id) {
       if (id === "Posts") {
-        const ids = new Set((DATA.posts || []).filter((p) => inAudience(p) && !isStory(p)).map((p) => p.group_id || p.link || p.id));
+        const ids = new Set((DATA.posts || []).filter((p) => inAudience(p) && !isStory(p) && !isGroupShare(p)).map((p) => p.group_id || p.link || p.id));
         return ids.size;
       }
       if (id === "Scheduled") return scheduledItems().length;
@@ -1019,6 +1092,9 @@
       if (!p) {
         return `<div class="plat-cell empty"><div class="plat-label">${icon}<span>${escapeHtml(spec.id)}</span></div><div class="metric">Not posted<strong class="na">—</strong></div></div>`;
       }
+      if (spec.id === "Google Business") {
+        return `<div class="plat-cell"><div class="plat-label">${icon}<span>Google Business</span></div><div class="metric">Status<strong>${escapeHtml(p.status || "Published")}</strong></div><div class="metric">Location<strong>${escapeHtml(p.location || p.brand || "")}</strong></div></div>`;
+      }
       const label = p.link
         ? `<a href="${escapeHtml(p.link)}" target="_blank" rel="noopener">${escapeHtml(spec.id)}</a>`
         : escapeHtml(spec.id);
@@ -1027,7 +1103,7 @@
     }
     function statusBadge(status) {
       const key = String(status || "").toLowerCase().replace(/\s+/g, "-");
-      const cls = key === "ready" ? "badge-ready" : key === "awaiting-ok" ? "badge-awaiting" : "badge-approved";
+      const cls = key === "ready" ? "badge-ready" : (key === "awaiting-ok" || key === "pending-review") ? "badge-pending" : key === "published" ? "badge-approved" : "badge-approved";
       return `<span class="badge-status ${cls}">${escapeHtml(status || "")}</span>`;
     }
     function renderGroupedPosts() {
@@ -1035,6 +1111,17 @@
       const stories = groupedPosts(true).filter((g) => g.kind === "story");
       const feedHtml = feed.length ? feed.map((g) => {
         const tot = combinedTotals(g);
+        const gbpOnly = g.posts.length && g.posts.every(isGbp);
+        if (gbpOnly) {
+          const p = g.posts[0];
+          return `<article class="group-card">
+            <div>${chip(g.brand)} ${statusBadge(p.status || "Published")}</div>
+            <h4>${escapeHtml(g.title || "Google Business post")}</h4>
+            <div class="meta">${escapeHtml(g.date || "")} ${escapeHtml(g.time_pt || "")} ${g.time_pt ? "PT" : ""}</div>
+            <div class="gbp-location">${escapeHtml(p.location || "")}</div>
+            ${p.caption ? `<p class="gbp-caption">${escapeHtml(p.caption)}</p>` : ""}
+          </article>`;
+        }
         return `<article class="group-card">
           <div>${chip(g.brand)}</div>
           <h4>${escapeHtml(g.title || "Post")}</h4>
@@ -1077,7 +1164,7 @@
           <div>${chip(item.brand)} ${statusBadge(item.status)}</div>
           <h4>${escapeHtml(item.title || "Scheduled post")}</h4>
           <div class="sched-meta">${escapeHtml(when)}</div>
-          <div class="sched-meta">${escapeHtml((item.platforms || []).join(", "))}</div>
+          <div class="sched-meta">${escapeHtml((item.platforms || []).join(", "))}${item.location ? " · " + escapeHtml(item.location) : ""}</div>
           ${item.caption ? `<p class="caption">${escapeHtml(item.caption)}</p>` : ""}
         </article>`;
       }).join("")}</div>` : `<div class="empty"><strong>Nothing waiting</strong>No ready or approved posts are queued in this filter.</div>`;
@@ -1087,7 +1174,7 @@
         ${shares.map((s) => `<tr><td>${escapeHtml(s.planned_date || "")}</td><td>${escapeHtml((s.planned_time || "") + (s.planned_tz ? " " + s.planned_tz : ""))}</td><td>${chip(s.brand)}</td><td>${statusBadge(s.status)}</td></tr>`).join("")}
         </tbody></table></div>` : "";
       return `<div class="section-head">${ICONS.Scheduled}<h2>Scheduled</h2></div>
-        <p class="section-note">Upcoming posts that have passed QA or are approved. Each creative is listed once, with the platforms it will go to. A post leaves this list once it goes live. Preview clips are 720p when a small file is available; otherwise a still is shown.</p>
+        <p class="section-note">Upcoming posts that have passed QA, are approved, or are pending Google review. Each creative is listed once, with the platforms it will go to. A post leaves this list once it goes live. Preview clips are 720p when a small file is available; otherwise a still is shown.</p>
         ${cards}${shareTable}`;
     }
 
@@ -1139,6 +1226,40 @@
         </div>`;
     }
 
+    function renderGbp() {
+      const rows = sortedPosts("Google Business");
+      const pending = scheduledItems().filter((i) => i.kind === "gbp" || (i.platforms || []).includes("Google Business"));
+      const body = rows.map((p) => `
+        <tr>
+          <td>${escapeHtml(p.date || "")}${p.time_pt ? `<div class="meta">${escapeHtml(p.time_pt)} PT</div>` : ""}</td>
+          <td>${escapeHtml(p.location || "")}</td>
+          <td class="title">${escapeHtml(p.title || "Google Business post")}${p.caption ? `<div class="meta">${escapeHtml(p.caption)}</div>` : ""}</td>
+          <td>${statusBadge(p.status || "Published")}</td>
+        </tr>`).join("");
+      const cards = rows.map((p) => `
+        <article class="post-card">
+          <div>${chip(p.brand)} ${statusBadge(p.status || "Published")}</div>
+          <h4>${escapeHtml(p.title || "Google Business post")}</h4>
+          <div class="gbp-location">${escapeHtml(p.location || "")}</div>
+          <div class="meta">${escapeHtml(p.date || "")} ${escapeHtml(p.time_pt || "")} ${p.time_pt ? "PT" : ""}</div>
+          ${p.caption ? `<p class="gbp-caption">${escapeHtml(p.caption)}</p>` : ""}
+        </article>`).join("");
+      const table = rows.length
+        ? `<div class="table-wrap">
+            <table>
+              <thead><tr><th>Date</th><th>Location</th><th>Caption</th><th>Status</th></tr></thead>
+              <tbody>${body}</tbody>
+            </table>
+            <div class="mobile-cards">${cards}</div>
+          </div>`
+        : `<div class="empty"><strong>No published posts yet</strong>Google Business posts still in Pending review are on the Scheduled tab.</div>`;
+      const pendingNote = pending.length
+        ? `<p class="section-note">${pending.length} post${pending.length === 1 ? " is" : "s are"} in Pending review on the Scheduled tab.</p>`
+        : "";
+      const note = (DATA.notes && DATA.notes["Google Business"]) ? `<p class="section-note">${escapeHtml(DATA.notes["Google Business"])}</p>` : "";
+      return `<div class="section-head">${ICONS["Google Business"]}<h2>Google Business</h2></div>
+        ${note}${pendingNote}${table}`;
+    }
     function renderPanel() {
       if (active === "Posts") {
         $("platform-panel").innerHTML = renderGroupedPosts();
@@ -1146,6 +1267,10 @@
       }
       if (active === "Scheduled") {
         $("platform-panel").innerHTML = renderScheduled();
+        return;
+      }
+      if (active === "Google Business") {
+        $("platform-panel").innerHTML = renderGbp();
         return;
       }
       const posts = postsFor(active);
@@ -1300,43 +1425,88 @@
       });
     }
 
-    function renderAudience() {
-      document.querySelectorAll("#audience [data-audience]").forEach((btn) => {
-        btn.setAttribute("aria-selected", btn.dataset.audience === audience ? "true" : "false");
+    function renderNav() {
+      document.querySelectorAll("#groups [data-group]").forEach((btn) => {
+        const on = !selectedBrand && btn.dataset.group === audience;
+        btn.setAttribute("aria-selected", on ? "true" : "false");
       });
+      document.querySelectorAll("#brands [data-brand]").forEach((btn) => {
+        btn.setAttribute("aria-selected", btn.dataset.brand === selectedBrand ? "true" : "false");
+      });
+      const seriesEl = $("series");
+      if (seriesEl) {
+        seriesEl.hidden = selectedBrand !== "Map Desk";
+        document.querySelectorAll("#series [data-series]").forEach((btn) => {
+          btn.setAttribute("aria-selected", btn.dataset.series === selectedSeries ? "true" : "false");
+        });
+      }
     }
-    function setAudience(next) {
-      if (!["all", "news", "business"].includes(next)) next = "all";
-      audience = next;
-      renderAudience();
+    function setGroup(next) {
+      audience = ["all", "news", "business"].includes(next) ? next : "all";
+      selectedBrand = null;
+      selectedSeries = "all";
+      renderNav();
+      renderOverall();
       renderCards();
       renderTabs();
       renderPanel();
+    }
+    function setBrand(next) {
+      selectedBrand = BRAND_LIST.includes(next) ? next : null;
+      audience = "all";
+      if (selectedBrand !== "Map Desk") selectedSeries = "all";
+      renderNav();
+      renderOverall();
+      renderCards();
+      renderTabs();
+      renderPanel();
+    }
+    function setSeries(next) {
+      selectedSeries = ["all", "Money", "World", "Places"].includes(next) ? next : "all";
+      renderNav();
+      renderOverall();
+      renderCards();
+      renderTabs();
+      renderPanel();
+    }
+    function renderOverall() {
+      if (!DATA) return;
+      const feed = (DATA.posts || []).filter((p) => inAudience(p) && !isStory(p) && !isGroupShare(p));
+      const stories = (DATA.posts || []).filter((p) => isStory(p) && inAudience(p));
+      const shares = (DATA.posts || []).filter((p) => isGroupShare(p) && inAudience(p));
+      const sched = scheduledItems();
+      let views = 0, vKnown = 0, likes = 0, lKnown = 0;
+      feed.forEach((p) => {
+        const v = viewsOf(p);
+        if (v != null) { views += v; vKnown += 1; }
+        if (p.likes != null) { likes += p.likes; lKnown += 1; }
+      });
+      const storyBit = stories.length ? `<span><strong>${fmt(stories.length)}</strong> stories</span>` : "";
+      const shareBit = shares.length ? `<span><strong>${fmt(shares.length)}</strong> group shares</span>` : "";
+      const schedBit = sched.length ? `<span><strong>${fmt(sched.length)}</strong> scheduled</span>` : "";
+      $("overall").innerHTML = `<span><strong>${fmt(feed.length) ?? "0"}</strong> posts</span>${storyBit}${shareBit}${schedBit}<span><strong>${vKnown ? fmt(views) : "n/a"}</strong> views</span><span><strong>${lKnown ? fmt(likes) : "n/a"}</strong> likes</span>`;
     }
 
     function render(data) {
       DATA = data;
       $("updated").textContent = data.generated_at_pt || formatWhen(data.generated_at);
-      const t = data.totals || {};
-      const storyBit = t.stories ? `<span><strong>${fmt(t.stories)}</strong> stories</span>` : "";
-      const shareN = t.group_shares || (DATA.posts || []).filter(isGroupShare).length;
-      const shareBit = shareN ? `<span><strong>${fmt(shareN)}</strong> group shares</span>` : "";
-      const schedN = ((data.scheduled && data.scheduled.items) || []).length;
-      const schedBit = schedN ? `<span><strong>${fmt(schedN)}</strong> scheduled</span>` : "";
-      $("overall").innerHTML = `<span><strong>${fmt(t.posts) ?? "0"}</strong> posts</span>${storyBit}${shareBit}${schedBit}<span><strong>${fmt(t.views) ?? "n/a"}</strong> views</span><span><strong>${fmt(t.likes) ?? "n/a"}</strong> likes</span>`;
       const hash = (location.hash || "").replace("#", "").toLowerCase();
       const fromHash = VIEW_TABS.find((id) => slug(id) === hash);
       const start = fromHash || "Posts";
-      $("audience").onclick = (e) => {
-        const btn = e.target.closest("[data-audience]");
-        if (!btn) return;
-        setAudience(btn.dataset.audience);
+      document.querySelector(".nav-block").onclick = (e) => {
+        const groupBtn = e.target.closest("[data-group]");
+        if (groupBtn) { setGroup(groupBtn.dataset.group); return; }
+        const brandBtn = e.target.closest("[data-brand]");
+        if (brandBtn) { setBrand(brandBtn.dataset.brand); return; }
+        const seriesBtn = e.target.closest("[data-series]");
+        if (seriesBtn) { setSeries(seriesBtn.dataset.series); return; }
       };
-      renderAudience();
+      renderNav();
+      renderOverall();
       setActive(start, !fromHash);
       drawChart(data);
       const notes = Object.entries(data.notes || {}).map(([k, v]) => `<strong>${escapeHtml(k)}:</strong> ${escapeHtml(v)}`).join(" · ");
-      $("footer").innerHTML = (notes ? notes + " · " : "") + "Scheduled lists ready or approved upcoming posts only. A post drops off that list once it is live.";
+      $("footer").innerHTML = (notes ? notes + " · " : "") + "Scheduled lists ready, approved, or pending Google review posts. A post drops off that list once it is live.";
     }
 
     fetch("data.json?ts=" + Date.now())

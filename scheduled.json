@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T15:38:44.202538-08:00",
-  "generated_at_pt": "2026-11-24 3:38 PM PT",
+  "generated_at": "2026-11-24T15:59:27.774759-08:00",
+  "generated_at_pt": "2026-11-24 3:59 PM PT",
   "timezone": "America/Los_Angeles",
   "items": [
     {
@@ -99,7 +99,7 @@
       "id": "QVN003",
       "group_id": "qvn003-qvn004",
       "title": "QVN map briefing Reel v3: this week on the plains, week of Nov. 22, 2026",
-      "caption": "Your rundown for the plains east of Denver, week of Nov. 22.\n\n\u2022 I-70 between Watkins and Bennett: median cable barrier work, with one westbound lane closed weekdays 9 a.m.\u20135 p.m., through late March 2027.\n\u2022 Elizabeth: the Senior Baskets drive is collecting donations through the week of Dec. 8.\n\u2022 Near Kiowa: T21 Sensory Ranch offers free one-on-one visits for people with disabilities, by appointment.\n\u2022 Kiowa: Christmas in Kiowa is Sat., Nov. 28, with live reindeer at the Extravaganza from noon to 2:30 p.m. and the lighted car parade and tree lighting Saturday evening.\n\u2022 Elizabeth: the Mayor's Tree Lighting is Sat., Dec. 5, 3\u20136 p.m. on Main Street, with the tree lit at 5 p.m.\n\nThanks to CDOT, Sentinel Colorado, Elbert County News, the Town of Elizabeth, Inside Elizabeth, Rocky Mountain PBS, the Town of Kiowa and Our Journey for the reporting and listings behind this rundown.\n\nFollow along for local news and things to do.\n\n#QuintValleyNews #Bennett #Strasburg #Kiowa #ElizabethCO",
+      "caption": "Your rundown for the plains east of Denver, week of Nov. 22.\n\nI-70 between Watkins and Bennett: median cable barrier work, with one westbound lane closed weekdays 9 a.m.\u20135 p.m., through late March 2027.\nElizabeth: the Senior Baskets drive is collecting donations through the week of Dec. 8.\nNear Kiowa: T21 Sensory Ranch offers free one-on-one visits for people with disabilities, by appointment.\nKiowa: Christmas in Kiowa is Sat., Nov. 28, with live reindeer at the Extravaganza from noon to 2:30 p.m. and the lighted car parade and tree lighting Saturday evening.\nElizabeth: the Mayor's Tree Lighting is Sat., Dec. 5, 3\u20136 p.m. on Main Street, with the tree lit at 5 p.m.\n\nThanks to CDOT, Sentinel Colorado, Elbert County News, the Town of Elizabeth, Inside Elizabeth, Rocky Mountain PBS, the Town of Kiowa and Our Journey for the reporting and listings behind this rundown.\n\nFollow along for local news and things to do.\n\n#QuintValleyNews #Bennett #Strasburg #Kiowa #ElizabethCO",
       "brand": "Quint Valley News",
       "family": "Quint Valley News",
       "network": "news",
@@ -158,7 +158,7 @@
     },
     {
       "id": "MN009",
-      "group_id": "mn009-mn011",
+      "group_id": "mn009-x014",
       "title": "80s VHS parody testimonial: \"Gary's Gutters\" (33 s, v5, ElevenLabs voices)",
       "caption": "Real results. Fake Gary. \ud83d\udcfc Your van doesn't have to be the refrigerator of the block. Full wraps designed, printed and installed in Gig Harbor. #vanwrap #80s #gigharbor\n\n(Dramatization. Gary is an AI actor and Gary's Gutters is fictional.)\nMusic: \"Local Forecast - Elevator\" Kevin MacLeod (incompetech.com) \u00b7 CC BY 4.0",
       "brand": "USA Wrap Co",
@@ -167,7 +167,8 @@
       "platforms": [
         "Facebook",
         "Instagram",
-        "LinkedIn"
+        "LinkedIn",
+        "X"
       ],
       "planned_date": "2026-11-24",
       "planned_time": "4:00 PM PT",
@@ -182,7 +183,7 @@
       "id": "QVN005",
       "group_id": "qvn005-qvn006",
       "title": "I-70 Watkins\u2013Bennett lane closures (holiday travel day)",
-      "caption": "Heading out on I-70 for the holiday? CDOT crews are installing median cable barriers between Watkins and Bennett.\n\nWhat to expect:\n\u2022 Weekdays, 9 a.m.\u20135 p.m.: one westbound lane and the eastbound shoulder closed\n\u2022 Saturdays, 7 a.m.\u20136 p.m.: one lane closed in each direction, plus the westbound shoulder\n\u2022 Construction trucks entering and leaving the closed left lanes\n\nThe work zone runs 13.8 miles, from about two miles east of Exit 292 (Airpark Rd.) to two miles east of Exit 306 (Kiowa-Bennett). CDOT doesn't expect big delays but says to plan extra time. The project is expected to wrap up by late March 2027. Check COtrip.org for real-time lane closures.\n\nThanks to CDOT and Sentinel Colorado for the details. Slow down in the cone zone and safe travels.\n\n#I70 #Bennett #Watkins #ColoradoRoads #QuintValleyNews",
+      "caption": "Heading out on I-70 for the holiday? CDOT crews are installing median cable barriers between Watkins and Bennett.\n\nWhat to expect:\nWeekdays, 9 a.m.\u20135 p.m.: one westbound lane and the eastbound shoulder closed\nSaturdays, 7 a.m.\u20136 p.m.: one lane closed in each direction, plus the westbound shoulder\nConstruction trucks entering and leaving the closed left lanes\n\nThe work zone runs 13.8 miles, from about two miles east of Exit 292 (Airpark Rd.) to two miles east of Exit 306 (Kiowa-Bennett). CDOT doesn't expect big delays but says to plan extra time. The project is expected to wrap up by late March 2027. Check COtrip.org for real-time lane closures.\n\nThanks to CDOT and Sentinel Colorado for the details. Slow down in the cone zone and safe travels.\n\n#I70 #Bennett #Watkins #ColoradoRoads #QuintValleyNews",
       "brand": "Quint Valley News",
       "family": "Quint Valley News",
       "network": "news",
@@ -200,10 +201,30 @@
       "video": null
     },
     {
+      "id": "L013",
+      "group_id": "L013",
+      "title": "Typographic card: Read it at 35 mph (fleet wrap basics, no photo)",
+      "caption": "What does a fleet wrap actually have to do? Work at 35 mph.\n\nMost people see your truck for a few seconds: at a light, in traffic, pulling out of a lot. When we lay out a fleet, I check three things before anything gets printed:\n\n1. Can you read who you are and what you do in about 3 seconds?\n2. Is the contact easy to find? One phone number or website, big enough to read, not buried in the design.\n3. Does every vehicle match? Same layout, same colors, same placement, so the fleet reads as one company.\n\nGet those three right and the rest is style.\n\nWant a second set of eyes on your trucks or vans? Send me a photo and I'll tell you what I'd change.\nusawrapco.com\n\n#FleetWraps #ChanceTheWrapper",
+      "brand": "Chance the Wrapper",
+      "family": "Chance the Wrapper",
+      "network": "creator",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-11-25",
+      "planned_time": "8:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-25T08:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l013.jpg",
+      "video": null
+    },
+    {
       "id": "H187",
       "group_id": "H187",
       "title": "Harbor News map-briefing v2 (90 s; Turkey Trot, Zoolights, tree lighting, SR 167 tolls)",
-      "caption": "Your Gig Harbor & Tacoma rundown: this week, plus what's coming up\n\u2022 Gig Harbor Boat Works to close in early 2027\n\u2022 Basket Brigade packed Thanksgiving baskets\n\u2022 Tacoma History Museum is open (free)\nComing up: Turkey Trot Thu 11/26 \u00b7 Zoolights from Fri 11/27 \u00b7 Gig Harbor tree lighting Sat 12/5 \u00b7 SR 167 tolls start Mon 12/14\nSources: Gig Harbor Now, The News Tribune, Greater Gig Harbor Foundation, Tacoma Historical Society, Gig Harbor Turkey Trot, RunSignup, Point Defiance Zoo & Aquarium, KING 5, GHDWA, Tacoma Foodie, WSDOT, Tacoma Weekly.\nImagery: USGS The National Map \u00b7 Map data \u00a9 OpenStreetMap contributors\nPresented by USA Wrap Co",
+      "caption": "Your Gig Harbor & Tacoma rundown: this week, plus what's coming up\nGig Harbor Boat Works to close in early 2027\nBasket Brigade packed Thanksgiving baskets\nTacoma History Museum is open (free)\nComing up: Turkey Trot Thu 11/26 \u00b7 Zoolights from Fri 11/27 \u00b7 Gig Harbor tree lighting Sat 12/5 \u00b7 SR 167 tolls start Mon 12/14\nSources: Gig Harbor Now, The News Tribune, Greater Gig Harbor Foundation, Tacoma Historical Society, Gig Harbor Turkey Trot, RunSignup, Point Defiance Zoo & Aquarium, KING 5, GHDWA, Tacoma Foodie, WSDOT, Tacoma Weekly.\nImagery: USGS The National Map \u00b7 Map data \u00a9 OpenStreetMap contributors\nPresented by USA Wrap Co",
       "brand": "Harbor News",
       "family": "Harbor News",
       "network": "news",
@@ -241,7 +262,7 @@
     },
     {
       "id": "MN003",
-      "group_id": "mn003-mn004",
+      "group_id": "mn003-x015",
       "title": "Mini 2: Golden Events \"Two Stories\" (14.6 s)",
       "caption": "One SUV, two stories: gold lettering on the doors, a PNW mountain mural on the back. Golden Events, wrapped in Gig Harbor. #vehiclewrap #pnw #gigharbor\n\nMusic: \"Neolith\" Kevin MacLeod (incompetech.com) \u00b7 CC BY 4.0",
       "brand": "USA Wrap Co",
@@ -249,7 +270,8 @@
       "network": "business",
       "platforms": [
         "Facebook",
-        "Instagram"
+        "Instagram",
+        "X"
       ],
       "planned_date": "2026-11-25",
       "planned_time": "4:00 PM PT",
@@ -305,7 +327,7 @@
       "id": "QVN007",
       "group_id": "qvn007-qvn008",
       "title": "CO 86 Kiowa Creek bridge replacement (+ the one gratitude line)",
-      "caption": "Happy Thanksgiving from Quint Valley News. If your plans take you through Kiowa this weekend, the CO 86 bridge replacement at Kiowa Creek is still on CDOT's schedule through winter 2026.\n\nCDOT says to expect:\n\u2022 Traffic shifts and reduced speeds through the work zone\n\u2022 A temporary shoofly alignment that keeps traffic moving while the bridge is replaced\n\u2022 A 12-foot width limit for traffic crossing the bridge while construction is active. Trucks and oversized loads should use another route.\n\nConstruction began March 9, 2026. CDOT notes the work is weather-dependent and subject to change, so check COtrip.org before you go. The Town of Kiowa says weekly project updates go out every Friday.\n\nThanks to CDOT and the Town of Kiowa for keeping folks posted. Today we're grateful for the neighbors out here who show up for each other.\n\n#Kiowa #ElbertCounty #CO86 #QuintValleyNews",
+      "caption": "Happy Thanksgiving from Quint Valley News. If your plans take you through Kiowa this weekend, the CO 86 bridge replacement at Kiowa Creek is still on CDOT's schedule through winter 2026.\n\nCDOT says to expect:\nTraffic shifts and reduced speeds through the work zone\nA temporary shoofly alignment that keeps traffic moving while the bridge is replaced\nA 12-foot width limit for traffic crossing the bridge while construction is active. Trucks and oversized loads should use another route.\n\nConstruction began March 9, 2026. CDOT notes the work is weather-dependent and subject to change, so check COtrip.org before you go. The Town of Kiowa says weekly project updates go out every Friday.\n\nThanks to CDOT and the Town of Kiowa for keeping folks posted. Today we're grateful for the neighbors out here who show up for each other.\n\n#Kiowa #ElbertCounty #CO86 #QuintValleyNews",
       "brand": "Quint Valley News",
       "family": "Quint Valley News",
       "network": "news",
@@ -320,6 +342,26 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/qvn007.jpg",
+      "video": null
+    },
+    {
+      "id": "X016",
+      "group_id": "X016",
+      "title": "16 Thanksgiving thank-you: matched 3-SUV fleet (real job photo, 4:5, plates blurred)",
+      "caption": "Happy Thanksgiving from all of us at USA Wrap Co. This matched three-SUV fleet is one of the local businesses we're proud to help get seen. Thank you, Gig Harbor.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-11-26",
+      "planned_time": "7:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-26T07:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x016.jpg",
       "video": null
     },
     {
@@ -347,7 +389,7 @@
       "id": "DW033",
       "group_id": "dw033-dw034",
       "title": "Typographic card: Why EVA decking? (no photo)",
-      "caption": "Why EVA decking? The short version:\n\n\u2022 Grip underfoot, wet or dry\n\u2022 Softer on your feet and knees\n\u2022 Cut around every hatch and fitting\n\u2022 Your colors, your pattern, even your logo\n\nWhich one matters most on your boat? \ud83d\udc47\n\nCall/#DekWave #EVADecking #BoatDecking #GigHarbor #PugetSoundBoating #PNWBoating",
+      "caption": "Why EVA decking? The short version:\n\nGrip underfoot, wet or dry\nSofter on your feet and knees\nCut around every hatch and fitting\nYour colors, your pattern, even your logo\n\nWhich one matters most on your boat? \ud83d\udc47\n\nCall/#DekWave #EVADecking #BoatDecking #GigHarbor #PugetSoundBoating #PNWBoating",
       "brand": "DekWave",
       "family": "DekWave",
       "network": "business",
@@ -368,7 +410,7 @@
       "id": "H173",
       "group_id": "H173",
       "title": "Harbor Desk community odds: Will you make it to Winterfest at Peninsula High this weekend?",
-      "caption": "Harbor Desk odds, just for fun: Will you make it to Winterfest at Peninsula High this weekend?\n\nPeninsula High School's Winterfest Arts & Crafts Show is back for Thanksgiving weekend:\n\u2022 Saturday, Nov. 28, 9 a.m.\u20135 p.m.\n\u2022 Sunday, Nov. 29, 11 a.m.\u20134 p.m.\n\u2022 Peninsula High School, 14105 Purdy Dr. NW, Gig Harbor\n\nHandmade arts and crafts, food trucks, and the Hall of Wreaths silent auction (Saturday only). It's the school ASB's annual fundraiser for clubs and activities, running since 1992.\n\nThe 68/32 \"odds\" on the graphic are made up to get the conversation going. No betting, no money, not a market.\n\nSource: Peninsula High School Winterfest (official site), https://sites.google.com/psd401.net/peninsulahswinterfest/home\nSource: Gig Harbor Now, 2026 key dates, https://www.gigharbornow.org/news/arts-entertainment/2026-key-dates-when-is-maritime-gig-fest-christmas-tree-lighting-scarecrow-fest/\n\nPresented by USA Wrap Co.\n\nSo, are you going? Vote YES or NO in the comments",
+      "caption": "Harbor Desk odds, just for fun: Will you make it to Winterfest at Peninsula High this weekend?\n\nPeninsula High School's Winterfest Arts & Crafts Show is back for Thanksgiving weekend:\nSaturday, Nov. 28, 9 a.m.\u20135 p.m.\nSunday, Nov. 29, 11 a.m.\u20134 p.m.\nPeninsula High School, 14105 Purdy Dr. NW, Gig Harbor\n\nHandmade arts and crafts, food trucks, and the Hall of Wreaths silent auction (Saturday only). It's the school ASB's annual fundraiser for clubs and activities, running since 1992.\n\nThe 68/32 \"odds\" on the graphic are made up to get the conversation going. No betting, no money, not a market.\n\nSource: Peninsula High School Winterfest (official site), https://sites.google.com/psd401.net/peninsulahswinterfest/home\nSource: Gig Harbor Now, 2026 key dates, https://www.gigharbornow.org/news/arts-entertainment/2026-key-dates-when-is-maritime-gig-fest-christmas-tree-lighting-scarecrow-fest/\n\nPresented by USA Wrap Co.\n\nSo, are you going? Vote YES or NO in the comments",
       "brand": "Harbor News",
       "family": "Harbor News",
       "network": "news",
@@ -443,6 +485,26 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/h032.jpg",
+      "video": null
+    },
+    {
+      "id": "X017",
+      "group_id": "X017",
+      "title": "11 Small Business Saturday poster",
+      "caption": "Happy Small Business Saturday. Local shops built this town, and your neighbors run on vans, trucks and trailers. Designed in our Gig Harbor shop.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-11-28",
+      "planned_time": "7:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-28T07:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x017.jpg",
       "video": null
     },
     {
@@ -530,7 +592,7 @@
       "id": "DW037",
       "group_id": "dw037-dw038",
       "title": "Typographic card: From the bow to the swim step (where EVA goes, no photo)",
-      "caption": "From the bow to the swim step, EVA decking goes where your feet go:\n\n\u2022 Swim platforms\n\u2022 Cockpit floors\n\u2022 Bow decks\n\u2022 Helm stations and steps\n\nEvery piece is cut to the shape of your boat.\n\nWhich spot on your boat takes the most wear? \ud83d\udc47\n\nCall/#DekWave #EVADecking #BoatDecking #GigHarbor #PugetSoundBoating #PNWBoating",
+      "caption": "From the bow to the swim step, EVA decking goes where your feet go:\n\nSwim platforms\nCockpit floors\nBow decks\nHelm stations and steps\n\nEvery piece is cut to the shape of your boat.\n\nWhich spot on your boat takes the most wear? \ud83d\udc47\n\nCall/#DekWave #EVADecking #BoatDecking #GigHarbor #PugetSoundBoating #PNWBoating",
       "brand": "DekWave",
       "family": "DekWave",
       "network": "business",
@@ -630,10 +692,30 @@
       "video": null
     },
     {
+      "id": "X018",
+      "group_id": "X018",
+      "title": "17 John's Plumbing & Pumps: RAM ProMaster full wrap (real job photo, 4:5)",
+      "caption": "Fresh water, fresh wrap. Full wrap on a RAM ProMaster for John's Plumbing & Pumps, with a splash of water from bumper to bumper. Out on South Sound roads, a van like this works every mile.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-11-30",
+      "planned_time": "7:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-30T07:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x018.jpg",
+      "video": null
+    },
+    {
       "id": "DW039",
       "group_id": "dw039-dw040",
       "title": "Typographic card: Three photos. That's the start. (quote photo checklist, no photo)",
-      "caption": "Thinking about a new deck? Three photos is all it takes to get started:\n\n\u2022 The whole deck, shot from above\n\u2022 Each hatch, step and fitting\n\u2022 The swim platform or bow\n\nText them over and we'll put together a written quote for your boat.\n\nCall/#DekWave #EVADecking #BoatDecking #GigHarbor #PugetSoundBoating #PNWBoating",
+      "caption": "Thinking about a new deck? Three photos is all it takes to get started:\n\nThe whole deck, shot from above\nEach hatch, step and fitting\nThe swim platform or bow\n\nText them over and we'll put together a written quote for your boat.\n\nCall/#DekWave #EVADecking #BoatDecking #GigHarbor #PugetSoundBoating #PNWBoating",
       "brand": "DekWave",
       "family": "DekWave",
       "network": "business",
@@ -711,6 +793,26 @@
       "video": null
     },
     {
+      "id": "L014",
+      "group_id": "L014",
+      "title": "Typographic card: Wrap, lettering or paint? How I would decide (no photo)",
+      "caption": "Wrap, lettering, or paint? Here's how I'd decide.\n\nWrap: when you want full color, graphics, or a design that covers most of the vehicle. It goes on over the paint and can come off later.\n\nLettering: when you just need the basics: company name, logo, and a way to reach you. Clean, simple, and easy to read.\n\nPaint: when you want one solid color that's meant to stay.\n\nA lot of vehicles end up with a mix, like a factory color with lettering or a partial wrap on top.\n\nNot sure which fits your vehicles? Send me a photo and I'll tell you what I'd do.\nusawrapco.com\n\n#VehicleWraps #ChanceTheWrapper",
+      "brand": "Chance the Wrapper",
+      "family": "Chance the Wrapper",
+      "network": "creator",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-12-01",
+      "planned_time": "8:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-01T08:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l014.jpg",
+      "video": null
+    },
+    {
       "id": "DW041",
       "group_id": "dw041-dw042",
       "title": "Typographic card: How's it holding up? (review ask, no photo)",
@@ -773,10 +875,30 @@
       "video": null
     },
     {
+      "id": "X019",
+      "group_id": "X019",
+      "title": "18 Toyota Tacoma color-shift wrap (real job photo, 4:5, plate blurred)",
+      "caption": "Same Tacoma. Brand-new look. This one got a full color-shift wrap at our Gig Harbor shop. In the light it moves between deep purple, blue and teal.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-12-02",
+      "planned_time": "7:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-02T07:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x019.jpg",
+      "video": null
+    },
+    {
       "id": "DW043",
       "group_id": "dw043-dw044",
       "title": "Typographic card: Your boat. Your look. (colors and patterns, no photo)",
-      "caption": "Your boat. Your look.\n\nEvery DekWave deck is cut and styled to the boat it goes on:\n\n\u2022 Teak-style lines and grooves\n\u2022 Diamond tread\n\u2022 Star and custom inlays\n\u2022 Your logo, routed right in\n\nClassic gray or something bold: what would you put on yours? \ud83d\udc47\n\nCall/#DekWave #EVADecking #BoatDecking #GigHarbor #PugetSoundBoating #PNWBoating",
+      "caption": "Your boat. Your look.\n\nEvery DekWave deck is cut and styled to the boat it goes on:\n\nTeak-style lines and grooves\nDiamond tread\nStar and custom inlays\nYour logo, routed right in\n\nClassic gray or something bold: what would you put on yours? \ud83d\udc47\n\nCall/#DekWave #EVADecking #BoatDecking #GigHarbor #PugetSoundBoating #PNWBoating",
       "brand": "DekWave",
       "family": "DekWave",
       "network": "business",
@@ -852,6 +974,68 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/h044.jpg",
+      "video": null
+    },
+    {
+      "id": "L011",
+      "group_id": "L011",
+      "title": "Chance wrapping",
+      "caption": "Year's almost over, and I'm still in the bay.\n\nThat's the whole idea behind Chance the Wrapper. USA WRAP Co. is my shop in Gig Harbor, and the work is still hands-on \u2014 commercial wraps, fleets, and the details that make a door look finished.\n\nIf you want something wrapped before the new year, send me a message and I'll tell you honestly whether the calendar still works.\n\n#ChanceTheWrapper #FleetWraps #GigHarbor",
+      "brand": "Chance the Wrapper",
+      "family": "Chance the Wrapper",
+      "network": "creator",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-12-16",
+      "planned_time": "8:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-16T08:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l011.jpg",
+      "video": null
+    },
+    {
+      "id": "gbp:H001",
+      "group_id": "gbp:h001",
+      "title": "Ranger van upfit (real photo)",
+      "caption": "Running a business in Olympia? Wrap outside, upfit inside",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "location": "USA Wrap Co \u00b7 Olympia",
+      "planned_date": "2026-11-18",
+      "planned_time": "12:00 AM",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-18T00:00:00-08:00",
+      "status": "Pending review",
+      "kind": "gbp",
+      "still": null,
+      "video": null
+    },
+    {
+      "id": "gbp:H022",
+      "group_id": "gbp:h022",
+      "title": "Real job photo: gray teak cockpit",
+      "caption": "Gray teak-style EVA, dark seam lines, and a floor that feels good barefoot.\n\nThis cockpit floor was patterned to the boat, so every panel follows the hull edge and the cabinet instead of a generic mat trimmed to fit. Cut and finished in our Gig Harbor shop.\n\nEVA stays softer and cooler than bare fiberglass and keeps its grip when it is wet, which matters on a Puget Sound morning.\n\nOff-season is a good time to plan new decking. Bring your boat by the Gig Harbor shop and we will help you pick a color and layout",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "location": "DekWave",
+      "planned_date": "2026-11-24",
+      "planned_time": "9:27 AM",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-24T09:27:00-08:00",
+      "status": "Pending review",
+      "kind": "gbp",
+      "still": null,
       "video": null
     }
   ],
@@ -2379,7 +2563,7 @@
   ],
   "counts": {
     "ready": 4,
-    "planned": 37,
+    "planned": 46,
     "group_shares": 76,
     "videos": 4
   }

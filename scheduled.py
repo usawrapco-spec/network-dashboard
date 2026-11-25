@@ -41,11 +41,15 @@ PHONE_RE = re.compile(
     r"(?:\+?1[\s.-]?)?(?:\(?\d{3}\)?[\s.-]?)\d{3}[\s.-]\d{4}"
 )
 NAME_RE = re.compile(r"\b(Chance Wallace|Chance the Wrapper|Chance|Wallace)\b", re.I)
+WALLACE_RE = re.compile(r"\b(Chance Wallace|Wallace)\b", re.I)
+CHANCE_NAME_RE = re.compile(r"\b(Chance the Wrapper|Chance)\b", re.I)
 EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 STATUS_PUBLIC = {
     "Ready to post": "Ready",
     "Approved": "Approved",
     "Awaiting OK": "Awaiting OK",
+    "Pending review": "Pending review",
+    "Pending Google review": "Pending review",
 }
 
 NEWS_BRANDS = (
@@ -53,7 +57,8 @@ NEWS_BRANDS = (
 )
 BUSINESS_BRANDS = ("usa wrap", "usawrap", "dekwave", "savajay")
 INCLUDE = NEWS_BRANDS + BUSINESS_BRANDS
-PERSONAL = re.compile(r"linkedin \(chance\)|chance the wrapper|linkedin\.com/in", re.I)
+PERSONAL_URL = re.compile(r"linkedin\.com/in", re.I)
+CHANCE_CHANNEL = re.compile(r"linkedin \(chance\)|chance the wrapper", re.I)
 
 # Named network renders Chance should preview even when they are not on the plan yet.
 NETWORK_READY = (
@@ -114,6 +119,9 @@ ASSET_DIRS = [
     SOCIAL / "savajay",
     SOCIAL / "harbor-news",
     SOCIAL / "quint-valley-news",
+    SOCIAL / "linkedin",
+    SOCIAL / "linkedin-refresh" / "featured",
+    Path("/workspace/marketing/linkedin/media"),
     SOCIAL / "assets",
     SOCIAL,
 ]
@@ -375,8 +383,9 @@ def plan_items(logged: set[str], fetched_at: datetime) -> tuple[list[dict[str, A
         channel = (r.get("channel") or "").strip()
         if not own_brand(brand):
             continue
-        if PERSONAL.search(channel) or PERSONAL.search(brand):
+        if PERSONAL_URL.search(channel) or PERSONAL_URL.search(brand) or PERSONAL_URL.search(r.get("asset_link") or ""):
             continue
+        is_chance = bool(CHANCE_CHANNEL.search(channel) or CHANCE_CHANNEL.search(brand))
         pid = (r.get("id") or "").strip()
         if pid.lower() in logged:
             continue
@@ -388,9 +397,12 @@ def plan_items(logged: set[str], fetched_at: datetime) -> tuple[list[dict[str, A
         rec: dict[str, Any] = {
             "id": pid,
             "source": "content-plan",
-            "brand": re.sub(r"\s*\(@[^)]+\)\s*$", "", brand).strip() or brand,
-            "family": re.sub(r"\s*\(@[^)]+\)\s*$", "", brand).strip() or brand,
-            "network": "news" if own_brand(brand) and any(h in brand.lower() for h in NEWS_BRANDS) else "business",
+            "brand": ("Chance the Wrapper" if is_chance else (re.sub(r"\s*\(@[^)]+\)\s*$", "", brand).strip() or brand)),
+            "family": ("Chance the Wrapper" if is_chance else (re.sub(r"\s*\(@[^)]+\)\s*$", "", brand).strip() or brand)),
+            "network": (
+                "creator" if is_chance else
+                ("news" if own_brand(brand) and any(h in brand.lower() for h in NEWS_BRANDS) else "business")
+            ),
             "title": (r.get("asset") or r.get("type") or pid).strip(),
             "caption": "" if is_group else (r.get("caption") or "").strip(),
             "platforms": [channel],
@@ -432,11 +444,14 @@ def plan_items(logged: set[str], fetched_at: datetime) -> tuple[list[dict[str, A
 
 
 
-def sanitize_public(text: Optional[str]) -> str:
+def sanitize_public(text: Optional[str], *, brand: str = "") -> str:
     if not text:
         return ""
     text = PHONE_RE.sub("", text)
-    text = NAME_RE.sub("", text)
+    text = re.sub(r"(?m)^[ \t]*[·•][ \t]*", "", text)
+    text = WALLACE_RE.sub("", text)
+    if "chance the wrapper" not in (brand or "").lower():
+        text = CHANCE_NAME_RE.sub("", text)
     text = EMAIL_RE.sub("", text)
     text = re.sub(r"/workspace\S+", "", text)
     text = re.sub(r"https?://(?:www\.)?linkedin\.com/in/\S+", "", text, flags=re.I)
@@ -534,13 +549,14 @@ def public_item(item: dict[str, Any], *, allow_video: bool) -> Optional[dict[str
         if p not in seen:
             seen.add(p)
             plat.append(p)
-    return {
+    brand = item.get("brand")
+    pub = {
         "id": item.get("id"),
         "group_id": item.get("id"),
-        "title": sanitize_public(item.get("title") or item.get("id") or "Scheduled post")[:160],
-        "caption": sanitize_public(item.get("caption") or ""),
-        "brand": item.get("brand"),
-        "family": item.get("family") or item.get("brand"),
+        "title": sanitize_public(re.sub(r"\s*\(same source as [^)]+\)\s*", "", item.get("title") or item.get("id") or "Scheduled post"), brand=brand or "")[:160],
+        "caption": sanitize_public(item.get("caption") or "", brand=brand or ""),
+        "brand": brand,
+        "family": item.get("family") or brand,
         "network": item.get("network") or "news",
         "platforms": plat,
         "planned_date": item.get("planned_date") or "",
@@ -552,6 +568,9 @@ def public_item(item: dict[str, Any], *, allow_video: bool) -> Optional[dict[str
         "still": still,
         "video": video,
     }
+    if item.get("location"):
+        pub["location"] = sanitize_public(item.get("location"), brand=brand or "")
+    return pub
 
 
 def merge_public_twins(items: list[dict[str, Any]], private_rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -605,7 +624,7 @@ FORBIDDEN_PUBLIC_KEYS = {
 
 def audit_public_payload(payload: dict[str, Any]) -> None:
     blob = json.dumps(payload)
-    if PHONE_RE.search(blob) or NAME_RE.search(blob) or "/workspace" in blob or "linkedin.com/in" in blob.lower():
+    if PHONE_RE.search(blob) or WALLACE_RE.search(blob) or "/workspace" in blob or "linkedin.com/in" in blob.lower():
         raise ValueError("public scheduled payload failed the privacy allowlist")
     for collection in (payload.get("items") or [], payload.get("group_shares") or []):
         for item in collection:
@@ -631,6 +650,27 @@ def write_public_queue(private_payload: dict[str, Any], fetched_at: datetime) ->
         if pub:
             planned.append(pub)
     planned = merge_public_twins(planned, private_payload.get("planned") or [])
+    for raw in private_payload.get("pending_gbp") or []:
+        pub = {
+            "id": raw.get("id") or raw.get("plan_id"),
+            "group_id": raw.get("group_id") or raw.get("id"),
+            "title": sanitize_public(raw.get("title") or "Google Business post", brand=raw.get("brand") or ""),
+            "caption": sanitize_public(raw.get("caption") or "", brand=raw.get("brand") or ""),
+            "brand": raw.get("brand"),
+            "family": raw.get("family") or raw.get("brand"),
+            "network": raw.get("network") or "business",
+            "platforms": ["Google Business"],
+            "location": raw.get("location"),
+            "planned_date": raw.get("date") or raw.get("planned_date") or "",
+            "planned_time": raw.get("time_pt") or raw.get("planned_time") or "",
+            "planned_tz": "PT",
+            "planned_at": raw.get("datetime_pt") or raw.get("planned_at"),
+            "status": "Pending review",
+            "kind": "gbp",
+            "still": None,
+            "video": None,
+        }
+        planned.append(pub)
     shares = []
     for item in private_payload.get("group_shares") or []:
         pub = public_item(item, allow_video=False)
@@ -663,7 +703,7 @@ def write_public_queue(private_payload: dict[str, Any], fetched_at: datetime) ->
     return payload
 
 
-def write_scheduled_queue(fetched_at: Optional[datetime] = None) -> dict[str, Any]:
+def write_scheduled_queue(fetched_at: Optional[datetime] = None, extra_pending: Optional[list[dict[str, Any]]] = None) -> dict[str, Any]:
     fetched_at = fetched_at or now_pt()
     PRIVATE.mkdir(parents=True, exist_ok=True)
     STILLS.mkdir(parents=True, exist_ok=True)
@@ -674,6 +714,7 @@ def write_scheduled_queue(fetched_at: Optional[datetime] = None) -> dict[str, An
     logged = logged_ids_and_slugs()
     ready = network_items(logged, fetched_at)
     planned, groups = plan_items(logged, fetched_at)
+    extras = list(extra_pending or [])
     payload = {
         "generated_at": fetched_at.isoformat(),
         "generated_at_pt": fetched_at.strftime("%Y-%m-%d %-I:%M %p PT"),
@@ -684,6 +725,7 @@ def write_scheduled_queue(fetched_at: Optional[datetime] = None) -> dict[str, An
         ),
         "ready": ready,
         "planned": planned,
+        "pending_gbp": extras,
         "group_shares": groups,
         "counts": {
             "ready": len(ready),

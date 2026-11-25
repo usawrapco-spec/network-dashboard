@@ -201,6 +201,7 @@ PLATFORM_NOTES = {
     "X": "Impressions, likes, reposts, and replies from the public FixTweet/syndication APIs (same public_metrics the X read tools return). Followers from the public profile payload.",
     "Facebook": "Reel view counts via yt-dlp on the public video page. Likes, comments, shares, photo/permalink posts, and Story views are n/a without a login or a recorded in-account check. Stories expire after 24 hours and usually have no public URL.",
     "Instagram": "Feed post views and likes via yt-dlp when the public page exposes them. Story views and replies are n/a unless an in-account check has recorded a real number; Stories expire after 24 hours and usually have no public URL.",
+    "Google Business": "Google Business posts have no public URL. This list shows the date, location, caption, and status. Published posts appear here; posts still in Pending review are on the Scheduled tab. Skipped posts are not listed.",
 }
 
 
@@ -214,6 +215,19 @@ def iso_pt(dt: datetime) -> str:
 
 def label_pt(dt: datetime) -> str:
     return dt.astimezone(PT).strftime("%a %b %-d, %Y, %-I:%M %p PT")
+
+
+def sanitize_caption(text: Optional[str]) -> str:
+    """Strip phones, names, emails and paths, but keep paragraph breaks."""
+    if not text:
+        return ""
+    text = PHONE_RE.sub("", text)
+    text = NAME_RE.sub("", text)
+    text = re.sub(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", "", text)
+    text = re.sub(r"/workspace\S+", "", text)
+    text = re.sub(r"[ \t]{2,}", " ", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip(" -|,;:")
 
 
 def sanitize(text: Optional[str]) -> str:
@@ -396,10 +410,12 @@ def looks_posted(action: str, link: str) -> bool:
         return True
     if is_usable_post_url(link) and re.search(r"\b(post|reel|short|upload)\b", a):
         return True
+    if re.match(r"^shout-out post\b", a) and is_usable_post_url(link):
+        return True
     return False
 
 
-POST_ID_RE = re.compile(r"\b((?:QVN|MD[MWP]?|DW|SJ|X|U|H|N)\d{2,4})\b", re.I)
+POST_ID_RE = re.compile(r"\b((?:QVN|MD[MWP]?|DW|SJ|SO|MN|L|G|X|U|H|N)\d{2,4})\b", re.I)
 
 
 def title_from_action(action: str, fallback: str = "") -> str:
@@ -429,6 +445,44 @@ def title_from_action(action: str, fallback: str = "") -> str:
     )
     text = re.sub(r"^(Posted|first post:|Created .+ and posted)\s*", "", text, flags=re.I)
     return clean_title(text or fallback)
+
+
+
+_PLAN_CACHE = None
+
+def load_content_plan() -> list[dict]:
+    global _PLAN_CACHE
+    if _PLAN_CACHE is not None:
+        return _PLAN_CACHE
+    path = Path("/workspace/marketing/social/content-plan.csv")
+    if not path.exists():
+        _PLAN_CACHE = []
+        return _PLAN_CACHE
+    with path.open() as f:
+        _PLAN_CACHE = list(csv.DictReader(f))
+    return _PLAN_CACHE
+
+
+def shoutout_plan_match(date_s: str, platform: str, url: str = "") -> tuple[str, str]:
+    """Return (title, plan_id) for a shout-out we posted from our Page."""
+    plat = (platform or "").lower()
+    for row in load_content_plan():
+        typ = (row.get("type") or "").lower()
+        if "shout-out" not in typ and not (row.get("id") or "").upper().startswith("SO"):
+            continue
+        if (row.get("date") or "").strip() != (date_s or "").strip():
+            continue
+        ch = (row.get("channel") or "").lower()
+        if plat and plat not in ch and ch not in plat:
+            # Facebook vs FB
+            if not (("facebook" in plat or plat == "fb") and "facebook" in ch):
+                continue
+        title = sanitize(row.get("asset") or row.get("caption") or "")
+        title = re.sub(r"\s+", " ", title).strip()
+        if title:
+            return title[:120], (row.get("id") or "").strip().upper()
+    return "", ""
+
 
 
 def parse_when(date_s: str, time_s: str) -> Optional[datetime]:
@@ -734,9 +788,13 @@ def collect_from_log() -> tuple[list[dict], set[str]]:
 
         if not is_own_brand(text):
             continue
-        # The business_or_person field must be one of our brands, not a customer or group we commented on.
+        # The business_or_person field must be one of our brands, not a customer
+        # or group we only liked/commented on. A shout-out we posted from our
+        # Page may name the other page in that field and still be our post.
         biz = lower(row.get("business_or_person"))
-        if not is_own_brand(biz):
+        account = row.get("account_used") or ""
+        our_shoutout = bool(re.search(r"^shout-out post\b", action, re.I)) and is_own_brand(account)
+        if not is_own_brand(biz) and not our_shoutout:
             continue
         # Never import personal LinkedIn.
         if "linkedin.com/in/" in lower(link_raw) or "linkedin.com/in/" in lower(action):
@@ -766,6 +824,8 @@ def collect_from_log() -> tuple[list[dict], set[str]]:
                 when = alt
 
         brand, family = classify_brand(text + " " + action)
+        if our_shoutout and not is_own_brand(brand):
+            brand, family = classify_brand(account)
         # Don't classify a Harbor+QVN file-work row as a mixed post without a clear brand
         if "harbor news + quint" in lower(text) and "quint" not in lower(action):
             brand, family = "Harbor News", "Harbor News"
@@ -788,6 +848,11 @@ def collect_from_log() -> tuple[list[dict], set[str]]:
                 platform = {"FB": "Facebook", "Instagram": "Instagram", "Facebook": "Facebook"}.get(raw_plat, raw_plat or "Unknown")
                 key = "story:" + (next(iter(sorted(row_ids)), "") or f"{brand}:{platform}:{row.get('date')}")
             title = "Story" if story else title_from_action(action)
+            shout_pid = ""
+            if our_shoutout:
+                shout_title, shout_pid = shoutout_plan_match(row.get("date") or "", platform, url or "")
+                if shout_title:
+                    title = shout_title
             expires_at = None
             story_live = None
             if story and when:
@@ -797,7 +862,9 @@ def collect_from_log() -> tuple[list[dict], set[str]]:
                 story_live = now_pt() < exp
             action_blob = action + " " + (link_raw or "")
             episode_m = re.search(r"\b((?:mdm|mdw|mdp)[-a-z0-9]+)\b", action_blob, re.I)
-            plan_ids = [x.upper() for x in re.findall(r"\b((?:H|DW|SJ|MN|X|QVN|G)\d{3,})\b", action_blob, re.I)]
+            plan_ids = [x.upper() for x in re.findall(r"\b((?:H|DW|SJ|MN|SO|L|X|QVN|G)\d{3,})\b", action_blob, re.I)]
+            if shout_pid and shout_pid not in plan_ids:
+                plan_ids = [shout_pid] + plan_ids
             posts_by_url[key] = {
                 "id": key if str(key).startswith("story:") else None,
                 "episode": (episode_m.group(1).lower() if episode_m else None),
@@ -819,6 +886,136 @@ def collect_from_log() -> tuple[list[dict], set[str]]:
 
     return list(posts_by_url.values()), deleted_urls
 
+
+
+
+ROUTINE_CAPTION_RE = re.compile(
+    r"written by the tuesday routine|no phone, email, url or handle",
+    re.I,
+)
+
+
+def gbp_location(brand: str, account: str = "") -> str:
+    text = f"{brand} {account}"
+    low = text.lower()
+    if "olympia" in low:
+        return "USA Wrap Co · Olympia"
+    if "dekwave" in low:
+        return "DekWave"
+    if "gig harbor" in low or "usa wrap" in low or "usawrap" in low:
+        return "USA Wrap Co · Gig Harbor"
+    return sanitize(brand) or "Google Business"
+
+
+def gbp_brand(location: str) -> str:
+    return "DekWave" if "dekwave" in (location or "").lower() else "USA Wrap Co"
+
+
+def is_internal_gbp_caption(text: str) -> bool:
+    return bool(ROUTINE_CAPTION_RE.search(text or ""))
+
+
+def gbp_title(asset: str) -> str:
+    title = sanitize(asset or "")
+    title = re.sub(r"\((?:IMG|DSC|DSCN)[_-]?\d+[^)]*\)", "", title, flags=re.I)
+    title = re.sub(r"\s{2,}", " ", title).strip(" -|,")
+    return title or "Google Business post"
+
+
+def collect_google_business() -> tuple[list[dict], list[dict]]:
+    """Return (published, pending_review) Google Business items. No public URLs, no phones."""
+    plan_rows: list[dict] = []
+    plan_path = Path("/workspace/marketing/social/content-plan.csv")
+    if plan_path.exists():
+        with plan_path.open() as f:
+            for row in csv.DictReader(f):
+                if (row.get("channel") or "").strip() != "Google Business":
+                    continue
+                plan_rows.append(row)
+
+    activity: list[dict] = []
+    if ACTIVITY_LOG.exists():
+        with ACTIVITY_LOG.open() as f:
+            for row in csv.DictReader(f):
+                if (row.get("platform") or "").strip().lower() != "google business":
+                    continue
+                action = row.get("action") or ""
+                if re.search(r"\b(inventoried|history pass|skipped)\b", action, re.I):
+                    continue
+                activity.append(row)
+
+    def caption_from_activity(date_s: str, location: str) -> str:
+        for row in activity:
+            loc = gbp_location(row.get("business_or_person") or "", row.get("account_used") or "")
+            if (row.get("date") or "") != date_s:
+                continue
+            if loc != location:
+                continue
+            cap = sanitize_caption((row.get("comment_text") or "").strip())
+            if cap and not is_internal_gbp_caption(cap):
+                return cap
+        return ""
+
+    def activity_pending(date_s: str, location: str) -> bool:
+        for row in activity:
+            loc = gbp_location(row.get("business_or_person") or "", row.get("account_used") or "")
+            if (row.get("date") or "") == date_s and loc == location and re.search(r"pending review", row.get("action") or "", re.I):
+                return True
+        return False
+
+    published: list[dict] = []
+    pending: list[dict] = []
+    for row in plan_rows:
+        status_raw = (row.get("status") or "").strip()
+        low = status_raw.lower()
+        if low.startswith("skip") or low.startswith("hold") or low.startswith("needs") or low.startswith("deleted"):
+            continue
+        location = gbp_location(row.get("brand") or "")
+        brand = gbp_brand(location)
+        date_s = (row.get("date") or "").strip()
+        when = parse_when(row.get("date") or "", re.sub(r"~|\(Tue routine\)", "", row.get("time") or ""))
+        cap = caption_from_activity(date_s, location)
+        if not cap:
+            cap = sanitize_caption((row.get("caption") or "").strip())
+        if is_internal_gbp_caption(cap):
+            cap = ""
+        title = gbp_title(row.get("asset") or "")
+        pending_flag = "pending" in low or activity_pending(date_s, location)
+        published_flag = low.startswith("posted") or low.startswith("published")
+        if not pending_flag and not published_flag:
+            # Weekly placeholder slots with no real caption stay off the public site.
+            continue
+        item = {
+            "id": f"gbp:{row.get('id')}",
+            "plan_id": (row.get("id") or "").strip(),
+            "group_id": f"gbp:{(row.get('id') or '').strip().lower()}",
+            "date": date_s,
+            "time_pt": when.strftime("%-I:%M %p") if when else "",
+            "datetime_pt": iso_pt(when) if when else None,
+            "brand": brand,
+            "family": brand,
+            "network": network_for(brand),
+            "platform": "Google Business",
+            "location": location,
+            "title": title,
+            "caption": cap,
+            "link": None,
+            "kind": "gbp",
+            "status": "Pending review" if pending_flag else "Published",
+            "views": None,
+            "likes": None,
+            "comments": None,
+            "shares": None,
+            "impressions": None,
+            "last_updated": iso_pt(when) if when else None,
+            "stats_source": "none",
+            "stats_note": "Google Business posts have no public URL. Stats are n/a.",
+        }
+        if pending_flag:
+            pending.append(item)
+        else:
+            published.append(item)
+    return published, pending
 
 
 def is_group_share_url(url: str) -> bool:
@@ -1066,6 +1263,61 @@ def apply_stats(post: dict, stats: dict, prev: Optional[dict], fetched_at: datet
         }
         return out
 
+    if kind == "gbp":
+        return {
+            "id": post.get("id") or prev.get("id"),
+            "plan_id": post.get("plan_id") or prev.get("plan_id"),
+            "group_id": post.get("group_id") or prev.get("group_id"),
+            "date": post.get("date") or prev.get("date") or "",
+            "time_pt": post.get("time_pt") or prev.get("time_pt") or "",
+            "datetime_pt": post.get("datetime_pt") or prev.get("datetime_pt"),
+            "brand": post.get("brand") or prev.get("brand"),
+            "family": post.get("family") or prev.get("family"),
+            "network": post.get("network") or prev.get("network") or network_for(post.get("family") or prev.get("family") or ""),
+            "platform": "Google Business",
+            "location": post.get("location") or prev.get("location"),
+            "title": post.get("title") or prev.get("title") or "Google Business post",
+            "caption": post.get("caption") or prev.get("caption") or "",
+            "link": None,
+            "kind": "gbp",
+            "status": post.get("status") or prev.get("status") or "Published",
+            "views": None,
+            "likes": None,
+            "comments": None,
+            "shares": None,
+            "impressions": None,
+            "last_updated": iso_pt(fetched_at),
+            "stats_source": "none",
+            "stats_note": post.get("stats_note") or "Google Business posts have no public URL. Stats are n/a.",
+        }
+
+    if kind == "group-share":
+        return {
+            "id": post.get("id") or prev.get("id") or (canonical_url(post.get("link")) if post.get("link") else None),
+            "episode": post.get("episode") or prev.get("episode"),
+            "plan_id": post.get("plan_id") or prev.get("plan_id"),
+            "group_id": post.get("group_id") or prev.get("group_id"),
+            "date": post.get("date") or prev.get("date") or "",
+            "time_pt": post.get("time_pt") or prev.get("time_pt") or "",
+            "datetime_pt": post.get("datetime_pt") or prev.get("datetime_pt"),
+            "brand": post.get("brand") or prev.get("brand"),
+            "family": post.get("family") or prev.get("family"),
+            "network": post.get("network") or prev.get("network") or network_for(post.get("family") or prev.get("family") or ""),
+            "platform": "Facebook",
+            "title": post.get("title") or prev.get("title") or "Group share",
+            "group_name": post.get("group_name") or prev.get("group_name") or "",
+            "link": post.get("link") or prev.get("link"),
+            "kind": "group-share",
+            "views": pick("views"),
+            "likes": pick("likes"),
+            "comments": None,
+            "shares": None,
+            "impressions": None,
+            "last_updated": iso_pt(fetched_at),
+            "stats_source": "none",
+            "stats_note": post.get("stats_note") or "Group share stats are n/a unless a public count is available.",
+        }
+
     out = {
         "id": post.get("id") or prev.get("id") or (canonical_url(post.get("link")) if post.get("link") else None),
         "episode": post.get("episode") or prev.get("episode"),
@@ -1234,24 +1486,6 @@ def assign_group_ids(posts: list[dict]) -> None:
             if fp and ofp and (fp == ofp or fp.split(":")[-1][:24] == ofp.split(":")[-1][:24] or fp.split(":")[-1].split()[:3] == ofp.split(":")[-1].split()[:3]):
                 members.append(other)
                 idxs.append(j)
-        if post.get("kind") == "group-share":
-            prev = prev_map.get(post.get("id") or (canonical_url(post.get("link")) if post.get("link") else "")) or {}
-            enriched.append({
-                **{k: post.get(k) for k in (
-                    "id", "episode", "plan_id", "group_id", "date", "time_pt", "datetime_pt",
-                    "brand", "family", "network", "platform", "title", "group_name", "link", "kind",
-                )},
-                "views": post.get("views") if post.get("views") is not None else prev.get("views"),
-                "likes": post.get("likes") if post.get("likes") is not None else prev.get("likes"),
-                "comments": None,
-                "shares": None,
-                "impressions": None,
-                "replies": None,
-                "last_updated": iso_pt(fetched_at),
-                "stats_source": "none",
-                "stats_note": post.get("stats_note") or "Group share stats are n/a unless a public count is available.",
-            })
-            continue
         if post.get("kind") == "story":
             gid = "story:" + slugish(family) + ":" + (date or "undated")
         else:
@@ -1382,6 +1616,10 @@ def main() -> int:
         before = len(posts)
         posts = [p for p in posts if not p.get("link") or canonical_url(p["link"]) not in deleted]
         print(f"  excluded {before - len(posts)} deleted post(s)")
+    gbp_live, gbp_pending = collect_google_business()
+    if gbp_live:
+        posts.extend(gbp_live)
+        print(f"  added {len(gbp_live)} published Google Business post(s)")
     group_shares = collect_posted_group_shares()
     if group_shares:
         existing = {canonical_url(p["link"]) for p in posts if p.get("link")}
@@ -1414,6 +1652,12 @@ def main() -> int:
         url = post.get("link")
         print(f"  {post.get('kind','post'):6} {post['platform']:10} {url or post.get('id')}")
         stats: dict
+        if post.get("kind") in {"gbp", "group-share"}:
+            prev_key = post.get("id") or (canonical_url(url) if url else "")
+            prev_row = prev_map.get(prev_key) or {}
+            stats = {"ok": False, "source": "none"}
+            enriched.append(apply_stats(post, stats, prev_row, fetched_at))
+            continue
         if post.get("kind") == "story":
             prev_key = post.get("id") or (canonical_url(url) if url else "")
             prev = prev_map.get(prev_key) or {}
@@ -1542,7 +1786,7 @@ def main() -> int:
     public_scheduled = None
     try:
         from scheduled import write_scheduled_queue
-        public_scheduled = write_scheduled_queue(fetched_at)
+        public_scheduled = write_scheduled_queue(fetched_at, extra_pending=gbp_pending)
     except Exception as exc:
         print(f"Scheduled queue write failed (public dashboard still ok): {exc}")
     if public_scheduled:
