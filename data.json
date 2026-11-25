@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-25T08:08:26-08:00",
-  "generated_at_pt": "Wed Nov 25, 2026, 8:08 AM PT",
+  "generated_at": "2026-11-25T08:53:27-08:00",
+  "generated_at_pt": "Wed Nov 25, 2026, 8:53 AM PT",
   "timezone": "America/Los_Angeles",
   "notes": {
     "YouTube": "Views and likes via yt-dlp. Comment counts are shown when YouTube exposes them; otherwise n/a.",
@@ -133,7 +133,7 @@
     "posts": 27,
     "stories": 2,
     "group_shares": 2,
-    "views": 1513,
+    "views": 1514,
     "likes": 10,
     "comments": 3,
     "shares": 0,
@@ -155,7 +155,7 @@
         "posts": 10,
         "stories": 2,
         "group_shares": 2,
-        "views": 110,
+        "views": 111,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -245,7 +245,7 @@
         "posts": 11,
         "stories": 1,
         "group_shares": 2,
-        "views": 209,
+        "views": 210,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -280,7 +280,7 @@
         "posts": 10,
         "stories": 2,
         "group_shares": 2,
-        "views": 110,
+        "views": 111,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -343,7 +343,7 @@
       "comments": 1,
       "shares": 0,
       "impressions": 5,
-      "last_updated": "2026-11-25T08:08:26-08:00",
+      "last_updated": "2026-11-25T08:53:27-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -367,7 +367,7 @@
       "comments": 1,
       "shares": 0,
       "impressions": 6,
-      "last_updated": "2026-11-25T08:08:26-08:00",
+      "last_updated": "2026-11-25T08:53:27-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -391,7 +391,7 @@
       "comments": 1,
       "shares": 0,
       "impressions": 10,
-      "last_updated": "2026-11-25T08:08:26-08:00",
+      "last_updated": "2026-11-25T08:53:27-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -463,7 +463,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T08:08:26-08:00",
+      "last_updated": "2026-11-25T08:53:27-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -487,7 +487,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 67,
-      "last_updated": "2026-11-25T08:08:26-08:00",
+      "last_updated": "2026-11-25T08:53:27-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -506,12 +506,12 @@
       "title": "Real results. Fake Gary. \ud83d\udcfc Your van doesn't have to be the refrigerator of the block. Full wraps designed, printed and installed in Gig Har\u2026",
       "link": "https://www.facebook.com/reel/1153969150339435",
       "kind": "post",
-      "views": 26,
+      "views": 27,
       "likes": null,
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T08:08:26-08:00",
+      "last_updated": "2026-11-25T08:53:27-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -607,7 +607,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T08:08:26-08:00",
+      "last_updated": "2026-11-25T08:53:27-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -655,7 +655,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 2,
-      "last_updated": "2026-11-25T08:08:26-08:00",
+      "last_updated": "2026-11-25T08:53:27-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -680,7 +680,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T08:08:26-08:00",
+      "last_updated": "2026-11-25T08:53:27-08:00",
       "stats_source": "none",
       "stats_note": "Group share stats are n/a unless a public count is available."
     },
@@ -704,7 +704,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T08:08:26-08:00",
+      "last_updated": "2026-11-25T08:53:27-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -778,7 +778,7 @@
       "impressions": null,
       "last_updated": "2026-11-25T08:08:26-08:00",
       "stats_source": "yt-dlp",
-      "stats_note": null
+      "stats_note": "Using last known stats; live fetch via yt-dlp failed"
     },
     {
       "id": "https://www.facebook.com/reel/2237819407088021",
@@ -1046,7 +1046,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 17,
-      "last_updated": "2026-11-25T08:08:26-08:00",
+      "last_updated": "2026-11-25T08:53:27-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -1071,7 +1071,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T08:08:26-08:00",
+      "last_updated": "2026-11-25T08:53:27-08:00",
       "stats_source": "none",
       "stats_note": "Group share stats are n/a unless a public count is available."
     }
@@ -2314,142 +2314,6 @@
       "x_followers": 0
     },
     {
-      "at": "2026-11-25T08:07:28-08:00",
-      "label": "Wed Nov 25, 2026, 8:07 AM PT",
-      "views": 1513,
-      "likes": 10,
-      "comments": 3,
-      "shares": 0,
-      "posts": 27,
-      "by_brand": {
-        "Map Desk Places": {
-          "posts": 6,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 42,
-          "likes": 0,
-          "comments": 3,
-          "shares": 0,
-          "views_known": 4,
-          "likes_known": 3
-        },
-        "USA Wrap Co": {
-          "posts": 10,
-          "stories": 2,
-          "group_shares": 2,
-          "views": 110,
-          "likes": 0,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 3,
-          "likes_known": 2
-        },
-        "DekWave": {
-          "posts": 4,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 0,
-          "likes": 0,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 0,
-          "likes_known": 0
-        },
-        "Map Desk World": {
-          "posts": 2,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 54,
-          "likes": 0,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 2,
-          "likes_known": 0
-        },
-        "Map Desk Money": {
-          "posts": 3,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 1307,
-          "likes": 10,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 3,
-          "likes_known": 2
-        },
-        "Quint Valley News": {
-          "posts": 1,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 0,
-          "likes": 0,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 0,
-          "likes_known": 0
-        },
-        "Harbor News": {
-          "posts": 1,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 0,
-          "likes": 0,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 0,
-          "likes_known": 0
-        }
-      },
-      "by_platform": {
-        "X": {
-          "posts": 6,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 107,
-          "likes": 0,
-          "comments": 3,
-          "shares": 0,
-          "views_known": 6,
-          "likes_known": 6
-        },
-        "YouTube": {
-          "posts": 5,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 1197,
-          "likes": 10,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 3,
-          "likes_known": 1
-        },
-        "Facebook": {
-          "posts": 11,
-          "stories": 1,
-          "group_shares": 2,
-          "views": 209,
-          "likes": 0,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 3,
-          "likes_known": 0
-        },
-        "Instagram": {
-          "posts": 5,
-          "stories": 1,
-          "group_shares": 0,
-          "views": 0,
-          "likes": 0,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 0,
-          "likes_known": 0
-        }
-      },
-      "youtube_subscribers": null,
-      "x_followers": 0
-    },
-    {
       "at": "2026-11-25T08:08:26-08:00",
       "label": "Wed Nov 25, 2026, 8:08 AM PT",
       "views": 1513,
@@ -2584,11 +2448,147 @@
       },
       "youtube_subscribers": null,
       "x_followers": 0
+    },
+    {
+      "at": "2026-11-25T08:53:27-08:00",
+      "label": "Wed Nov 25, 2026, 8:53 AM PT",
+      "views": 1514,
+      "likes": 10,
+      "comments": 3,
+      "shares": 0,
+      "posts": 27,
+      "by_brand": {
+        "Map Desk Places": {
+          "posts": 6,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 42,
+          "likes": 0,
+          "comments": 3,
+          "shares": 0,
+          "views_known": 4,
+          "likes_known": 3
+        },
+        "USA Wrap Co": {
+          "posts": 10,
+          "stories": 2,
+          "group_shares": 2,
+          "views": 111,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 3,
+          "likes_known": 2
+        },
+        "DekWave": {
+          "posts": 4,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        },
+        "Map Desk World": {
+          "posts": 2,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 54,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 2,
+          "likes_known": 0
+        },
+        "Map Desk Money": {
+          "posts": 3,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 1307,
+          "likes": 10,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 3,
+          "likes_known": 2
+        },
+        "Quint Valley News": {
+          "posts": 1,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        },
+        "Harbor News": {
+          "posts": 1,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        }
+      },
+      "by_platform": {
+        "X": {
+          "posts": 6,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 107,
+          "likes": 0,
+          "comments": 3,
+          "shares": 0,
+          "views_known": 6,
+          "likes_known": 6
+        },
+        "YouTube": {
+          "posts": 5,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 1197,
+          "likes": 10,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 3,
+          "likes_known": 1
+        },
+        "Facebook": {
+          "posts": 11,
+          "stories": 1,
+          "group_shares": 2,
+          "views": 210,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 3,
+          "likes_known": 0
+        },
+        "Instagram": {
+          "posts": 5,
+          "stories": 1,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        }
+      },
+      "youtube_subscribers": null,
+      "x_followers": 0
     }
   ],
   "scheduled": {
-    "generated_at": "2026-11-25T08:08:26.796680-08:00",
-    "generated_at_pt": "2026-11-25 8:08 AM PT",
+    "generated_at": "2026-11-25T08:53:27.339181-08:00",
+    "generated_at_pt": "2026-11-25 8:53 AM PT",
     "timezone": "America/Los_Angeles",
     "items": [
       {
