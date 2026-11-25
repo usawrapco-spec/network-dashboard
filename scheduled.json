@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T16:05:32.442036-08:00",
-  "generated_at_pt": "2026-11-24 4:05 PM PT",
+  "generated_at": "2026-11-24T17:08:20.350840-08:00",
+  "generated_at_pt": "2026-11-24 5:08 PM PT",
   "timezone": "America/Los_Angeles",
   "items": [
     {
@@ -117,57 +117,14 @@
       "video": null
     },
     {
-      "id": "DW029",
-      "group_id": "DW029",
-      "title": "Orange star panel + grooved hatch lid, Townsend job (real photo, 1:1, small DekWave mark)",
-      "caption": "Orange teak-look EVA with a star routed right into the panel, plus a matching hatch lid with vertical grooves. Every piece cut in our Gig Harbor shop and fitted to the boat.\n\nBold color, soft underfoot, and grippy when it's wet.\n\nWould you go bold like this, or keep it classic gray?\n\n#DekWave #EVADecking #GigHarbor #PugetSoundBoating",
-      "brand": "DekWave",
-      "family": "DekWave",
-      "network": "business",
-      "platforms": [
-        "Instagram"
-      ],
-      "planned_date": "2026-11-24",
-      "planned_time": "3:00 PM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-24T15:00:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/dw029.jpg",
-      "video": null
-    },
-    {
-      "id": "DW032",
-      "group_id": "DW032",
-      "title": "Orange star panel + grooved hatch lid, Townsend job (real photo, 1:1, small DekWave mark)",
-      "caption": "Orange teak-look EVA with a star routed right into the panel, plus a matching hatch lid with vertical grooves. Every piece cut in our Gig Harbor shop and fitted to the boat.\n\nBold color, soft underfoot, and grippy when it's wet.\n\nWould you go bold like this, or keep it classic gray?\n\n#DekWave #EVADecking #GigHarbor #PugetSoundBoating",
-      "brand": "DekWave",
-      "family": "DekWave",
-      "network": "business",
-      "platforms": [
-        "Facebook"
-      ],
-      "planned_date": "2026-11-24",
-      "planned_time": "3:00 PM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-24T15:00:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/dw032.jpg",
-      "video": null
-    },
-    {
-      "id": "MN009",
-      "group_id": "mn009-x014",
+      "id": "X014",
+      "group_id": "X014",
       "title": "80s VHS parody testimonial: \"Gary's Gutters\" (33 s, v5, ElevenLabs voices)",
-      "caption": "Real results. Fake Gary. \ud83d\udcfc Your van doesn't have to be the refrigerator of the block. Full wraps designed, printed and installed in Gig Harbor. #vanwrap #80s #gigharbor\n\n(Dramatization. Gary is an AI actor and Gary's Gutters is fictional.)\nMusic: \"Local Forecast - Elevator\" Kevin MacLeod (incompetech.com) \u00b7 CC BY 4.0",
+      "caption": "Real results. Fake Gary. Your van doesn't have to be the refrigerator of the block. Full wraps in Gig Harbor.\n(Dramatization. Gary is an AI actor; Gary's Gutters is fictional.)\nMusic: \"Local Forecast - Elevator\" Kevin MacLeod (incompetech.com) \u00b7 CC BY 4.0\n",
       "brand": "USA Wrap Co",
       "family": "USA Wrap Co",
       "network": "business",
       "platforms": [
-        "Facebook",
-        "Instagram",
-        "LinkedIn",
         "X"
       ],
       "planned_date": "2026-11-24",
@@ -176,7 +133,7 @@
       "planned_at": "2026-11-24T16:00:00-08:00",
       "status": "Approved",
       "kind": "plan",
-      "still": "media/scheduled/mn009.jpg",
+      "still": "media/scheduled/x014.jpg",
       "video": null
     },
     {
@@ -201,6 +158,26 @@
       "video": null
     },
     {
+      "id": "L002",
+      "group_id": "L002",
+      "title": "Jefferson County Food Bank Association donated EV",
+      "caption": "Thanksgiving week, and still one of my favorite jobs of the year: the donated EV we wrapped for Jefferson County Food Bank Association. Pantry locations, mapped right on the rear doors, working every mile.\n\nGrateful to the teams who feed our neighbors, and glad this shop could help them show up clearly.\n\n#ChanceTheWrapper #GigHarbor #FleetWraps",
+      "brand": "Chance the Wrapper",
+      "family": "Chance the Wrapper",
+      "network": "creator",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-11-25",
+      "planned_time": "8:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-25T08:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l002.jpg",
+      "video": null
+    },
+    {
       "id": "L013",
       "group_id": "L013",
       "title": "Typographic card: Read it at 35 mph (fleet wrap basics, no photo)",
@@ -218,6 +195,46 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/l013.jpg",
+      "video": null
+    },
+    {
+      "id": "X010",
+      "group_id": "X010",
+      "title": "01 Bay Pointe shuttle poster (\"IN THE BAY\", real mid-install job photo, 4:5)",
+      "caption": "In the bay: Bay Pointe Senior Living's shuttle, mid-install in our Gig Harbor shop. Panels go on one section at a time so the graphics read clean from the curb.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-11-25",
+      "planned_time": "10:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-25T10:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x010.jpg",
+      "video": null
+    },
+    {
+      "id": "X011",
+      "group_id": "X011",
+      "title": "Local shout-out: Gig Harbor Cruisers Automotive Club",
+      "caption": "Local shout-out to Gig Harbor Cruisers Automotive Club. Since 1997 they've welcomed all makes and years, and Cruise the Narrows in Uptown helps fund local youth activities. Thanks for keeping the Peninsula car scene rolling.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-11-25",
+      "planned_time": "10:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-25T10:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x011.jpg",
       "video": null
     },
     {
@@ -258,6 +275,26 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/x004.jpg",
+      "video": null
+    },
+    {
+      "id": "DW028",
+      "group_id": "DW028",
+      "title": "Sea Ray swim platform, tan teak-look EVA with routed DekWave mark (real photo, 4:5)",
+      "caption": "Tan teak-look EVA on a Sea Ray swim platform, with our mark routed right into the foam. Cut in our Gig Harbor shop and fitted to the boat.\n\nWarm color, cool to the touch, and grippy when you're climbing out of the Sound.\n\nWould you go with tan or gray?\n\n#DekWave #EVADecking #GigHarbor #PugetSoundBoating",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-11-25",
+      "planned_time": "3:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-25T15:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw028.jpg",
       "video": null
     },
     {
@@ -407,6 +444,26 @@
       "video": null
     },
     {
+      "id": "X012",
+      "group_id": "X012",
+      "title": "08 Food Bank EV detail",
+      "caption": "One of our favorite wraps this year: pantry locations mapped on the rear doors of Jefferson County Food Bank Association's EV. A wrap that works every mile. Wrapped in Gig Harbor.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-11-27",
+      "planned_time": "9:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-27T09:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x012.jpg",
+      "video": null
+    },
+    {
       "id": "H173",
       "group_id": "H173",
       "title": "Harbor Desk community odds: Will you make it to Winterfest at Peninsula High this weekend?",
@@ -444,6 +501,26 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/x005.jpg",
+      "video": null
+    },
+    {
+      "id": "X013",
+      "group_id": "X013",
+      "title": "EP01 We Lift Brands (as-is)",
+      "caption": "Phone not ringing? Your truck might be invisible. We'll take it from here. We Lift Brands, Ep. 1\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-11-27",
+      "planned_time": "3:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-27T15:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x013.jpg",
       "video": null
     },
     {
@@ -651,6 +728,26 @@
       "video": null
     },
     {
+      "id": "X007",
+      "group_id": "X007",
+      "title": "EliteOne tractor 594 fighter-jet / flag wrap (real job photo; USDOT lettering removed)",
+      "caption": "Cleared for takeoff. F-22 and stars-and-stripes graphics on EliteOne's tractor 594, designed, printed and installed in our Gig Harbor shop. #truckwrap #semitruck #fleetgraphics #gigharbor",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-11-29",
+      "planned_time": "12:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-29T12:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x007.jpg",
+      "video": null
+    },
+    {
       "id": "SJ031",
       "group_id": "SJ031",
       "title": "Typographic card: Quick answers FAQ (no photo)",
@@ -709,6 +806,26 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/x018.jpg",
+      "video": null
+    },
+    {
+      "id": "L004",
+      "group_id": "L004",
+      "title": "Ranger van upfit, rear bay",
+      "caption": "Wraps outside, upfits inside.\n\nThis is a shelving, drawers and bins install we finished in the bay \u2014 a place for every tool. A work van should work as a shop, not just as a billboard.\n\nThat's the other half of what we do at USA WRAP Co.\n\n#ChanceTheWrapper #VanUpfit #GigHarbor",
+      "brand": "Chance the Wrapper",
+      "family": "Chance the Wrapper",
+      "network": "creator",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-11-30",
+      "planned_time": "8:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-30T08:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l004.jpg",
       "video": null
     },
     {
@@ -793,6 +910,27 @@
       "video": null
     },
     {
+      "id": "H034",
+      "group_id": "h034-h035",
+      "title": "02 Ranger upfit detail",
+      "caption": "Shelving, drawers and bins. A rolling shop, built in. Wraps outside, upfits inside.\n\n#usawrapco #vehiclewrap #gigharbor #pnwbusiness #vanupfit",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-01",
+      "planned_time": "7:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-01T07:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h034.jpg",
+      "video": null
+    },
+    {
       "id": "L014",
       "group_id": "L014",
       "title": "Typographic card: Wrap, lettering or paint? How I would decide (no photo)",
@@ -810,6 +948,26 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/l014.jpg",
+      "video": null
+    },
+    {
+      "id": "DW008",
+      "group_id": "DW008",
+      "title": "Medium-gray cockpit with DekWave mark and hatch fit (real photo)",
+      "caption": "Medium gray, teak-style lines, and the DekWave mark, cut to fit around the hatches.\n\nThis is the kind of clean, custom fit we do in our Gig Harbor shop.\n\nIf your cockpit is due for a new deck, call or visit dekwave.com.\n\n#DekWave #EVADecking #BoatDecking #GigHarbor #PugetSoundBoating #PNWBoating #MarineDecking",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Instagram"
+      ],
+      "planned_date": "2026-12-01",
+      "planned_time": "11:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-01T11:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw008.jpg",
       "video": null
     },
     {
@@ -956,6 +1114,46 @@
       "video": null
     },
     {
+      "id": "L005",
+      "group_id": "L005",
+      "title": "Golden Events SUV wrap",
+      "caption": "People don't just drive past this one.\n\nFull wrap for Golden Events: clean lettering on the doors, and a forest mural wrapping the rear quarters. Built so the company is obvious from the next lane, and interesting when you get closer.\n\nThis is the kind of commercial work I like coming out of the shop.\n\n#ChanceTheWrapper #VehicleBranding #GigHarbor",
+      "brand": "Chance the Wrapper",
+      "family": "Chance the Wrapper",
+      "network": "creator",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-12-03",
+      "planned_time": "8:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-03T08:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l005.jpg",
+      "video": null
+    },
+    {
+      "id": "L006",
+      "group_id": "L006",
+      "title": "H2Away cargo van wrap (side graphic)",
+      "caption": "Name, job, and a design you can read while you're moving.\n\nH2Away mitigation and restoration, wrapped at USA WRAP Co. in Gig Harbor. Commercial vans should work this hard every day.\n\n#FleetWraps #VehicleBranding #GigHarbor",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-12-04",
+      "planned_time": "9:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-04T09:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l006.jpg",
+      "video": null
+    },
+    {
       "id": "H044",
       "group_id": "h044-h045",
       "title": "12 Dahlia Society detail",
@@ -977,6 +1175,106 @@
       "video": null
     },
     {
+      "id": "L007",
+      "group_id": "L007",
+      "title": "Lesperance Plumbing two-van fleet",
+      "caption": "If you run more than one van, they should look like they belong to the same company.\n\nTwo Lesperance Plumbing vehicles, same color, same lettering, same read from the road. That's the quiet advantage of wrapping a small fleet at once: every mile, every vehicle, same impression.\n\nI help South Sound fleets get there. Send me a message if you want me to look at what you've got on the road now.\n\n#ChanceTheWrapper #FleetWraps #GigHarbor",
+      "brand": "Chance the Wrapper",
+      "family": "Chance the Wrapper",
+      "network": "creator",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-12-07",
+      "planned_time": "8:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-07T08:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l007.jpg",
+      "video": null
+    },
+    {
+      "id": "L008",
+      "group_id": "L008",
+      "title": "Fast Adams Septic work truck",
+      "caption": "A work truck can look like a work truck and still be the best ad you own.\n\nFast Adams Septic, lettered and wrapped so the name holds up in daylight, on the road, next to the tanks and the hose. That's the job: make it clear, make it last, don't get in the way of the work.\n\n#ChanceTheWrapper #FleetWraps #VehicleBranding",
+      "brand": "Chance the Wrapper",
+      "family": "Chance the Wrapper",
+      "network": "creator",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-12-10",
+      "planned_time": "8:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-10T08:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l008.jpg",
+      "video": null
+    },
+    {
+      "id": "L009",
+      "group_id": "L009",
+      "title": "CleanStart Concrete & Coatings box truck",
+      "caption": "Big box, simple read.\n\nCleanStart Concrete & Coatings, a full box-truck wrap designed, printed, and installed at our shop in Gig Harbor. When the panel is this large, the graphics have one job: be obvious.\n\nUSA WRAP Co. \u00b7 \n\n#FleetWraps #GigHarbor #USAWrapCo",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-12-11",
+      "planned_time": "9:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-11T09:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l009.jpg",
+      "video": null
+    },
+    {
+      "id": "DW018",
+      "group_id": "DW018",
+      "title": "Gray bow deck at a marina (real photo)",
+      "caption": "If DekWave has already done your deck, we'd be grateful for a Google review, and a photo of the boat on the water if you have one.\n\nLeave a review: https://g.page/r/CWkJqhD0Sk-xECA/review\n\nQuestions about a new deck? Call .\n\n#DekWave #EVADecking #BoatDecking #GigHarbor #PugetSoundBoating #PNWBoating #MarineDecking",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Instagram"
+      ],
+      "planned_date": "2026-12-12",
+      "planned_time": "9:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-12T09:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw018.jpg",
+      "video": null
+    },
+    {
+      "id": "L010",
+      "group_id": "L010",
+      "title": "Dorothy the Piper, nose art and lightning stripe",
+      "caption": "Yes, we do planes.\n\n\"Dorothy\" is a yellow Piper with nose art, a lightning stripe, and a tail that had to be as clean as the fuselage. Same shop, same hands, as the vans and the box trucks.\n\nIf it takes vinyl and it has to look right, it can come through this bay.\n\n#ChanceTheWrapper #VehicleBranding #GigHarbor",
+      "brand": "Chance the Wrapper",
+      "family": "Chance the Wrapper",
+      "network": "creator",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-12-14",
+      "planned_time": "8:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-14T08:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l010.jpg",
+      "video": null
+    },
+    {
       "id": "L011",
       "group_id": "L011",
       "title": "Chance wrapping",
@@ -994,6 +1292,26 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/l011.jpg",
+      "video": null
+    },
+    {
+      "id": "L012",
+      "group_id": "L012",
+      "title": "Fast Adams Septic work truck",
+      "caption": "Last install weeks of the year are on the board.\n\nIf your company wants a truck or van wrapped before the new year, send us a message or call and we'll see what the calendar can still hold. Designed, printed, and installed in Gig Harbor \u2014 by and the USA WRAP Co. shop.\n\n#FleetWraps #USAWrapCo #GigHarbor",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-12-18",
+      "planned_time": "9:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-18T09:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l012.jpg",
       "video": null
     },
     {
@@ -2563,7 +2881,7 @@
   ],
   "counts": {
     "ready": 4,
-    "planned": 46,
+    "planned": 62,
     "group_shares": 76,
     "videos": 4
   }
