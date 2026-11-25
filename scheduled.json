@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T19:07:09.364646-08:00",
-  "generated_at_pt": "2026-11-24 7:07 PM PT",
+  "generated_at": "2026-11-24T19:58:19.385456-08:00",
+  "generated_at_pt": "2026-11-24 7:58 PM PT",
   "timezone": "America/Los_Angeles",
   "items": [
     {
@@ -138,6 +138,47 @@
       "video": null
     },
     {
+      "id": "H196",
+      "group_id": "h196-h197",
+      "title": "Cybertruck matte color-change wrap (real job photo, 4:5)",
+      "caption": "Same truck. Matte mode.\n\nThis Cybertruck traded its factory stainless look for a matte color-change wrap. The original finish stays protected underneath, and the wrap can come off later if the owner wants the stainless back.\n\nThinking about a color change? Call .\n\n#VehicleWrap #GigHarbor #USAWrapCo",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-11-25",
+      "planned_time": "7:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-25T07:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h196.jpg",
+      "video": null
+    },
+    {
+      "id": "X021",
+      "group_id": "X021",
+      "title": "Cybertruck matte color-change wrap (real job photo, 4:5)",
+      "caption": "Same Cybertruck. Matte mode. Color-change wrap, original finish protected underneath. Wrapped by USA Wrap Co.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-11-25",
+      "planned_time": "7:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-25T07:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x021.jpg",
+      "video": null
+    },
+    {
       "id": "L002",
       "group_id": "L002",
       "title": "Jefferson County Food Bank Association donated EV",
@@ -178,6 +219,86 @@
       "video": null
     },
     {
+      "id": "L015",
+      "group_id": "L015",
+      "title": "Cybertruck matte color-change wrap (real job photo, 4:5)",
+      "caption": "Color-change wraps protect the factory finish underneath and can be removed later. This Cybertruck went matte.\n\nUSA Wrap Co designs, prints and installs vehicle wraps, fleet graphics and lettering. Call .\n\n#FleetGraphics #VehicleWraps #SmallBusiness",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-11-25",
+      "planned_time": "8:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-25T08:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l015.jpg",
+      "video": null
+    },
+    {
+      "id": "H252",
+      "group_id": "H252",
+      "title": "Raverie vending truck wrap (real job photo)",
+      "caption": "Fresh wrap on the Raverie vending truck. Bold color that people notice from across the lot",
+      "brand": "USA Wrap Co \u00b7 Gig Harbor",
+      "family": "USA Wrap Co \u00b7 Gig Harbor",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-11-25",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-25T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h252.jpg",
+      "video": null
+    },
+    {
+      "id": "H258",
+      "group_id": "H258",
+      "title": "Cybertruck matte color change (real job photo)",
+      "caption": "Matte color-change wrap on a Cybertruck. The original finish stays protected underneath",
+      "brand": "USA Wrap Co \u00b7 Olympia",
+      "family": "USA Wrap Co \u00b7 Olympia",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-11-25",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-25T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h258.jpg",
+      "video": null
+    },
+    {
+      "id": "H264",
+      "group_id": "H264",
+      "title": "Octopus custom EVA deck design (real job photo)",
+      "caption": "Custom EVA foam decking with an octopus design. Soft, grippy underfoot and built for the water",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-11-25",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-25T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h264.jpg",
+      "video": null
+    },
+    {
       "id": "X010",
       "group_id": "X010",
       "title": "01 Bay Pointe shuttle poster (\"IN THE BAY\", real mid-install job photo, 4:5)",
@@ -195,6 +316,27 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/x010.jpg",
+      "video": null
+    },
+    {
+      "id": "H224",
+      "group_id": "h224-h225",
+      "title": "Story: T-Mobile van wrap (real job photo, 9:16)",
+      "caption": "Story (no caption). Optional link sticker to usawrapco.com in the plain band (y 1160-1320)",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-11-25",
+      "planned_time": "10:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-25T10:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h224.jpg",
       "video": null
     },
     {
@@ -278,6 +420,26 @@
       "video": null
     },
     {
+      "id": "DW052",
+      "group_id": "DW052",
+      "title": "Typographic card: Your deck is your front porch (liveaboards, no photo)",
+      "caption": "Living aboard? Your deck is your front porch. \u2693\n\nYou're on it every day, so it should feel good underfoot and fit your boat: cut around every hatch and cleat, in colors that suit you.\n\nLiveaboards, what's your favorite spot on deck? \ud83d\udc47\n\n#DekWave #EVADecking #GigHarbor #PugetSoundBoating",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Instagram"
+      ],
+      "planned_date": "2026-11-25",
+      "planned_time": "3:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-25T15:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw052.jpg",
+      "video": null
+    },
+    {
       "id": "MN003",
       "group_id": "mn003-x015",
       "title": "Mini 2: Golden Events \"Two Stories\" (14.6 s)",
@@ -317,6 +479,66 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/sj013.jpg",
+      "video": null
+    },
+    {
+      "id": "H270",
+      "group_id": "H270",
+      "title": "Harbor Desk card: 5 museum this week",
+      "caption": "This week at the Harbor History Museum \ud83c\udfdb\ufe0f\n\nOpen Wed\u2013Sat, 11 a.m.\u20134 p.m.\nMuseum Mercantile: 20% off Old World glass ornaments, Nov. 25\u201328\n\"The Hostess with the Mostest\" exhibit is held over through Dec. 24: aprons, women's clubs and vintage ads\nGig Harbor Literary Society meets Tue., Dec. 1 at 6:30 p.m. All welcome\n\n4121 Harborview Dr.\n\nPresented by USA Wrap Co",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-11-25",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-25T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h270.jpg",
+      "video": null
+    },
+    {
+      "id": "DW059",
+      "group_id": "DW059",
+      "title": "Story share of DW028: Sea Ray swim platform, tan teak-look EVA with routed DekWave mark (real photo, 4:5)",
+      "caption": "Story: share today's feed post DW028 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-11-25",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-25T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw059.jpg",
+      "video": null
+    },
+    {
+      "id": "DW073",
+      "group_id": "DW073",
+      "title": "Story share of DW052: Typographic card: Your deck is your front porch (liveaboards, no photo)",
+      "caption": "Story: share today's feed post DW052 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Instagram"
+      ],
+      "planned_date": "2026-11-25",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-25T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw073.jpg",
       "video": null
     },
     {
@@ -382,6 +604,248 @@
       "video": null
     },
     {
+      "id": "H271",
+      "group_id": "H271",
+      "title": "Harbor Desk card: 6 turkey trot road closure",
+      "caption": "Heads up this Thanksgiving morning \ud83e\udd83\n\nHarborview Drive is closed 7\u201310:30 a.m. for the Gig Harbor Turkey Trot. The 5K starts at 8 a.m. at 3118 Judson St. and loops out to North Harborview Dr. and Peacock Hill Ave.\n\nProceeds go to Food Back Packs 4 Kids, GHP FISH and local scholarships. Plan another way around downtown, or come cheer them on.\n\nPresented by USA Wrap Co",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-11-26",
+      "planned_time": "7:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-26T07:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h271.jpg",
+      "video": null
+    },
+    {
+      "id": "L016",
+      "group_id": "L016",
+      "title": "Northwest Epoxy Coatings box truck full wrap (real job photo, 4:5)",
+      "caption": "A box truck is the biggest piece of advertising most trades own. Northwest Epoxy Coatings put theirs to work.\n\nUSA Wrap Co designs, prints and installs vehicle wraps, fleet graphics and lettering. Call .\n\n#FleetGraphics #VehicleWraps #SmallBusiness",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-11-26",
+      "planned_time": "8:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-26T08:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l016.jpg",
+      "video": null
+    },
+    {
+      "id": "H226",
+      "group_id": "h226-h227",
+      "title": "Story: T-Mobile box truck wrap (real job photo, 9:16)",
+      "caption": "Story (no caption). Optional link sticker to usawrapco.com in the plain band (y 1160-1320)",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-11-26",
+      "planned_time": "10:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-26T10:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h226.jpg",
+      "video": null
+    },
+    {
+      "id": "H272",
+      "group_id": "H272",
+      "title": "Harbor Desk card: 6 holiday travel",
+      "caption": "Traveling this weekend? WSDOT's Thanksgiving notes:\n\n\u26f4\ufe0f Ferries are busiest onto the islands Wed\u2013Thu and off them Sat\u2013Sun (both ways Friday). Walk-ons usually board much faster.\n\ud83d\ude97 I-405 and SR 167 express toll lanes are free and open to all on Thursday.\n\ud83d\udea7 Most highway construction is paused for the holiday weekend.\n\nCheck the WSDOT app or traffic cameras before you go.\n\nPresented by USA Wrap Co",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-11-26",
+      "planned_time": "12:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-26T12:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h272.jpg",
+      "video": null
+    },
+    {
+      "id": "DW027",
+      "group_id": "DW027",
+      "title": "Charcoal teak-line EVA cockpit with white helm seats, on the water (real photo, 4:5, small DekWave mark)",
+      "caption": "Charcoal teak lines with a cream border, cut around every seat base, hatch and cup holder. Clean, quiet, and easy on bare feet.\n\nNo more slippery gelcoat on a wet Puget Sound morning.\n\nWhat color would you put on your deck?\n\n#DekWave #EVADecking #GigHarbor #PugetSoundBoating",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-11-26",
+      "planned_time": "3:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-26T15:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw027.jpg",
+      "video": null
+    },
+    {
+      "id": "DW053",
+      "group_id": "DW053",
+      "title": "Typographic card: Thankful for every boat (Thanksgiving, no photo)",
+      "caption": "Happy Thanksgiving from all of us at DekWave. \ud83e\udd83\n\nTo every boat owner who trusted us with their deck this year: thank you. Enjoy the day, and we'll see you on the water.\n\n#DekWave #EVADecking #GigHarbor #PugetSoundBoating",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Instagram"
+      ],
+      "planned_date": "2026-11-26",
+      "planned_time": "3:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-26T15:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw053.jpg",
+      "video": null
+    },
+    {
+      "id": "H198",
+      "group_id": "h198-h199",
+      "title": "Overland camper wrap (real job photo, 4:5)",
+      "caption": "Off-grid ready.\n\nAn overland camper wrap built to match the adventure. Graphics like these hold up on long trips and protect the paint from the dings that come with backroads.\n\nGot a rig that deserves a look like this? Call .\n\n#VehicleWrap #GigHarbor #USAWrapCo",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-11-26",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-26T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h198.jpg",
+      "video": null
+    },
+    {
+      "id": "H273",
+      "group_id": "H273",
+      "title": "Harbor Desk card: 6 weekend nights out",
+      "caption": "Nights out this weekend \ud83c\udfb6\n\nFri 6:30 p.m. Ted Pickett's Neil Diamond tribute, Olalla Winery\nFri 6\u20138 p.m. Trivia, Hidden Harbor Wine Library\nFri 8 p.m. Karaoke, The Float in Purdy\nSat 4 p.m. Robbie Vee, Hidden Harbor Wine Library\nSat 6\u20139 p.m. Record night at Hop Pharm (bring a favorite record)\nSat 7 p.m. Comedy night at Ocean5 (doors at 6)\n\nWhere are you headed?\n\nPresented by USA Wrap Co",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-11-26",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-26T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h273.jpg",
+      "video": null
+    },
+    {
+      "id": "SJ039",
+      "group_id": "SJ039",
+      "title": "Typographic card: Save some for later (Thanksgiving, no photo)",
+      "caption": "Happy Thanksgiving from Savajay. \ud83e\udd83\n\nLeftovers aren't just for the fridge. Press. Drop. Saved. Puff Pods by Savajay keeps the rest of your preroll, cigar, or cigarette for later.\n\nFounder reservations are open at https://savajay.com/fb. Reservations only; payment isn't live yet.\n21+ only. For legal use only. Patent pending.\n\n#PuffPods #Savajay #PocketGadget #CigarLife #EDC #PatentPending",
+      "brand": "Savajay",
+      "family": "Savajay",
+      "network": "business",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-11-26",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-26T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/sj039.jpg",
+      "video": null
+    },
+    {
+      "id": "X022",
+      "group_id": "X022",
+      "title": "Overland camper wrap (real job photo, 4:5)",
+      "caption": "Off-grid ready. Overland camper wrap that protects the paint on the backroads. Wrapped by USA Wrap Co.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-11-26",
+      "planned_time": "4:30 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-26T16:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x022.jpg",
+      "video": null
+    },
+    {
+      "id": "DW060",
+      "group_id": "DW060",
+      "title": "Story share of DW027: Charcoal teak-line EVA cockpit with white helm seats, on the water (real photo, 4:5, small",
+      "caption": "Story: share today's feed post DW027 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-11-26",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-26T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw060.jpg",
+      "video": null
+    },
+    {
+      "id": "DW074",
+      "group_id": "DW074",
+      "title": "Story share of DW053: Typographic card: Thankful for every boat (Thanksgiving, no photo)",
+      "caption": "Story: share today's feed post DW053 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Instagram"
+      ],
+      "planned_date": "2026-11-26",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-26T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw074.jpg",
+      "video": null
+    },
+    {
       "id": "QVN009",
       "group_id": "qvn009-qvn010",
       "title": "Christmas in Kiowa is tomorrow, Sat. Nov. 28 (Town-published times only) + ECCO deadline today",
@@ -400,6 +864,67 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/qvn009.jpg",
+      "video": null
+    },
+    {
+      "id": "H200",
+      "group_id": "h200-h201",
+      "title": "Farm2Fork step van wrap (real job photo, 4:5)",
+      "caption": "Fresh route.\n\nFarm2Fork's step van now carries the brand to every stop. A delivery truck is parked in front of customers all day long, so it might as well do the marketing too.\n\nWant your route working for you? Call .\n\n#VehicleWrap #GigHarbor #USAWrapCo",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-11-27",
+      "planned_time": "7:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-27T07:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h200.jpg",
+      "video": null
+    },
+    {
+      "id": "X023",
+      "group_id": "X023",
+      "title": "Farm2Fork step van wrap (real job photo, 4:5)",
+      "caption": "Fresh route. Farm2Fork's step van now markets the brand at every stop. Wrapped by USA Wrap Co.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-11-27",
+      "planned_time": "7:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-27T07:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x023.jpg",
+      "video": null
+    },
+    {
+      "id": "H274",
+      "group_id": "H274",
+      "title": "Harbor Desk card: 7 art show free day",
+      "caption": "Free today: the Peninsula Art League's national art show \ud83c\udfa8\n\nAdmission is free Friday, Nov. 27, with about 100 works by artists from across the country plus STEAM activities. Vintage Aero Museum, 1108 26th Ave. NW. Open 10 a.m.\u20134 p.m. Monday\u2013Saturday through Wednesday, Dec. 2.\n\nPresented by USA Wrap Co",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-11-27",
+      "planned_time": "7:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-27T07:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h274.jpg",
       "video": null
     },
     {
@@ -424,6 +949,26 @@
       "video": null
     },
     {
+      "id": "L017",
+      "group_id": "L017",
+      "title": "Tanker truck graphics (real job photo, 4:5)",
+      "caption": "Commercial graphics for a tanker truck: clean, readable and professional at highway speed.\n\nUSA Wrap Co designs, prints and installs vehicle wraps, fleet graphics and lettering. Call .\n\n#FleetGraphics #VehicleWraps #SmallBusiness",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-11-27",
+      "planned_time": "8:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-27T08:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l017.jpg",
+      "video": null
+    },
+    {
       "id": "X012",
       "group_id": "X012",
       "title": "08 Food Bank EV detail",
@@ -441,6 +986,87 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/x012.jpg",
+      "video": null
+    },
+    {
+      "id": "H253",
+      "group_id": "H253",
+      "title": "Amped Up Electric box truck wrap (real job photo)",
+      "caption": "Box truck wrap for Amped Up Electric: clean, bright and easy to read at highway speed",
+      "brand": "USA Wrap Co \u00b7 Gig Harbor",
+      "family": "USA Wrap Co \u00b7 Gig Harbor",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-11-27",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-27T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h253.jpg",
+      "video": null
+    },
+    {
+      "id": "H259",
+      "group_id": "H259",
+      "title": "Overland camper wrap (real job photo)",
+      "caption": "Overland camper wrap, built for long trips and backroads",
+      "brand": "USA Wrap Co \u00b7 Olympia",
+      "family": "USA Wrap Co \u00b7 Olympia",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-11-27",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-27T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h259.jpg",
+      "video": null
+    },
+    {
+      "id": "H265",
+      "group_id": "H265",
+      "title": "Bass boat blue star EVA decking (real job photo)",
+      "caption": "EVA foam decking on a bass boat with a blue star accent. Comfortable to stand on all day",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-11-27",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-27T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h265.jpg",
+      "video": null
+    },
+    {
+      "id": "H228",
+      "group_id": "h228-h229",
+      "title": "Story: Green tow truck graphics (real job photo, 9:16)",
+      "caption": "Story (no caption). Optional link sticker to usawrapco.com in the plain band (y 1160-1320)",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-11-27",
+      "planned_time": "10:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-27T10:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h228.jpg",
       "video": null
     },
     {
@@ -484,6 +1110,26 @@
       "video": null
     },
     {
+      "id": "X035",
+      "group_id": "X035",
+      "title": "Text-only wrap tip (no image, no job subject)",
+      "caption": "Wrap tip: wash your wrap by hand with mild soap. Skip the brush car wash, and keep pressure washers 12+ inches away from edges.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-11-27",
+      "planned_time": "12:30 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-27T12:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": null,
+      "video": null
+    },
+    {
       "id": "X013",
       "group_id": "X013",
       "title": "EP01 We Lift Brands (as-is)",
@@ -521,6 +1167,47 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/sj017.jpg",
+      "video": null
+    },
+    {
+      "id": "H275",
+      "group_id": "H275",
+      "title": "Harbor Desk card: 7 wildwatch donkey creek",
+      "caption": "Walk off the pie tomorrow \ud83c\udf42\n\nHarbor WildWatch leads a creek walk Saturday, Nov. 28 at 10 a.m., starting at Donkey Creek Park and following the creek down to the estuary. Dress for the weather.\n\nPresented by USA Wrap Co",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-11-27",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-27T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h275.jpg",
+      "video": null
+    },
+    {
+      "id": "DW061",
+      "group_id": "dw061-dw075",
+      "title": "Story share of DW033: Typographic card: Why EVA decking? (no photo)",
+      "caption": "Story: share today's feed post DW033 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-11-27",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-27T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw061.jpg",
       "video": null
     },
     {
@@ -565,6 +1252,26 @@
       "video": null
     },
     {
+      "id": "H276",
+      "group_id": "H276",
+      "title": "Harbor Desk card: 8 small business saturday kspek",
+      "caption": "Small Business Saturday: something new downtown \ud83d\udecd\ufe0f\n\nKspek, designer Kathleen van der Spek's studio and shop, is open at 7706 Pioneer Way (the former Williams Flower & Gift). Sweatshirts and more made from repurposed vintage beach towels, plus a makerspace for custom patches and embroidery. Open 10 a.m.\u20136 p.m. Tue\u2013Sun through the holidays.\n\nShop small today.\n\nPresented by USA Wrap Co",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-11-28",
+      "planned_time": "7:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-28T07:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h276.jpg",
+      "video": null
+    },
+    {
       "id": "DW035",
       "group_id": "dw035-dw036",
       "title": "Typographic card: Photos in. Deck out. (how it works, no photo)",
@@ -583,6 +1290,27 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/dw035.jpg",
+      "video": null
+    },
+    {
+      "id": "H230",
+      "group_id": "h230-h231",
+      "title": "Story: Boombox bus wrap (real job photo, 9:16)",
+      "caption": "Story (no caption). Optional link sticker to usawrapco.com in the plain band (y 1160-1320)",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-11-28",
+      "planned_time": "10:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-28T10:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h230.jpg",
       "video": null
     },
     {
@@ -646,6 +1374,129 @@
       "video": null
     },
     {
+      "id": "H202",
+      "group_id": "h202-h203",
+      "title": "Mobile Equipment Repair service van wrap (real job photo, 4:5)",
+      "caption": "On call. On brand.\n\nService vans spend the day parked at job sites, which makes them some of the hardest-working ads a company owns. This one for Mobile Equipment Repair tells every customer's neighbor who showed up.\n\nReady to put your van to work? Call .\n\n#VehicleWrap #GigHarbor #USAWrapCo",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-11-28",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-28T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h202.jpg",
+      "video": null
+    },
+    {
+      "id": "H277",
+      "group_id": "H277",
+      "title": "Harbor Desk card: 8 galaxy movies",
+      "caption": "At the Galaxy Uptown this Sunday and Monday \ud83c\udfac\n\nSun 1 p.m. Flashback Cinema: \"Christmas in Connecticut\"\nMon 10 a.m. Classic Movie: \"Calamity Jane\" (1953)\nMon 6:30 p.m. Gig Harbor Film Festival Monday Movie Night: \"Georgia O'Keeffe \u2013 The Brightness of Light\"\nMon 7 p.m. Mystery Movie (title revealed at showtime)\n\nPresented by USA Wrap Co",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-11-28",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-28T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h277.jpg",
+      "video": null
+    },
+    {
+      "id": "X024",
+      "group_id": "X024",
+      "title": "Mobile Equipment Repair service van wrap (real job photo, 4:5)",
+      "caption": "On call. On brand. Mobile Equipment Repair's service van, wrapped. Wrapped by USA Wrap Co.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-11-28",
+      "planned_time": "4:30 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-28T16:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x024.jpg",
+      "video": null
+    },
+    {
+      "id": "DW062",
+      "group_id": "dw062-dw076",
+      "title": "Story share of DW035: Typographic card: Photos in. Deck out. (how it works, no photo)",
+      "caption": "Story: share today's feed post DW035 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-11-28",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-28T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw062.jpg",
+      "video": null
+    },
+    {
+      "id": "H204",
+      "group_id": "h204-h205",
+      "title": "Northwest Epoxy Coatings box truck full wrap (real job photo, 4:5)",
+      "caption": "Seen everywhere.\n\nA box truck is a lot of blank space. Northwest Epoxy Coatings turned theirs into a rolling billboard that's readable from across the lot.\n\nWant your box truck seen everywhere it goes? Call .\n\n#VehicleWrap #GigHarbor #USAWrapCo",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-11-29",
+      "planned_time": "7:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-29T07:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h204.jpg",
+      "video": null
+    },
+    {
+      "id": "X025",
+      "group_id": "X025",
+      "title": "Northwest Epoxy Coatings box truck full wrap (real job photo, 4:5)",
+      "caption": "Seen everywhere. Northwest Epoxy Coatings' box truck, full wrap. Wrapped by USA Wrap Co.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-11-29",
+      "planned_time": "7:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-29T07:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x025.jpg",
+      "video": null
+    },
+    {
       "id": "DW037",
       "group_id": "dw037-dw038",
       "title": "Typographic card: From the bow to the swim step (where EVA goes, no photo)",
@@ -685,6 +1536,87 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/qvn011.jpg",
+      "video": null
+    },
+    {
+      "id": "H254",
+      "group_id": "H254",
+      "title": "Farm2Fork step van wrap (real job photo)",
+      "caption": "Step van wrap for Farm2Fork, carrying the brand to every delivery stop",
+      "brand": "USA Wrap Co \u00b7 Gig Harbor",
+      "family": "USA Wrap Co \u00b7 Gig Harbor",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-11-29",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-29T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h254.jpg",
+      "video": null
+    },
+    {
+      "id": "H260",
+      "group_id": "H260",
+      "title": "Tanker truck graphics (real job photo)",
+      "caption": "Tanker truck graphics: clean, readable and professional on the road",
+      "brand": "USA Wrap Co \u00b7 Olympia",
+      "family": "USA Wrap Co \u00b7 Olympia",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-11-29",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-29T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h260.jpg",
+      "video": null
+    },
+    {
+      "id": "H266",
+      "group_id": "H266",
+      "title": "Sea Ray swim platform with logo (real job photo)",
+      "caption": "Swim platform decking with a custom logo on a Sea Ray",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-11-29",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-29T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h266.jpg",
+      "video": null
+    },
+    {
+      "id": "H232",
+      "group_id": "h232-h233",
+      "title": "Story: Camo Jeep wrap (real job photo, 9:16)",
+      "caption": "Story (no caption). Optional link sticker to usawrapco.com in the plain band (y 1160-1320)",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-11-29",
+      "planned_time": "10:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-29T10:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h232.jpg",
       "video": null
     },
     {
@@ -728,6 +1660,26 @@
       "video": null
     },
     {
+      "id": "X036",
+      "group_id": "X036",
+      "title": "Text-only wrap tip (no image, no job subject)",
+      "caption": "Fleet tip: if a driver can't read your phone number at a stoplight, it's too small. Big name, one number, one service line.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-11-29",
+      "planned_time": "12:30 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-29T12:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": null,
+      "video": null
+    },
+    {
       "id": "SJ031",
       "group_id": "SJ031",
       "title": "Typographic card: Quick answers FAQ (no photo)",
@@ -745,6 +1697,47 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/sj031.jpg",
+      "video": null
+    },
+    {
+      "id": "H278",
+      "group_id": "H278",
+      "title": "Harbor Desk card: 9 lions giving trees",
+      "caption": "Take a tag from a Lions Club Giving Tree \ud83c\udf81\n\nEach tag lists a child's age and wish. Buy the gift and return it unwrapped before Saturday, Dec. 12. Trees are at 7 Seas, Columbia Bank, Kitsap Bank, Cutters Point (Uptown), Kimball Coffeehouse, The Hub, Galaxy Theatre and more. Gifts go to GHP FISH and other local nonprofits.\n\nPresented by USA Wrap Co",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-11-29",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-29T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h278.jpg",
+      "video": null
+    },
+    {
+      "id": "DW063",
+      "group_id": "dw063-dw077",
+      "title": "Story share of DW037: Typographic card: From the bow to the swim step (where EVA goes, no photo)",
+      "caption": "Story: share today's feed post DW037 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-11-29",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-29T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw063.jpg",
       "video": null
     },
     {
@@ -830,6 +1823,47 @@
       "video": null
     },
     {
+      "id": "L018",
+      "group_id": "L018",
+      "title": "Farm2Fork step van wrap (real job photo, 4:5)",
+      "caption": "Delivery vehicles sit in front of customers all day. Farm2Fork's step van now carries the brand on every stop.\n\nUSA Wrap Co designs, prints and installs vehicle wraps, fleet graphics and lettering. Call .\n\n#FleetGraphics #VehicleWraps #SmallBusiness",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-11-30",
+      "planned_time": "8:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-30T08:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l018.jpg",
+      "video": null
+    },
+    {
+      "id": "H234",
+      "group_id": "h234-h235",
+      "title": "Story: Teal EV wrap (real job photo, 9:16)",
+      "caption": "Story (no caption). Optional link sticker to usawrapco.com in the plain band (y 1160-1320)",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-11-30",
+      "planned_time": "10:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-30T10:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h234.jpg",
+      "video": null
+    },
+    {
       "id": "H178",
       "group_id": "H178",
       "title": "Harbor News Through Time: Born From the Flames (Fire District No. 5, 1945)",
@@ -890,6 +1924,88 @@
       "video": null
     },
     {
+      "id": "H206",
+      "group_id": "h206-h207",
+      "title": "Reel: Amped Up Electric box truck wrap (12.9 s, real job photos, 9:16)",
+      "caption": "Big box. Bold brand.\n\nAmped Up Electric's box truck, wrapped and ready to work. Bright, simple and easy to read at highway speed.\n\nNeed your truck to stand out? Call .\n\n#VehicleWrap #GigHarbor #USAWrapCo",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-11-30",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-30T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h206.jpg",
+      "video": null
+    },
+    {
+      "id": "H279",
+      "group_id": "H279",
+      "title": "Harbor Desk card: 0 fish toy drive",
+      "caption": "Last year, Gig Harbor Peninsula FISH got gifts to more than 900 kids. The 2026 toy drive is on \ud83c\udf84\n\nDonate new, unwrapped toys and gifts for kids 0\u201318 at FISH on Burnham Dr. (Mon/Wed/Thu/Fri, 9:30 a.m.\u20133 p.m.) by Dec. 11, or use the bins at Ace Hardware (Pt. Fosdick), the Gig Harbor Library, Invitation Bookshop, Big Nate's and more.\n\nFamilies who need help can sign up at ghpfish.org.\n\nPresented by USA Wrap Co",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-11-30",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-30T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h279.jpg",
+      "video": null
+    },
+    {
+      "id": "X026",
+      "group_id": "X026",
+      "title": "Reel: Amped Up Electric box truck wrap (12.9 s, real job photos, 9:16)",
+      "caption": "Big box, bold brand: Amped Up Electric's box truck wrap. Wrapped by USA Wrap Co.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-11-30",
+      "planned_time": "4:30 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-30T16:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x026.jpg",
+      "video": null
+    },
+    {
+      "id": "DW064",
+      "group_id": "dw064-dw078",
+      "title": "Story share of DW039: Typographic card: Three photos. That's the start. (quote photo checklist, no photo)",
+      "caption": "Story: share today's feed post DW039 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-11-30",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-11-30T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw064.jpg",
+      "video": null
+    },
+    {
       "id": "H034",
       "group_id": "h034-h035",
       "title": "02 Ranger upfit detail",
@@ -928,6 +2044,47 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/l014.jpg",
+      "video": null
+    },
+    {
+      "id": "L019",
+      "group_id": "L019",
+      "title": "Saela door logos and lettering (real job photo, 4:5)",
+      "caption": "Door logos are the fastest, most affordable way to make a fleet look like one team. Saela's trucks, lettered.\n\nUSA Wrap Co designs, prints and installs vehicle wraps, fleet graphics and lettering. Call .\n\n#FleetGraphics #VehicleWraps #SmallBusiness",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-12-01",
+      "planned_time": "8:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-01T08:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l019.jpg",
+      "video": null
+    },
+    {
+      "id": "H236",
+      "group_id": "h236-h237",
+      "title": "Story: Aircraft graphics (real job photo, 9:16)",
+      "caption": "Story (no caption). Optional link sticker to usawrapco.com in the plain band (y 1160-1320)",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-01",
+      "planned_time": "10:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-01T10:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h236.jpg",
       "video": null
     },
     {
@@ -972,6 +2129,26 @@
       "video": null
     },
     {
+      "id": "H280",
+      "group_id": "H280",
+      "title": "Harbor Desk card: 1 library this week",
+      "caption": "Free at the Gig Harbor Library \ud83d\udcda\n\nTue., Dec. 1: Story Time for Preschoolers, 11:15 a.m.\nMon., Dec. 7: Play Time, 11 a.m.\u2013noon\nMon., Dec. 7: Engineering Explorers, 4\u20135 p.m.\n\nCheck the Pierce County Library calendar for any changes before you go.\n\nPresented by USA Wrap Co",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-12-01",
+      "planned_time": "12:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-01T12:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h280.jpg",
+      "video": null
+    },
+    {
       "id": "SJ035",
       "group_id": "SJ035",
       "title": "Typographic card: Press. Drop. Saved. (how it works in three words, no photo)",
@@ -989,6 +2166,107 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/sj035.jpg",
+      "video": null
+    },
+    {
+      "id": "H208",
+      "group_id": "h208-h209",
+      "title": "Jeep partial wrap with fish graphics (real job photo, 4:5)",
+      "caption": "Gone fishin'.\n\nA partial wrap with fish graphics on a Jeep. You don't need a full wrap to make a vehicle yours: a few well-placed graphics do the job.\n\nWhat would you put on yours? Call .\n\n#VehicleWrap #GigHarbor #USAWrapCo",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-01",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-01T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h208.jpg",
+      "video": null
+    },
+    {
+      "id": "H281",
+      "group_id": "H281",
+      "title": "Harbor Desk card: 1 through time narrows 1950",
+      "caption": "Gig Harbor Through Time: the 1950 Narrows Bridge \ud83c\udf09\n\nTen years after the 1940 collapse, a sturdier span opened on Oct. 14, 1950, after 29 months of work. Wind-tunnel tests shaped it: open grating and perforated girders let the wind pass through. At 5,979 feet, it still carries westbound SR 16 into Gig Harbor; the twin span was added in 2007.\n\nPhoto: Jet Lowe, HAER WA-99, Library of Congress (public domain).\n\nPresented by USA Wrap Co",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-12-01",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-01T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h281.jpg",
+      "video": null
+    },
+    {
+      "id": "X027",
+      "group_id": "X027",
+      "title": "Jeep partial wrap with fish graphics (real job photo, 4:5)",
+      "caption": "Gone fishin'. Partial wrap with fish graphics on a Jeep. Wrapped by USA Wrap Co.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-12-01",
+      "planned_time": "4:30 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-01T16:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x027.jpg",
+      "video": null
+    },
+    {
+      "id": "DW065",
+      "group_id": "DW065",
+      "title": "Story share of DW041: Typographic card: How's it holding up? (review ask, no photo)",
+      "caption": "Story: share today's feed post DW041 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-12-01",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-01T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw065.jpg",
+      "video": null
+    },
+    {
+      "id": "DW079",
+      "group_id": "DW079",
+      "title": "Story share of DW008: Medium-gray cockpit with DekWave mark and hatch fit (real photo)",
+      "caption": "Story: share today's feed post DW008 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Instagram"
+      ],
+      "planned_date": "2026-12-01",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-01T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw079.jpg",
       "video": null
     },
     {
@@ -1054,6 +2332,47 @@
       "video": null
     },
     {
+      "id": "L020",
+      "group_id": "L020",
+      "title": "Mobile Equipment Repair service van wrap (real job photo, 4:5)",
+      "caption": "Service vans are parked at job sites all day. Mobile Equipment Repair's van now tells the neighbors who showed up.\n\nUSA Wrap Co designs, prints and installs vehicle wraps, fleet graphics and lettering. Call .\n\n#FleetGraphics #VehicleWraps #SmallBusiness",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-12-02",
+      "planned_time": "8:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-02T08:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l020.jpg",
+      "video": null
+    },
+    {
+      "id": "H238",
+      "group_id": "h238-h239",
+      "title": "Story: Boat hull graphics (real job photo, 9:16)",
+      "caption": "Story (no caption). Optional link sticker to usawrapco.com in the plain band (y 1160-1320)",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-02",
+      "planned_time": "10:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-02T10:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h238.jpg",
+      "video": null
+    },
+    {
       "id": "X009",
       "group_id": "X009",
       "title": "Xclusive Painting LLC Chevy Express marble + gold full wrap (real job photo; floor scraps cleaned)",
@@ -1071,6 +2390,26 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/x009.jpg",
+      "video": null
+    },
+    {
+      "id": "H282",
+      "group_id": "H282",
+      "title": "Harbor Desk card: 2 jingle bell breakfast",
+      "caption": "Save the date: PenMet Parks' Jingle Bell Breakfast is Saturday, Dec. 12, 9 a.m.\u20131 p.m. \ud83e\udd5e\n\nIt's indoors this year at the PenMet Parks Recreation Center, 2524 14th Ave. NW. Tickets are by donation, and advance registration (hourly slots) is required. Pancakes, crafts and free photos with Santa. Bring a new, unwrapped toy for the Kiwanis gift drive.\n\nPresented by USA Wrap Co",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-12-02",
+      "planned_time": "12:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-02T12:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h282.jpg",
       "video": null
     },
     {
@@ -1094,6 +2433,109 @@
       "video": null
     },
     {
+      "id": "H210",
+      "group_id": "h210-h211",
+      "title": "Kia Soul full wrap (real job photo, 4:5)",
+      "caption": "Smile miles.\n\nA full wrap on a Kia Soul. Small cars make great brand cars: easy to park, easy to spot, and they get noticed everywhere around town.\n\nGot a small car that could do big things? Call .\n\n#VehicleWrap #GigHarbor #USAWrapCo",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-02",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-02T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h210.jpg",
+      "video": null
+    },
+    {
+      "id": "X028",
+      "group_id": "X028",
+      "title": "Kia Soul full wrap (real job photo, 4:5)",
+      "caption": "Smile miles. Full wrap on a Kia Soul. Wrapped by USA Wrap Co.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-12-02",
+      "planned_time": "4:30 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-02T16:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x028.jpg",
+      "video": null
+    },
+    {
+      "id": "DW066",
+      "group_id": "dw066-dw080",
+      "title": "Story share of DW043: Typographic card: Your boat. Your look. (colors and patterns, no photo)",
+      "caption": "Story: share today's feed post DW043 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-02",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-02T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw066.jpg",
+      "video": null
+    },
+    {
+      "id": "H212",
+      "group_id": "h212-h213",
+      "title": "Tanker truck graphics (real job photo, 4:5)",
+      "caption": "Hauling big.\n\nTanker graphics for a truck that covers a lot of miles. Commercial graphics built to stay clean, readable and professional on the road.\n\nRunning heavy equipment? Call .\n\n#VehicleWrap #GigHarbor #USAWrapCo",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-03",
+      "planned_time": "7:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-03T07:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h212.jpg",
+      "video": null
+    },
+    {
+      "id": "X029",
+      "group_id": "X029",
+      "title": "Tanker truck graphics (real job photo, 4:5)",
+      "caption": "Hauling big. Tanker truck graphics. Wrapped by USA Wrap Co.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-12-03",
+      "planned_time": "7:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-03T07:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x029.jpg",
+      "video": null
+    },
+    {
       "id": "L005",
       "group_id": "L005",
       "title": "Golden Events SUV wrap",
@@ -1114,6 +2556,250 @@
       "video": null
     },
     {
+      "id": "L021",
+      "group_id": "L021",
+      "title": "Bainbridge Island Construction door lettering (real job photo, 4:5)",
+      "caption": "Door lettering for Bainbridge Island Construction: every job site visit is a sign for the next customer.\n\nUSA Wrap Co designs, prints and installs vehicle wraps, fleet graphics and lettering. Call .\n\n#FleetGraphics #VehicleWraps #SmallBusiness",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-12-03",
+      "planned_time": "8:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-03T08:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l021.jpg",
+      "video": null
+    },
+    {
+      "id": "H255",
+      "group_id": "H255",
+      "title": "Mobile Equipment Repair van wrap (real job photo)",
+      "caption": "Service van wrap for Mobile Equipment Repair. Work vans are parked at job sites all day, so they make great signs",
+      "brand": "USA Wrap Co \u00b7 Gig Harbor",
+      "family": "USA Wrap Co \u00b7 Gig Harbor",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-03",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-03T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h255.jpg",
+      "video": null
+    },
+    {
+      "id": "H261",
+      "group_id": "H261",
+      "title": "ACT 3 Catering van wrap (real job photo)",
+      "caption": "Van wrap for ACT 3 Catering. The back doors get the most looks, so we made them count",
+      "brand": "USA Wrap Co \u00b7 Olympia",
+      "family": "USA Wrap Co \u00b7 Olympia",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-03",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-03T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h261.jpg",
+      "video": null
+    },
+    {
+      "id": "H267",
+      "group_id": "H267",
+      "title": "Orange star EVA deck (real job photo)",
+      "caption": "EVA foam decking with an orange star accent, cut to fit",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-03",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-03T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h267.jpg",
+      "video": null
+    },
+    {
+      "id": "H240",
+      "group_id": "h240-h241",
+      "title": "Story: Ascend vehicle graphics (real job photo, 9:16)",
+      "caption": "Story (no caption). Optional link sticker to usawrapco.com in the plain band (y 1160-1320)",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-03",
+      "planned_time": "10:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-03T10:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h240.jpg",
+      "video": null
+    },
+    {
+      "id": "X037",
+      "group_id": "X037",
+      "title": "Text-only wrap tip (no image, no job subject)",
+      "caption": "Wrap or paint? A wrap goes on over the paint and can come off later. Paint is permanent. That's the short version.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-12-03",
+      "planned_time": "12:30 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-03T12:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": null,
+      "video": null
+    },
+    {
+      "id": "DW045",
+      "group_id": "dw045-dw046",
+      "title": "Aluminum boat: gray EVA with routed DekWave logo around the grab bar (real job photo, 4:5)",
+      "caption": "Gray teak-style EVA on an aluminum boat, cut around the grab bar mounts with our mark routed right into the foam.\n\nClean lines, grippy underfoot, and fitted to the boat it goes on.\n\nAluminum boat owners: gray like this, or something bolder?\n\n#DekWave #EVADecking #GigHarbor #PugetSoundBoating",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-03",
+      "planned_time": "3:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-03T15:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw045.jpg",
+      "video": null
+    },
+    {
+      "id": "H283",
+      "group_id": "H283",
+      "title": "Harbor Desk card: 3 weekly game nights",
+      "caption": "Your weekly trivia and bingo guide \ud83c\udfb2\n\nMondays: Bingo, 4:30 p.m., Hidden Harbor Wine Library\nWednesdays: Family bingo, 5:30 p.m., Ocean5\nWednesdays: Tank'd Up Trivia, 7:15 p.m., The Float in Purdy\nFridays: Trivia, 6\u20138 p.m., Hidden Harbor Wine Library\n\nCheck with the venue before you go. Did we miss your favorite?\n\nPresented by USA Wrap Co",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-12-03",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-03T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h283.jpg",
+      "video": null
+    },
+    {
+      "id": "SJ040",
+      "group_id": "SJ040",
+      "title": "Typographic card: Charge it. Pocket it. (no photo)",
+      "caption": "Charge it. Pocket it.\n\nPuff Pods by Savajay is a rechargeable pocket vacuum. Press the button when you need it, drop in the rest of your preroll, cigar, or cigarette, and the lid seals.\n\nFounder reservations are open at https://savajay.com/fb. Reservations only; payment isn't live yet.\n21+ only. For legal use only. Patent pending.\n\n#PuffPods #Savajay #PocketGadget #CigarLife #EDC #PatentPending",
+      "brand": "Savajay",
+      "family": "Savajay",
+      "network": "business",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-12-03",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-03T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/sj040.jpg",
+      "video": null
+    },
+    {
+      "id": "DW067",
+      "group_id": "dw067-dw081",
+      "title": "Story share of DW045: Aluminum boat: gray EVA with routed DekWave logo around the grab bar (real job photo, 4:5)",
+      "caption": "Story: share today's feed post DW045 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-03",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-03T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw067.jpg",
+      "video": null
+    },
+    {
+      "id": "H214",
+      "group_id": "h214-h215",
+      "title": "Scoot partial wrap on a Honda Civic (real job photo, 4:5)",
+      "caption": "Small budget. Big name.\n\nA partial wrap for Scoot. Partials put the brand where people look and let the car's own color do the rest, for a lot less than a full wrap.\n\nWant to see what a partial would cost on yours? Call .\n\n#VehicleWrap #GigHarbor #USAWrapCo",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-04",
+      "planned_time": "7:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-04T07:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h214.jpg",
+      "video": null
+    },
+    {
+      "id": "X030",
+      "group_id": "X030",
+      "title": "Scoot partial wrap on a Honda Civic (real job photo, 4:5)",
+      "caption": "Small budget, big name. Partial wrap for Scoot. Wrapped by USA Wrap Co.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-12-04",
+      "planned_time": "7:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-04T07:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x030.jpg",
+      "video": null
+    },
+    {
       "id": "L006",
       "group_id": "L006",
       "title": "H2Away cargo van wrap (side graphic)",
@@ -1131,6 +2817,129 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/l006.jpg",
+      "video": null
+    },
+    {
+      "id": "H242",
+      "group_id": "h242-h243",
+      "title": "Story: ePower vehicle graphics (real job photo, 9:16)",
+      "caption": "Story (no caption). Optional link sticker to usawrapco.com in the plain band (y 1160-1320)",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-04",
+      "planned_time": "10:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-04T10:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h242.jpg",
+      "video": null
+    },
+    {
+      "id": "H284",
+      "group_id": "H284",
+      "title": "Harbor Desk card: 4 tidefest",
+      "caption": "Tidefest is this weekend \ud83c\udfa8\n\nMore than 100 Northwest artists, handcrafted work only: glass, pottery, jewelry, paintings, wood and more.\nSat., Dec. 5, 10 a.m.\u20135 p.m.\nSun., Dec. 6, 11 a.m.\u20134 p.m.\nGig Harbor High School\n\nLive music and food, and proceeds support Gig Harbor High activities.\n\nPresented by USA Wrap Co",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-12-04",
+      "planned_time": "12:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-04T12:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h284.jpg",
+      "video": null
+    },
+    {
+      "id": "X038",
+      "group_id": "X038",
+      "title": "Text-only wrap tip (no image, no job subject)",
+      "caption": "Behind the scenes: every wrap starts with a clean, dry surface. Most of the install is prep you'll never see.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-12-04",
+      "planned_time": "12:30 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-04T12:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": null,
+      "video": null
+    },
+    {
+      "id": "DW048",
+      "group_id": "dw048-dw049",
+      "title": "Bass boat: gray/blue star EVA pads on the casting decks (real job photo, 4:5)",
+      "caption": "Gray EVA pads with blue seam lines and star inlays, cut to fit the casting decks and hatch lids on this bass boat.\n\nGrippy underfoot when you're up front working a shoreline.\n\nStars, stripes or something else: what would you put on yours?\n\n#DekWave #EVADecking #GigHarbor #PugetSoundBoating #BassBoat",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-04",
+      "planned_time": "3:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-04T15:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw048.jpg",
+      "video": null
+    },
+    {
+      "id": "SJ041",
+      "group_id": "SJ041",
+      "title": "Typographic card: Founders go first (no photo)",
+      "caption": "Founders go first.\n\nFounder reservations for Puff Pods by Savajay are open now. Founders get the production unit, which is smaller than the current prototype.\n\nFounder reservations are open at https://savajay.com/fb. Reservations only; payment isn't live yet.\n21+ only. For legal use only. Patent pending.\n\n#PuffPods #Savajay #PocketGadget #CigarLife #EDC #PatentPending",
+      "brand": "Savajay",
+      "family": "Savajay",
+      "network": "business",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-12-04",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-04T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/sj041.jpg",
+      "video": null
+    },
+    {
+      "id": "DW068",
+      "group_id": "dw068-dw082",
+      "title": "Story share of DW048: Bass boat: gray/blue star EVA pads on the casting decks (real job photo, 4:5)",
+      "caption": "Story: share today's feed post DW048 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-04",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-04T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw068.jpg",
       "video": null
     },
     {
@@ -1155,6 +2964,393 @@
       "video": null
     },
     {
+      "id": "H256",
+      "group_id": "H256",
+      "title": "Club Icon shuttle wrap (real job photo)",
+      "caption": "Shuttle wrap for Club Icon. Big vehicles, big impressions",
+      "brand": "USA Wrap Co \u00b7 Gig Harbor",
+      "family": "USA Wrap Co \u00b7 Gig Harbor",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-05",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-05T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h256.jpg",
+      "video": null
+    },
+    {
+      "id": "H262",
+      "group_id": "H262",
+      "title": "Scoot partial wrap on a Civic (real job photo)",
+      "caption": "Partial wrap for Scoot. A partial puts the brand where people look for less than a full wrap",
+      "brand": "USA Wrap Co \u00b7 Olympia",
+      "family": "USA Wrap Co \u00b7 Olympia",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-05",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-05T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h262.jpg",
+      "video": null
+    },
+    {
+      "id": "H244",
+      "group_id": "h244-h245",
+      "title": "Story: Bliss vehicle wrap (real job photo, 9:16)",
+      "caption": "Story (no caption). Optional link sticker to usawrapco.com in the plain band (y 1160-1320)",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-05",
+      "planned_time": "10:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-05T10:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h244.jpg",
+      "video": null
+    },
+    {
+      "id": "DW054",
+      "group_id": "dw054-dw055",
+      "title": "Typographic card: On the stands? Plan the deck (winter haul-out, no photo)",
+      "caption": "Hauled out for the winter? A boat on the hard is easy to look over.\n\nSnap a few photos of the deck, pick your colors and pattern, and be ready when the season opens.\n\n#DekWave #EVADecking #GigHarbor #PugetSoundBoating",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-05",
+      "planned_time": "3:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-05T15:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw054.jpg",
+      "video": null
+    },
+    {
+      "id": "H216",
+      "group_id": "h216-h217",
+      "title": "ACT 3 Catering van wrap, back doors (real job photo, 4:5)",
+      "caption": "Back doors that sell.\n\nThe back of a van gets more looks than any other side, from every driver stuck behind it. ACT 3 Catering put theirs to work.\n\nIs your van's best side doing anything? Call .\n\n#VehicleWrap #GigHarbor #USAWrapCo",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-05",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-05T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h216.jpg",
+      "video": null
+    },
+    {
+      "id": "SJ042",
+      "group_id": "SJ042",
+      "title": "Typographic card: Half left. Now what? A/B comment prompt (no photo)",
+      "caption": "Half left. Now what?\n\nA) Toss it\nB) Save it\n\nDrop your letter in the comments. \ud83d\udc47\n\nFounder reservations are open at https://savajay.com/fb. Reservations only; payment isn't live yet.\n21+ only. For legal use only. Patent pending.\n\n#PuffPods #Savajay #PocketGadget #CigarLife #EDC #PatentPending",
+      "brand": "Savajay",
+      "family": "Savajay",
+      "network": "business",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-12-05",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-05T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/sj042.jpg",
+      "video": null
+    },
+    {
+      "id": "X031",
+      "group_id": "X031",
+      "title": "ACT 3 Catering van wrap, back doors (real job photo, 4:5)",
+      "caption": "Back doors that sell. ACT 3 Catering's van. Wrapped by USA Wrap Co.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-12-05",
+      "planned_time": "4:30 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-05T16:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x031.jpg",
+      "video": null
+    },
+    {
+      "id": "DW069",
+      "group_id": "dw069-dw083",
+      "title": "Story share of DW054: Typographic card: On the stands? Plan the deck (winter haul-out, no photo)",
+      "caption": "Story: share today's feed post DW054 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-05",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-05T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw069.jpg",
+      "video": null
+    },
+    {
+      "id": "H218",
+      "group_id": "h218-h219",
+      "title": "Saela door logos and lettering (real job photo, 4:5)",
+      "caption": "Clean. Fleet-ready.\n\nDoor logos for Saela. Simple lettering is the fastest, most affordable way to make a fleet look like a team.\n\nNeed door logos for your trucks? Call .\n\n#VehicleWrap #GigHarbor #USAWrapCo",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-06",
+      "planned_time": "7:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-06T07:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h218.jpg",
+      "video": null
+    },
+    {
+      "id": "X032",
+      "group_id": "X032",
+      "title": "Saela door logos and lettering (real job photo, 4:5)",
+      "caption": "Clean and fleet-ready. Door logos for Saela. Wrapped by USA Wrap Co.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-12-06",
+      "planned_time": "7:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-06T07:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x032.jpg",
+      "video": null
+    },
+    {
+      "id": "H246",
+      "group_id": "h246-h247",
+      "title": "Story: Blue tow truck graphics (real job photo, 9:16)",
+      "caption": "Story (no caption). Optional link sticker to usawrapco.com in the plain band (y 1160-1320)",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-06",
+      "planned_time": "10:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-06T10:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h246.jpg",
+      "video": null
+    },
+    {
+      "id": "X039",
+      "group_id": "X039",
+      "title": "Text-only wrap tip (no image, no job subject)",
+      "caption": "Partial wraps put the brand where people look and let the vehicle's color do the rest. Less vinyl, same impact.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-12-06",
+      "planned_time": "12:30 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-06T12:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": null,
+      "video": null
+    },
+    {
+      "id": "DW047",
+      "group_id": "DW047",
+      "title": "Custom octopus-graphic EVA deck (real job photo, 1:1)",
+      "caption": "A custom octopus graphic routed into tan teak-style EVA, from the cockpit floor to the seat bases, with a fish ruler built right in.\n\nYour deck can tell a story. What would you put on yours?\n\n#DekWave #EVADecking #GigHarbor #PugetSoundBoating",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-12-06",
+      "planned_time": "3:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-06T15:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw047.jpg",
+      "video": null
+    },
+    {
+      "id": "DW056",
+      "group_id": "DW056",
+      "title": "Typographic card: Every slip has a story (marinas, no photo)",
+      "caption": "Walk any dock in the Sound and every slip has a story.\n\nTell yours with a deck cut for your boat: teak-style lines or diamond tread, stars, inlays and logos, classic gray or something bold.\n\nWhich marina do you call home? \ud83d\udc47\n\n#DekWave #EVADecking #GigHarbor #PugetSoundBoating",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Instagram"
+      ],
+      "planned_date": "2026-12-06",
+      "planned_time": "3:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-06T15:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw056.jpg",
+      "video": null
+    },
+    {
+      "id": "SJ043",
+      "group_id": "SJ043",
+      "title": "Typographic card: The smell stays in (no photo)",
+      "caption": "The smell stays in.\n\nNot in your pocket. Not in your car. Drop the rest in Puff Pods by Savajay and the lid seals and locks in the smell.\n\nFounder reservations are open at https://savajay.com/fb. Reservations only; payment isn't live yet.\n21+ only. For legal use only. Patent pending.\n\n#PuffPods #Savajay #PocketGadget #CigarLife #EDC #PatentPending",
+      "brand": "Savajay",
+      "family": "Savajay",
+      "network": "business",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-12-06",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-06T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/sj043.jpg",
+      "video": null
+    },
+    {
+      "id": "DW070",
+      "group_id": "DW070",
+      "title": "Story share of DW047: Custom octopus-graphic EVA deck (real job photo, 1:1)",
+      "caption": "Story: share today's feed post DW047 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-12-06",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-06T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw070.jpg",
+      "video": null
+    },
+    {
+      "id": "DW084",
+      "group_id": "DW084",
+      "title": "Story share of DW056: Typographic card: Every slip has a story (marinas, no photo)",
+      "caption": "Story: share today's feed post DW056 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Instagram"
+      ],
+      "planned_date": "2026-12-06",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-06T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw084.jpg",
+      "video": null
+    },
+    {
+      "id": "H220",
+      "group_id": "h220-h221",
+      "title": "Reel: Raverie vending truck wrap (16.0 s, real job photos, 9:16)",
+      "caption": "Pull up. Stand out.\n\nRaverie's vending truck wrap: bold color that draws a line before the window even opens.\n\nGot a food or vending truck that needs a look? Call .\n\n#VehicleWrap #GigHarbor #USAWrapCo",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-07",
+      "planned_time": "7:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-07T07:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h220.jpg",
+      "video": null
+    },
+    {
+      "id": "X033",
+      "group_id": "X033",
+      "title": "Reel: Raverie vending truck wrap (16.0 s, real job photos, 9:16)",
+      "caption": "Pull up, stand out: Raverie's vending truck wrap. Wrapped by USA Wrap Co.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-12-07",
+      "planned_time": "7:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-07T07:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x033.jpg",
+      "video": null
+    },
+    {
       "id": "L007",
       "group_id": "L007",
       "title": "Lesperance Plumbing two-van fleet",
@@ -1172,6 +3368,474 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/l007.jpg",
+      "video": null
+    },
+    {
+      "id": "QVN017",
+      "group_id": "qvn017-qvn018",
+      "title": "Colorado Gives Day is tomorrow, Tue. Dec. 8",
+      "caption": "Colorado Gives Day is tomorrow, Tuesday, Dec. 8: Colorado's biggest 24-hour day of giving.\n\nGifts made since early giving opened Nov. 1 count too. If there's a nonprofit on the plains you love, now's the time.\n\ncoloradogives.org\n\nSources: Colorado Gives Foundation; Colorado Community Media",
+      "brand": "Quint Valley News",
+      "family": "Quint Valley News",
+      "network": "news",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-07",
+      "planned_time": "9:00 a.m. MT",
+      "planned_tz": "MT",
+      "planned_at": "2026-12-07T08:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/qvn017.jpg",
+      "video": null
+    },
+    {
+      "id": "L022",
+      "group_id": "L022",
+      "title": "ACT 3 Catering van wrap, back doors (real job photo, 4:5)",
+      "caption": "The back doors of a van get more looks than any other side. ACT 3 Catering made theirs count.\n\nUSA Wrap Co designs, prints and installs vehicle wraps, fleet graphics and lettering. Call .\n\n#FleetGraphics #VehicleWraps #SmallBusiness",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-12-07",
+      "planned_time": "8:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-07T08:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l022.jpg",
+      "video": null
+    },
+    {
+      "id": "H257",
+      "group_id": "H257",
+      "title": "T-Mobile Transit van wrap (real job photo)",
+      "caption": "Transit van wrap for T-Mobile, done by our install crew",
+      "brand": "USA Wrap Co \u00b7 Gig Harbor",
+      "family": "USA Wrap Co \u00b7 Gig Harbor",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-07",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-07T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h257.jpg",
+      "video": null
+    },
+    {
+      "id": "H263",
+      "group_id": "H263",
+      "title": "T-Mobile box truck wrap (real job photo)",
+      "caption": "Box truck wrap for T-Mobile, readable from every side",
+      "brand": "USA Wrap Co \u00b7 Olympia",
+      "family": "USA Wrap Co \u00b7 Olympia",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-07",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-07T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h263.jpg",
+      "video": null
+    },
+    {
+      "id": "H269",
+      "group_id": "H269",
+      "title": "Gray EVA hatch with logo (real job photo)",
+      "caption": "Gray EVA foam decking on a hatch, with a custom logo cut in",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-07",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-07T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h269.jpg",
+      "video": null
+    },
+    {
+      "id": "H248",
+      "group_id": "h248-h249",
+      "title": "Story: Heron Stone Masonry van (real job photo, 9:16)",
+      "caption": "Story (no caption). Optional link sticker to usawrapco.com in the plain band (y 1160-1320)",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-07",
+      "planned_time": "10:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-07T10:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h248.jpg",
+      "video": null
+    },
+    {
+      "id": "H285",
+      "group_id": "H285",
+      "title": "Harbor Desk card: 7 lighted boat parade",
+      "caption": "The Gig Harbor Yacht Club Lighted Boat Parade is Saturday, Dec. 12, 5\u20137 p.m. \u26f5\u2728\n\nWatch from Skansie Brothers Park, Jerisich Dock, Ancich Waterfront Park or the Bogue Viewing Platform. Want to join? It's free to register, no membership needed, and kayaks are welcome. On the water, monitor VHF Channel 9.\n\nPresented by USA Wrap Co",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-12-07",
+      "planned_time": "12:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-07T12:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h285.jpg",
+      "video": null
+    },
+    {
+      "id": "X040",
+      "group_id": "X040",
+      "title": "Text-only wrap tip (no image, no job subject)",
+      "caption": "Wrap tip: park in the shade when you can. Sun is the hardest thing on vinyl over the years.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-12-07",
+      "planned_time": "12:30 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-07T12:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": null,
+      "video": null
+    },
+    {
+      "id": "DW050",
+      "group_id": "dw050-dw051",
+      "title": "Beneteau: tan teak-style EVA with routed builder logo (real job photo, 4:5)",
+      "caption": "Tan teak-style EVA with black seams, with the builder's logo routed right into the hatch pad. Cut around every hatch, drain and fitting.\n\nWant your boat's logo, or your own, in the deck?\n\n#DekWave #EVADecking #GigHarbor #PugetSoundBoating",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-07",
+      "planned_time": "3:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-07T15:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw050.jpg",
+      "video": null
+    },
+    {
+      "id": "SJ044",
+      "group_id": "SJ044",
+      "title": "Typographic card: Tag the half-saver (no photo)",
+      "caption": "Everyone has a friend who never finishes the whole thing.\n\nTag them below. \ud83d\udc47 Puff Pods by Savajay was made for them.\n\nFounder reservations are open at https://savajay.com/fb. Reservations only; payment isn't live yet.\n21+ only. For legal use only. Patent pending.\n\n#PuffPods #Savajay #PocketGadget #CigarLife #EDC #PatentPending",
+      "brand": "Savajay",
+      "family": "Savajay",
+      "network": "business",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-12-07",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-07T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/sj044.jpg",
+      "video": null
+    },
+    {
+      "id": "DW071",
+      "group_id": "dw071-dw085",
+      "title": "Story share of DW050: Beneteau: tan teak-style EVA with routed builder logo (real job photo, 4:5)",
+      "caption": "Story: share today's feed post DW050 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-07",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-07T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw071.jpg",
+      "video": null
+    },
+    {
+      "id": "H222",
+      "group_id": "h222-h223",
+      "title": "Bainbridge Island Construction door lettering (real job photo, 4:5)",
+      "caption": "Built to be seen.\n\nDoor lettering for Bainbridge Island Construction. Every job site visit doubles as a sign for the next customer.\n\nWant your trucks working while they're parked? Call .\n\n#VehicleWrap #GigHarbor #USAWrapCo",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-08",
+      "planned_time": "7:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-08T07:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h222.jpg",
+      "video": null
+    },
+    {
+      "id": "X034",
+      "group_id": "X034",
+      "title": "Bainbridge Island Construction door lettering (real job photo, 4:5)",
+      "caption": "Built to be seen. Door lettering for Bainbridge Island Construction. Wrapped by USA Wrap Co.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-12-08",
+      "planned_time": "7:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-08T07:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/x034.jpg",
+      "video": null
+    },
+    {
+      "id": "L023",
+      "group_id": "L023",
+      "title": "Jeep partial wrap with fish graphics (real job photo, 4:5)",
+      "caption": "You don't need a full wrap to make a vehicle stand out. A partial with fish graphics on a Jeep.\n\nUSA Wrap Co designs, prints and installs vehicle wraps, fleet graphics and lettering. Call .\n\n#FleetGraphics #VehicleWraps #SmallBusiness",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "LinkedIn"
+      ],
+      "planned_date": "2026-12-08",
+      "planned_time": "8:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-08T08:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/l023.jpg",
+      "video": null
+    },
+    {
+      "id": "H250",
+      "group_id": "h250-h251",
+      "title": "Story: Mustang color change (real job photo, 9:16)",
+      "caption": "Story (no caption). Optional link sticker to usawrapco.com in the plain band (y 1160-1320)",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-08",
+      "planned_time": "10:00 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-08T10:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h250.jpg",
+      "video": null
+    },
+    {
+      "id": "H286",
+      "group_id": "H286",
+      "title": "Harbor Desk card: 8 free santa photos",
+      "caption": "Free photos with Santa on the waterfront \ud83c\udf85\n\nDec. 12 & 13 and Dec. 19 & 20, noon\u20132:30 p.m. (the line may close 30 minutes early) at The Midway School, 4121 Harborview Dr. Bring your own phone or camera. Well-behaved pets are welcome. Complimentary cocoa, cider and treats while supplies last. Rain or shine.\n\nPresented by USA Wrap Co",
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-12-08",
+      "planned_time": "12:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-08T12:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h286.jpg",
+      "video": null
+    },
+    {
+      "id": "X041",
+      "group_id": "X041",
+      "title": "Text-only wrap tip (no image, no job subject)",
+      "caption": "Door logos are the quickest way to make a few trucks look like a fleet. Same logo, same spot, every truck.\n",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platforms": [
+        "X"
+      ],
+      "planned_date": "2026-12-08",
+      "planned_time": "12:30 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-08T12:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": null,
+      "video": null
+    },
+    {
+      "id": "DW057",
+      "group_id": "dw057-dw058",
+      "title": "Typographic card: Boat repair pros, let's work together (no photo)",
+      "caption": "Boat repair and marine service pros around the Sound: let's work together. \ud83e\udd1d\n\nIf a customer asks about new decking, send them our way. We make custom EVA cut to the boat. Trailer boats come to our Gig Harbor shop, and for big boats in the water, we come to you.\n\n#DekWave #EVADecking #GigHarbor #PugetSoundBoating",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-08",
+      "planned_time": "3:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-08T15:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw057.jpg",
+      "video": null
+    },
+    {
+      "id": "SJ045",
+      "group_id": "SJ045",
+      "title": "Typographic card: Ember out. Lid locked. (no photo)",
+      "caption": "Ember out. Lid locked.\n\nPress the button, drop it in, and the lid seals. The rest of your preroll, cigar, or cigarette waits for you.\n\nFounder reservations are open at https://savajay.com/fb. Reservations only; payment isn't live yet.\n21+ only. For legal use only. Patent pending.\n\n#PuffPods #Savajay #PocketGadget #CigarLife #EDC #PatentPending",
+      "brand": "Savajay",
+      "family": "Savajay",
+      "network": "business",
+      "platforms": [
+        "Facebook"
+      ],
+      "planned_date": "2026-12-08",
+      "planned_time": "4:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-08T16:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/sj045.jpg",
+      "video": null
+    },
+    {
+      "id": "DW072",
+      "group_id": "dw072-dw086",
+      "title": "Story share of DW057: Typographic card: Boat repair pros, let's work together (no photo)",
+      "caption": "Story: share today's feed post DW057 to Stories (no new caption), then save it to the DekWave Highlight",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Facebook",
+        "Instagram"
+      ],
+      "planned_date": "2026-12-08",
+      "planned_time": "5:00 PM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-08T17:00:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/dw072.jpg",
+      "video": null
+    },
+    {
+      "id": "H287",
+      "group_id": "H287",
+      "title": "Cybertruck matte color change (real job photo)",
+      "caption": "Matte color-change wrap on a Cybertruck. The original finish stays protected underneath",
+      "brand": "USA Wrap Co \u00b7 Gig Harbor",
+      "family": "USA Wrap Co \u00b7 Gig Harbor",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-09",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-09T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h287.jpg",
+      "video": null
+    },
+    {
+      "id": "H290",
+      "group_id": "H290",
+      "title": "Raverie vending truck wrap (real job photo)",
+      "caption": "Fresh wrap on the Raverie vending truck. Bold color that people notice from across the lot",
+      "brand": "USA Wrap Co \u00b7 Olympia",
+      "family": "USA Wrap Co \u00b7 Olympia",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-09",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-09T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h290.jpg",
+      "video": null
+    },
+    {
+      "id": "H293",
+      "group_id": "H293",
+      "title": "Aluminum boat gray EVA with routed logo (real job photo)",
+      "caption": "Gray teak-style EVA on an aluminum boat, cut around the grab bar mounts with our logo routed into the foam",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-09",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-09T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h293.jpg",
       "video": null
     },
     {
@@ -1215,6 +3879,66 @@
       "video": null
     },
     {
+      "id": "H288",
+      "group_id": "H288",
+      "title": "Overland camper wrap (real job photo)",
+      "caption": "Overland camper wrap, built for long trips and backroads",
+      "brand": "USA Wrap Co \u00b7 Gig Harbor",
+      "family": "USA Wrap Co \u00b7 Gig Harbor",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-11",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-11T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h288.jpg",
+      "video": null
+    },
+    {
+      "id": "H291",
+      "group_id": "H291",
+      "title": "Amped Up Electric box truck wrap (real job photo)",
+      "caption": "Box truck wrap for Amped Up Electric: clean, bright and easy to read at highway speed",
+      "brand": "USA Wrap Co \u00b7 Olympia",
+      "family": "USA Wrap Co \u00b7 Olympia",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-11",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-11T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h291.jpg",
+      "video": null
+    },
+    {
+      "id": "H294",
+      "group_id": "H294",
+      "title": "Tan teak-style EVA hatch with routed builder logo (real job photo)",
+      "caption": "Tan teak-style EVA with black seams, with the boat builder's logo routed into the hatch pad",
+      "brand": "DekWave",
+      "family": "DekWave",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-11",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-11T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h294.jpg",
+      "video": null
+    },
+    {
       "id": "DW018",
       "group_id": "DW018",
       "title": "Gray bow deck at a marina (real photo)",
@@ -1232,6 +3956,46 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/dw018.jpg",
+      "video": null
+    },
+    {
+      "id": "H289",
+      "group_id": "H289",
+      "title": "Tanker truck graphics (real job photo)",
+      "caption": "Tanker truck graphics: clean, readable and professional on the road",
+      "brand": "USA Wrap Co \u00b7 Gig Harbor",
+      "family": "USA Wrap Co \u00b7 Gig Harbor",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-13",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-13T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h289.jpg",
+      "video": null
+    },
+    {
+      "id": "H292",
+      "group_id": "H292",
+      "title": "Farm2Fork step van wrap (real job photo)",
+      "caption": "Step van wrap for Farm2Fork, carrying the brand to every delivery stop",
+      "brand": "USA Wrap Co \u00b7 Olympia",
+      "family": "USA Wrap Co \u00b7 Olympia",
+      "network": "business",
+      "platforms": [
+        "Google Business"
+      ],
+      "planned_date": "2026-12-13",
+      "planned_time": "9:30 AM PT",
+      "planned_tz": "PT",
+      "planned_at": "2026-12-13T09:30:00-08:00",
+      "status": "Approved",
+      "kind": "plan",
+      "still": "media/scheduled/h292.jpg",
       "video": null
     },
     {
@@ -2861,7 +5625,7 @@
   ],
   "counts": {
     "ready": 4,
-    "planned": 61,
+    "planned": 197,
     "group_shares": 76,
     "videos": 4
   }
