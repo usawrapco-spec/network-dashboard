@@ -110,6 +110,18 @@ NETWORK_READY = (
         "planned_time": "After approval",
         "planned_tz": "PT",
     },
+    {
+        "id": "mdb-battle-2026-11-26-texas",
+        "brand": "Map Desk",
+        "family": "Map Desk",
+        "title": "Texas vs California | Map Battle",
+        "status": "Ready to post",
+        "status_detail": "QA passed, dup gate cleared, scheduled to post 11/26",
+        "platforms": ["YouTube", "Facebook", "X", "Instagram"],
+        "planned_date": "2026-11-26",
+        "planned_time": "Waiting to post",
+        "planned_tz": "PT",
+    },
 )
 
 ASSET_DIRS = [

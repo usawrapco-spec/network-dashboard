@@ -1,31 +1,8 @@
 {
-  "generated_at": "2026-11-25T15:59:19.013773-08:00",
-  "generated_at_pt": "2026-11-25 3:59 PM PT",
+  "generated_at": "2026-11-25T16:30:37.571468-08:00",
+  "generated_at_pt": "2026-11-25 4:30 PM PT",
   "timezone": "America/Los_Angeles",
   "items": [
-    {
-      "id": "mdm-2026-11-24-prices",
-      "group_id": "mdm-2026-11-24-prices",
-      "title": "Alaska led the nation in price gains + more | Map Desk Money",
-      "caption": "Home-price change by state, year to 2026 Q3: Alaska led the nation in price gains; Prices rose in 48 states.\n\n1. Alaska led the nation in price gains\n2. Prices rose in 48 states\n\nCredits & thanks: Thank you to Federal Housing Finance Agency and Mortgage Professional America for the reporting we cite.\nMap imagery: NASA GIBS (Blue Marble, Black Marble). Borders and labels: Natural Earth.\nNarrated with an AI voice. Facts checked against two independent sources per story. Not financial advice.\n\n#MapDeskMoney #Housing #HomePrices",
-      "brand": "Map Desk Money",
-      "family": "Map Desk",
-      "network": "news",
-      "platforms": [
-        "YouTube",
-        "Facebook",
-        "X",
-        "Instagram"
-      ],
-      "planned_date": "2026-11-24",
-      "planned_time": "Waiting to post",
-      "planned_tz": "PT",
-      "planned_at": null,
-      "status": "Ready",
-      "kind": "short",
-      "still": "media/scheduled/mdm-2026-11-24-prices.jpg",
-      "video": "media/scheduled/mdm-2026-11-24-prices-720.mp4"
-    },
     {
       "id": "mdm-2026-11-24-living",
       "group_id": "mdm-2026-11-24-living",
@@ -94,6 +71,29 @@
       "kind": "short",
       "still": "media/scheduled/mdp-places-2026-11-24-sample.jpg",
       "video": "media/scheduled/mdp-places-2026-11-24-sample-720.mp4"
+    },
+    {
+      "id": "mdb-battle-2026-11-26-texas",
+      "group_id": "mdb-battle-2026-11-26-texas",
+      "title": "Texas vs California | Map Battle",
+      "caption": "Texas vs California, on the map: moves, prices, homes, jobs, and growth. Final score: Texas 5, California 0.\n\n1. Net domestic migration, 2025: Texas +67,299, California \u2212229,077 \u2014 Texas takes it\n2. Cost of living index, 2024 (U.S. = 100): Texas 97.1, California 110.7 \u2014 Texas takes it\n3. Typical home value: Texas $318,100, California $770,700 \u2014 Texas takes it\n4. Jobs added, Oct. 2025 to Oct. 2026: Texas +203,300, California +187,200 \u2014 Texas takes it\n5. Population change, 2024 to 2025: Texas +391,243, California \u22129,465 \u2014 Texas takes it\n\nWho should battle next?\n\nNext: Seattle vs Denver\n\nCredits & thanks: Thank you to U.S. Census Bureau, Maryland Dept. of Planning, U.S. Bureau of Economic Analysis, The Rational Moderate, OSCOPE Data, U.S. Bureau of Labor Statistics, Entivel Insights, and STATS Indiana for the reporting we cite.\nMap imagery: NASA GIBS (Blue Marble, Black Marble). Borders and labels: Natural Earth.\nNarrated with an AI voice. Every figure checked against two independent public sources. Not financial advice.\n\n#MapBattle #Texas #California",
+      "brand": "Map Desk",
+      "family": "Map Desk",
+      "network": "news",
+      "platforms": [
+        "YouTube",
+        "Facebook",
+        "X",
+        "Instagram"
+      ],
+      "planned_date": "2026-11-26",
+      "planned_time": "Waiting to post",
+      "planned_tz": "PT",
+      "planned_at": null,
+      "status": "Ready",
+      "kind": "short",
+      "still": "media/scheduled/mdb-battle-2026-11-26-texas.jpg",
+      "video": "media/scheduled/mdb-battle-2026-11-26-texas-720.mp4"
     },
     {
       "id": "QVN005",
@@ -220,7 +220,7 @@
     },
     {
       "id": "MN003",
-      "group_id": "mn003-x015",
+      "group_id": "mn003-mn004",
       "title": "Mini 2: Golden Events \"Two Stories\" (14.6 s)",
       "caption": "One SUV, two stories: gold lettering on the doors, a PNW mountain mural on the back. Golden Events, wrapped in Gig Harbor. #vehiclewrap #pnw #gigharbor\n\nMusic: \"Neolith\" Kevin MacLeod (incompetech.com) \u00b7 CC BY 4.0",
       "brand": "USA Wrap Co",
@@ -228,8 +228,7 @@
       "network": "business",
       "platforms": [
         "Facebook",
-        "Instagram",
-        "X"
+        "Instagram"
       ],
       "planned_date": "2026-11-25",
       "planned_time": "4:00 PM PT",
