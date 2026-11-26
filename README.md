@@ -1,6 +1,6 @@
 # Video News Network dashboard
 
-A public, static dashboard of every live post from **Map Desk** (Money, World, and Places), **Harbor News**, **Quint Valley News**, **USA Wrap Co**, **DekWave**, **Savajay**, and **Chance the Wrapper**, with the engagement each post has gathered.
+A public, static dashboard of every live post from **Map Desk** (Money, World, Places, Weather, and Battle), **Harbor News**, **Quint Valley News**, **Big Brave Rambo**, **USA Wrap Co**, **DekWave**, **Savajay**, and **Chance the Wrapper**, with the engagement each post has gathered.
 
 Live site: https://usawrapco-spec.github.io/network-dashboard/
 
@@ -11,8 +11,9 @@ This is a GitHub Pages site. There is no build step and no paid host. The page i
 The page opens on a Posts tab (one row per creative, with per-platform stats side by side). Platform tabs follow for YouTube, X, Facebook, Instagram, and Google Business, plus a Scheduled tab for upcoming work.
 
 - Brand groups (All / News / Local businesses) sit above a selector for each brand. Map Desk has sub-filters for Money, World, and Places. Map Battle is its own brand. Each brand view has its own platform breakdown, Posts list, Stories, and Scheduled list.
-- The Accounts tab lists each brand's public channels, with a handle or link when there is one, and a status of Live, Pending, Not set up, or Skipped. Edit `accounts.json` to add or change accounts. Never put emails, passwords, vault ids, or login names in that file.
-- Map Desk, Map Desk Places, and Map Battle YouTube channels share one Google account.
+- The Accounts tab opens with a news-brand gap matrix (YouTube, X, Instagram, Facebook, TikTok, Threads), then lists each brand's public channels. Status is Live, Needs fix, Not set up, or Skipped. Edit `accounts.json` to add or change accounts. Never put emails, passwords, vault ids, phones, or login names in that file.
+- Map Desk World, Money, Weather, and Battle post on the main Map Desk accounts, with YouTube playlists. Map Desk Places has its own YouTube channel (`@MapDeskPlaces`) so it can be compared with Money; Places X posts still go out on `@MapDeskNews`. Map Desk and Places YouTube channels share one Google account. Do not create `youtube.com/@MapBattle` — that handle is used by another creator.
+- TikTok posting is skipped. Facebook posting is held while the Facebook session is signed out.
 - Platform cards at the top show posts, views or impressions, likes or reactions, and followers or subscribers. Google Business cards show published vs pending-review counts, because those posts have no public URL.
 - Inside each social channel: account totals per brand, then that channel's posts, newest first.
 - Instagram reads "Coming soon" until there are live posts.

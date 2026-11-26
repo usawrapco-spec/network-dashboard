@@ -123,6 +123,24 @@ CHANNELS = [
         "network": "news",
     },
     {
+        "brand": "Map Desk Places",
+        "platform": "YouTube",
+        "handle": "@MapDeskPlaces",
+        "url": "https://www.youtube.com/@MapDeskPlaces",
+        "followers_label": "subscribers",
+        "kind": "youtube",
+        "network": "news",
+    },
+    {
+        "brand": "Map Desk Places",
+        "platform": "Facebook",
+        "handle": "Map Desk Places",
+        "url": "https://www.facebook.com/profile.php?id=61596793805858",
+        "followers_label": "followers",
+        "kind": "facebook",
+        "network": "news",
+    },
+    {
         "brand": "Harbor News",
         "platform": "Facebook",
         "handle": "Harbor News",
@@ -138,6 +156,15 @@ CHANNELS = [
         "url": "https://www.facebook.com/profile.php?id=61596620650836",
         "followers_label": "followers",
         "kind": "facebook",
+        "network": "news",
+    },
+    {
+        "brand": "Quint Valley News",
+        "platform": "Instagram",
+        "handle": "@quintvalleynews",
+        "url": "https://www.instagram.com/quintvalleynews/",
+        "followers_label": "followers",
+        "kind": "instagram",
         "network": "news",
     },
     {
@@ -635,6 +662,8 @@ def fetch_youtube_channel_videos() -> list[dict]:
     urls = [
         "https://www.youtube.com/@MapDeskNews/shorts",
         "https://www.youtube.com/@MapDeskNews/videos",
+        "https://www.youtube.com/@MapDeskPlaces/shorts",
+        "https://www.youtube.com/@MapDeskPlaces/videos",
     ]
     seen = set()
     found = []
@@ -656,7 +685,8 @@ def fetch_youtube_channel_videos() -> list[dict]:
             seen.add(vid)
             title = item.get("title") or item.get("url") or vid
             link = f"https://youtube.com/shorts/{vid}"
-            found.append({"id": vid, "title": clean_title(title.replace(" #Shorts", "")), "link": link})
+            handle = "@MapDeskPlaces" if "MapDeskPlaces" in url else "@MapDeskNews"
+            found.append({"id": vid, "title": clean_title(title.replace(" #Shorts", "")), "link": link, "handle": handle})
     return found
 
 
@@ -1165,7 +1195,8 @@ def merge_youtube_discoveries(posts: list[dict]) -> list[dict]:
         if link in existing:
             continue
         title = item["title"]
-        brand, family = classify_brand("map desk " + title)
+        handle = item.get("handle") or "@MapDeskNews"
+        brand, family = classify_brand(("map desk places " if handle == "@MapDeskPlaces" else "map desk ") + title)
         posts.append(
             {
                 "date": "",
@@ -1176,7 +1207,7 @@ def merge_youtube_discoveries(posts: list[dict]) -> list[dict]:
                 "platform": "YouTube",
                 "title": title,
                 "link": link,
-                "log_action": "Discovered on the @MapDeskNews YouTube channel",
+                "log_action": f"Discovered on the {handle} YouTube channel",
             }
         )
         existing.add(link)

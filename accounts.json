@@ -1,18 +1,270 @@
 {
+  "updated_at_pt": "Wed Nov 25, 2026, evening PT",
   "notes": [
-    "Map Desk, Map Desk Places, and Map Battle YouTube channels share one Google account."
+    "Status is Live, Needs fix, Not set up, or Skipped. Handles and public links only \u2014 no emails, phones, or login details.",
+    "Lean setup: Map Desk World, Money, Weather, and Battle post on the main Map Desk accounts, with YouTube playlists. Map Desk Places keeps its own YouTube channel so it can be compared with Money. Do not create a @MapBattle YouTube channel: that handle is already used by another creator.",
+    "TikTok posting is skipped. Handles below were not claimed by us as of this check.",
+    "Facebook posting is on hold while the Facebook session is signed out. New Facebook Pages need a one-time personal-profile step.",
+    "Map Desk YouTube (@MapDeskNews) is live for Shorts. A phone check is still needed before custom thumbnails and videos over 15 minutes can go up; Money ep1 stays private until that is done."
+  ],
+  "matrix_platforms": [
+    "YouTube",
+    "X",
+    "Instagram",
+    "Facebook",
+    "TikTok",
+    "Threads"
   ],
   "brands": [
+    {
+      "brand": "Harbor News",
+      "family": "Harbor News",
+      "network": "news",
+      "matrix": true,
+      "matrix_order": 1,
+      "note": "Facebook Page is live. YouTube, X, Instagram, and Threads are not set up. Planned handle @harbornewswa was still free on YouTube and X in a logged-out check this evening.",
+      "channels": [
+        {
+          "platform": "YouTube",
+          "handle": null,
+          "url": null,
+          "status": "Not set up",
+          "note": "Planned handle @harbornewswa looked free."
+        },
+        {
+          "platform": "X",
+          "handle": null,
+          "url": null,
+          "status": "Not set up",
+          "note": "Planned handle @harbornewswa looked free."
+        },
+        {
+          "platform": "Instagram",
+          "handle": null,
+          "url": null,
+          "status": "Not set up",
+          "note": "Planned handle @harbornewswa. No live profile or posts found."
+        },
+        {
+          "platform": "Facebook",
+          "handle": "Harbor News",
+          "url": "https://www.facebook.com/profile.php?id=61596429704380",
+          "status": "Live",
+          "note": "Still on a profile.php URL; custom username @harbornewswa was not granted. Posting held while Facebook is signed out."
+        },
+        {
+          "platform": "TikTok",
+          "handle": null,
+          "url": null,
+          "status": "Skipped",
+          "note": "Posting skipped. Handle not claimed."
+        },
+        {
+          "platform": "Threads",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        }
+      ]
+    },
+    {
+      "brand": "Quint Valley News",
+      "family": "Quint Valley News",
+      "network": "news",
+      "matrix": true,
+      "matrix_order": 2,
+      "note": "Facebook Page and Instagram @quintvalleynews are live (first IG post: Christmas for Kids, Mon Nov 23, 6:30 AM PT). YouTube, X, and Threads are not set up.",
+      "channels": [
+        {
+          "platform": "YouTube",
+          "handle": null,
+          "url": null,
+          "status": "Not set up",
+          "note": "Planned handle @quintvalleynews looked free."
+        },
+        {
+          "platform": "X",
+          "handle": null,
+          "url": null,
+          "status": "Not set up",
+          "note": "Planned handle @quintvalleynews looked free."
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@quintvalleynews",
+          "url": "https://www.instagram.com/quintvalleynews/",
+          "status": "Live",
+          "note": "At least one post is live. A public permalink was not stored in the activity log."
+        },
+        {
+          "platform": "Facebook",
+          "handle": "Quint Valley News",
+          "url": "https://www.facebook.com/profile.php?id=61596620650836",
+          "status": "Live",
+          "note": "Posting held while Facebook is signed out."
+        },
+        {
+          "platform": "TikTok",
+          "handle": null,
+          "url": null,
+          "status": "Skipped",
+          "note": "Posting skipped. Handle not claimed."
+        },
+        {
+          "platform": "Threads",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        }
+      ]
+    },
     {
       "brand": "Map Desk",
       "family": "Map Desk",
       "network": "news",
+      "matrix": true,
+      "matrix_label": "Map Desk (World / News)",
+      "matrix_order": 3,
+      "note": "Main Map Desk account set. World, Money, Weather, and Battle post here, with YouTube playlists.",
       "channels": [
-        { "platform": "YouTube", "handle": "@MapDeskNews", "url": "https://www.youtube.com/@MapDeskNews", "status": "Live" },
-        { "platform": "X", "handle": "@MapDeskNews", "url": "https://x.com/MapDeskNews", "status": "Live" },
-        { "platform": "Facebook", "handle": "Map Desk", "url": "https://www.facebook.com/profile.php?id=61596875401709", "status": "Live" },
-        { "platform": "Instagram", "handle": null, "url": null, "status": "Not set up" },
-        { "platform": "TikTok", "handle": null, "url": null, "status": "Skipped" }
+        {
+          "platform": "YouTube",
+          "handle": "@MapDeskNews",
+          "url": "https://www.youtube.com/@MapDeskNews",
+          "status": "Live",
+          "note": "Phone check still needed for custom thumbnails and videos over 15 minutes."
+        },
+        {
+          "platform": "X",
+          "handle": "@MapDeskNews",
+          "url": "https://x.com/MapDeskNews",
+          "status": "Live"
+        },
+        {
+          "platform": "Instagram",
+          "handle": null,
+          "url": null,
+          "status": "Not set up",
+          "note": "No brand Instagram. Do not use a personal profile."
+        },
+        {
+          "platform": "Facebook",
+          "handle": "Map Desk",
+          "url": "https://www.facebook.com/profile.php?id=61596875401709",
+          "status": "Live",
+          "note": "Posting held while Facebook is signed out."
+        },
+        {
+          "platform": "TikTok",
+          "handle": null,
+          "url": null,
+          "status": "Skipped",
+          "note": "Posting skipped. Handle not claimed."
+        },
+        {
+          "platform": "Threads",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        }
+      ]
+    },
+    {
+      "brand": "Map Desk World",
+      "family": "Map Desk",
+      "network": "news",
+      "series": "World",
+      "matrix": true,
+      "matrix_order": 4,
+      "note": "Series on the main Map Desk accounts, not a separate account set.",
+      "channels": [
+        {
+          "platform": "YouTube",
+          "handle": "@MapDeskNews",
+          "url": "https://www.youtube.com/@MapDeskNews",
+          "status": "Live",
+          "note": "Posts to the Map Desk World playlist on @MapDeskNews."
+        },
+        {
+          "platform": "X",
+          "handle": "@MapDeskNews",
+          "url": "https://x.com/MapDeskNews",
+          "status": "Live"
+        },
+        {
+          "platform": "Instagram",
+          "handle": null,
+          "url": null,
+          "status": "Not set up",
+          "note": "Covered once the main Map Desk Instagram is created."
+        },
+        {
+          "platform": "Facebook",
+          "handle": "Map Desk",
+          "url": "https://www.facebook.com/profile.php?id=61596875401709",
+          "status": "Live"
+        },
+        {
+          "platform": "TikTok",
+          "handle": null,
+          "url": null,
+          "status": "Skipped"
+        },
+        {
+          "platform": "Threads",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        }
+      ]
+    },
+    {
+      "brand": "Map Desk Money",
+      "family": "Map Desk",
+      "network": "news",
+      "series": "Money",
+      "matrix": true,
+      "matrix_order": 5,
+      "note": "Series on the main Map Desk accounts. Long-form Money ep1 is uploaded private until the YouTube phone check is done.",
+      "channels": [
+        {
+          "platform": "YouTube",
+          "handle": "@MapDeskNews",
+          "url": "https://www.youtube.com/@MapDeskNews",
+          "status": "Live",
+          "note": "Posts to the Map Desk Money playlist. Phone check still needed for the ep1 thumbnail."
+        },
+        {
+          "platform": "X",
+          "handle": "@MapDeskNews",
+          "url": "https://x.com/MapDeskNews",
+          "status": "Live"
+        },
+        {
+          "platform": "Instagram",
+          "handle": null,
+          "url": null,
+          "status": "Not set up",
+          "note": "Covered once the main Map Desk Instagram is created."
+        },
+        {
+          "platform": "Facebook",
+          "handle": "Map Desk",
+          "url": "https://www.facebook.com/profile.php?id=61596875401709",
+          "status": "Live"
+        },
+        {
+          "platform": "TikTok",
+          "handle": null,
+          "url": null,
+          "status": "Skipped"
+        },
+        {
+          "platform": "Threads",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        }
       ]
     },
     {
@@ -20,45 +272,197 @@
       "family": "Map Desk",
       "network": "news",
       "series": "Places",
+      "matrix": true,
+      "matrix_order": 6,
+      "note": "Own YouTube channel for comparison with Money. X posts currently go out on @MapDeskNews. Facebook Page is listed live; no Places posts are in the activity log.",
       "channels": [
-        { "platform": "YouTube", "handle": "@MapDeskPlaces", "url": null, "status": "Pending", "note": "Channel creation will be retried." },
-        { "platform": "Facebook", "handle": "Map Desk Places", "url": "https://www.facebook.com/profile.php?id=61596793805858", "status": "Live" },
-        { "platform": "X", "handle": null, "url": null, "status": "Not set up" },
-        { "platform": "Instagram", "handle": null, "url": null, "status": "Not set up" }
+        {
+          "platform": "YouTube",
+          "handle": "@MapDeskPlaces",
+          "url": "https://www.youtube.com/@MapDeskPlaces",
+          "status": "Live"
+        },
+        {
+          "platform": "X",
+          "handle": "@MapDeskNews",
+          "url": "https://x.com/MapDeskNews",
+          "status": "Live",
+          "note": "Shared with the main Map Desk account. No separate @MapDeskPlaces X account; that handle looked free, and we are not creating one."
+        },
+        {
+          "platform": "Instagram",
+          "handle": null,
+          "url": null,
+          "status": "Not set up",
+          "note": "No separate Places Instagram. Use the main Map Desk Instagram once it exists."
+        },
+        {
+          "platform": "Facebook",
+          "handle": "Map Desk Places",
+          "url": "https://www.facebook.com/profile.php?id=61596793805858",
+          "status": "Live",
+          "note": "Page listed in the account directory. No posts in the activity log. Could not re-check today because Facebook is signed out."
+        },
+        {
+          "platform": "TikTok",
+          "handle": null,
+          "url": null,
+          "status": "Skipped"
+        },
+        {
+          "platform": "Threads",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        }
       ]
     },
     {
       "brand": "Map Battle",
-      "family": "Map Battle",
+      "family": "Map Desk",
       "network": "news",
-      "note": "Sample in progress.",
+      "series": "Battle",
+      "matrix": true,
+      "matrix_order": 7,
+      "note": "Runs on the main Map Desk accounts until it earns its own channel after about 10\u201315 episodes. Do not create youtube.com/@MapBattle: that handle belongs to another creator (World History Battle Animation Maker).",
       "channels": [
-        { "platform": "YouTube", "handle": null, "url": null, "status": "Not set up" },
-        { "platform": "X", "handle": null, "url": null, "status": "Not set up" },
-        { "platform": "Facebook", "handle": null, "url": null, "status": "Not set up" },
-        { "platform": "Instagram", "handle": null, "url": null, "status": "Not set up" }
+        {
+          "platform": "YouTube",
+          "handle": "@MapDeskNews",
+          "url": "https://www.youtube.com/@MapDeskNews",
+          "status": "Live",
+          "note": "Posts to the Map Battle playlist on @MapDeskNews. @MapBattle is taken by another creator."
+        },
+        {
+          "platform": "X",
+          "handle": "@MapDeskNews",
+          "url": "https://x.com/MapDeskNews",
+          "status": "Live"
+        },
+        {
+          "platform": "Instagram",
+          "handle": null,
+          "url": null,
+          "status": "Not set up",
+          "note": "Covered once the main Map Desk Instagram is created."
+        },
+        {
+          "platform": "Facebook",
+          "handle": "Map Desk",
+          "url": "https://www.facebook.com/profile.php?id=61596875401709",
+          "status": "Live"
+        },
+        {
+          "platform": "TikTok",
+          "handle": null,
+          "url": null,
+          "status": "Skipped"
+        },
+        {
+          "platform": "Threads",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        }
       ]
     },
     {
-      "brand": "Harbor News",
-      "family": "Harbor News",
+      "brand": "Map Desk Weather",
+      "family": "Map Desk",
       "network": "news",
+      "series": "Weather",
+      "matrix": true,
+      "matrix_order": 8,
+      "note": "A Map Desk series, not a separate brand. No Weather-only accounts. The series was paused; when it resumes it should post on the main Map Desk accounts.",
       "channels": [
-        { "platform": "Facebook", "handle": "Harbor News", "url": "https://www.facebook.com/profile.php?id=61596429704380", "status": "Live" },
-        { "platform": "YouTube", "handle": null, "url": null, "status": "Not set up" },
-        { "platform": "X", "handle": null, "url": null, "status": "Not set up" },
-        { "platform": "Instagram", "handle": null, "url": null, "status": "Not set up" }
+        {
+          "platform": "YouTube",
+          "handle": "@MapDeskNews",
+          "url": "https://www.youtube.com/@MapDeskNews",
+          "status": "Live",
+          "note": "Will use a Weather playlist on @MapDeskNews. No @MapDeskWeather channel (that handle looked free; leave it unused)."
+        },
+        {
+          "platform": "X",
+          "handle": "@MapDeskNews",
+          "url": "https://x.com/MapDeskNews",
+          "status": "Live"
+        },
+        {
+          "platform": "Instagram",
+          "handle": null,
+          "url": null,
+          "status": "Not set up",
+          "note": "Covered once the main Map Desk Instagram is created."
+        },
+        {
+          "platform": "Facebook",
+          "handle": "Map Desk",
+          "url": "https://www.facebook.com/profile.php?id=61596875401709",
+          "status": "Live"
+        },
+        {
+          "platform": "TikTok",
+          "handle": null,
+          "url": null,
+          "status": "Skipped"
+        },
+        {
+          "platform": "Threads",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        }
       ]
     },
     {
-      "brand": "Quint Valley News",
-      "family": "Quint Valley News",
+      "brand": "Big Brave Rambo",
+      "family": "Big Brave Rambo",
       "network": "news",
+      "matrix": true,
+      "matrix_order": 9,
+      "note": "Kids faith show. No accounts created yet. Planned handle @bigbraverambo looked free on YouTube and X in a logged-out check this evening; confirm at sign-up. Do not post the 30-second teaser.",
       "channels": [
-        { "platform": "Facebook", "handle": "Quint Valley News", "url": "https://www.facebook.com/profile.php?id=61596620650836", "status": "Live" },
-        { "platform": "YouTube", "handle": null, "url": null, "status": "Not set up" },
-        { "platform": "X", "handle": null, "url": null, "status": "Not set up" },
-        { "platform": "Instagram", "handle": null, "url": null, "status": "Not set up" }
+        {
+          "platform": "YouTube",
+          "handle": null,
+          "url": null,
+          "status": "Not set up",
+          "note": "Planned handle @bigbraverambo looked free."
+        },
+        {
+          "platform": "X",
+          "handle": null,
+          "url": null,
+          "status": "Not set up",
+          "note": "Planned handle @bigbraverambo looked free."
+        },
+        {
+          "platform": "Instagram",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        },
+        {
+          "platform": "Facebook",
+          "handle": null,
+          "url": null,
+          "status": "Not set up",
+          "note": "New Facebook Pages need a one-time personal-profile step."
+        },
+        {
+          "platform": "TikTok",
+          "handle": null,
+          "url": null,
+          "status": "Skipped",
+          "note": "Posting skipped. Handle not claimed."
+        },
+        {
+          "platform": "Threads",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        }
       ]
     },
     {
@@ -66,13 +470,51 @@
       "family": "USA Wrap Co",
       "network": "business",
       "channels": [
-        { "platform": "Facebook", "handle": "USA WRAP Co.", "url": "https://www.facebook.com/USAWRAPCO", "status": "Live" },
-        { "platform": "Instagram", "handle": "@usawrapco_upfitting", "url": "https://www.instagram.com/usawrapco_upfitting/", "status": "Live" },
-        { "platform": "X", "handle": "@usawrapco", "url": "https://x.com/usawrapco", "status": "Live" },
-        { "platform": "LinkedIn", "handle": "USA WRAP Co.", "url": "https://www.linkedin.com/company/71340067/", "status": "Live" },
-        { "platform": "YouTube", "handle": null, "url": null, "status": "Not set up" },
-        { "platform": "Google Business", "handle": "USA Wrap Co · Gig Harbor", "url": null, "status": "Live", "location": "USA Wrap Co · Gig Harbor" },
-        { "platform": "Google Business", "handle": "USA Wrap Co · Olympia", "url": null, "status": "Live", "location": "USA Wrap Co · Olympia" }
+        {
+          "platform": "Facebook",
+          "handle": "USA WRAP Co.",
+          "url": "https://www.facebook.com/USAWRAPCO",
+          "status": "Live"
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@usawrapco_upfitting",
+          "url": "https://www.instagram.com/usawrapco_upfitting/",
+          "status": "Needs fix",
+          "note": "Account has been hitting a selfie-verification wall. Posts have still gone out through Business Suite when that was signed in."
+        },
+        {
+          "platform": "X",
+          "handle": "@usawrapco",
+          "url": "https://x.com/usawrapco",
+          "status": "Live"
+        },
+        {
+          "platform": "LinkedIn",
+          "handle": "USA WRAP Co.",
+          "url": "https://www.linkedin.com/company/71340067/",
+          "status": "Live"
+        },
+        {
+          "platform": "YouTube",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        },
+        {
+          "platform": "Google Business",
+          "handle": "USA Wrap Co \u00b7 Gig Harbor",
+          "url": null,
+          "status": "Live",
+          "location": "USA Wrap Co \u00b7 Gig Harbor"
+        },
+        {
+          "platform": "Google Business",
+          "handle": "USA Wrap Co \u00b7 Olympia",
+          "url": null,
+          "status": "Live",
+          "location": "USA Wrap Co \u00b7 Olympia"
+        }
       ]
     },
     {
@@ -80,11 +522,37 @@
       "family": "DekWave",
       "network": "business",
       "channels": [
-        { "platform": "Facebook", "handle": "DekWave", "url": "https://www.facebook.com/profile.php?id=61590781825933", "status": "Live" },
-        { "platform": "Instagram", "handle": "@dekwaveprotect", "url": "https://www.instagram.com/dekwaveprotect/", "status": "Live" },
-        { "platform": "Google Business", "handle": "DekWave", "url": null, "status": "Live", "location": "DekWave" },
-        { "platform": "YouTube", "handle": null, "url": null, "status": "Not set up" },
-        { "platform": "X", "handle": null, "url": null, "status": "Not set up" }
+        {
+          "platform": "Facebook",
+          "handle": "DekWave",
+          "url": "https://www.facebook.com/profile.php?id=61590781825933",
+          "status": "Live"
+        },
+        {
+          "platform": "Instagram",
+          "handle": "@dekwaveprotect",
+          "url": "https://www.instagram.com/dekwaveprotect/",
+          "status": "Live"
+        },
+        {
+          "platform": "Google Business",
+          "handle": "DekWave",
+          "url": null,
+          "status": "Live",
+          "location": "DekWave"
+        },
+        {
+          "platform": "YouTube",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        },
+        {
+          "platform": "X",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        }
       ]
     },
     {
@@ -92,10 +560,30 @@
       "family": "Savajay",
       "network": "business",
       "channels": [
-        { "platform": "Facebook", "handle": "Savajay", "url": "https://www.facebook.com/profile.php?id=61553803499989", "status": "Live" },
-        { "platform": "YouTube", "handle": null, "url": null, "status": "Not set up" },
-        { "platform": "X", "handle": null, "url": null, "status": "Not set up" },
-        { "platform": "Instagram", "handle": null, "url": null, "status": "Not set up" }
+        {
+          "platform": "Facebook",
+          "handle": "Savajay",
+          "url": "https://www.facebook.com/profile.php?id=61553803499989",
+          "status": "Live"
+        },
+        {
+          "platform": "YouTube",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        },
+        {
+          "platform": "X",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        },
+        {
+          "platform": "Instagram",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        }
       ]
     },
     {
@@ -103,11 +591,36 @@
       "family": "Chance the Wrapper",
       "network": "creator",
       "channels": [
-        { "platform": "LinkedIn", "handle": "Chance the Wrapper", "url": null, "status": "Live" },
-        { "platform": "YouTube", "handle": null, "url": null, "status": "Not set up" },
-        { "platform": "X", "handle": null, "url": null, "status": "Not set up" },
-        { "platform": "Facebook", "handle": null, "url": null, "status": "Not set up" },
-        { "platform": "Instagram", "handle": null, "url": null, "status": "Not set up" }
+        {
+          "platform": "LinkedIn",
+          "handle": "Chance the Wrapper",
+          "url": null,
+          "status": "Live"
+        },
+        {
+          "platform": "YouTube",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        },
+        {
+          "platform": "X",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        },
+        {
+          "platform": "Facebook",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        },
+        {
+          "platform": "Instagram",
+          "handle": null,
+          "url": null,
+          "status": "Not set up"
+        }
       ]
     }
   ]

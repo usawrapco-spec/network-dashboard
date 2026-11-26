@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-25T16:30:37-08:00",
-  "generated_at_pt": "Wed Nov 25, 2026, 4:30 PM PT",
+  "generated_at": "2026-11-25T16:48:28-08:00",
+  "generated_at_pt": "Wed Nov 25, 2026, 4:48 PM PT",
   "timezone": "America/Los_Angeles",
   "notes": {
     "YouTube": "Views and likes via yt-dlp. Comment counts are shown when YouTube exposes them; otherwise n/a.",
@@ -42,6 +42,27 @@
       "note": "n/a without a login"
     },
     {
+      "brand": "Map Desk Places",
+      "platform": "YouTube",
+      "handle": "@MapDeskPlaces",
+      "url": "https://www.youtube.com/@MapDeskPlaces",
+      "followers_label": "subscribers",
+      "network": "news",
+      "followers": 2,
+      "followers_available": true
+    },
+    {
+      "brand": "Map Desk Places",
+      "platform": "Facebook",
+      "handle": "Map Desk Places",
+      "url": "https://www.facebook.com/profile.php?id=61596793805858",
+      "followers_label": "followers",
+      "network": "news",
+      "followers": null,
+      "followers_available": false,
+      "note": "n/a without a login"
+    },
+    {
       "brand": "Harbor News",
       "platform": "Facebook",
       "handle": "Harbor News",
@@ -57,6 +78,17 @@
       "platform": "Facebook",
       "handle": "Quint Valley News",
       "url": "https://www.facebook.com/profile.php?id=61596620650836",
+      "followers_label": "followers",
+      "network": "news",
+      "followers": null,
+      "followers_available": false,
+      "note": "n/a without a login"
+    },
+    {
+      "brand": "Quint Valley News",
+      "platform": "Instagram",
+      "handle": "@quintvalleynews",
+      "url": "https://www.instagram.com/quintvalleynews/",
       "followers_label": "followers",
       "network": "news",
       "followers": null,
@@ -133,9 +165,9 @@
     "posts": 39,
     "stories": 2,
     "group_shares": 2,
-    "views": 2130,
+    "views": 2187,
     "likes": 14,
-    "comments": 8,
+    "comments": 9,
     "shares": 0,
     "views_known": 24,
     "likes_known": 14,
@@ -199,9 +231,9 @@
         "posts": 6,
         "stories": 0,
         "group_shares": 0,
-        "views": 301,
+        "views": 358,
         "likes": 2,
-        "comments": 3,
+        "comments": 4,
         "shares": 0,
         "views_known": 6,
         "likes_known": 4
@@ -234,9 +266,9 @@
         "posts": 10,
         "stories": 0,
         "group_shares": 0,
-        "views": 1770,
+        "views": 1827,
         "likes": 14,
-        "comments": 0,
+        "comments": 1,
         "shares": 0,
         "views_known": 10,
         "likes_known": 3
@@ -291,9 +323,9 @@
         "posts": 18,
         "stories": 0,
         "group_shares": 0,
-        "views": 1996,
+        "views": 2053,
         "likes": 14,
-        "comments": 8,
+        "comments": 9,
         "shares": 0,
         "views_known": 18,
         "likes_known": 9
@@ -365,7 +397,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -389,7 +421,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -413,7 +445,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -437,7 +469,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -461,7 +493,7 @@
       "comments": 2,
       "shares": 0,
       "impressions": 4,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -485,7 +517,7 @@
       "comments": 3,
       "shares": 0,
       "impressions": 8,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -509,7 +541,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 8,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -533,7 +565,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 3,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -557,7 +589,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 6,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -583,7 +615,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "none",
       "stats_note": "Google Business posts have no public URL. Stats are n/a."
     },
@@ -609,7 +641,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "none",
       "stats_note": "Google Business posts have no public URL. Stats are n/a."
     },
@@ -633,7 +665,7 @@
       "comments": 1,
       "shares": 0,
       "impressions": 7,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -657,7 +689,7 @@
       "comments": 1,
       "shares": 0,
       "impressions": 7,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -681,7 +713,7 @@
       "comments": 1,
       "shares": 0,
       "impressions": 11,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -700,12 +732,12 @@
       "title": "Near Snoqualmie Pass, hunt quartz legally + more | Map Desk Places",
       "link": "https://youtube.com/shorts/h0LhxNM-_3Y",
       "kind": "post",
-      "views": 73,
+      "views": 81,
       "likes": 2,
-      "comments": null,
+      "comments": 1,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -724,12 +756,12 @@
       "title": "A hike-in soak on Idaho public land + more | Map Desk Places",
       "link": "https://youtube.com/shorts/ztr5UFvdXWk",
       "kind": "post",
-      "views": 112,
+      "views": 154,
       "likes": null,
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -748,12 +780,12 @@
       "title": "Pan for gold where the Gold Rush began + more | Map Desk Places",
       "link": "https://youtube.com/shorts/9blV7hHzzD8",
       "kind": "post",
-      "views": 91,
+      "views": 98,
       "likes": null,
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -777,7 +809,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 72,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -801,7 +833,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -897,7 +929,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -921,7 +953,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -945,7 +977,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 4,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -970,7 +1002,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "none",
       "stats_note": "Group share stats are n/a unless a public count is available."
     },
@@ -994,7 +1026,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -1066,7 +1098,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -1336,7 +1368,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 17,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -1361,7 +1393,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "none",
       "stats_note": "Group share stats are n/a unless a public count is available."
     },
@@ -1385,7 +1417,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:30:37-08:00",
+      "last_updated": "2026-11-25T16:48:28-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     }
