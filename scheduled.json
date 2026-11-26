@@ -1,54 +1,8 @@
 {
-  "generated_at": "2026-11-25T16:48:28.795972-08:00",
-  "generated_at_pt": "2026-11-25 4:48 PM PT",
+  "generated_at": "2026-11-25T18:23:39.042388-08:00",
+  "generated_at_pt": "2026-11-25 6:23 PM PT",
   "timezone": "America/Los_Angeles",
   "items": [
-    {
-      "id": "mdm-2026-11-24-living",
-      "group_id": "mdm-2026-11-24-living",
-      "title": "California had the highest prices + more | Map Desk Money",
-      "caption": "Cost of living by state, 2024 price levels: California had the highest prices; Arkansas was the lowest.\n\n1. California had the highest prices\n2. Arkansas was the lowest\n\nCredits & thanks: Thank you to U.S. Bureau of Economic Analysis, FRED, St. Louis Fed for the reporting we cite.\nMap imagery: NASA GIBS (Blue Marble, Black Marble). Borders and labels: Natural Earth.\nNarrated with an AI voice. Facts checked against two independent sources per story. Not financial advice",
-      "brand": "Map Desk Money",
-      "family": "Map Desk",
-      "network": "news",
-      "platforms": [
-        "YouTube",
-        "Facebook",
-        "X",
-        "Instagram"
-      ],
-      "planned_date": "2026-11-24",
-      "planned_time": "Waiting to post",
-      "planned_tz": "PT",
-      "planned_at": null,
-      "status": "Ready",
-      "kind": "short",
-      "still": "media/scheduled/mdm-2026-11-24-living.jpg",
-      "video": "media/scheduled/mdm-2026-11-24-living-720.mp4"
-    },
-    {
-      "id": "mdm-2026-11-24-rent",
-      "group_id": "mdm-2026-11-24-rent",
-      "title": "Florida renters paid the most of income + more | Map Desk Money",
-      "caption": "Where renters pay the most of their income, 2025: Florida renters paid the most of income; Connecticut and California were close behind.\n\n1. Florida renters paid the most of income\n2. Connecticut and California were close behind\n\nCredits & thanks: Thank you to U.S. Census Bureau, Quadranac for the reporting we cite.\nMap imagery: NASA GIBS (Blue Marble, Black Marble). Borders and labels: Natural Earth.\nNarrated with an AI voice. Facts checked against two independent sources per story. Not financial advice",
-      "brand": "Map Desk Money",
-      "family": "Map Desk",
-      "network": "news",
-      "platforms": [
-        "YouTube",
-        "Facebook",
-        "X",
-        "Instagram"
-      ],
-      "planned_date": "2026-11-24",
-      "planned_time": "Waiting to post",
-      "planned_tz": "PT",
-      "planned_at": null,
-      "status": "Ready",
-      "kind": "short",
-      "still": "media/scheduled/mdm-2026-11-24-rent.jpg",
-      "video": "media/scheduled/mdm-2026-11-24-rent-720.mp4"
-    },
     {
       "id": "mdp-places-2026-11-24-sample",
       "group_id": "mdp-places-2026-11-24-sample",
@@ -5523,9 +5477,9 @@
     }
   ],
   "counts": {
-    "ready": 4,
+    "ready": 2,
     "planned": 192,
     "group_shares": 76,
-    "videos": 4
+    "videos": 2
   }
 }

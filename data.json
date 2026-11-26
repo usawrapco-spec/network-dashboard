@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-25T16:48:28-08:00",
-  "generated_at_pt": "Wed Nov 25, 2026, 4:48 PM PT",
+  "generated_at": "2026-11-25T18:23:39-08:00",
+  "generated_at_pt": "Wed Nov 25, 2026, 6:23 PM PT",
   "timezone": "America/Los_Angeles",
   "notes": {
     "YouTube": "Views and likes via yt-dlp. Comment counts are shown when YouTube exposes them; otherwise n/a.",
@@ -162,15 +162,15 @@
     }
   ],
   "totals": {
-    "posts": 39,
+    "posts": 44,
     "stories": 2,
     "group_shares": 2,
-    "views": 2187,
-    "likes": 14,
-    "comments": 9,
+    "views": 2398,
+    "likes": 19,
+    "comments": 11,
     "shares": 0,
-    "views_known": 24,
-    "likes_known": 14,
+    "views_known": 29,
+    "likes_known": 18,
     "by_brand": {
       "Map Desk": {
         "posts": 3,
@@ -184,26 +184,26 @@
         "likes_known": 2
       },
       "Map Desk World": {
-        "posts": 5,
+        "posts": 7,
         "stories": 0,
         "group_shares": 0,
-        "views": 60,
+        "views": 67,
         "likes": 0,
-        "comments": 2,
+        "comments": 3,
         "shares": 0,
-        "views_known": 5,
-        "likes_known": 1
+        "views_known": 7,
+        "likes_known": 2
       },
       "Map Desk Money": {
-        "posts": 4,
+        "posts": 7,
         "stories": 0,
         "group_shares": 0,
-        "views": 1300,
+        "views": 1306,
         "likes": 10,
-        "comments": 0,
+        "comments": 1,
         "shares": 0,
-        "views_known": 4,
-        "likes_known": 2
+        "views_known": 7,
+        "likes_known": 3
       },
       "USA Wrap Co": {
         "posts": 14,
@@ -231,12 +231,12 @@
         "posts": 6,
         "stories": 0,
         "group_shares": 0,
-        "views": 358,
-        "likes": 2,
+        "views": 556,
+        "likes": 7,
         "comments": 4,
         "shares": 0,
         "views_known": 6,
-        "likes_known": 4
+        "likes_known": 6
       },
       "Quint Valley News": {
         "posts": 1,
@@ -263,26 +263,26 @@
     },
     "by_platform": {
       "YouTube": {
-        "posts": 10,
+        "posts": 13,
         "stories": 0,
         "group_shares": 0,
-        "views": 1827,
-        "likes": 14,
+        "views": 2025,
+        "likes": 19,
         "comments": 1,
         "shares": 0,
-        "views_known": 10,
-        "likes_known": 3
+        "views_known": 13,
+        "likes_known": 5
       },
       "X": {
-        "posts": 11,
+        "posts": 13,
         "stories": 0,
         "group_shares": 0,
-        "views": 147,
+        "views": 160,
         "likes": 0,
-        "comments": 8,
+        "comments": 10,
         "shares": 0,
-        "views_known": 11,
-        "likes_known": 11
+        "views_known": 13,
+        "likes_known": 13
       },
       "Google Business": {
         "posts": 2,
@@ -320,15 +320,15 @@
     },
     "by_family": {
       "Map Desk": {
-        "posts": 18,
+        "posts": 23,
         "stories": 0,
         "group_shares": 0,
-        "views": 2053,
-        "likes": 14,
-        "comments": 9,
+        "views": 2264,
+        "likes": 19,
+        "comments": 11,
         "shares": 0,
-        "views_known": 18,
-        "likes_known": 9
+        "views_known": 23,
+        "likes_known": 13
       },
       "USA Wrap Co": {
         "posts": 14,
@@ -397,7 +397,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -421,7 +421,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -445,7 +445,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -469,7 +469,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -488,12 +488,12 @@
       "title": "Cairo Ring Road tanker fire, November 25, 2026: Fuel tanker fire kills at least 30. AI-narrated \u00b7 Two-source check. #MapDeskWorld",
       "link": "https://x.com/MapDeskNews/status/2125724506635526210",
       "kind": "post",
-      "views": 4,
+      "views": 6,
       "likes": 0,
       "comments": 2,
       "shares": 0,
-      "impressions": 4,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "impressions": 6,
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -517,7 +517,7 @@
       "comments": 3,
       "shares": 0,
       "impressions": 8,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -541,7 +541,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 8,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -565,7 +565,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 3,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -589,7 +589,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 6,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -615,7 +615,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "none",
       "stats_note": "Google Business posts have no public URL. Stats are n/a."
     },
@@ -641,7 +641,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "none",
       "stats_note": "Google Business posts have no public URL. Stats are n/a."
     },
@@ -665,7 +665,7 @@
       "comments": 1,
       "shares": 0,
       "impressions": 7,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -689,7 +689,7 @@
       "comments": 1,
       "shares": 0,
       "impressions": 7,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -713,7 +713,7 @@
       "comments": 1,
       "shares": 0,
       "impressions": 11,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -732,12 +732,12 @@
       "title": "Near Snoqualmie Pass, hunt quartz legally + more | Map Desk Places",
       "link": "https://youtube.com/shorts/h0LhxNM-_3Y",
       "kind": "post",
-      "views": 81,
-      "likes": 2,
+      "views": 120,
+      "likes": 5,
       "comments": 1,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -756,12 +756,12 @@
       "title": "A hike-in soak on Idaho public land + more | Map Desk Places",
       "link": "https://youtube.com/shorts/ztr5UFvdXWk",
       "kind": "post",
-      "views": 154,
-      "likes": null,
+      "views": 289,
+      "likes": 1,
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -780,13 +780,133 @@
       "title": "Pan for gold where the Gold Rush began + more | Map Desk Places",
       "link": "https://youtube.com/shorts/9blV7hHzzD8",
       "kind": "post",
-      "views": 98,
+      "views": 122,
+      "likes": 1,
+      "comments": null,
+      "shares": null,
+      "impressions": null,
+      "last_updated": "2026-11-25T18:23:39-08:00",
+      "stats_source": "yt-dlp",
+      "stats_note": null
+    },
+    {
+      "id": "https://youtube.com/shorts/opHINEX-5ZY",
+      "episode": "mdw-world-2026-11-25",
+      "plan_id": null,
+      "group_id": "mdw-world-2026-11-25",
+      "date": "2026-11-25",
+      "time_pt": "12:00 AM",
+      "datetime_pt": "2026-11-25T00:00:00-08:00",
+      "brand": "Map Desk World",
+      "family": "Map Desk",
+      "network": "news",
+      "platform": "YouTube",
+      "title": "China flies its first foreign astronaut + more | Map Desk World",
+      "link": "https://youtube.com/shorts/opHINEX-5ZY",
+      "kind": "post",
+      "views": 0,
       "likes": null,
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "yt-dlp",
+      "stats_note": null
+    },
+    {
+      "id": "https://youtube.com/shorts/me3d7y4yYhU",
+      "episode": "mdm-2026-11-24-living",
+      "plan_id": null,
+      "group_id": "mdm-2026-11-24-living",
+      "date": "2026-11-25",
+      "time_pt": "12:00 AM",
+      "datetime_pt": "2026-11-25T00:00:00-08:00",
+      "brand": "Map Desk Money",
+      "family": "Map Desk",
+      "network": "news",
+      "platform": "YouTube",
+      "title": "Short mdm-2026-11-24-living 'California had the highest prices + more | Map Desk Money'",
+      "link": "https://youtube.com/shorts/me3d7y4yYhU",
+      "kind": "post",
+      "views": 0,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "impressions": null,
+      "last_updated": "2026-11-25T18:23:39-08:00",
+      "stats_source": "yt-dlp",
+      "stats_note": null
+    },
+    {
+      "id": "https://youtube.com/shorts/8vYACnXx2lU",
+      "episode": "mdm-2026-11-24-rent",
+      "plan_id": null,
+      "group_id": "mdm-2026-11-24-rent",
+      "date": "2026-11-25",
+      "time_pt": "12:00 AM",
+      "datetime_pt": "2026-11-25T00:00:00-08:00",
+      "brand": "Map Desk Money",
+      "family": "Map Desk",
+      "network": "news",
+      "platform": "YouTube",
+      "title": "Short mdm-2026-11-24-rent 'Florida renters paid the most of income + more | Map Desk Money'",
+      "link": "https://youtube.com/shorts/8vYACnXx2lU",
+      "kind": "post",
+      "views": 0,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "impressions": null,
+      "last_updated": "2026-11-25T18:23:39-08:00",
+      "stats_source": "yt-dlp",
+      "stats_note": null
+    },
+    {
+      "id": "https://x.com/MapDeskNews/status/2125770845629100059",
+      "episode": "mdw-world-2026-11-25",
+      "plan_id": null,
+      "group_id": "mdw-world-2026-11-25",
+      "date": "2026-11-25",
+      "time_pt": "12:00 AM",
+      "datetime_pt": "2026-11-25T00:00:00-08:00",
+      "brand": "Map Desk World",
+      "family": "Map Desk",
+      "network": "news",
+      "platform": "X",
+      "title": "World news today, November 25, 2026: China flies its first foreign astronaut; 20 hostages freed in Cartagena; 23 miners trapped in flooded\u2026",
+      "link": "https://x.com/MapDeskNews/status/2125770845629100059",
+      "kind": "post",
+      "views": 5,
+      "likes": 0,
+      "comments": 1,
+      "shares": 0,
+      "impressions": 5,
+      "last_updated": "2026-11-25T18:23:39-08:00",
+      "stats_source": "fxtwitter",
+      "stats_note": null
+    },
+    {
+      "id": "https://x.com/MapDeskNews/status/2125771776458400014",
+      "episode": "mdm-2026-11-24-living",
+      "plan_id": null,
+      "group_id": "mdm-2026-11-24-living",
+      "date": "2026-11-25",
+      "time_pt": "12:00 AM",
+      "datetime_pt": "2026-11-25T00:00:00-08:00",
+      "brand": "Map Desk Money",
+      "family": "Map Desk",
+      "network": "news",
+      "platform": "X",
+      "title": "Cost of living by state, 2024 price levels: California had the highest prices; Arkansas was the lowest. Narrated with an AI voice. #MapDesk\u2026",
+      "link": "https://x.com/MapDeskNews/status/2125771776458400014",
+      "kind": "post",
+      "views": 6,
+      "likes": 0,
+      "comments": 1,
+      "shares": 0,
+      "impressions": 6,
+      "last_updated": "2026-11-25T18:23:39-08:00",
+      "stats_source": "fxtwitter",
       "stats_note": null
     },
     {
@@ -809,7 +929,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 72,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -833,7 +953,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -929,7 +1049,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -953,7 +1073,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -977,7 +1097,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 4,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -1002,7 +1122,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "none",
       "stats_note": "Group share stats are n/a unless a public count is available."
     },
@@ -1026,7 +1146,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -1098,7 +1218,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -1368,7 +1488,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 17,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -1393,7 +1513,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "none",
       "stats_note": "Group share stats are n/a unless a public count is available."
     },
@@ -1417,7 +1537,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-25T16:48:28-08:00",
+      "last_updated": "2026-11-25T18:23:39-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     }
@@ -3869,164 +3989,6 @@
       "x_followers": 0
     },
     {
-      "at": "2026-11-25T16:30:37-08:00",
-      "label": "Wed Nov 25, 2026, 4:30 PM PT",
-      "views": 2130,
-      "likes": 14,
-      "comments": 8,
-      "shares": 0,
-      "posts": 39,
-      "by_brand": {
-        "Map Desk": {
-          "posts": 3,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 335,
-          "likes": 2,
-          "comments": 3,
-          "shares": 0,
-          "views_known": 3,
-          "likes_known": 2
-        },
-        "Map Desk World": {
-          "posts": 5,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 60,
-          "likes": 0,
-          "comments": 2,
-          "shares": 0,
-          "views_known": 5,
-          "likes_known": 1
-        },
-        "Map Desk Money": {
-          "posts": 4,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 1300,
-          "likes": 10,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 4,
-          "likes_known": 2
-        },
-        "USA Wrap Co": {
-          "posts": 14,
-          "stories": 2,
-          "group_shares": 2,
-          "views": 134,
-          "likes": 0,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 6,
-          "likes_known": 5
-        },
-        "DekWave": {
-          "posts": 5,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 0,
-          "likes": 0,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 0,
-          "likes_known": 0
-        },
-        "Map Desk Places": {
-          "posts": 6,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 301,
-          "likes": 2,
-          "comments": 3,
-          "shares": 0,
-          "views_known": 6,
-          "likes_known": 4
-        },
-        "Quint Valley News": {
-          "posts": 1,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 0,
-          "likes": 0,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 0,
-          "likes_known": 0
-        },
-        "Harbor News": {
-          "posts": 1,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 0,
-          "likes": 0,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 0,
-          "likes_known": 0
-        }
-      },
-      "by_platform": {
-        "YouTube": {
-          "posts": 10,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 1770,
-          "likes": 14,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 10,
-          "likes_known": 3
-        },
-        "X": {
-          "posts": 11,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 147,
-          "likes": 0,
-          "comments": 8,
-          "shares": 0,
-          "views_known": 11,
-          "likes_known": 11
-        },
-        "Google Business": {
-          "posts": 2,
-          "stories": 0,
-          "group_shares": 0,
-          "views": 0,
-          "likes": 0,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 0,
-          "likes_known": 0
-        },
-        "Facebook": {
-          "posts": 11,
-          "stories": 1,
-          "group_shares": 2,
-          "views": 213,
-          "likes": 0,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 3,
-          "likes_known": 0
-        },
-        "Instagram": {
-          "posts": 5,
-          "stories": 1,
-          "group_shares": 0,
-          "views": 0,
-          "likes": 0,
-          "comments": 0,
-          "shares": 0,
-          "views_known": 0,
-          "likes_known": 0
-        }
-      },
-      "youtube_subscribers": 2,
-      "x_followers": 0
-    },
-    {
       "at": "2026-11-25T16:48:28-08:00",
       "label": "Wed Nov 25, 2026, 4:48 PM PT",
       "views": 2187,
@@ -4183,59 +4145,171 @@
       },
       "youtube_subscribers": 2,
       "x_followers": 0
+    },
+    {
+      "at": "2026-11-25T18:23:39-08:00",
+      "label": "Wed Nov 25, 2026, 6:23 PM PT",
+      "views": 2398,
+      "likes": 19,
+      "comments": 11,
+      "shares": 0,
+      "posts": 44,
+      "by_brand": {
+        "Map Desk": {
+          "posts": 3,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 335,
+          "likes": 2,
+          "comments": 3,
+          "shares": 0,
+          "views_known": 3,
+          "likes_known": 2
+        },
+        "Map Desk World": {
+          "posts": 7,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 67,
+          "likes": 0,
+          "comments": 3,
+          "shares": 0,
+          "views_known": 7,
+          "likes_known": 2
+        },
+        "Map Desk Money": {
+          "posts": 7,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 1306,
+          "likes": 10,
+          "comments": 1,
+          "shares": 0,
+          "views_known": 7,
+          "likes_known": 3
+        },
+        "USA Wrap Co": {
+          "posts": 14,
+          "stories": 2,
+          "group_shares": 2,
+          "views": 134,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 6,
+          "likes_known": 5
+        },
+        "DekWave": {
+          "posts": 5,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        },
+        "Map Desk Places": {
+          "posts": 6,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 556,
+          "likes": 7,
+          "comments": 4,
+          "shares": 0,
+          "views_known": 6,
+          "likes_known": 6
+        },
+        "Quint Valley News": {
+          "posts": 1,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        },
+        "Harbor News": {
+          "posts": 1,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        }
+      },
+      "by_platform": {
+        "YouTube": {
+          "posts": 13,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 2025,
+          "likes": 19,
+          "comments": 1,
+          "shares": 0,
+          "views_known": 13,
+          "likes_known": 5
+        },
+        "X": {
+          "posts": 13,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 160,
+          "likes": 0,
+          "comments": 10,
+          "shares": 0,
+          "views_known": 13,
+          "likes_known": 13
+        },
+        "Google Business": {
+          "posts": 2,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        },
+        "Facebook": {
+          "posts": 11,
+          "stories": 1,
+          "group_shares": 2,
+          "views": 213,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 3,
+          "likes_known": 0
+        },
+        "Instagram": {
+          "posts": 5,
+          "stories": 1,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        }
+      },
+      "youtube_subscribers": 2,
+      "x_followers": 0
     }
   ],
   "scheduled": {
-    "generated_at": "2026-11-25T16:48:28.795972-08:00",
-    "generated_at_pt": "2026-11-25 4:48 PM PT",
+    "generated_at": "2026-11-25T18:23:39.042388-08:00",
+    "generated_at_pt": "2026-11-25 6:23 PM PT",
     "timezone": "America/Los_Angeles",
     "items": [
-      {
-        "id": "mdm-2026-11-24-living",
-        "group_id": "mdm-2026-11-24-living",
-        "title": "California had the highest prices + more | Map Desk Money",
-        "caption": "Cost of living by state, 2024 price levels: California had the highest prices; Arkansas was the lowest.\n\n1. California had the highest prices\n2. Arkansas was the lowest\n\nCredits & thanks: Thank you to U.S. Bureau of Economic Analysis, FRED, St. Louis Fed for the reporting we cite.\nMap imagery: NASA GIBS (Blue Marble, Black Marble). Borders and labels: Natural Earth.\nNarrated with an AI voice. Facts checked against two independent sources per story. Not financial advice",
-        "brand": "Map Desk Money",
-        "family": "Map Desk",
-        "network": "news",
-        "platforms": [
-          "YouTube",
-          "Facebook",
-          "X",
-          "Instagram"
-        ],
-        "planned_date": "2026-11-24",
-        "planned_time": "Waiting to post",
-        "planned_tz": "PT",
-        "planned_at": null,
-        "status": "Ready",
-        "kind": "short",
-        "still": "media/scheduled/mdm-2026-11-24-living.jpg",
-        "video": "media/scheduled/mdm-2026-11-24-living-720.mp4"
-      },
-      {
-        "id": "mdm-2026-11-24-rent",
-        "group_id": "mdm-2026-11-24-rent",
-        "title": "Florida renters paid the most of income + more | Map Desk Money",
-        "caption": "Where renters pay the most of their income, 2025: Florida renters paid the most of income; Connecticut and California were close behind.\n\n1. Florida renters paid the most of income\n2. Connecticut and California were close behind\n\nCredits & thanks: Thank you to U.S. Census Bureau, Quadranac for the reporting we cite.\nMap imagery: NASA GIBS (Blue Marble, Black Marble). Borders and labels: Natural Earth.\nNarrated with an AI voice. Facts checked against two independent sources per story. Not financial advice",
-        "brand": "Map Desk Money",
-        "family": "Map Desk",
-        "network": "news",
-        "platforms": [
-          "YouTube",
-          "Facebook",
-          "X",
-          "Instagram"
-        ],
-        "planned_date": "2026-11-24",
-        "planned_time": "Waiting to post",
-        "planned_tz": "PT",
-        "planned_at": null,
-        "status": "Ready",
-        "kind": "short",
-        "still": "media/scheduled/mdm-2026-11-24-rent.jpg",
-        "video": "media/scheduled/mdm-2026-11-24-rent-720.mp4"
-      },
       {
         "id": "mdp-places-2026-11-24-sample",
         "group_id": "mdp-places-2026-11-24-sample",
@@ -9710,10 +9784,10 @@
       }
     ],
     "counts": {
-      "ready": 4,
+      "ready": 2,
       "planned": 192,
       "group_shares": 76,
-      "videos": 4
+      "videos": 2
     }
   }
 }
