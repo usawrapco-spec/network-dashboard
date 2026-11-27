@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-26T09:06:47.096609-08:00",
-  "generated_at_pt": "2026-11-26 9:06 AM PT",
+  "generated_at": "2026-11-26T18:10:52.967315-08:00",
+  "generated_at_pt": "2026-11-26 6:10 PM PT",
   "timezone": "America/Los_Angeles",
   "items": [
     {
@@ -109,26 +109,6 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/h271.jpg",
-      "video": null
-    },
-    {
-      "id": "L016",
-      "group_id": "L016",
-      "title": "Northwest Epoxy Coatings box truck full wrap (real job photo, 4:5)",
-      "caption": "A box truck is the biggest piece of advertising most trades own. Northwest Epoxy Coatings put theirs to work.\n\nUSA Wrap Co designs, prints and installs vehicle wraps, fleet graphics and lettering. Call .\n\n#FleetGraphics #VehicleWraps #SmallBusiness",
-      "brand": "USA Wrap Co",
-      "family": "USA Wrap Co",
-      "network": "business",
-      "platforms": [
-        "LinkedIn"
-      ],
-      "planned_date": "2026-11-26",
-      "planned_time": "8:30 AM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-26T08:30:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/l016.jpg",
       "video": null
     },
     {
@@ -271,26 +251,6 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/sj039.jpg",
-      "video": null
-    },
-    {
-      "id": "X022",
-      "group_id": "X022",
-      "title": "Overland camper wrap (real job photo, 4:5)",
-      "caption": "Off-grid ready. Overland camper wrap that protects the paint on the backroads. Wrapped by USA Wrap Co.\n",
-      "brand": "USA Wrap Co",
-      "family": "USA Wrap Co",
-      "network": "business",
-      "platforms": [
-        "X"
-      ],
-      "planned_date": "2026-11-26",
-      "planned_time": "4:30 PM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-26T16:30:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/x022.jpg",
       "video": null
     },
     {
@@ -5154,7 +5114,7 @@
   ],
   "counts": {
     "ready": 2,
-    "planned": 180,
+    "planned": 178,
     "group_shares": 72,
     "videos": 2
   }
