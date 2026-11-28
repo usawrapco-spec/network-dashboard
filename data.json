@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-27T09:09:38-08:00",
-  "generated_at_pt": "Fri Nov 27, 2026, 9:09 AM PT",
+  "generated_at": "2026-11-27T18:13:45-08:00",
+  "generated_at_pt": "Fri Nov 27, 2026, 6:13 PM PT",
   "timezone": "America/Los_Angeles",
   "notes": {
     "YouTube": "Views and likes via yt-dlp. Comment counts are shown when YouTube exposes them; otherwise n/a.",
@@ -162,36 +162,36 @@
     }
   ],
   "totals": {
-    "posts": 48,
+    "posts": 53,
     "stories": 2,
     "group_shares": 2,
-    "views": 2677,
+    "views": 2764,
     "likes": 19,
-    "comments": 12,
+    "comments": 14,
     "shares": 0,
-    "views_known": 33,
-    "likes_known": 21,
+    "views_known": 38,
+    "likes_known": 24,
     "by_brand": {
       "USA Wrap Co": {
-        "posts": 17,
+        "posts": 20,
         "stories": 2,
         "group_shares": 2,
-        "views": 161,
+        "views": 189,
         "likes": 0,
         "comments": 0,
         "shares": 0,
-        "views_known": 9,
-        "likes_known": 8
+        "views_known": 12,
+        "likes_known": 11
       },
       "Map Desk": {
-        "posts": 4,
+        "posts": 5,
         "stories": 0,
         "group_shares": 0,
         "views": 337,
         "likes": 2,
-        "comments": 4,
+        "comments": 5,
         "shares": 0,
-        "views_known": 4,
+        "views_known": 5,
         "likes_known": 2
       },
       "Map Desk World": {
@@ -209,7 +209,7 @@
         "posts": 7,
         "stories": 0,
         "group_shares": 0,
-        "views": 1308,
+        "views": 1306,
         "likes": 10,
         "comments": 1,
         "shares": 0,
@@ -228,14 +228,14 @@
         "likes_known": 0
       },
       "Map Desk Places": {
-        "posts": 6,
+        "posts": 7,
         "stories": 0,
         "group_shares": 0,
-        "views": 801,
+        "views": 862,
         "likes": 7,
-        "comments": 4,
+        "comments": 5,
         "shares": 0,
-        "views_known": 6,
+        "views_known": 7,
         "likes_known": 6
       },
       "Quint Valley News": {
@@ -263,25 +263,25 @@
     },
     "by_platform": {
       "X": {
-        "posts": 16,
+        "posts": 19,
         "stories": 0,
         "group_shares": 0,
-        "views": 189,
+        "views": 217,
         "likes": 0,
         "comments": 10,
         "shares": 0,
-        "views_known": 16,
-        "likes_known": 16
+        "views_known": 19,
+        "likes_known": 19
       },
       "YouTube": {
-        "posts": 14,
+        "posts": 16,
         "stories": 0,
         "group_shares": 0,
-        "views": 2275,
+        "views": 2334,
         "likes": 19,
-        "comments": 2,
+        "comments": 4,
         "shares": 0,
-        "views_known": 14,
+        "views_known": 16,
         "likes_known": 5
       },
       "Google Business": {
@@ -320,25 +320,25 @@
     },
     "by_family": {
       "USA Wrap Co": {
-        "posts": 17,
+        "posts": 20,
         "stories": 2,
         "group_shares": 2,
-        "views": 161,
+        "views": 189,
         "likes": 0,
         "comments": 0,
         "shares": 0,
-        "views_known": 9,
-        "likes_known": 8
+        "views_known": 12,
+        "likes_known": 11
       },
       "Map Desk": {
-        "posts": 24,
+        "posts": 26,
         "stories": 0,
         "group_shares": 0,
-        "views": 2516,
+        "views": 2575,
         "likes": 19,
-        "comments": 12,
+        "comments": 14,
         "shares": 0,
-        "views_known": 24,
+        "views_known": 26,
         "likes_known": 13
       },
       "DekWave": {
@@ -378,6 +378,78 @@
   },
   "posts": [
     {
+      "id": "https://x.com/usawrapco/status/2126428455432847486",
+      "episode": null,
+      "plan_id": "X035",
+      "group_id": "x035",
+      "date": "2026-11-27",
+      "time_pt": "1:30 PM",
+      "datetime_pt": "2026-11-27T13:30:00-08:00",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platform": "X",
+      "title": "Wrap tip: wash your wrap by hand with mild soap. Skip the brush car wash, and keep pressure washers 12+ inches away from edges. Call .",
+      "link": "https://x.com/usawrapco/status/2126428455432847486",
+      "kind": "post",
+      "views": 4,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "impressions": 4,
+      "last_updated": "2026-11-27T18:13:45-08:00",
+      "stats_source": "fxtwitter",
+      "stats_note": null
+    },
+    {
+      "id": "https://x.com/usawrapco/status/2126412412014514675",
+      "episode": null,
+      "plan_id": "X005",
+      "group_id": "x005",
+      "date": "2026-11-27",
+      "time_pt": "12:26 PM",
+      "datetime_pt": "2026-11-27T12:26:00-08:00",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platform": "X",
+      "title": "Rooted in nature, built to last. Rear-door lettering and logo for ONA Landscaping, readable from a block away. Gig Harbor, WA. #trailerwrap\u2026",
+      "link": "https://x.com/usawrapco/status/2126412412014514675",
+      "kind": "post",
+      "views": 9,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "impressions": 9,
+      "last_updated": "2026-11-27T18:13:45-08:00",
+      "stats_source": "fxtwitter",
+      "stats_note": null
+    },
+    {
+      "id": "https://x.com/usawrapco/status/2126367363016933856",
+      "episode": null,
+      "plan_id": "X012",
+      "group_id": "x012",
+      "date": "2026-11-27",
+      "time_pt": "9:27 AM",
+      "datetime_pt": "2026-11-27T09:27:00-08:00",
+      "brand": "USA Wrap Co",
+      "family": "USA Wrap Co",
+      "network": "business",
+      "platform": "X",
+      "title": "One of our favorite wraps this year: pantry locations mapped on the rear doors of Jefferson County Food Bank Association's EV. A wrap that\u2026",
+      "link": "https://x.com/usawrapco/status/2126367363016933856",
+      "kind": "post",
+      "views": 7,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "impressions": 7,
+      "last_updated": "2026-11-27T18:13:45-08:00",
+      "stats_source": "fxtwitter",
+      "stats_note": null
+    },
+    {
       "id": "https://x.com/usawrapco/status/2126338447929425972",
       "episode": null,
       "plan_id": "X023",
@@ -392,12 +464,12 @@
       "title": "Fresh route. Farm2Fork's step van now markets the brand at every stop. Wrapped by USA Wrap Co. Call .",
       "link": "https://x.com/usawrapco/status/2126338447929425972",
       "kind": "post",
-      "views": 3,
+      "views": 5,
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "impressions": 3,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "impressions": 5,
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -416,12 +488,12 @@
       "title": "Off-grid ready. Overland camper wrap that protects the paint on the backroads. Wrapped by USA Wrap Co. Call .",
       "link": "https://x.com/usawrapco/status/2126126205581893686",
       "kind": "post",
-      "views": 7,
+      "views": 11,
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "impressions": 7,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "impressions": 11,
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -445,7 +517,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 7,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -469,9 +541,9 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T05:32:07-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "yt-dlp",
-      "stats_note": "Using last known stats; live fetch via yt-dlp failed"
+      "stats_note": null
     },
     {
       "id": "https://youtube.com/shorts/0sQjWAfgeTM",
@@ -493,7 +565,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -517,9 +589,9 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T05:32:07-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "yt-dlp",
-      "stats_note": "Using last known stats; live fetch via yt-dlp failed"
+      "stats_note": null
     },
     {
       "id": "https://youtube.com/shorts/IqgPSNlmp80",
@@ -541,7 +613,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -565,7 +637,7 @@
       "comments": 2,
       "shares": 0,
       "impressions": 6,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -589,7 +661,7 @@
       "comments": 3,
       "shares": 0,
       "impressions": 8,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -608,12 +680,12 @@
       "title": "Not just vans. Custom stripe graphics on a light aircraft. If it moves, we can wrap it. Gig Harbor, WA. #aircraftgraphics #aviation #gighar\u2026",
       "link": "https://x.com/usawrapco/status/2125687588828905632",
       "kind": "post",
-      "views": 14,
+      "views": 15,
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "impressions": 14,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "impressions": 15,
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -637,7 +709,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 3,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -656,12 +728,12 @@
       "title": "Same Cybertruck. Matte mode. Color-change wrap, original finish protected underneath. Wrapped by USA Wrap Co. Call .",
       "link": "https://x.com/usawrapco/status/2125643831832178695",
       "kind": "post",
-      "views": 8,
+      "views": 9,
       "likes": 0,
       "comments": 0,
       "shares": 0,
-      "impressions": 8,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "impressions": 9,
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -687,7 +759,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "none",
       "stats_note": "Google Business posts have no public URL. Stats are n/a."
     },
@@ -713,7 +785,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "none",
       "stats_note": "Google Business posts have no public URL. Stats are n/a."
     },
@@ -737,7 +809,7 @@
       "comments": 1,
       "shares": 0,
       "impressions": 7,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -761,7 +833,7 @@
       "comments": 1,
       "shares": 0,
       "impressions": 7,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -785,7 +857,7 @@
       "comments": 1,
       "shares": 0,
       "impressions": 11,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -801,7 +873,7 @@
       "family": "Map Desk",
       "network": "news",
       "platform": "YouTube",
-      "title": "post",
+      "title": "Near Snoqualmie Pass, hunt quartz legally + more | Map Desk Places",
       "link": "https://youtube.com/shorts/h0LhxNM-_3Y",
       "kind": "post",
       "views": 179,
@@ -809,9 +881,9 @@
       "comments": 1,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T05:32:07-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "yt-dlp",
-      "stats_note": "Using last known stats; live fetch via yt-dlp failed"
+      "stats_note": null
     },
     {
       "id": "https://youtube.com/shorts/ztr5UFvdXWk",
@@ -828,12 +900,12 @@
       "title": "A hike-in soak on Idaho public land + more | Map Desk Places",
       "link": "https://youtube.com/shorts/ztr5UFvdXWk",
       "kind": "post",
-      "views": 421,
+      "views": 423,
       "likes": 1,
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -852,12 +924,12 @@
       "title": "Pan for gold where the Gold Rush began + more | Map Desk Places",
       "link": "https://youtube.com/shorts/9blV7hHzzD8",
       "kind": "post",
-      "views": 176,
+      "views": 179,
       "likes": 1,
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -881,7 +953,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -905,9 +977,9 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T05:32:07-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "yt-dlp",
-      "stats_note": "Using last known stats; live fetch via yt-dlp failed"
+      "stats_note": null
     },
     {
       "id": "https://youtube.com/shorts/8vYACnXx2lU",
@@ -929,9 +1001,9 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T05:32:07-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "yt-dlp",
-      "stats_note": "Using last known stats; live fetch via yt-dlp failed"
+      "stats_note": null
     },
     {
       "id": "https://x.com/MapDeskNews/status/2125770845629100059",
@@ -953,7 +1025,7 @@
       "comments": 1,
       "shares": 0,
       "impressions": 5,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -977,7 +1049,7 @@
       "comments": 1,
       "shares": 0,
       "impressions": 6,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -1001,7 +1073,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 73,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -1025,7 +1097,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -1121,7 +1193,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -1145,7 +1217,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -1169,7 +1241,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 6,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -1194,7 +1266,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "none",
       "stats_note": "Group share stats are n/a unless a public count is available."
     },
@@ -1218,7 +1290,7 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "yt-dlp",
       "stats_note": "Views from the public Reel page; likes, comments, and shares are n/a without a Facebook login"
     },
@@ -1285,12 +1357,12 @@
       "title": "Where Americans Moved in 2025",
       "link": "https://youtube.com/shorts/KGL7hHWmrUM",
       "kind": "post",
-      "views": 1163,
+      "views": 1161,
       "likes": 10,
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -1560,7 +1632,7 @@
       "comments": 0,
       "shares": 0,
       "impressions": 18,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "fxtwitter",
       "stats_note": null
     },
@@ -1585,9 +1657,33 @@
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "none",
       "stats_note": "Group share stats are n/a unless a public count is available."
+    },
+    {
+      "id": "https://youtube.com/shorts/gSHTJAOWNmw",
+      "episode": null,
+      "plan_id": null,
+      "group_id": "map-desk:texas-vs-california-who-actually-wins:undated",
+      "date": "",
+      "time_pt": "",
+      "datetime_pt": null,
+      "brand": "Map Desk",
+      "family": "Map Desk",
+      "network": "news",
+      "platform": "YouTube",
+      "title": "Texas vs California: Who Actually Wins? | Map Battle",
+      "link": "https://youtube.com/shorts/gSHTJAOWNmw",
+      "kind": "post",
+      "views": 1,
+      "likes": null,
+      "comments": 1,
+      "shares": null,
+      "impressions": null,
+      "last_updated": "2026-11-27T18:13:45-08:00",
+      "stats_source": "yt-dlp",
+      "stats_note": null
     },
     {
       "id": "https://youtube.com/shorts/tBMdtuSAO4A",
@@ -1604,12 +1700,12 @@
       "title": "Washington vs Florida | Map Battle",
       "link": "https://youtube.com/shorts/tBMdtuSAO4A",
       "kind": "post",
-      "views": 327,
+      "views": 326,
       "likes": 2,
       "comments": null,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     },
@@ -1633,7 +1729,31 @@
       "comments": 1,
       "shares": null,
       "impressions": null,
-      "last_updated": "2026-11-27T09:09:38-08:00",
+      "last_updated": "2026-11-27T18:13:45-08:00",
+      "stats_source": "yt-dlp",
+      "stats_note": null
+    },
+    {
+      "id": "https://youtube.com/shorts/1Y4LJCinwYU",
+      "episode": null,
+      "plan_id": null,
+      "group_id": "map-desk:where-you-can-dig-for-real-diamonds-in-a:undated",
+      "date": "",
+      "time_pt": "",
+      "datetime_pt": null,
+      "brand": "Map Desk Places",
+      "family": "Map Desk",
+      "network": "news",
+      "platform": "YouTube",
+      "title": "Where You Can Dig for Real Diamonds in America | Map Desk Places",
+      "link": "https://youtube.com/shorts/1Y4LJCinwYU",
+      "kind": "post",
+      "views": 56,
+      "likes": null,
+      "comments": 1,
+      "shares": null,
+      "impressions": null,
+      "last_updated": "2026-11-27T18:13:45-08:00",
       "stats_source": "yt-dlp",
       "stats_note": null
     }
@@ -5347,11 +5467,169 @@
       },
       "youtube_subscribers": 2,
       "x_followers": 0
+    },
+    {
+      "at": "2026-11-27T18:13:45-08:00",
+      "label": "Fri Nov 27, 2026, 6:13 PM PT",
+      "views": 2764,
+      "likes": 19,
+      "comments": 14,
+      "shares": 0,
+      "posts": 53,
+      "by_brand": {
+        "USA Wrap Co": {
+          "posts": 20,
+          "stories": 2,
+          "group_shares": 2,
+          "views": 189,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 12,
+          "likes_known": 11
+        },
+        "Map Desk": {
+          "posts": 5,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 337,
+          "likes": 2,
+          "comments": 5,
+          "shares": 0,
+          "views_known": 5,
+          "likes_known": 2
+        },
+        "Map Desk World": {
+          "posts": 7,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 70,
+          "likes": 0,
+          "comments": 3,
+          "shares": 0,
+          "views_known": 7,
+          "likes_known": 2
+        },
+        "Map Desk Money": {
+          "posts": 7,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 1306,
+          "likes": 10,
+          "comments": 1,
+          "shares": 0,
+          "views_known": 7,
+          "likes_known": 3
+        },
+        "DekWave": {
+          "posts": 5,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        },
+        "Map Desk Places": {
+          "posts": 7,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 862,
+          "likes": 7,
+          "comments": 5,
+          "shares": 0,
+          "views_known": 7,
+          "likes_known": 6
+        },
+        "Quint Valley News": {
+          "posts": 1,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        },
+        "Harbor News": {
+          "posts": 1,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        }
+      },
+      "by_platform": {
+        "X": {
+          "posts": 19,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 217,
+          "likes": 0,
+          "comments": 10,
+          "shares": 0,
+          "views_known": 19,
+          "likes_known": 19
+        },
+        "YouTube": {
+          "posts": 16,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 2334,
+          "likes": 19,
+          "comments": 4,
+          "shares": 0,
+          "views_known": 16,
+          "likes_known": 5
+        },
+        "Google Business": {
+          "posts": 2,
+          "stories": 0,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        },
+        "Facebook": {
+          "posts": 11,
+          "stories": 1,
+          "group_shares": 2,
+          "views": 213,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 3,
+          "likes_known": 0
+        },
+        "Instagram": {
+          "posts": 5,
+          "stories": 1,
+          "group_shares": 0,
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "shares": 0,
+          "views_known": 0,
+          "likes_known": 0
+        }
+      },
+      "youtube_subscribers": 2,
+      "x_followers": 0
     }
   ],
   "scheduled": {
-    "generated_at": "2026-11-27T09:09:38.877677-08:00",
-    "generated_at_pt": "2026-11-27 9:09 AM PT",
+    "generated_at": "2026-11-27T18:13:45.308148-08:00",
+    "generated_at_pt": "2026-11-27 6:13 PM PT",
     "timezone": "America/Los_Angeles",
     "items": [
       {
@@ -5484,46 +5762,6 @@
         "video": null
       },
       {
-        "id": "L017",
-        "group_id": "L017",
-        "title": "Tanker truck graphics (real job photo, 4:5)",
-        "caption": "Commercial graphics for a tanker truck: clean, readable and professional at highway speed.\n\nUSA Wrap Co designs, prints and installs vehicle wraps, fleet graphics and lettering. Call .\n\n#FleetGraphics #VehicleWraps #SmallBusiness",
-        "brand": "USA Wrap Co",
-        "family": "USA Wrap Co",
-        "network": "business",
-        "platforms": [
-          "LinkedIn"
-        ],
-        "planned_date": "2026-11-27",
-        "planned_time": "8:30 AM PT",
-        "planned_tz": "PT",
-        "planned_at": "2026-11-27T08:30:00-08:00",
-        "status": "Approved",
-        "kind": "plan",
-        "still": "media/scheduled/l017.jpg",
-        "video": null
-      },
-      {
-        "id": "X012",
-        "group_id": "X012",
-        "title": "08 Food Bank EV detail",
-        "caption": "One of our favorite wraps this year: pantry locations mapped on the rear doors of Jefferson County Food Bank Association's EV. A wrap that works every mile. Wrapped in Gig Harbor.\n",
-        "brand": "USA Wrap Co",
-        "family": "USA Wrap Co",
-        "network": "business",
-        "platforms": [
-          "X"
-        ],
-        "planned_date": "2026-11-27",
-        "planned_time": "9:00 AM PT",
-        "planned_tz": "PT",
-        "planned_at": "2026-11-27T09:00:00-08:00",
-        "status": "Approved",
-        "kind": "plan",
-        "still": "media/scheduled/x012.jpg",
-        "video": null
-      },
-      {
         "id": "H253",
         "group_id": "H253",
         "title": "Amped Up Electric box truck wrap (real job photo)",
@@ -5622,66 +5860,6 @@
         "status": "Approved",
         "kind": "plan",
         "still": "media/scheduled/h173.jpg",
-        "video": null
-      },
-      {
-        "id": "X005",
-        "group_id": "X005",
-        "title": "ONA Landscaping trailer (real job photo; bystander plate blurred)",
-        "caption": "Rooted in nature, built to last. Rear-door lettering and logo for ONA Landscaping, readable from a block away. Gig Harbor, WA. #trailerwrap #fleetgraphics #landscaping #pnw",
-        "brand": "USA Wrap Co",
-        "family": "USA Wrap Co",
-        "network": "business",
-        "platforms": [
-          "X"
-        ],
-        "planned_date": "2026-11-27",
-        "planned_time": "12:00 PM PT",
-        "planned_tz": "PT",
-        "planned_at": "2026-11-27T12:00:00-08:00",
-        "status": "Approved",
-        "kind": "plan",
-        "still": "media/scheduled/x005.jpg",
-        "video": null
-      },
-      {
-        "id": "X035",
-        "group_id": "X035",
-        "title": "Text-only wrap tip (no image, no job subject)",
-        "caption": "Wrap tip: wash your wrap by hand with mild soap. Skip the brush car wash, and keep pressure washers 12+ inches away from edges.\n",
-        "brand": "USA Wrap Co",
-        "family": "USA Wrap Co",
-        "network": "business",
-        "platforms": [
-          "X"
-        ],
-        "planned_date": "2026-11-27",
-        "planned_time": "12:30 PM PT",
-        "planned_tz": "PT",
-        "planned_at": "2026-11-27T12:30:00-08:00",
-        "status": "Approved",
-        "kind": "plan",
-        "still": null,
-        "video": null
-      },
-      {
-        "id": "X013",
-        "group_id": "X013",
-        "title": "EP01 We Lift Brands (as-is)",
-        "caption": "Phone not ringing? Your truck might be invisible. We'll take it from here. We Lift Brands, Ep. 1\n",
-        "brand": "USA Wrap Co",
-        "family": "USA Wrap Co",
-        "network": "business",
-        "platforms": [
-          "X"
-        ],
-        "planned_date": "2026-11-27",
-        "planned_time": "3:00 PM PT",
-        "planned_tz": "PT",
-        "planned_at": "2026-11-27T15:00:00-08:00",
-        "status": "Approved",
-        "kind": "plan",
-        "still": "media/scheduled/x013.jpg",
         "video": null
       },
       {
@@ -6781,26 +6959,6 @@
         "status": "Approved",
         "kind": "plan",
         "still": "media/scheduled/dw041.jpg",
-        "video": null
-      },
-      {
-        "id": "X003",
-        "group_id": "X003",
-        "title": "Jefferson County Food Bank Association EV van (real job photo)",
-        "caption": "A wrap that works every mile. Full EV van wrap for the Jefferson County Food Bank Association, with a route map right on the back doors. Wrapped in Gig Harbor. #vanwrap #fleetgraphics #nonprofit #gigharbor",
-        "brand": "USA Wrap Co",
-        "family": "USA Wrap Co",
-        "network": "business",
-        "platforms": [
-          "X"
-        ],
-        "planned_date": "2026-12-01",
-        "planned_time": "12:00 PM PT",
-        "planned_tz": "PT",
-        "planned_at": "2026-12-01T12:00:00-08:00",
-        "status": "Approved",
-        "kind": "plan",
-        "still": "media/scheduled/x003.jpg",
         "video": null
       },
       {
@@ -10341,7 +10499,7 @@
     ],
     "counts": {
       "ready": 2,
-      "planned": 175,
+      "planned": 169,
       "group_shares": 69,
       "videos": 2
     }

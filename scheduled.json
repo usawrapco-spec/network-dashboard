@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-27T09:09:38.877677-08:00",
-  "generated_at_pt": "2026-11-27 9:09 AM PT",
+  "generated_at": "2026-11-27T18:13:45.308148-08:00",
+  "generated_at_pt": "2026-11-27 6:13 PM PT",
   "timezone": "America/Los_Angeles",
   "items": [
     {
@@ -133,46 +133,6 @@
       "video": null
     },
     {
-      "id": "L017",
-      "group_id": "L017",
-      "title": "Tanker truck graphics (real job photo, 4:5)",
-      "caption": "Commercial graphics for a tanker truck: clean, readable and professional at highway speed.\n\nUSA Wrap Co designs, prints and installs vehicle wraps, fleet graphics and lettering. Call .\n\n#FleetGraphics #VehicleWraps #SmallBusiness",
-      "brand": "USA Wrap Co",
-      "family": "USA Wrap Co",
-      "network": "business",
-      "platforms": [
-        "LinkedIn"
-      ],
-      "planned_date": "2026-11-27",
-      "planned_time": "8:30 AM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-27T08:30:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/l017.jpg",
-      "video": null
-    },
-    {
-      "id": "X012",
-      "group_id": "X012",
-      "title": "08 Food Bank EV detail",
-      "caption": "One of our favorite wraps this year: pantry locations mapped on the rear doors of Jefferson County Food Bank Association's EV. A wrap that works every mile. Wrapped in Gig Harbor.\n",
-      "brand": "USA Wrap Co",
-      "family": "USA Wrap Co",
-      "network": "business",
-      "platforms": [
-        "X"
-      ],
-      "planned_date": "2026-11-27",
-      "planned_time": "9:00 AM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-27T09:00:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/x012.jpg",
-      "video": null
-    },
-    {
       "id": "H253",
       "group_id": "H253",
       "title": "Amped Up Electric box truck wrap (real job photo)",
@@ -271,66 +231,6 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/h173.jpg",
-      "video": null
-    },
-    {
-      "id": "X005",
-      "group_id": "X005",
-      "title": "ONA Landscaping trailer (real job photo; bystander plate blurred)",
-      "caption": "Rooted in nature, built to last. Rear-door lettering and logo for ONA Landscaping, readable from a block away. Gig Harbor, WA. #trailerwrap #fleetgraphics #landscaping #pnw",
-      "brand": "USA Wrap Co",
-      "family": "USA Wrap Co",
-      "network": "business",
-      "platforms": [
-        "X"
-      ],
-      "planned_date": "2026-11-27",
-      "planned_time": "12:00 PM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-27T12:00:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/x005.jpg",
-      "video": null
-    },
-    {
-      "id": "X035",
-      "group_id": "X035",
-      "title": "Text-only wrap tip (no image, no job subject)",
-      "caption": "Wrap tip: wash your wrap by hand with mild soap. Skip the brush car wash, and keep pressure washers 12+ inches away from edges.\n",
-      "brand": "USA Wrap Co",
-      "family": "USA Wrap Co",
-      "network": "business",
-      "platforms": [
-        "X"
-      ],
-      "planned_date": "2026-11-27",
-      "planned_time": "12:30 PM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-27T12:30:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": null,
-      "video": null
-    },
-    {
-      "id": "X013",
-      "group_id": "X013",
-      "title": "EP01 We Lift Brands (as-is)",
-      "caption": "Phone not ringing? Your truck might be invisible. We'll take it from here. We Lift Brands, Ep. 1\n",
-      "brand": "USA Wrap Co",
-      "family": "USA Wrap Co",
-      "network": "business",
-      "platforms": [
-        "X"
-      ],
-      "planned_date": "2026-11-27",
-      "planned_time": "3:00 PM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-11-27T15:00:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/x013.jpg",
       "video": null
     },
     {
@@ -1430,26 +1330,6 @@
       "status": "Approved",
       "kind": "plan",
       "still": "media/scheduled/dw041.jpg",
-      "video": null
-    },
-    {
-      "id": "X003",
-      "group_id": "X003",
-      "title": "Jefferson County Food Bank Association EV van (real job photo)",
-      "caption": "A wrap that works every mile. Full EV van wrap for the Jefferson County Food Bank Association, with a route map right on the back doors. Wrapped in Gig Harbor. #vanwrap #fleetgraphics #nonprofit #gigharbor",
-      "brand": "USA Wrap Co",
-      "family": "USA Wrap Co",
-      "network": "business",
-      "platforms": [
-        "X"
-      ],
-      "planned_date": "2026-12-01",
-      "planned_time": "12:00 PM PT",
-      "planned_tz": "PT",
-      "planned_at": "2026-12-01T12:00:00-08:00",
-      "status": "Approved",
-      "kind": "plan",
-      "still": "media/scheduled/x003.jpg",
       "video": null
     },
     {
@@ -4990,7 +4870,7 @@
   ],
   "counts": {
     "ready": 2,
-    "planned": 175,
+    "planned": 169,
     "group_shares": 69,
     "videos": 2
   }
